@@ -1,4 +1,5 @@
-const { getContent } = require('./readfile.js');
+const { getContent } = require('./readfile');
+const { parse } = require('./with.jsdom');
 
 describe('jsdom', () => {
   it('read', async () => {
@@ -7,6 +8,16 @@ describe('jsdom', () => {
   });
   it('parse', async () => {
     const content = await getContent();
-    
+    const result = parse(content);
+    expect(result).toStrictEqual({
+      causes: [
+      ],
+      consequences: [
+        "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
+        "/wiki/index.php?title=Fr-fr_adulte_carte_3_b%C3%A2timent",
+        "/wiki/index.php?title=Fr-fr_adulte_carte_4_transport",
+        "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture",
+      ],
+    });
   });
 });
