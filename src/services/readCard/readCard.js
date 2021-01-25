@@ -8,16 +8,29 @@ const readCard = async (cardNumber) => {
   return await getCardData(card);
 };
 
-const readAllCards = async () => {
-  return Promise.all(cards
-    .filter(c => c.cardNum < 3)
-    .map((card) => getCardData(card))
-  );
+const readAllCards = async (fromCard, toCard) => {
+  const cardsData = [];
+  for (let index = fromCard - 1; index < toCard; index++) {
+    const card = cards[index];
+    const cardData = await getCardData(card);
+    cardsData.push(cardData);
+    await sleepRandom(300, 800);
+  }
+  return cardsData;
 };
+
+function sleepRandom(min, max) {
+  const ms = Math.floor(Math.random() * (max - min)) + min;
+  return sleep(ms);
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 const getCardData = async (card) => {
   const cardId = await getPageId(card.title);
-  const relations = await getCardRelations(cardId);
+  const relations = await getCardRelations(cardId, ` (card id=${cardId}, title=${card.title})`);
   return {
     cardId,
     ...card,
@@ -25,9 +38,9 @@ const getCardData = async (card) => {
   };
 };
 
-const getCardRelations = async (cardId) => {
+const getCardRelations = async (cardId, message) => {
   const cardContent = await getPageContent(cardId);
-  const relations = parse(cardContent);
+  const relations = parse(cardContent, message);
   return relations;
 };
 

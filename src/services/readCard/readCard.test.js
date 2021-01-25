@@ -43,8 +43,26 @@ describe('readCard', () => {
       ],
     });
   });
-  it('read all cards', async () => {
-    const cards = await readAllCards();
-    expect(cards).toBeTruthy();
+  it('read carte_9', async () => {
+    const cardNumber = 9;
+    const pageData = await readCard(cardNumber);
+    expect(pageData).toMatchSnapshot();
   });
+  it('read carte_14', async () => {
+    const cardNumber = 14;
+    const pageData = await readCard(cardNumber);
+    expect(pageData).toMatchSnapshot();
+  });
+  it('read all cards 1-2', async () => {
+    const cards = await readAllCards(1, 2);
+    expect(cards.length).toBe(2);
+  }, 99000);
+  it('read all cards 1-10', async () => {
+    const cards = await readAllCards(1, 10);
+    expect(cards.length).toBe(10);
+  }, 99000);
+  it('read all cards 10-29', async () => {
+    const cards = await readAllCards(10, 19);
+    expect(cards.length).toBe(10);
+  }, 99000);
 });

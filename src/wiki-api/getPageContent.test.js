@@ -14,4 +14,9 @@ describe('getPageContent', () => {
     const pageContent = await getPageContent(pageId);
     expect(pageContent).not.toBeFalsy();
   });
+  it('get carte_14', async () => {
+    const pageId = 36;
+    const pageContent = await getPageContent(pageId);
+    expect(pageContent).not.toBeFalsy();
+  });
 });
