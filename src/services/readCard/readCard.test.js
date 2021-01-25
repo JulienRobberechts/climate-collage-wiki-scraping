@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-const { readCard } = require('./readCard');
+const { readCard, readAllCards } = require('./readCard');
 
 describe('readCard', () => {
   it('read carte_1', async () => {
@@ -42,5 +42,9 @@ describe('readCard', () => {
         "/wiki/index.php?title=Fr-fr_adulte_carte_10_a%C3%A9rosols",
       ],
     });
+  });
+  it('read all cards', async () => {
+    const cards = await readAllCards();
+    expect(cards).toBeTruthy();
   });
 });

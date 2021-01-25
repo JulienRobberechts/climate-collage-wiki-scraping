@@ -11,7 +11,7 @@ module.exports.getPageId = async (pageTitle) => {
     assert("pagesIds count", pagesIds.length, 1);
     return response.data.query.pages[pagesIds[0]].pageid;
   } catch (error) {
-    throw new Error(`getPageId error: ${error}`);
+    throw new Error(`getPageId error to get '${pageTitle}': ${error}`);
   }
 };
 
