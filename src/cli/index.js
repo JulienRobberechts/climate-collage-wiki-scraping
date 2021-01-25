@@ -1,6 +1,8 @@
 const inquirer = require('inquirer');
 
 const { getPageId } = require('../wiki-api/getPageProps');
+const { readAllCards } = require('../services/readCard/readCard');
+const { writeFile } = require('../tests/writefile');
 
 var questions = [
   {
@@ -8,13 +10,14 @@ var questions = [
     name: 'operation',
     message: 'Which operation do you want to execute?',
     choices: [
-      'Extract page Id',
-      'Do something else',
+      'Extract a page Id',
+      'Extract all data',
     ],
   },
   {
     type: 'expand',
     name: 'card',
+    when: ({ operation }) => operation === 'Extract a page Id',
     message: 'Which card do you want to extract?',
     choices: [
       {
@@ -47,12 +50,10 @@ const executeRequest = (answers) => {
   console.log(`\noperation: ${answers.operation}`);
   switch (answers.operation) {
     case 'Extract page Id':
-      extractCard(answers.card)
-        .then(() => console.log('extraction completed'))
-        .catch((e) => console.log('error', e));;
+      extractCard(answers.card);
       break;
-    case 'Do something else':
-      console.log(`Operation not implemented`);
+    case 'Extract all data':
+      extractAllCards();
       break;
     default:
       console.log(`Operation not implemented`);
@@ -64,4 +65,12 @@ const extractCard = async (pageTitle) => {
   process.stdout.write(`\ncard id for '${pageTitle}': `);
   const pageId = await getPageId(pageTitle);
   console.log(`${pageId}`);
+};
+
+const extractAllCards = async () => {
+  const filePath = './resx/cards-result.json';
+  process.stdout.write(`\nCards data in file '${filePath}' ...`);
+  const cardsData = await readAllCards(1, 42);
+  await writeFile(filePath, JSON.stringify(cardsData));
+  console.log('done');
 };
