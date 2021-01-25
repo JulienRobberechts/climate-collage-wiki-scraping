@@ -1,4 +1,4 @@
-const { getContent } = require('../readfile');
+const { getContent } = require('../tests/readfile');
 const { parse } = require('./with.jsdom');
 
 describe('jsdom', () => {
