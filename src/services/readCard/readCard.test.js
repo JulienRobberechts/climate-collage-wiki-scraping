@@ -61,8 +61,20 @@ describe('readCard', () => {
     const cards = await readAllCards(1, 10);
     expect(cards.length).toBe(10);
   }, 99000);
-  it('read all cards 10-29', async () => {
+  it('read all cards 10-19', async () => {
     const cards = await readAllCards(10, 19);
     expect(cards.length).toBe(10);
+  }, 99000);
+  it('read all cards 20-29', async () => {
+    const cards = await readAllCards(20, 29);
+    expect(cards.length).toBe(10);
+  }, 99000);
+  it('read all cards 30-39', async () => {
+    const cards = await readAllCards(30, 39);
+    expect(cards.length).toBe(10);
+  }, 99000);
+  it('read all cards 40-42', async () => {
+    const cards = await readAllCards(40, 42);
+    expect(cards.length).toBe(3);
   }, 99000);
 });
