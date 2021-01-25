@@ -8,6 +8,12 @@ describe('readCard', () => {
     const cardNumber = 1;
     const pageData = await readCard(cardNumber);
     expect(pageData).toStrictEqual({
+      cardId: 4,
+      cardNum: 1,
+      url: "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
+      title: "Fr-fr adulte carte 1 activités humaines",
+      shortTitle: "Activités humaines",
+      cardBatch: 1,
       causes: [
       ],
       consequences: [
@@ -22,13 +28,18 @@ describe('readCard', () => {
     const cardNumber = 2;
     const pageData = await readCard(cardNumber);
     expect(pageData).toStrictEqual({
+      cardId: 12,
+      cardNum: 2,
+      url: "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
+      title: "Fr-fr adulte carte 2 industrie",
+      shortTitle: "Industrie",
+      cardBatch: 2,
       causes: [
-        "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
-        "/wiki/index.php?title=Fr-fr_adulte_carte_4_transport"
+        "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
       ],
       consequences: [
-        "/wiki/index.php?title=Fr-fr_adulte_carte_5_énergies_fossiles",
-        "/wiki/index.php?title=Fr-fr_adulte_carte_10_aérosols",
+        "/wiki/index.php?title=Fr-fr_adulte_carte_5_%C3%A9nergies_fossiles",
+        "/wiki/index.php?title=Fr-fr_adulte_carte_10_a%C3%A9rosols",
       ],
     });
   });

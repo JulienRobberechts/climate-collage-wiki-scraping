@@ -1,15 +1,17 @@
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
+const cards = require('../../data/cards.json');
+const { getPageId } = require('../../wiki-api/getPageProps');
+const { getPageContent } = require('../../wiki-api/getPageContent');
+const { parse } = require('../../extraction/with.jsdom');
 
-module.exports.readCard = (cardNumber) => {
+module.exports.readCard = async (cardNumber) => {
+
+  const card = cards.find(({ cardNum }) => cardNum === cardNumber);
+  const cardId = await getPageId(card.title);
+  const cardContent = await getPageContent(cardId);
+  const relations = parse(cardContent);
   return {
-    causes: [
-    ],
-    consequences: [
-      "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
-      "/wiki/index.php?title=Fr-fr_adulte_carte_3_b%C3%A2timent",
-      "/wiki/index.php?title=Fr-fr_adulte_carte_4_transport",
-      "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture",
-    ],
+    cardId,
+    ...card,
+    ...relations,
   };
 };
