@@ -1,0 +1,55 @@
+[
+  {
+    "cardId": 4,
+    "cardNum": 1,
+    "url": "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
+    "title": "Fr-fr adulte carte 1 activités humaines",
+    "shortTitle": "Activités humaines",
+    "cardBatch": 1,
+    "img": {
+      "url": "https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png"
+    },
+    "causes": [],
+    "consequences": [
+      "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
+      "/wiki/index.php?title=Fr-fr_adulte_carte_3_b%C3%A2timent",
+      "/wiki/index.php?title=Fr-fr_adulte_carte_4_transport",
+      "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture"
+    ]
+  },
+  {
+    "cardId": 12,
+    "cardNum": 2,
+    "url": "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
+    "title": "Fr-fr adulte carte 2 industrie",
+    "shortTitle": "Industrie",
+    "cardBatch": 2,
+    "img": {
+      "url": "https://fresqueduclimat.org/wiki/images/7/7e/Fr-fr_adulte_carte_2_recto.png"
+    },
+    "causes": [
+      "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines"
+    ],
+    "consequences": [
+      "/wiki/index.php?title=Fr-fr_adulte_carte_5_%C3%A9nergies_fossiles",
+      "/wiki/index.php?title=Fr-fr_adulte_carte_10_a%C3%A9rosols"
+    ]
+  },
+  {
+    "cardId": 14,
+    "cardNum": 3,
+    "url": "/wiki/index.php?title=Fr-fr_adulte_carte_3_utilisation_des_b%C3%A2timents",
+    "title": "Fr-fr adulte carte 3 utilisation des bâtiments",
+    "shortTitle": "Utilisation des bâtiments",
+    "cardBatch": 2,
+    "img": {
+      "url": "https://fresqueduclimat.org/wiki/images/6/60/Fr-fr_adulte_carte_3_recto.png"
+    },
+    "causes": [
+      "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines"
+    ],
+    "consequences": [
+      "/wiki/index.php?title=Fr-fr_adulte_carte_5_%C3%A9nergies_fossiles"
+    ]
+  }
+]

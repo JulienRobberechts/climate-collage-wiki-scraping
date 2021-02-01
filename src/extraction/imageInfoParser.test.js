@@ -14,12 +14,12 @@ describe('parseImageInfo', () => {
     const content = await getContent(imageInfo1FilePath);
     const data = JSON.parse(content);
     const result = parseImageInfo(data);
-    expect(result).toStrictEqual("https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png");
+    expect(result).toStrictEqual({ url: "https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png" });
   });
   it('parse image 3', async () => {
     const content = await getContent(imageInfo3FilePath);
     const data = JSON.parse(content);
     const result = parseImageInfo(data);
-    expect(result).toStrictEqual("https://fresqueduclimat.org/wiki/images/6/60/Fr-fr_adulte_carte_3_recto.png");
+    expect(result).toStrictEqual({ url: "https://fresqueduclimat.org/wiki/images/6/60/Fr-fr_adulte_carte_3_recto.png" });
   });
 });

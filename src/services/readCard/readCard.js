@@ -1,7 +1,11 @@
 const cards = require('../../data/cards.json');
 const { getPageId } = require('../../wiki-api/getPageProps');
+
 const { getPageContent } = require('../../wiki-api/getPageContent');
 const { parsePageContent } = require('../../extraction/pageContentParser');
+
+const { getImageInfo } = require('../../wiki-api/getImageInfo');
+const { parseImageInfo } = require('../../extraction/imageInfoParser');
 
 const readCard = async (cardNumber) => {
   const card = cards.find(({ cardNum }) => cardNum === cardNumber);
@@ -30,12 +34,20 @@ function sleep(ms) {
 
 const getCardData = async (card) => {
   const cardId = await getPageId(card.title);
-  const relations = await getCardRelations(cardId, ` (card id=${cardId}, title=${card.title})`);
+  const img = await getCardImage(card.cardNum, `image (card id=${cardId}, num=${card.cardNum}, title=${card.title})`);
+  const relations = await getCardRelations(cardId, `relation (card id=${cardId}, num=${card.cardNum}, title=${card.title})`);
   return {
     cardId,
     ...card,
+    img,
     ...relations,
   };
+};
+
+const getCardImage = async (cardNum, message) => {
+  const data = await getImageInfo(cardNum);
+  const img = parseImageInfo(data, message);
+  return img;
 };
 
 const getCardRelations = async (cardId, message) => {

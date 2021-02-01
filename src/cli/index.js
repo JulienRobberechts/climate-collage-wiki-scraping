@@ -11,6 +11,7 @@ var questions = [
     message: 'Which operation do you want to execute?',
     choices: [
       'Extract a page Id',
+      'Extract card 1-3',
       'Extract all data',
     ],
   },
@@ -52,8 +53,11 @@ const executeRequest = (answers) => {
     case 'Extract page Id':
       extractCard(answers.card);
       break;
+    case 'Extract card 1-3':
+      extractAllCards(1, 3);
+      break;
     case 'Extract all data':
-      extractAllCards();
+      extractAllCards(1, 42);
       break;
     default:
       console.log(`Operation not implemented`);
@@ -67,10 +71,10 @@ const extractCard = async (pageTitle) => {
   console.log(`${pageId}`);
 };
 
-const extractAllCards = async () => {
-  const filePath = './resx/cards-result.json';
+const extractAllCards = async (fromCard, toCard) => {
+  const filePath = `./resx/cards-${fromCard}-${toCard}.json`;
   process.stdout.write(`\nCards data in file '${filePath}' ...`);
-  const cardsData = await readAllCards(1, 42);
+  const cardsData = await readAllCards(fromCard, toCard);
   await writeFile(filePath, JSON.stringify(cardsData));
   console.log('done');
 };
