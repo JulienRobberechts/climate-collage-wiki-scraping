@@ -50,7 +50,7 @@ const executeRequest = (answers) => {
   console.log('answers:', answers);
   console.log(`\noperation: ${answers.operation}`);
   switch (answers.operation) {
-    case 'Extract page Id':
+    case 'Extract a page Id':
       extractCard(answers.card);
       break;
     case 'Extract card 1-3':

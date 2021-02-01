@@ -1,9 +1,9 @@
 [
   {
-    "cardId": 4,
+    "id": 4,
     "cardNum": 1,
     "url": "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
-    "title": "Fr-fr adulte carte 1 activités humaines",
+    "wikiTitle": "Fr-fr adulte carte 1 activités humaines",
     "shortTitle": "Activités humaines",
     "cardBatch": 1,
     "img": {
@@ -18,10 +18,10 @@
     ]
   },
   {
-    "cardId": 12,
+    "id": 12,
     "cardNum": 2,
     "url": "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
-    "title": "Fr-fr adulte carte 2 industrie",
+    "wikiTitle": "Fr-fr adulte carte 2 industrie",
     "shortTitle": "Industrie",
     "cardBatch": 2,
     "img": {
@@ -36,10 +36,10 @@
     ]
   },
   {
-    "cardId": 14,
+    "id": 14,
     "cardNum": 3,
     "url": "/wiki/index.php?title=Fr-fr_adulte_carte_3_utilisation_des_b%C3%A2timents",
-    "title": "Fr-fr adulte carte 3 utilisation des bâtiments",
+    "wikiTitle": "Fr-fr adulte carte 3 utilisation des bâtiments",
     "shortTitle": "Utilisation des bâtiments",
     "cardBatch": 2,
     "img": {

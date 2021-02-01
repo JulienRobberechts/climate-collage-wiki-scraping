@@ -33,11 +33,11 @@ function sleep(ms) {
 }
 
 const getCardData = async (card) => {
-  const cardId = await getPageId(card.title);
-  const img = await getCardImage(card.cardNum, `image (card id=${cardId}, num=${card.cardNum}, title=${card.title})`);
-  const relations = await getCardRelations(cardId, `relation (card id=${cardId}, num=${card.cardNum}, title=${card.title})`);
+  const id = await getPageId(card.wikiTitle);
+  const img = await getCardImage(card.cardNum, `image (card id=${id}, num=${card.cardNum}, title=${card.wikiTitle})`);
+  const relations = await getCardRelations(id, `relation (card id=${id}, num=${card.cardNum}, title=${card.wikiTitle})`);
   return {
-    cardId,
+    id,
     ...card,
     img,
     ...relations,
@@ -50,8 +50,8 @@ const getCardImage = async (cardNum, message) => {
   return img;
 };
 
-const getCardRelations = async (cardId, message) => {
-  const cardContent = await getPageContent(cardId);
+const getCardRelations = async (id, message) => {
+  const cardContent = await getPageContent(id);
   const relations = parsePageContent(cardContent, message);
   return relations;
 };
