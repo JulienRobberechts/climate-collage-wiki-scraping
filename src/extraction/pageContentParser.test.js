@@ -1,5 +1,5 @@
 const { getContent } = require('../tests/readfile');
-const { parse } = require('./with.jsdom');
+const { parsePageContent } = require('./pageContentParser');
 
 describe('jsdom', () => {
   it('read', async () => {
@@ -8,7 +8,7 @@ describe('jsdom', () => {
   });
   it('parse', async () => {
     const content = await getContent();
-    const result = parse(content);
+    const result = parsePageContent(content);
     expect(result).toStrictEqual({
       causes: [
       ],

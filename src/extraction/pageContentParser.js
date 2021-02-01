@@ -1,7 +1,7 @@
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-module.exports.parse = (content, message = '') => {
+module.exports.parsePageContent = (content, message = '') => {
   const dom = new JSDOM(content);
 
   const tables = dom.window.document.querySelectorAll("table");

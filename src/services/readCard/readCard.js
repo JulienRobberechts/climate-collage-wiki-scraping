@@ -1,7 +1,7 @@
 const cards = require('../../data/cards.json');
 const { getPageId } = require('../../wiki-api/getPageProps');
 const { getPageContent } = require('../../wiki-api/getPageContent');
-const { parse } = require('../../extraction/with.jsdom');
+const { parsePageContent } = require('../../extraction/pageContentParser');
 
 const readCard = async (cardNumber) => {
   const card = cards.find(({ cardNum }) => cardNum === cardNumber);
@@ -40,7 +40,7 @@ const getCardData = async (card) => {
 
 const getCardRelations = async (cardId, message) => {
   const cardContent = await getPageContent(cardId);
-  const relations = parse(cardContent, message);
+  const relations = parsePageContent(cardContent, message);
   return relations;
 };
 
