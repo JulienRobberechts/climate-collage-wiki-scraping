@@ -1,0 +1,28 @@
+{
+  "continue": {
+    "iistart": "2019-07-11T18:11:16Z",
+    "continue": "||"
+  },
+  "query": {
+    "pages": {
+      "15": {
+        "pageid": 15,
+        "ns": 6,
+        "title": "Fichier:Fr-fr adulte carte 3 recto.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 670306,
+            "width": 590,
+            "height": 401,
+            "canonicaltitle": "Fichier:Fr-fr adulte carte 3 recto.png",
+            "url": "https://fresqueduclimat.org/wiki/images/6/60/Fr-fr_adulte_carte_3_recto.png",
+            "descriptionurl": "https://fresqueduclimat.org/wiki/index.php?title=Fichier:Fr-fr_adulte_carte_3_recto.png",
+            "descriptionshorturl": "https://fresqueduclimat.org/wiki/index.php?curid=15",
+            "mediatype": "BITMAP"
+          }
+        ]
+      }
+    }
+  }
+}
