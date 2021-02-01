@@ -1,13 +1,15 @@
 const { getContent } = require('../tests/readfile');
 const { parsePageContent } = require('./pageContentParser');
 
-describe('jsdom', () => {
+const cardContent1FilePath = './src/tests/data/carte1.html';
+
+describe('parsePageContent', () => {
   it('read', async () => {
-    const content = await getContent();
+    const content = await getContent(cardContent1FilePath);
     expect(content).toMatch(/modifier le wikicode/gm);
   });
   it('parse', async () => {
-    const content = await getContent();
+    const content = await getContent(cardContent1FilePath);
     const result = parsePageContent(content);
     expect(result).toStrictEqual({
       causes: [
