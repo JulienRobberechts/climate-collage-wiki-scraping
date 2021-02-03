@@ -1,38 +1,21 @@
 const inquirer = require('inquirer');
 
-const { getPageId } = require('../wiki-api/getPageProps');
 const { readAllCards } = require('../services/readCard/readCard');
 const { writeFile } = require('../tests/writefile');
+const { buildAllLinks } = require('../services/linkCalculation/buildLinks');
+const { getObject } = require('../tests/readfile');
 
 var questions = [
   {
     type: 'list',
     name: 'operation',
-    message: 'Which operation do you want to execute?',
+    message: 'What do you want?',
     choices: [
-      'Extract a page Id',
-      'Extract card 1-3',
-      'Extract all data',
+      'Read cards 1-3',
+      'Read all cards',
+      'Read all links',
     ],
-  },
-  {
-    type: 'expand',
-    name: 'card',
-    when: ({ operation }) => operation === 'Extract a page Id',
-    message: 'Which card do you want to extract?',
-    choices: [
-      {
-        key: '1',
-        name: 'carte 1 activit\u00e9s humaines',
-        value: 'Fr-fr adulte carte 1 activit\u00e9s humaines',
-      },
-      {
-        key: '2',
-        name: 'carte 2 industrie',
-        value: 'Fr-fr_adulte_carte_2_industrie',
-      },
-    ],
-  },
+  }
 ];
 
 module.exports.run = (answers) => {
@@ -50,14 +33,14 @@ const executeRequest = (answers) => {
   console.log('answers:', answers);
   console.log(`\noperation: ${answers.operation}`);
   switch (answers.operation) {
-    case 'Extract a page Id':
-      extractCard(answers.card);
-      break;
-    case 'Extract card 1-3':
+    case 'Read cards 1-3':
       extractAllCards(1, 3);
       break;
-    case 'Extract all data':
+    case 'Read all cards':
       extractAllCards(1, 42);
+      break;
+    case 'Read all links':
+      getAllLinks(1, 42);
       break;
     default:
       console.log(`Operation not implemented`);
@@ -65,16 +48,21 @@ const executeRequest = (answers) => {
   }
 };
 
-const extractCard = async (pageTitle) => {
-  process.stdout.write(`\ncard id for '${pageTitle}': `);
-  const pageId = await getPageId(pageTitle);
-  console.log(`${pageId}`);
-};
-
 const extractAllCards = async (fromCard, toCard) => {
   const filePath = `./out/cards-${fromCard}-${toCard}.json`;
   process.stdout.write(`\nCards data in file '${filePath}' ...`);
   const cardsData = await readAllCards(fromCard, toCard);
   await writeFile(filePath, JSON.stringify(cardsData));
+  console.log('done');
+};
+
+const getAllLinks = async (fromCard, toCard) => {
+  const filePathInput = `./out/cards-${fromCard}-${toCard}.json`;
+  const filePathOutput = `./out/links-${fromCard}-${toCard}.json`;
+  process.stdout.write(`\nRead cards data from file '${filePathInput}' ...`);
+  process.stdout.write(`\nWrite links data to file '${filePathOutput}' ...`);
+  const cards = await getObject(filePathInput);
+  const links = await buildAllLinks(cards);
+  await writeFile(filePathOutput, JSON.stringify(links));
   console.log('done');
 };
