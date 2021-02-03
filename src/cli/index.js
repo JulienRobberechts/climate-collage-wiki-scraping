@@ -72,7 +72,7 @@ const extractCard = async (pageTitle) => {
 };
 
 const extractAllCards = async (fromCard, toCard) => {
-  const filePath = `./resx/cards-${fromCard}-${toCard}.json`;
+  const filePath = `./out/cards-${fromCard}-${toCard}.json`;
   process.stdout.write(`\nCards data in file '${filePath}' ...`);
   const cardsData = await readAllCards(fromCard, toCard);
   await writeFile(filePath, JSON.stringify(cardsData));
