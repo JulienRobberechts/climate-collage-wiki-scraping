@@ -7,15 +7,38 @@ const { parsePageContent } = require('../../extraction/pageContentParser');
 const { getImageInfo } = require('../../wiki-api/getImageInfo');
 const { parseImageInfo } = require('../../extraction/imageInfoParser');
 
+const buildAllLinks = (cards) => {
+  const links = Array.from(new Array(cards.length), (_x, i) => i + 1)
+    .map((n) => buildLinks(cards, n));
+  const linksFlat = links.flat();
+  return dedupLinks(linksFlat);
+};
+
+const dedupLinks = (links) => {
+  const result = [];
+  const map = new Map();
+  for (const l of links) {
+    const key = `${l.fromNum}-${l.toNum}`;
+    if (!map.has(key)) {
+      map.set(key, true);
+      result.push({
+        fromNum: l.fromNum,
+        toNum: l.toNum
+      });
+    }
+  }
+  return result;
+}
+
 const buildLinks = (cards, cardNumber) => {
   const card = getCardByNum(cards, cardNumber);
   const linkCauses = card.causes.map(cause => ({
-    fromNum: getCardByUrlV2(cards, cause).cardNum,
+    fromNum: getCardByUrl(cards, cause).cardNum,
     toNum: cardNumber
   }));
   const linkConsequences = card.consequences.map(consequence => ({
     fromNum: cardNumber,
-    toNum: getCardByUrlV2(cards, consequence).cardNum,
+    toNum: getCardByUrl(cards, consequence).cardNum,
   }));
 
   return [...linkCauses, ...linkConsequences];
@@ -35,7 +58,7 @@ const getCardByNum = (cards, cardNumber) => {
 //   return card;
 // };
 
-const getCardByUrlV2 = (cards, cardUrl) => {
+const getCardByUrl = (cards, cardUrl) => {
   const regexp = /Fr-fr_adulte_carte_(?<num>\d+)_/g;
   const found = regexp.exec(cardUrl);
   const cardNumber = found.groups['num'];
@@ -43,4 +66,4 @@ const getCardByUrlV2 = (cards, cardUrl) => {
   return card;
 };
 
-module.exports = { buildLinks };
+module.exports = { buildLinks, buildAllLinks };

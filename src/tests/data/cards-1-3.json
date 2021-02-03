@@ -43,10 +43,9 @@
       "url": "https://fresqueduclimat.org/wiki/images/6/60/Fr-fr_adulte_carte_3_recto.png"
     },
     "causes": [
-      "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines"
+      "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
+      "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie"
     ],
-    "consequences": [
-      "/wiki/index.php?title=Fr-fr_adulte_carte_5_%C3%A9nergies_fossiles"
-    ]
+    "consequences": []
   }
 ]

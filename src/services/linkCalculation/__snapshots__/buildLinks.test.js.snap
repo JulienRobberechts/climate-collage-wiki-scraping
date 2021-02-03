@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildAllLinks build links 1`] = `
+Array [
+  Object {
+    "fromNum": 1,
+    "toNum": 2,
+  },
+  Object {
+    "fromNum": 1,
+    "toNum": 3,
+  },
+  Object {
+    "fromNum": 2,
+    "toNum": 3,
+  },
+]
+`;
