@@ -3,14 +3,6 @@
 exports[`readCard read carte_9 1`] = `
 Object {
   "cardNum": 9,
-  "causes": Array [
-    "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture",
-    "/wiki/index.php?title=Fr-fr_adulte_carte_41_permafrost",
-    "/wiki/index.php?title=Fr-fr_adulte_carte_42_hydrates_de_m%C3%A9thane",
-  ],
-  "consequences": Array [
-    "/wiki/index.php?title=Fr-fr_adulte_carte_13_effet_de_serre_additionnel",
-  ],
   "img": Object {
     "url": "https://fresqueduclimat.org/wiki/images/3/38/Fr-fr_adulte_carte_9_recto.png",
   },
@@ -24,16 +16,6 @@ Object {
 exports[`readCard read carte_14 1`] = `
 Object {
   "cardNum": 14,
-  "causes": Array [
-    "/wiki/index.php?title=Fr-fr_adulte_carte_15_for%C3%A7age_radiatif",
-  ],
-  "consequences": Array [
-    "/wiki/index.php?title=Fr-fr_adulte_carte_16_fonte_des_glaciers",
-    "/wiki/index.php?title=Fr-fr_adulte_carte_17_hausse_temp%C3%A9rature_eau",
-    "/wiki/index.php?title=Fr-fr_adulte_carte_18_fonte_de_la_banquise",
-    "/wiki/index.php?title=Fr-fr_adulte_carte_19_fonte_des_calottes_glaciaires",
-    "/wiki/index.php?title=Fr-fr_adulte_carte_21_hausse_temp%C3%A9rature",
-  ],
   "img": Object {
     "url": "https://fresqueduclimat.org/wiki/images/f/fe/Fr-fr_adulte_carte_14_recto.png",
   },

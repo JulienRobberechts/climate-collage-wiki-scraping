@@ -81,6 +81,3 @@ https://{{api}}?action=parse&format=json&pageid=4
 https://{{api}}?action=parse&format=json&pageid=4&section=0&prop=text
 
 ###
-https://fresqueduclimat.org/wiki/api.php?action=parse&format=json&pageid=394
-
-### 

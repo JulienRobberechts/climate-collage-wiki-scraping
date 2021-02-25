@@ -15,15 +15,7 @@ describe('readCard', () => {
       title: "Activités humaines",
       img: {
         url: "https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png",
-      },
-      causes: [
-      ],
-      consequences: [
-        "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
-        "/wiki/index.php?title=Fr-fr_adulte_carte_3_b%C3%A2timent",
-        "/wiki/index.php?title=Fr-fr_adulte_carte_4_transport",
-        "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture",
-      ],
+      }
     });
   });
   it('read carte_2', async () => {
@@ -37,14 +29,7 @@ describe('readCard', () => {
       title: "Industrie",
       img: {
         url: "https://fresqueduclimat.org/wiki/images/7/7e/Fr-fr_adulte_carte_2_recto.png",
-      },
-      causes: [
-        "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
-      ],
-      consequences: [
-        "/wiki/index.php?title=Fr-fr_adulte_carte_5_%C3%A9nergies_fossiles",
-        "/wiki/index.php?title=Fr-fr_adulte_carte_10_a%C3%A9rosols",
-      ],
+      }
     });
   });
   it('read carte_9', async () => {
