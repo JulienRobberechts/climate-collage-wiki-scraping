@@ -3,8 +3,6 @@
 exports[`readCard read carte_9 1`] = `
 Object {
   "cardNum": 9,
-  "wikiInternalName": "Fr-fr adulte carte 9 autres ges",
-  "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges",
   "causes": Array [
     "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture",
     "/wiki/index.php?title=Fr-fr_adulte_carte_41_permafrost",
@@ -16,16 +14,16 @@ Object {
   "img": Object {
     "url": "https://fresqueduclimat.org/wiki/images/3/38/Fr-fr_adulte_carte_9_recto.png",
   },
-  "title": undefined,
+  "title": "Autres GES",
   "wikiId": 26,
+  "wikiInternalName": "Fr-fr adulte carte 9 autres ges",
+  "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges",
 }
 `;
 
 exports[`readCard read carte_14 1`] = `
 Object {
   "cardNum": 14,
-  "wikiInternalName": "Fr-fr adulte carte 14 bilan énergétique",
-  "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique",
   "causes": Array [
     "/wiki/index.php?title=Fr-fr_adulte_carte_15_for%C3%A7age_radiatif",
   ],
@@ -39,7 +37,9 @@ Object {
   "img": Object {
     "url": "https://fresqueduclimat.org/wiki/images/f/fe/Fr-fr_adulte_carte_14_recto.png",
   },
-  "title": undefined,
+  "title": "Bilan énergétique",
   "wikiId": 36,
+  "wikiInternalName": "Fr-fr adulte carte 14 bilan énergétique",
+  "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique",
 }
 `;

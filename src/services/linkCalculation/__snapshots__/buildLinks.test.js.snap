@@ -4,14 +4,17 @@ exports[`buildAllLinks build links 1`] = `
 Array [
   Object {
     "fromNum": 1,
+    "status": "valid",
     "toNum": 2,
   },
   Object {
     "fromNum": 1,
+    "status": "valid",
     "toNum": 3,
   },
   Object {
     "fromNum": 2,
+    "status": "valid",
     "toNum": 3,
   },
 ]
