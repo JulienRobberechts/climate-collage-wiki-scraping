@@ -2,7 +2,7 @@ const { getContent } = require('../fileServices/readFile');
 const { parseCausesEffects, parseBackDescription } = require('./pageContentParser');
 
 const cardContent1FilePath = './src/tests/data/carte1.html';
-const cardContent3FilePath = './src/tests/data/carte3.html';
+const cardContent3FilePath = './src/tests/data/carte3-0.html';
 
 describe('parse Page Content', () => {
   it('read', async () => {
