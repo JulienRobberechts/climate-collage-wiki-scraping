@@ -124,7 +124,7 @@ const extractCardList = async () => {
 };
 
 const extractCardsLanguage = async () => {
-  const inFilePath = `./src/data/wip/cards.json`;
+  const inFilePath = `./out/current-data/cards.json`;
   const transform = (data) => data.map(({
     cardNum,
     id,
@@ -146,12 +146,12 @@ const extractCardsLanguage = async () => {
     explanation,
     notes,
   }));
-  const outFilePath = `./out/cards-fr.json`;
+  const outFilePath = `./out/targetv2/cards-fr.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
 const extractCardsStruct = async () => {
-  const inFilePath = `./src/data/wip/cards.json`;
+  const inFilePath = `./out/current-data/cards.json`;
   const transform = (data) => data.map(({
     cardNum,
     cardSet,
@@ -159,13 +159,13 @@ const extractCardsStruct = async () => {
     cardNum,
     cardSet,
   }));
-  const outFilePath = `./out/cards.json`;
+  const outFilePath = `./out/targetv2/cards.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
 
 const extractLinksLanguage = async () => {
-  const inFilePath = `./src/data/wip/links.json`;
+  const inFilePath = `./out/current-data/links.json`;
   const transform = (data) => data.map(({
     fromNum,
     toNum,
@@ -175,13 +175,13 @@ const extractLinksLanguage = async () => {
     toNum,
     explanation: Explanation
   }));
-  const outFilePath = `./out/links-fr.json`;
+  const outFilePath = `./out/targetv2/links-fr.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
 
 const extractLinksStruct = async () => {
-  const inFilePath = `./src/data/wip/links.json`;
+  const inFilePath = `./out/current-data/links.json`;
   const transform = (data) => data.map(({
     fromNum,
     toNum,
@@ -191,7 +191,7 @@ const extractLinksStruct = async () => {
     toNum,
     status
   }));
-  const outFilePath = `./out/links.json`;
+  const outFilePath = `./out/targetv2/links.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
