@@ -1,9 +1,10 @@
 const inquirer = require('inquirer');
 
 const { readCards } = require('../services/readCard/readCard');
-const { writeFile } = require('../tests/writeFile');
+const { writeFile } = require('../services/fileServices/writeFile');
 const { buildAllLinks } = require('../services/linkCalculation/buildLinks');
-const { getObject } = require('../tests/readFile');
+const { getObject } = require('../services/fileServices/readFile');
+const { transformData } = require('../services/etl/transformData');
 
 var questions = [
   {
@@ -11,6 +12,7 @@ var questions = [
     name: 'operation',
     message: 'What do you want?',
     choices: [
+      'Extract links',
       'Read cards 1-3',
       'Read all cards',
       'Read all links',
@@ -33,6 +35,10 @@ const executeRequest = (answers) => {
   console.log('answers:', answers);
   console.log(`\noperation: ${answers.operation}`);
   switch (answers.operation) {
+    case 'Extract links':
+      extractLinksLanguage();
+      extractLinksStruct();
+      break;
     case 'Read cards 1-3':
       extractAllCards(1, 3);
       break;
@@ -46,6 +52,26 @@ const executeRequest = (answers) => {
       console.log(`Operation not implemented`);
       break;
   }
+};
+
+const extractLinksLanguage = async () => {
+  const inFilePath = `./src/data/wip/links.json`;
+  // const transform = (data) => data.map((i) => i);
+  const transform = (data) => data.map(({ fromNum, toNum, Explanation }) => ({ fromNum, toNum, explanation: Explanation }));
+  // const transform = (data) => data;
+  const outFilePath = `./out/links-fr.json`;
+  await transformData(inFilePath, transform, outFilePath);
+  console.log('done');
+};
+
+const extractLinksStruct = async () => {
+  const inFilePath = `./src/data/wip/links.json`;
+  // const transform = (data) => data.map((i) => i);
+  const transform = (data) => data.map(({ fromNum, toNum, status }) => ({ fromNum, toNum, status }));
+  // const transform = (data) => data;
+  const outFilePath = `./out/links.json`;
+  await transformData(inFilePath, transform, outFilePath);
+  console.log('done');
 };
 
 const extractAllCards = async (fromCard, toCard) => {
