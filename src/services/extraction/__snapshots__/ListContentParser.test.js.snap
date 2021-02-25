@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parseListContent parse 1`] = `
+Array [
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 1 activit\\\\u00e9s humaines",
+    "cardNum": 1,
+    "cardSet": 1,
+    "cardTitle": "Activit\\\\u00e9s humaines",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
+  },
+  Object {
+    "cardInternalName": "Fr-fr
+            adulte carte 2 industrie",
+    "cardNum": 2,
+    "cardSet": 2,
+    "cardTitle": "Industrie",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte
+            carte 3 utilisation des b\\\\u00e2timents",
+    "cardNum": 3,
+    "cardSet": 2,
+    "cardTitle": "Utilisation des b\\\\u00e2timents",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_3_utilisation_des_b%C3%A2timents",
+  },
+  Object {
+    "cardInternalName": "Fr-fr
+            adulte carte 4 transport",
+    "cardNum": 4,
+    "cardSet": 2,
+    "cardTitle": "Transport",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_4_transport",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 5 \\\\u00e9nergies fossiles",
+    "cardNum": 5,
+    "cardSet": 1,
+    "cardTitle": "\\\\u00c9nergies fossiles",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_5_%C3%A9nergies_fossiles",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 6 d\\\\u00e9forestation",
+    "cardNum": 6,
+    "cardSet": 2,
+    "cardTitle": "D\\\\u00e9forestation",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_6_d%C3%A9forestation",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 7 \\\\u00e9missions de co2",
+    "cardNum": 7,
+    "cardSet": 1,
+    "cardTitle": "\\\\u00c9missions de
+                                    CO2",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_7_%C3%A9missions_de_co2",
+  },
+  Object {
+    "cardInternalName": "Fr-fr
+            adulte carte 8 agriculture",
+    "cardNum": 8,
+    "cardSet": 2,
+    "cardTitle": "Agriculture",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture",
+  },
+  Object {
+    "cardInternalName": "Fr-fr
+            adulte carte 9 autres ges",
+    "cardNum": 9,
+    "cardSet": 2,
+    "cardTitle": "Autres GES",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 10 a\\\\u00e9rosols",
+    "cardNum": 10,
+    "cardSet": 3,
+    "cardTitle": "A\\\\u00e9rosols",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_10_a%C3%A9rosols",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 11 concentration en co2",
+    "cardNum": 11,
+    "cardSet": 2,
+    "cardTitle": "Concentration en
+                                    CO2
+                                    (ppm)",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_11_concentration_en_co2",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 12 puits de carbone",
+    "cardNum": 12,
+    "cardSet": 2,
+    "cardTitle": "Puits de carbone",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_12_puits_de_carbone",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 13 effet de serre additionnel",
+    "cardNum": 13,
+    "cardSet": 1,
+    "cardTitle": "Effet de serre
+                                    additionnel",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_13_effet_de_serre_additionnel",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 14 budget \\\\u00e9nerg\\\\u00e9tique",
+    "cardNum": 14,
+    "cardSet": 3,
+    "cardTitle": "Budget
+                                    \\\\u00e9nerg\\\\u00e9tique",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_14_budget_%C3%A9nerg%C3%A9tique",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 15 for\\\\u00e7age radiatif",
+    "cardNum": 15,
+    "cardSet": 3,
+    "cardTitle": "For\\\\u00e7age radiatif",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_15_for%C3%A7age_radiatif",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 16 fonte des glaciers",
+    "cardNum": 16,
+    "cardSet": 3,
+    "cardTitle": "Fonte des glaciers",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_16_fonte_des_glaciers",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte
+            17 hausse temp\\\\u00e9rature eau",
+    "cardNum": 17,
+    "cardSet": 3,
+    "cardTitle": "Hausse de la temp\\\\u00e9rature de l'eau",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_17_hausse_temp%C3%A9rature_eau",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 18 fonte de la banquise",
+    "cardNum": 18,
+    "cardSet": 1,
+    "cardTitle": "Fonte de la banquise",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_18_fonte_de_la_banquise",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte
+            carte 19 fonte des calottes glaciaires",
+    "cardNum": 19,
+    "cardSet": 3,
+    "cardTitle": "Fonte des calottes glaciaires",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_19_fonte_des_calottes_glaciaires",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 20 perturbation cycle eau",
+    "cardNum": 20,
+    "cardSet": 3,
+    "cardTitle": "Perturbation du cycle de
+                                    l'eau",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_20_perturbation_cycle_eau",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 21 hausse temp\\\\u00e9rature",
+    "cardNum": 21,
+    "cardSet": 1,
+    "cardTitle": "Hausse de la
+                                    temp\\\\u00e9rature",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_21_hausse_temp%C3%A9rature",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 22 mont\\\\u00e9e des eaux",
+    "cardNum": 22,
+    "cardSet": 1,
+    "cardTitle": "Mont\\\\u00e9e des eaux",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_22_mont%C3%A9e_des_eaux",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte
+            carte 23 probl\\\\u00e8mes de calcification",
+    "cardNum": 23,
+    "cardSet": 4,
+    "cardTitle": "Probl\\\\u00e8mes de calcification",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_23_probl%C3%A8mes_de_calcification",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 24 acidification oc\\\\u00e9an",
+    "cardNum": 24,
+    "cardSet": 2,
+    "cardTitle": "Acidification de
+                                    l'oc\\\\u00e9an",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_24_acidification_oc%C3%A9an",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte
+            25 biodiversit\\\\u00e9 terrestre",
+    "cardNum": 25,
+    "cardSet": 4,
+    "cardTitle": "Biodiversit\\\\u00e9 terrestre",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_25_biodiversit%C3%A9_terrestre",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte
+            carte 26 crues",
+    "cardNum": 26,
+    "cardSet": 4,
+    "cardTitle": "Crues",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_26_crues",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 27 biodiversit\\\\u00e9 marine",
+    "cardNum": 27,
+    "cardSet": 4,
+    "cardTitle": "Biodiversit\\\\u00e9
+                                    marine",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_27_biodiversit%C3%A9_marine",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 28 vecteurs de maladie",
+    "cardNum": 28,
+    "cardSet": 5,
+    "cardTitle": "Vecteurs de maladie",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_28_vecteurs_de_maladie",
+  },
+  Object {
+    "cardInternalName": "Fr-fr
+            adulte carte 29 pt\\\\u00e9ropodes et coccolithophores",
+    "cardNum": 29,
+    "cardSet": 4,
+    "cardTitle": "Pt\\\\u00e9ropodes et coccolithophores",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_29_pt%C3%A9ropodes_et_coccolithophores",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 30 s\\\\u00e9cheresses",
+    "cardNum": 30,
+    "cardSet": 4,
+    "cardTitle": "S\\\\u00e9cheresses",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_30_s%C3%A9cheresses",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 31 ressources eau douce",
+    "cardNum": 31,
+    "cardSet": 5,
+    "cardTitle": "Ressources en eau douce",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_31_ressources_eau_douce",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte
+            32 baisse rendements agricoles",
+    "cardNum": 32,
+    "cardSet": 5,
+    "cardTitle": "Baisse des rendements agricoles",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_32_baisse_rendements_agricoles",
+  },
+  Object {
+    "cardInternalName": "Fr-fr
+            adulte carte 33 submersions",
+    "cardNum": 33,
+    "cardSet": 4,
+    "cardTitle": "Submersions",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_33_submersions",
+  },
+  Object {
+    "cardInternalName": "Fr-fr
+            adulte carte 34 cyclones",
+    "cardNum": 34,
+    "cardSet": 4,
+    "cardTitle": "Cyclones",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_34_cyclones",
+  },
+  Object {
+    "cardInternalName": "Fr-fr
+            adulte carte 35 incendies",
+    "cardNum": 35,
+    "cardSet": 5,
+    "cardTitle": "Incendies",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_35_incendies",
+  },
+  Object {
+    "cardInternalName": "Fr-fr
+            adulte carte 36 canicules",
+    "cardNum": 36,
+    "cardSet": 5,
+    "cardTitle": "Canicules",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_36_canicules",
+  },
+  Object {
+    "cardInternalName": "Fr-fr
+            adulte carte 37 famine",
+    "cardNum": 37,
+    "cardSet": 5,
+    "cardTitle": "Famine",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_37_famine",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 38 sant\\\\u00e9 humaine",
+    "cardNum": 38,
+    "cardSet": 5,
+    "cardTitle": "Sant\\\\u00e9 humaine",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_38_sant%C3%A9_humaine",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte
+            carte 39 r\\\\u00e9fugi\\\\u00e9s climatiques",
+    "cardNum": 39,
+    "cardSet": 5,
+    "cardTitle": "R\\\\u00e9fugi\\\\u00e9s climatiques",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_39_r%C3%A9fugi%C3%A9s_climatiques",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 40 conflits arm\\\\u00e9s",
+    "cardNum": 40,
+    "cardSet": 5,
+    "cardTitle": "Conflits arm\\\\u00e9s",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_40_conflits_arm%C3%A9s",
+  },
+  Object {
+    "cardInternalName": "Fr-fr
+            adulte carte 41 permafrost",
+    "cardNum": 41,
+    "cardSet": 5,
+    "cardTitle": "Permafrost",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_41_permafrost",
+  },
+  Object {
+    "cardInternalName": "Fr-fr adulte carte 42 hydrates de m\\\\u00e9thane",
+    "cardNum": 42,
+    "cardSet": 5,
+    "cardTitle": "Hydrates de
+                                    m\\\\u00e9thane",
+    "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_42_hydrates_de_m%C3%A9thane",
+  },
+]
+`;

@@ -18,11 +18,21 @@ module.exports.parseListContent = (content, message = '') => {
   assertEqual('Set header' + message, headers[2].textContent.trim(), "Lot");
 
   // For each row
-  const contentRow = rows[1].querySelectorAll("td");
-  assertEqual('contentRow count' + message, contentRow.length, 3);
+  const cards = [];
+  for (let cardNum = 1; cardNum <= 42; cardNum++) {
+    const contentRow = rows[cardNum].querySelectorAll("td");
+    const cardData = parseCardRow(contentRow, cardNum, message);
+    cards.push(cardData);
+  }
 
+  return cards;
+};
+
+const parseCardRow = (contentRow, expectedCardNum, message = '') => {
   const numCell = contentRow[0];
   const cardNum = parseInt(numCell.textContent.trim());
+
+  assertEqual('card Num' + message, cardNum, expectedCardNum);
 
   const nameCell = contentRow[1];
   const cardLink = nameCell.querySelectorAll("a")[0];
@@ -33,7 +43,7 @@ module.exports.parseListContent = (content, message = '') => {
   const setCell = contentRow[2];
   const cardSet = parseInt(setCell.textContent.trim());
 
-  return [{ cardNum, cardTitle, cardInternalName, cardWikiUrl, cardSet }];
+  return { cardNum, cardTitle, cardInternalName, cardWikiUrl, cardSet };
 };
 
 const assertEqual = (message, actualNum, expectedNum) => {
