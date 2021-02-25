@@ -2,10 +2,10 @@ const cards = require('../../data/cards.json');
 const { getPageId } = require('../wiki-api/getPageProps');
 
 const { getPageContent } = require('../wiki-api/getPageContent');
-const { parsePageContent } = require('../../extraction/pageContentParser');
+const { parsePageContent } = require('../extraction/pageContentParser');
 
 const { getImageInfo } = require('../wiki-api/getImageInfo');
-const { parseImageInfo } = require('../../extraction/imageInfoParser');
+const { parseImageInfo } = require('../extraction/imageInfoParser');
 
 const buildAllLinks = (cards) => {
   const links = Array.from(new Array(cards.length), (_x, i) => i + 1)
