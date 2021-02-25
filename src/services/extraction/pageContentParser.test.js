@@ -1,4 +1,4 @@
-const { getContent } = require('../../tests/readFile');
+const { getContent } = require('../fileServices/readFile');
 const { parsePageContent } = require('./pageContentParser');
 
 const cardContent1FilePath = './src/tests/data/carte1.html';
