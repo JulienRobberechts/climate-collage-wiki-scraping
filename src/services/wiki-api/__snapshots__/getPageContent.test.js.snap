@@ -341,12 +341,12 @@ exports[`getPageContent get list 1`] = `
 </tbody></table>
 <!-- 
 NewPP limit report
-Cached time: 20210225102926
+Cached time: 20210225103947
 Cache expiry: 86400
 Dynamic content: false
 Complications: []
-CPU time usage: 0.024 seconds
-Real time usage: 0.032 seconds
+CPU time usage: 0.029 seconds
+Real time usage: 0.097 seconds
 Preprocessor visited node count: 97/1000000
 Post‐expand include size: 672/2097152 bytes
 Template argument size: 3/2097152 bytes
@@ -357,9 +357,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%    7.542      1 -total
- 99.23%    7.484      2 Modèle:CO2
- 56.22%    4.240      1 Modèle:Formule_chimique
+100.00%   10.454      1 -total
+ 99.43%   10.394      2 Modèle:CO2
+ 47.94%    5.012      1 Modèle:Formule_chimique
 -->
 </div>"
 `;
