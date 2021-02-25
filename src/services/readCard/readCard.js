@@ -1,4 +1,3 @@
-// const cards = require('../../data/cards.json');
 const { getObject } = require('../fileServices/readFile.js');
 
 const { getPageId } = require('../wiki-api/getPageProps');

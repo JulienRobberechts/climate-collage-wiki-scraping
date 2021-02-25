@@ -1,12 +1,3 @@
-const cards = require('../../data/cards.json');
-const { getPageId } = require('../wiki-api/getPageProps');
-
-const { getPageContent } = require('../wiki-api/getPageContent');
-const { parsePageContent } = require('../extraction/pageContentParser');
-
-const { getImageInfo } = require('../wiki-api/getImageInfo');
-const { parseImageInfo } = require('../extraction/imageInfoParser');
-
 const buildAllLinks = (cards) => {
   const links = Array.from(new Array(cards.length), (_x, i) => i + 1)
     .map((n) => buildLinks(cards, n));
@@ -50,13 +41,6 @@ const getCardByNum = (cards, cardNumber) => {
     throw new Error(`Card not found with number ${cardNumber}`);
   return card;
 };
-
-// const getCardByUrlV1 = (cards, cardUrl) => {
-//   const card = cards.find(c => c.url === cardUrl);
-//   if (!card)
-//     throw new Error(`Card not found with url ${cardUrl}`);
-//   return card;
-// };
 
 const getCardByUrl = (cards, cardUrl) => {
   const regexp = /Fr-fr_adulte_carte_(?<num>\d+)_/g;

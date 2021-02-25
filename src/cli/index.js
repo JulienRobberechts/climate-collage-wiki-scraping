@@ -123,7 +123,6 @@ const extractCardList = async () => {
   await writeFile(filePath, JSON.stringify(cardsData));
 };
 
-
 const extractCardsLanguage = async () => {
   const inFilePath = `./src/data/wip/cards.json`;
   const transform = (data) => data.map(({
