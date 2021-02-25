@@ -1,15 +1,17 @@
 const inquirer = require('inquirer');
 
+const { readCardList } = require('../services/readCardList/readCardList');
 const { readCards } = require('../services/readCard/readCard');
 const { writeFile } = require('../services/fileServices/writeFile');
 const { buildAllLinks } = require('../services/linkCalculation/buildLinks');
 const { getObject } = require('../services/fileServices/readFile');
 const { mapDataFile } = require('../services/etl/transformData');
 
-const TRANSFORM_DATA = 'Transform existing data';
+const EXTRACT_CARDS_LIST = '1. Extract Card list';
 const READ_CARD_DETAILS_1to3 = 'Read cards details 1-3';
 const READ_CARD_DETAILS_ALL = 'Read all cards details';
 const READ_CARD_LINKS_ALL = 'Read all cards links';
+const TRANSFORM_DATA = 'Transform existing data';
 
 var questions = [
   {
@@ -17,10 +19,11 @@ var questions = [
     name: 'operation',
     message: 'What do you want?',
     choices: [
-      TRANSFORM_DATA,
+      EXTRACT_CARDS_LIST,
       READ_CARD_DETAILS_1to3,
       READ_CARD_DETAILS_ALL,
       READ_CARD_LINKS_ALL,
+      TRANSFORM_DATA,
     ],
   }
 ];
@@ -36,12 +39,13 @@ module.exports.run = (answers) => {
   console.log('Thank you');
 };
 
-
-
 const executeRequest = (answers) => {
   console.log('answers:', answers);
   console.log(`\noperation: ${answers.operation}`);
   switch (answers.operation) {
+    case EXTRACT_CARDS_LIST:
+      extractCardList();
+      break;
     case TRANSFORM_DATA:
       extractLinksLanguage();
       extractLinksStruct();
@@ -62,6 +66,13 @@ const executeRequest = (answers) => {
       break;
   }
 };
+
+const extractCardList = async () => {
+  const cardsData = await readCardList();
+  const filePath = `./out/1-cards-list.json`;
+  await writeFile(filePath, JSON.stringify(cardsData));
+};
+
 
 const extractCardsLanguage = async () => {
   const inFilePath = `./src/data/wip/cards.json`;
@@ -140,7 +151,8 @@ const extractAllCards = async (fromCard, toCard) => {
   const filePath = `./out/cards-${fromCard}-${toCard}.json`;
   process.stdout.write(`\nCards data in file '${filePath}' ...`);
   const cardsData = await readCards(fromCard, toCard);
-  await writeFile(filePath, JSON.stringify(cardsData));
+  const data = JSON.stringify(cardsData);
+  await writeFile(filePath, JSON.stringify(data));
   console.log('done');
 };
 
