@@ -3,7 +3,7 @@ const { getObject } = require('../fileServices/readFile.js');
 const { getPageId } = require('../wiki-api/getPageProps');
 
 const { getPageContent } = require('../wiki-api/getPageContent');
-const { parsePageContent } = require('../extraction/pageContentParser');
+const { parseCausesEffects, parseBackDescription } = require('../extraction/pageContentParser');
 
 const { getImageInfo } = require('../wiki-api/getImageInfo');
 const { parseImageInfo } = require('../extraction/imageInfoParser');
@@ -34,6 +34,7 @@ const readCards = async (fromCard, toCard) => {
 const getCardData = async (card) => {
   const wikiId = await getPageId(card.wikiInternalName);
   const img = await getCardImage(card.cardNum, `image (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
+  const otherProps = await getCardPropsFromContent(wikiId, `getCardPropsFromContent (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
   const {
     cardNum,
     title,
@@ -47,6 +48,7 @@ const getCardData = async (card) => {
     wikiInternalName,
     wikiUrl,
     img,
+    ...otherProps
   };
 };
 
@@ -56,7 +58,11 @@ const getCardImage = async (cardNum, message) => {
   return img;
 };
 
-
+const getCardPropsFromContent = async (wikiId, message) => {
+  const cardContent = await getPageContent(wikiId);
+  const backDescription = parseBackDescription(cardContent, message);
+  return { backDescription };
+};
 
 const readAllRelations = async (fromCard, toCard) => {
   const sourceFile = `./out/1-cards-list.json`;
@@ -78,7 +84,7 @@ const readAllRelations = async (fromCard, toCard) => {
 
 const getCardRelations = async (wikiId, message) => {
   const cardContent = await getPageContent(wikiId);
-  const relations = parsePageContent(cardContent, message);
+  const relations = parseCausesEffects(cardContent, message);
   return relations;
 };
 

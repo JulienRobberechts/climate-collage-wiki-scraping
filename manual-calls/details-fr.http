@@ -75,9 +75,10 @@ http://{{query}}&prop=revisions&rvprop=content&rvsection=0
 https://en.wikipedia.org/w/api.php?action=parse&page=Template:Infobox%20hydrogen&format=json
 
 ### parse page (by id)
-https://{{api}}?action=parse&format=json&pageid=4
+@wikiId = 14
+https://{{api}}?action=parse&format=json&pageid={{wikiId}}
 
 ### parse section 0 - Works just need HTML parsing
-https://{{api}}?action=parse&format=json&pageid=4&section=0&prop=text
+https://{{api}}?action=parse&format=json&pageid={{wikiId}}&section=0&prop=text
 
 ###

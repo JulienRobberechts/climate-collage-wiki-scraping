@@ -15,7 +15,8 @@ describe('readCard', () => {
       title: "Activités humaines",
       img: {
         url: "https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png",
-      }
+      },
+      backDescription: "C'est ici que tout commence...",
     });
   });
   it('read carte_2', async () => {
@@ -29,7 +30,8 @@ describe('readCard', () => {
       title: "Industrie",
       img: {
         url: "https://fresqueduclimat.org/wiki/images/7/7e/Fr-fr_adulte_carte_2_recto.png",
-      }
+      },
+      backDescription: "L'industrie utilise des énergies fossiles et de l'électricité.\nElle représente 40% des Gaz à Effet de Serre (GES)."
     });
   });
   it('read carte_9', async () => {

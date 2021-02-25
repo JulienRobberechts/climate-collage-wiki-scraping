@@ -1,16 +1,17 @@
 const { getContent } = require('../fileServices/readFile');
-const { parsePageContent } = require('./pageContentParser');
+const { parseCausesEffects, parseBackDescription } = require('./pageContentParser');
 
 const cardContent1FilePath = './src/tests/data/carte1.html';
+const cardContent3FilePath = './src/tests/data/carte3.html';
 
-describe('parsePageContent', () => {
+describe('parse Page Content', () => {
   it('read', async () => {
     const content = await getContent(cardContent1FilePath);
     expect(content).toMatch(/modifier le wikicode/gm);
   });
-  it('parse', async () => {
+  it('parse CausesEffects card 1', async () => {
     const content = await getContent(cardContent1FilePath);
-    const result = parsePageContent(content);
+    const result = parseCausesEffects(content);
     expect(result).toStrictEqual({
       causes: [
       ],
@@ -21,5 +22,15 @@ describe('parsePageContent', () => {
         "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture",
       ],
     });
+  });
+  it('parse BackDescription card 1', async () => {
+    const content = await getContent(cardContent1FilePath);
+    const result = parseBackDescription(content);
+    expect(result).toStrictEqual("C'est ici que tout commence...");
+  });
+  it('parse BackDescription card 3', async () => {
+    const content = await getContent(cardContent3FilePath);
+    const result = parseBackDescription(content);
+    expect(result).toMatchSnapshot();
   });
 });

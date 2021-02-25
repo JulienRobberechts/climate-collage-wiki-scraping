@@ -1,10 +1,21 @@
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-module.exports.parsePageContent = (content, message = '') => {
-  const dom = new JSDOM(content);
+// module.exports.parsePageContent = (content, message = '') => {
 
-  const tables = dom.window.document.querySelectorAll("table");
+//   const { causes, effects } = parseCausesEffects(document, message);
+//   const backDescription = parseBackDescription(document, message);
+
+//   return {
+//     backDescription,
+//     causes,
+//     effects,
+//   };
+// };
+
+module.exports.parseCausesEffects = (content, message = '') => {
+  const { window: { document } } = new JSDOM(content);
+  const tables = document.querySelectorAll("table");
   assertMore('table count' + message, tables.length, 1);
 
   const rows = tables[0].querySelectorAll("tr");
@@ -34,6 +45,14 @@ module.exports.parsePageContent = (content, message = '') => {
     causes,
     effects,
   };
+};
+
+module.exports.parseBackDescription = (content, message = '') => {
+  const { window: { document } } = new JSDOM(content);
+  const paragraphes = document.querySelectorAll("table ~ p");
+  assertMore('paragraphes count' + message, paragraphes.length, 1);
+  const backDescription = Array.from(paragraphes).reduce((text, p) => text + p.textContent.trim(), '')
+  return backDescription;
 };
 
 const assertEqual = (message, actualNum, expectedNum) => {
