@@ -7,22 +7,45 @@ const { buildAllLinks } = require('../services/linkCalculation/buildLinks');
 const { getObject } = require('../services/fileServices/readFile');
 const { mapDataFile } = require('../services/etl/transformData');
 
+
+const LANG_FR = 'Français';
+const LANG_EN = 'English (Not supported yet)';
+
+const MODE_PROD = 'Full';
+const MODE_TEST = 'Test (sample)';
+
 const EXTRACT_CARDS_LIST = '1. Extract Card list';
-const READ_CARD_DETAILS_1to3 = 'Read cards details 1-3';
-const READ_CARD_DETAILS_ALL = 'Read all cards details';
-const READ_CARD_LINKS_ALL = 'Read all cards links';
-const TRANSFORM_DATA = 'Transform existing data';
+const READ_CARD_DETAILS = '2. Read cards details';
+const READ_CARD_LINKS = '3. Read cards links';
+const TRANSFORM_DATA = '999. Transform existing data';
 
 var questions = [
+  {
+    type: 'list',
+    name: 'langage',
+    message: 'Which langage?',
+    choices: [
+      LANG_FR,
+      LANG_EN,
+    ],
+  },
+  {
+    type: 'list',
+    name: 'mode',
+    message: 'Which mode?',
+    choices: [
+      MODE_PROD,
+      MODE_TEST,
+    ],
+  },
   {
     type: 'list',
     name: 'operation',
     message: 'What do you want?',
     choices: [
       EXTRACT_CARDS_LIST,
-      READ_CARD_DETAILS_1to3,
-      READ_CARD_DETAILS_ALL,
-      READ_CARD_LINKS_ALL,
+      READ_CARD_DETAILS,
+      READ_CARD_LINKS,
       TRANSFORM_DATA,
     ],
   }
@@ -30,36 +53,40 @@ var questions = [
 
 module.exports.run = (answers) => {
   console.log('Hey,');
-  console.log('welcome to Fresque Wiki scrapper');
+  console.log('welcome to the Climate Collage Wiki scraper');
 
   inquirer.prompt(questions).then((answers) => {
     executeRequest(answers);
   });
-
-  console.log('Thank you');
 };
 
 const executeRequest = (answers) => {
-  console.log('answers:', answers);
-  console.log(`\noperation: ${answers.operation}`);
+  if (answers.langage === LANG_EN) {
+    console.log("English is not supported yet. sorry.");
+    return;
+  }
   switch (answers.operation) {
     case EXTRACT_CARDS_LIST:
       extractCardList();
+      break;
+
+    case READ_CARD_DETAILS:
+      if (answers.mode === MODE_TEST)
+        extractAllCards(1, 3);
+      else
+        extractAllCards(1, 42);
+      break;
+    case READ_CARD_LINKS_ALL:
+      if (answers.mode === MODE_TEST)
+        getAllLinks(1, 3);
+      else
+        getAllLinks(1, 42);
       break;
     case TRANSFORM_DATA:
       extractLinksLanguage();
       extractLinksStruct();
       extractCardsLanguage();
       extractCardsStruct();
-      break;
-    case READ_CARD_DETAILS_1to3:
-      extractAllCards(1, 3);
-      break;
-    case READ_CARD_DETAILS_ALL:
-      extractAllCards(1, 42);
-      break;
-    case READ_CARD_LINKS_ALL:
-      getAllLinks(1, 42);
       break;
     default:
       console.log(`Operation not implemented`);
