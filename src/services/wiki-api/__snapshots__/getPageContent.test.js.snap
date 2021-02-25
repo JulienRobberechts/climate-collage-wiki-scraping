@@ -105,7 +105,7 @@ exports[`getPageContent get list 1`] = `
 <tr>
 <td>14
 </td>
-<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_14_budget_%C3%A9nerg%C3%A9tique\\" class=\\"mw-redirect\\" title=\\"Fr-fr adulte carte 14 budget énergétique\\">Budget énergétique</a>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique\\" title=\\"Fr-fr adulte carte 14 bilan énergétique\\">Bilan énergétique</a>
 </td>
 <td>3
 </td></tr>
@@ -341,12 +341,12 @@ exports[`getPageContent get list 1`] = `
 </tbody></table>
 <!-- 
 NewPP limit report
-Cached time: 20210225103947
+Cached time: 20210225121249
 Cache expiry: 86400
 Dynamic content: false
 Complications: []
-CPU time usage: 0.029 seconds
-Real time usage: 0.097 seconds
+CPU time usage: 0.027 seconds
+Real time usage: 0.045 seconds
 Preprocessor visited node count: 97/1000000
 Post‐expand include size: 672/2097152 bytes
 Template argument size: 3/2097152 bytes
@@ -357,9 +357,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   10.454      1 -total
- 99.43%   10.394      2 Modèle:CO2
- 47.94%    5.012      1 Modèle:Formule_chimique
+100.00%    8.059      1 -total
+ 99.29%    8.002      2 Modèle:CO2
+ 50.18%    4.044      1 Modèle:Formule_chimique
 -->
 </div>"
 `;
