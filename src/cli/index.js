@@ -38,6 +38,8 @@ const executeRequest = (answers) => {
     case 'Extract links':
       extractLinksLanguage();
       extractLinksStruct();
+      extractCardsLanguage();
+      extractCardsStruct();
       break;
     case 'Read cards 1-3':
       extractAllCards(1, 3);
@@ -54,11 +56,58 @@ const executeRequest = (answers) => {
   }
 };
 
+const extractCardsLanguage = async () => {
+  const inFilePath = `./src/data/wip/cards.json`;
+  const transform = (data) => data.map(({
+    cardNum,
+    id,
+    url,
+    shortTitle,
+    img,
+    youtubeCode,
+    backDescription,
+    explanation,
+    notes,
+  }) => ({
+    cardNum,
+    wikiId: id,
+    wikiUrl: url,
+    title: shortTitle,
+    img,
+    videoYoutubeCode: youtubeCode,
+    backDescription,
+    explanation,
+    notes,
+  }));
+  const outFilePath = `./out/cards-fr.json`;
+  await transformData(inFilePath, transform, outFilePath);
+  console.log('done');
+};
+const extractCardsStruct = async () => {
+  const inFilePath = `./src/data/wip/cards.json`;
+  const transform = (data) => data.map(({
+    cardNum,
+    cardSet,
+  }) => ({
+    cardNum,
+    cardSet,
+  }));
+  const outFilePath = `./out/cards.json`;
+  await transformData(inFilePath, transform, outFilePath);
+  console.log('done');
+};
+
 const extractLinksLanguage = async () => {
   const inFilePath = `./src/data/wip/links.json`;
-  // const transform = (data) => data.map((i) => i);
-  const transform = (data) => data.map(({ fromNum, toNum, Explanation }) => ({ fromNum, toNum, explanation: Explanation }));
-  // const transform = (data) => data;
+  const transform = (data) => data.map(({
+    fromNum,
+    toNum,
+    Explanation
+  }) => ({
+    fromNum,
+    toNum,
+    explanation: Explanation
+  }));
   const outFilePath = `./out/links-fr.json`;
   await transformData(inFilePath, transform, outFilePath);
   console.log('done');
@@ -66,9 +115,15 @@ const extractLinksLanguage = async () => {
 
 const extractLinksStruct = async () => {
   const inFilePath = `./src/data/wip/links.json`;
-  // const transform = (data) => data.map((i) => i);
-  const transform = (data) => data.map(({ fromNum, toNum, status }) => ({ fromNum, toNum, status }));
-  // const transform = (data) => data;
+  const transform = (data) => data.map(({
+    fromNum,
+    toNum,
+    status
+  }) => ({
+    fromNum,
+    toNum,
+    status
+  }));
   const outFilePath = `./out/links.json`;
   await transformData(inFilePath, transform, outFilePath);
   console.log('done');
