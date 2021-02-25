@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 
-const { readAllCards } = require('../services/readCard/readCard');
+const { readCards } = require('../services/readCard/readCard');
 const { writeFile } = require('../tests/writefile');
 const { buildAllLinks } = require('../services/linkCalculation/buildLinks');
 const { getObject } = require('../tests/readfile');
@@ -51,7 +51,7 @@ const executeRequest = (answers) => {
 const extractAllCards = async (fromCard, toCard) => {
   const filePath = `./out/cards-${fromCard}-${toCard}.json`;
   process.stdout.write(`\nCards data in file '${filePath}' ...`);
-  const cardsData = await readAllCards(fromCard, toCard);
+  const cardsData = await readCards(fromCard, toCard);
   await writeFile(filePath, JSON.stringify(cardsData));
   console.log('done');
 };

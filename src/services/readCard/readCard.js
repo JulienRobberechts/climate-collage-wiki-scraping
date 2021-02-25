@@ -1,10 +1,10 @@
 const cards = require('../../data/cards.json');
-const { getPageId } = require('../../wiki-api/getPageProps');
+const { getPageId } = require('../wiki-api/getPageProps');
 
-const { getPageContent } = require('../../wiki-api/getPageContent');
+const { getPageContent } = require('../wiki-api/getPageContent');
 const { parsePageContent } = require('../../extraction/pageContentParser');
 
-const { getImageInfo } = require('../../wiki-api/getImageInfo');
+const { getImageInfo } = require('../wiki-api/getImageInfo');
 const { parseImageInfo } = require('../../extraction/imageInfoParser');
 
 const readCard = async (cardNumber) => {
@@ -12,7 +12,7 @@ const readCard = async (cardNumber) => {
   return await getCardData(card);
 };
 
-const readAllCards = async (fromCard, toCard) => {
+const readCards = async (fromCard, toCard) => {
   const cardsData = [];
   for (let index = fromCard - 1; index < toCard; index++) {
     const card = cards[index];
@@ -56,4 +56,4 @@ const getCardRelations = async (id, message) => {
   return relations;
 };
 
-module.exports = { readCard, readAllCards, getCardData, getCardRelations };
+module.exports = { readCard, readCards, getCardData, getCardRelations };

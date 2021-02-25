@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-const { readCard, readAllCards } = require('./readCard');
+const { readCard, readCards } = require('./readCard');
 
 describe('readCard', () => {
   it('read carte_1', async () => {
@@ -60,30 +60,30 @@ describe('readCard', () => {
     expect(pageData).toMatchSnapshot();
   });
   it('read all cards 1-2', async () => {
-    const cards = await readAllCards(1, 2);
+    const cards = await readCards(1, 2);
     expect(cards.length).toBe(2);
   }, 99000);
 });
 
 describe.skip('readCard by batch', () => {
   it.skip('read all cards 1-10', async () => {
-    const cards = await readAllCards(1, 10);
+    const cards = await readCards(1, 10);
     expect(cards.length).toBe(10);
   }, 99000);
   it.skip('read all cards 10-19', async () => {
-    const cards = await readAllCards(10, 19);
+    const cards = await readCards(10, 19);
     expect(cards.length).toBe(10);
   }, 99000);
   it.skip('read all cards 20-29', async () => {
-    const cards = await readAllCards(20, 29);
+    const cards = await readCards(20, 29);
     expect(cards.length).toBe(10);
   }, 99000);
   it.skip('read all cards 30-39', async () => {
-    const cards = await readAllCards(30, 39);
+    const cards = await readCards(30, 39);
     expect(cards.length).toBe(10);
   }, 99000);
   it.skip('read all cards 40-42', async () => {
-    const cards = await readAllCards(40, 42);
+    const cards = await readCards(40, 42);
     expect(cards.length).toBe(3);
   }, 99000);
 });

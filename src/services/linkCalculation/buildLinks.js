@@ -1,10 +1,10 @@
 const cards = require('../../data/cards.json');
-const { getPageId } = require('../../wiki-api/getPageProps');
+const { getPageId } = require('../wiki-api/getPageProps');
 
-const { getPageContent } = require('../../wiki-api/getPageContent');
+const { getPageContent } = require('../wiki-api/getPageContent');
 const { parsePageContent } = require('../../extraction/pageContentParser');
 
-const { getImageInfo } = require('../../wiki-api/getImageInfo');
+const { getImageInfo } = require('../wiki-api/getImageInfo');
 const { parseImageInfo } = require('../../extraction/imageInfoParser');
 
 const buildAllLinks = (cards) => {
