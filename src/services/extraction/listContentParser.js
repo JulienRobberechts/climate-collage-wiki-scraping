@@ -37,13 +37,13 @@ const parseCardRow = (contentRow, expectedCardNum, message = '') => {
   const nameCell = contentRow[1];
   const cardLink = nameCell.querySelectorAll("a")[0];
   const title = cardLink.textContent.trim();
-  const cardWikiInternalName = cardLink.title;
-  const cardWikiUrl = cardLink.href;
+  const wikiInternalName = cardLink.title;
+  const wikiUrl = cardLink.href;
 
   const setCell = contentRow[2];
   const cardSet = parseInt(setCell.textContent.trim());
 
-  return { cardNum, title, cardWikiInternalName, cardWikiUrl, cardSet };
+  return { cardNum, title, wikiInternalName, wikiUrl, cardSet };
 };
 
 const assertEqual = (message, actualNum, expectedNum) => {

@@ -9,19 +9,19 @@ describe('parseListContent', () => {
     const cards = parseListContent(content);
     expect(cards).toMatchSnapshot();
     expect(cards[0]).toStrictEqual({
-      cardWikiInternalName: "Fr-fr adulte carte 1 activit\\u00e9s humaines",
+      wikiInternalName: "Fr-fr adulte carte 1 activit\\u00e9s humaines",
       cardNum: 1,
       cardSet: 1,
       title: "Activit\\u00e9s humaines",
-      cardWikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
+      wikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
     });
 
     expect(cards[0]).toStrictEqual({
-      cardWikiInternalName: "Fr-fr adulte carte 1 activit\\u00e9s humaines",
+      wikiInternalName: "Fr-fr adulte carte 1 activit\\u00e9s humaines",
       cardNum: 1,
       cardSet: 1,
       title: "Activit\\u00e9s humaines",
-      cardWikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
+      wikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
     });
 
     expect(cards.length).toBe(42);

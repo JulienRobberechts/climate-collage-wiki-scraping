@@ -10,8 +10,8 @@ describe('readCard', () => {
     expect(pageData).toStrictEqual({
       wikiId: 4,
       cardNum: 1,
-      cardWikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
-      cardWikiInternalName: "Fr-fr adulte carte 1 activités humaines",
+      wikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
+      wikiInternalName: "Fr-fr adulte carte 1 activités humaines",
       title: "Activités humaines",
       img: {
         url: "https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png",
@@ -32,8 +32,8 @@ describe('readCard', () => {
     expect(pageData).toStrictEqual({
       wikiId: 12,
       cardNum: 2,
-      cardWikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
-      cardWikiInternalName: "Fr-fr adulte carte 2 industrie",
+      wikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
+      wikiInternalName: "Fr-fr adulte carte 2 industrie",
       title: "Industrie",
       img: {
         url: "https://fresqueduclimat.org/wiki/images/7/7e/Fr-fr_adulte_carte_2_recto.png",

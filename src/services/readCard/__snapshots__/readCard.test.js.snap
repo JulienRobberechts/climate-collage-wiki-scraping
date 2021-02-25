@@ -3,8 +3,8 @@
 exports[`readCard read carte_9 1`] = `
 Object {
   "cardNum": 9,
-  "cardWikiInternalName": "Fr-fr adulte carte 9 autres ges",
-  "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges",
+  "wikiInternalName": "Fr-fr adulte carte 9 autres ges",
+  "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges",
   "causes": Array [
     "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture",
     "/wiki/index.php?title=Fr-fr_adulte_carte_41_permafrost",
@@ -24,8 +24,8 @@ Object {
 exports[`readCard read carte_14 1`] = `
 Object {
   "cardNum": 14,
-  "cardWikiInternalName": "Fr-fr adulte carte 14 bilan énergétique",
-  "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique",
+  "wikiInternalName": "Fr-fr adulte carte 14 bilan énergétique",
+  "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique",
   "causes": Array [
     "/wiki/index.php?title=Fr-fr_adulte_carte_15_for%C3%A7age_radiatif",
   ],

@@ -32,22 +32,22 @@ const readCards = async (fromCard, toCard) => {
 };
 
 const getCardData = async (card) => {
-  const wikiId = await getPageId(card.cardWikiInternalName);
-  const img = await getCardImage(card.cardNum, `image (card id=${wikiId}, num=${card.cardNum}, title=${card.cardWikiInternalName})`);
-  const relations = await getCardRelations(wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.cardWikiInternalName})`);
+  const wikiId = await getPageId(card.wikiInternalName);
+  const img = await getCardImage(card.cardNum, `image (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
+  const relations = await getCardRelations(wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
   const {
     cardNum,
     title,
-    cardWikiInternalName,
-    cardWikiUrl,
+    wikiInternalName,
+    wikiUrl,
     cardSet
   } = card;
   return {
     cardNum,
     title,
     wikiId,
-    cardWikiInternalName,
-    cardWikiUrl,
+    wikiInternalName,
+    wikiUrl,
     img,
     ...relations,
   };
