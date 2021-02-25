@@ -13,7 +13,7 @@ describe('readCard', () => {
       url: "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
       wikiTitle: "Fr-fr adulte carte 1 activités humaines",
       shortTitle: "Activités humaines",
-      cardBatch: 1,
+      cardSet: 1,
       img: {
         url: "https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png",
       },
@@ -36,7 +36,7 @@ describe('readCard', () => {
       url: "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
       wikiTitle: "Fr-fr adulte carte 2 industrie",
       shortTitle: "Industrie",
-      cardBatch: 2,
+      cardSet: 2,
       img: {
         url: "https://fresqueduclimat.org/wiki/images/7/7e/Fr-fr_adulte_carte_2_recto.png",
       },

@@ -2,8 +2,8 @@
 
 exports[`readCard read carte_9 1`] = `
 Object {
-  "cardBatch": 2,
   "cardNum": 9,
+  "cardSet": 2,
   "causes": Array [
     "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture",
     "/wiki/index.php?title=Fr-fr_adulte_carte_41_permafrost",
@@ -24,8 +24,8 @@ Object {
 
 exports[`readCard read carte_14 1`] = `
 Object {
-  "cardBatch": 3,
   "cardNum": 14,
+  "cardSet": 3,
   "causes": Array [
     "/wiki/index.php?title=Fr-fr_adulte_carte_15_for%C3%A7age_radiatif",
   ],
