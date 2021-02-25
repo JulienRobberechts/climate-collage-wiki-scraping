@@ -59,14 +59,31 @@ const getCardImage = async (cardNum, message) => {
 };
 
 const getCardPropsFromContent = async (wikiId, message) => {
-  const cardContent = await getPageContent(wikiId);
+  const section0 = 0;
+  const cardContent = await getPageContent(wikiId, section0);
   const backDescription = parseBackDescription(cardContent, message);
   return { backDescription: cleanUpString(backDescription) };
 };
 
 const cleanUpString = (input) => {
-  const regex = /\n/gi;
-  return input.replace(regex, ' ');
+  const newline = /\n/gi;
+  const displaystyle = /\{\\\\displaystyle\sm\^\{2\}\}/gi;
+  const spaces = /\s+/gi;
+  const tab = /\t/gi;
+  const nbps = /\u00A0/gi;
+
+  return input
+    .trim()
+    .replace(spaces, ' ')
+    .replace(tab, ' ')
+    .replace(nbps, ' ')
+    .replace(displaystyle, '')
+    .replace(newline, ' ')
+    .replace("3 , 1 W / m 2 {\\displaystyle 3,1W/m^{2}}", "3,1 W/m2")
+    .replace("m 2 {\\displaystyle m^{2}} ", "métre carré")
+    .replace("0 , 8 W / m 2 {\\displaystyle -0,8W/m^{2}}", "0,8 W/m2")
+    .replace("2 , 3 W / m 2 {\\displaystyle 2,3W/m^{2}}", "2,3 W/m2")
+    ;
 };
 
 const readAllRelations = async (fromCard, toCard) => {

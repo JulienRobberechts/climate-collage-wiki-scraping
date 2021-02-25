@@ -8,7 +8,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png"
     },
     "videoYoutubeCode": "ZPknjN0hYe8",
-    "backDescription": "C'est là que tout commence...",
+    "backDescription": "C'est ici que tout commence...",
     "explanation": "Cette carte peut être considérée comme la cause des secteurs économiques (Industrie, Bâtiment, Transport, Agriculture), ou comme le titre d'un ensemble de cartes (qui sont alors regroupées dans une grosse 'patate').",
     "notes": [
       "C'est aussi par là que commence le 5ème rapport du GIEC, dans l'avant-propos de son résumé.",
@@ -25,7 +25,7 @@
     },
     "videoYoutubeCode": "4LG5GMiCcR0",
     "backDescription": "L'industrie utilise des énergies fossiles et de l'électricité. Elle représente 40% des Gaz à Effet de Serre (GES).",
-    "explanation": "Il s'agit de la fabrication de l'ensemble des biens de consommation. L'industrie regroupe un très grand nombre de secteurs industriels différents dont les plus importants en émissions de GES sont la papeterie, le ciment, l'acier, l'aluminium, la chimie. Pour réduire les émissions de l'industrie, la solution consiste à allonger la durée de vie des produits, voire à réduire leur consommation. ",
+    "explanation": "Il s'agit de la fabrication de l'ensemble des biens de consommation. L'industrie regroupe un très grand nombre de secteurs industriels différents dont les plus importants en émissions de GES sont la papeterie, le ciment, l'acier, l'aluminium, la chimie. Pour réduire les émissions de l'industrie, la solution consiste à allonger la durée de vie des produits, voire à réduire leur consommation.",
     "notes": [
       "La construction des bâtiments tombe dans la catégorie de l'industrie, mais pas leur utilisation",
       "La fabrication de ciment représente 10% des émissions de GES dans le monde. Entre 2011 et 2013, la Chine a utilisé plus de ciment que les États-Unis pendant tout le XXième siècle. Pour fabriquer du ciment, il faut bruler du calcaire CaCO3, ce qui donne de la chaux, CaO et qui libère du CO2 dans l’atmosphère."
@@ -41,7 +41,7 @@
     },
     "videoYoutubeCode": "rxHxR0Ald3I",
     "backDescription": "L’utilisation du bâtiment (logement et services) utilise des énergies fossiles et de l'électricité. Cela représente 20% des Gaz à Effet de Serre (GES).",
-    "explanation": "On parle ici de l'utilisation des bâtiments et non de leur construction (qui, elle, entre dans le secteur de l'industrie). Chauffage, climatisation, éclairage, électronique, etc. Le gros sujet, sous nos latitudes, c'est l'isolation thermique des bâtiments. En ce qui concerne la construction dans le neuf, il est important de construire des bâtiment bien isolés. Mais l'enjeu est limité car les normes dans le neuf sont bien plus contraignantes que par le passé et on ne construit chaque année qu'une petite partie (1%) du parc déjà construit. L'enjeu est donc beaucoup plus dans la rénovation thermique des bâtiments. ",
+    "explanation": "On parle ici de l'utilisation des bâtiments et non de leur construction (qui, elle, entre dans le secteur de l'industrie). Chauffage, climatisation, éclairage, électronique, etc. Le gros sujet, sous nos latitudes, c'est l'isolation thermique des bâtiments. En ce qui concerne la construction dans le neuf, il est important de construire des bâtiment bien isolés. Mais l'enjeu est limité car les normes dans le neuf sont bien plus contraignantes que par le passé et on ne construit chaque année qu'une petite partie (1%) du parc déjà construit. L'enjeu est donc beaucoup plus dans la rénovation thermique des bâtiments.",
     "notes": []
   },
   {
@@ -86,7 +86,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/d/d3/Fr-fr_adulte_carte_6_recto.png"
     },
     "videoYoutubeCode": "EMi8CNnHVmE",
-    "backDescription": "La déforestation consiste à couper ou brûler des arbres au-delà de la capacité de renouvellement de la forêt. Elle est liée à 80% à l’agriculture. ",
+    "backDescription": "La déforestation consiste à couper ou brûler des arbres au-delà de la capacité de renouvellement de la forêt. Elle est liée à 80% à l’agriculture.",
     "explanation": "La déforestation est le phénomène de régression durable des surfaces couvertes de forêts, qu'il soit d'origine anthropique ou naturelle. Si une forêt repousse après une coupe, une attaque d'insectes xylophage ou un feu, on ne parle pas de déforestation. La déforestation peut être considérée comme une activité humaine ou comme une conséquence de l'agriculture, ou encore les deux à la fois. Attention : le problème avec la déforestation, ce n'est pas que ça détruit des puits de carbone, c'est que ça émet du CO2. C'est une différence entre flux et stock.",
     "notes": [
       "Sur la déforestation, 93% du bois est brûlé (papier, agriculture, meubles jetables ......) pour 7% utilisé de manière durable (meuble, construction ...) ",
@@ -171,7 +171,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/e/e2/Fr-fr_adulte_carte_12_recto.png"
     },
     "videoYoutubeCode": "--H_a7k_sQ8",
-    "backDescription": "La moitié du CO2 que nous émettons chaque année est absorbée par les puits de carbone : la végétation pour 1/4 (via la photosynthèse), l'océan pour 1/4, le reste (1/2) reste dans l'atmosphère. ",
+    "backDescription": "La moitié du CO2 que nous émettons chaque année est absorbée par les puits de carbone : -la végétation pour 1/4 (via la photosynthèse) -l'océan pour 1/4 Le reste (1/2) reste dans l'atmosphère.",
     "explanation": "Dans le rapport du GIEC, le graphique est directement le rasseblement des deux cartes, la Fresque l'a 'découpé'. Il montre d'où vient le CO2 et où il va.",
     "notes": []
   },
@@ -210,8 +210,8 @@
       "url": "https://fresqueduclimat.org/wiki/images/9/95/Fr-fr_adulte_carte_15_recto.png"
     },
     "videoYoutubeCode": "WYpGFCtFuNg",
-    "backDescription": "Le forçage radiatif est la mesure du déséquilibre entre l'énergie qui arrive chaque seconde sur terre et celle qui repart. Il vaut 3,1 W/m 2 (Watt par métre carré) pour l’effet de serre et − 0,8 W/m2 pour les aérosols, soit 2,3 W / m 2 en tout.",
-    "explanation": "La terre reçoit de l'énergie du Soleil et en réémet vers l'espace sous forme d'infrarouges. En temps normal, elle est en équilibre thermique et sa température est constante. On appelle forçage radiatif tout ce qui lui fait quitter cet équilibre thermique, que ce soit d'origine naturelle (soleil, volcans) ou anthropique (aérosols, GES). ",
+    "backDescription": "Le forçage radiatif est la mesure du déséquilibre entre l'énergie qui arrive chaque seconde sur terre et celle qui repart. Il vaut 3,1 W/m2 (Watt par métre carré) pour l’effet de serre et − 0,8 W/m2 pour les aérosols, soit 2,3 W/m2 en tout.",
+    "explanation": "La terre reçoit de l'énergie du Soleil et en réémet vers l'espace sous forme d'infrarouges. En temps normal, elle est en équilibre thermique et sa température est constante. On appelle forçage radiatif tout ce qui lui fait quitter cet équilibre thermique, que ce soit d'origine naturelle (soleil, volcans) ou anthropique (aérosols, GES).",
     "notes": []
   },
   {
@@ -223,8 +223,8 @@
       "url": "https://fresqueduclimat.org/wiki/images/1/14/Fr-fr_adulte_carte_16_recto.png"
     },
     "videoYoutubeCode": "zRlMGkImeUs",
-    "backDescription": "Presque tous les glaciers ont perdu de la masse. Des centaines ont même déjà disparu. Or ces glaciers ont un rôle régulateur sur l'approvisionnement en eau douce. ",
-    "explanation": "On appellera ici glacier une accumulation de glace continentale issue de la transformation de la neige et soumise à un écoulement lent. On parlera ici de fonte d'un glacier lorsque la masse totale de glace a diminué sur la période considérée, quel·s que soi·en·t le·s processus en cause. ",
+    "backDescription": "Presque tous les glaciers ont perdu de la masse. Des centaines ont même déjà disparu. Or ces glaciers ont un rôle régulateur sur l'approvisionnement en eau douce.",
+    "explanation": "On appellera ici glacier une accumulation de glace continentale issue de la transformation de la neige et soumise à un écoulement lent. On parlera ici de fonte d'un glacier lorsque la masse totale de glace a diminué sur la période considérée, quel·s que soi·en·t le·s processus en cause.",
     "notes": []
   },
   {
@@ -237,7 +237,7 @@
     },
     "videoYoutubeCode": "TRhhK8tJ9ds",
     "backDescription": "L'océan absorbe 93% de l'énergie qui s'accumule sur la Terre. En se réchauffant, l'eau se dilate.",
-    "explanation": "L'océan se réchauffe de l'ordre du dixième de degré en surface et encore moins en profondeur. Comment cela se fait-il alors qu'il absorbe 93% de l'énergie en excès sur la terre ? C'est parce qu'il est beaucoup plus gros que l'atmosphère. Il a une capacité calorifique beaucoup plus grande. ",
+    "explanation": "L'océan se réchauffe de l'ordre du dixième de degré en surface et encore moins en profondeur. Comment cela se fait-il alors qu'il absorbe 93% de l'énergie en excès sur la terre ? C'est parce qu'il est beaucoup plus gros que l'atmosphère. Il a une capacité calorifique beaucoup plus grande.",
     "notes": [
       "l'océan couvre 71% de la surface de la terre et a une profondeur de 4000m en moyenne.",
       "L'atmosphère s'étend sur une plus grande hauteur, mais si on le ramenait à la même densité que l'eau, il ne mesurerait plus que 10m (c'est pour ça qu'on gagne un atmosphère de pression tous les 10m quand on fait de la plongée).",
@@ -253,7 +253,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/7/74/Fr-fr_adulte_carte_18_recto.png"
     },
     "videoYoutubeCode": "qtZ3J_HEHuA",
-    "backDescription": "La fonte de la banquise n'est pas responsable de la montée des eaux (un glaçon qui fond dans du pastis ne fait pas déborder le verre). ",
+    "backDescription": "La fonte de la banquise n'est pas responsable de la montée des eaux (un glaçon qui fond dans du pastis ne fait pas déborder le verre).",
     "explanation": "Pour une explication plus poussée du pourquoi du comment Archimède et tout et tout.",
     "notes": []
   },
@@ -266,7 +266,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/e/e1/Fr-fr_adulte_carte_19_recto.png"
     },
     "videoYoutubeCode": "Btoz2BU9PFo",
-    "backDescription": "Les calottes glaciaires sont le Groënland et l'Antarctique. Si elles fondaient intégralement, cela représenterait une augmentation du niveau de la mer de 7m pour le Groënland, et de 54m pour l'Antarctique. Durant la dernière ère glaciaire, les calottes étaient si importantes que le niveau de la mer était 120 m plus bas qu'aujourd'hui. ",
+    "backDescription": "Les calottes glaciaires sont le Groënland et l'Antarctique. Si elles fondaient intégralement, cela représenterait une augmentation du niveau de la mer de 7m pour le Groënland, et de 54m pour l'Antarctique. Durant la dernière ère glaciaire, les calottes étaient si importantes que le niveau de la mer était 120 m plus bas qu'aujourd'hui.",
     "explanation": "Ces illustrations représentent le gain ou la perte de masse des calottes, indiqué en centimètre d'eau par année (cm d'eau/an) et mesuré par gravimétrie. En bleu le gain de masse (parce qu'il neige davantage) et en rouge les pertes (les glaciers s'écoulent plus vite vers l'océan).",
     "notes": [
       "On appellera ici calotte glaciaire (ou nappe glaciaire ou inlandsis) une masse de glace terrestre d’échelle continentale, suffisamment épaisse (entre 1600 et 6400m ) pour recouvrir la majeure partie des formations rocheuses sous jacentes. Il n’existe actuellement que deux grandes nappes glaciaires, une au Groenland et une en Antarctique. On parlera ici de fonte des calottes glaciaires lorsque la masse totale de glace a diminué sur la période considérée, quel·s que soi·en·t le·s processus en cause."
@@ -282,7 +282,7 @@
     },
     "videoYoutubeCode": "m16bWEIgUnI",
     "backDescription": "L'évaporation qui a lieu à la surface de l'océan augmente si l'eau et l'air se réchauffent. Cela fait plus de nuages qui feront ensuite de la pluie. Mais si l’évaporation a lieu sur terre, cela assèche le sol.",
-    "explanation": "Cette carte est importante. Elle matérialise à elle seule pourquoi on parlait autrefois de réchauffement climatique, puis maintenant de changement climatique, voire de dérèglement climatique. L'augmentation de température est en soi un problème, mais on voit sur la fresque, à la fin, que la perturbation du cycle de l'eau a beaucoup plus d'effets. ",
+    "explanation": "Cette carte est importante. Elle matérialise à elle seule pourquoi on parlait autrefois de réchauffement climatique, puis maintenant de changement climatique, voire de dérèglement climatique. L'augmentation de température est en soi un problème, mais on voit sur la fresque, à la fin, que la perturbation du cycle de l'eau a beaucoup plus d'effets.",
     "notes": []
   },
   {
@@ -294,7 +294,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/7/78/Fr-fr_adulte_carte_21_recto.png"
     },
     "videoYoutubeCode": "X0zSLQTEHD8",
-    "backDescription": "On parle ici de la température de l’air au sol, en moyenne sur la surface de la Terre. Elle a déjà augmenté de près de 1°C depuis 1900. Selon les scénarios, elle aura augmenté de 2°C à 5°C d’ici 2100. Or, lors de la dernière période glaciaire (il y a 20.000 ans), elle était seulement 5°C plus basse qu’aujourd’hui... et la déglaciation a duré 10.000 ans ! ",
+    "backDescription": "On parle ici de la température de l’air au sol, en moyenne sur la surface de la Terre. Elle a déjà augmenté de près de 1°C depuis 1900. Selon les scénarios, elle aura augmenté de 2°C à 5°C d’ici 2100. Or, lors de la dernière période glaciaire (il y a 20.000 ans), elle était seulement 5°C plus basse qu’aujourd’hui... et la déglaciation a duré 10.000 ans !",
     "explanation": "Quand on a gardé les cartes 10, 14 et 15, (version standard) cette carte représente la température de l'air donc de l'atmosphère.",
     "notes": [
       "Au rythme actuel de réchauffement, 0,2°C par décennie, le réchauffement atteindra 1,5°C entre 2030 et 2050 environ"
@@ -342,7 +342,7 @@
     },
     "videoYoutubeCode": "XlaLH13Pups",
     "backDescription": "Quand le CO2 se dissout dans l'océan, il se transforme en des ions acides (H2CO3 puis HCO3–). Cela a pour effet d'acidifier l'océan (le pH baisse).",
-    "explanation": "L'acidification de l'océan est parfois appelée 'l'autre problème du carbone'. En effet, ce n'est pas à proprement parler une conséquence du changement climatique, mais une autre conséquence des émissions de CO2. ",
+    "explanation": "L'acidification de l'océan est parfois appelée 'l'autre problème du carbone'. En effet, ce n'est pas à proprement parler une conséquence du changement climatique, mais une autre conséquence des émissions de CO2.",
     "notes": []
   },
   {
@@ -354,7 +354,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/b/bd/Fr-fr_adulte_carte_25_recto.png"
     },
     "videoYoutubeCode": "TP8Tu4Gq2CE",
-    "backDescription": "Les animaux et les plantes sont affectés par les changements de température et du cycle de l'eau : ils se déplacent ou disparaissent (ou, plus rarement, ils prolifèrent). ",
+    "backDescription": "Les animaux et les plantes sont affectés par les changements de température et du cycle de l'eau : ils se déplacent ou disparaissent (ou, plus rarement, ils prolifèrent).",
     "explanation": "Aujourd'hui, la biodiversité terrestre est avant tout mise à mal par d'autres facteurs que le climat : déforestation, disparition des habitats naturels, pesticides, pollutions diverses. Il n'empêche que le changement climatique va largement contribuer à la disparition des espèces dans les décennies à venir.",
     "notes": [
       "Cette carte désigne aussi bien la biodiversité végétale que l'animale."
@@ -382,7 +382,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/d/dd/Fr-fr_adulte_carte_27_recto.png"
     },
     "videoYoutubeCode": "mMMByJIVkhc",
-    "backDescription": "Ptéropodes et coccolithophores étant à la base de la chaîne alimentaire, leur disparition menace toute la biodiversité marine. Le réchauffement de l’eau joue aussi un rôle important dans la fragilisation de la biodiversité marine. ",
+    "backDescription": "Ptéropodes et coccolithophores étant à la base de la chaîne alimentaire, leur disparition menace toute la biodiversité marine. Le réchauffement de l’eau joue aussi un rôle important dans la fragilisation de la biodiversité marine.",
     "explanation": "Aujourd'hui, la biodiversité marine est plus mise en danger par la surpêche que par le changement climatique ou l'acidification. Mais à long terme, ces derniers vont considérablement augmenter leur pression. La FAO considère que dans le monde, entre 660 et 820 million d'individus sont directement ou indirectement dépendant de la pêche et de l'aquaculture. Soit à peu près 10% de la population mondiale.",
     "notes": []
   },
@@ -408,7 +408,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/e/e0/Fr-fr_adulte_carte_29_recto.png"
     },
     "videoYoutubeCode": "nzqB3nKTjzc",
-    "backDescription": "Les ptéropodes sont du zooplancton et les coccolithophores du phytoplancton. Ces micro-organismes ont une coquille en calcaire. ",
+    "backDescription": "Les ptéropodes sont du zooplancton et les coccolithophores du phytoplancton. Ces micro-organismes ont une coquille en calcaire.",
     "explanation": "",
     "notes": []
   },
@@ -421,7 +421,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/8/8e/Fr-fr_adulte_carte_30_recto.png"
     },
     "videoYoutubeCode": "EX82KQmQ3yg",
-    "backDescription": "La perturbation du cycle de l'eau peut amener plus ou moins d'eau. Moins d'eau, c'est une sécheresse. On estime ainsi que les sécheresses pourraient se multiplier à l’avenir. ",
+    "backDescription": "La perturbation du cycle de l'eau peut amener plus ou moins d'eau. Moins d'eau, c'est une sécheresse. On estime ainsi que les sécheresses pourraient se multiplier à l’avenir.",
     "explanation": "Une sécheresse est une période de temps anormalement sec suffisamment longue pour causer un grave déséquilibre hydrologique. On peut parler de sécheresse agricole si l'on mesure l'humidité du sol ou de sécheresse météorologique dans le cas d'une baisse de précipitation. Une mégasécheresse est une sécheresse persistante et étendue, d’une durée très supérieure à la normale (en général, une décennie ou plus). Le manque de pluie et l'évaporation sur le sol sont les causes des sécheresses.",
     "notes": []
   },
@@ -434,7 +434,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/7/7e/Fr-fr_adulte_carte_31_recto.png"
     },
     "videoYoutubeCode": "JHRnIGIebH0",
-    "backDescription": "Les ressources en eau douce sont affectées par les changements de précipitation et la disparition des glaciers qui jouent un rôle régulateur du débit des cours d'eau. ",
+    "backDescription": "Les ressources en eau douce sont affectées par les changements de précipitation et la disparition des glaciers qui jouent un rôle régulateur du débit des cours d'eau.",
     "explanation": "Le gros sujet, c'est la disparition des glaciers. Ils servent de réservoirs d'eau douce sous forme solide et fondent (surtout en été, quand il fait chaud, ça tombe bien !) pour alimenter en aval l'irrigation des cultures.",
     "notes": []
   },
@@ -473,7 +473,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/9/98/Fr-fr_adulte_carte_34_recto.png"
     },
     "videoYoutubeCode": "YvJcgi3LjDY",
-    "backDescription": "Les cyclones s’alimentent de l’énergie des eaux chaudes à la surface de l’océan. Leur puissance a augmenté à cause du changement climatique. ",
+    "backDescription": "Les cyclones s’alimentent de l’énergie des eaux chaudes à la surface de l’océan. Leur puissance a augmenté à cause du changement climatique.",
     "explanation": "Un cyclone est un phénomène tourbillonnaire des régions tropicales (entre 30°N et 30°S) accompagnés de vents dont la vitesse est supérieure ou égale à 64 nœuds c'est-à-dire 118 km/h ( soit une force 12 sur l'échelle de Beaufort). Les termes typhon, ouragan et cyclone tropical recouvrent tous les trois le même phénomène, la désignation adoptée dépend simplement de l'endroit du globe où il se produit. Le terme cyclone ou cyclone tropical est réservé à l'océan Indien et au Pacifique sud. On parle en revanche d'ouragan en Atlantique nord et dans le Pacifique nord-est et enfin de typhon dans le Pacifique nord-ouest.",
     "notes": []
   },
@@ -514,7 +514,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/2/20/Fr-fr_adulte_carte_37_recto.png"
     },
     "videoYoutubeCode": "FfyI7LHroFk",
-    "backDescription": "Les famines peuvent être occasionnées par la baisse des rendements agricoles et la réduction de la biodiversité marine. ",
+    "backDescription": "Les famines peuvent être occasionnées par la baisse des rendements agricoles et la réduction de la biodiversité marine.",
     "explanation": "",
     "notes": []
   },

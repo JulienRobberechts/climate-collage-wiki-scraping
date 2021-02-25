@@ -7,7 +7,8 @@ module.exports.getPageContent = async (pageId, section) => {
   // https://{{api}}?action=parse&format=json&pageid=4
 
   try {
-    const sectionParam = section ? `&section=${section}` : '';
+    console.log('getPageContent', section);
+    const sectionParam = (section === null || section === undefined) ? '' : `&section=${section}`;
     const url = `${rootApiUrl}?action=parse&format=json&pageid=${pageId}${sectionParam}`;
     console.log("url: " + url);
     const response = await axios.get(url);
