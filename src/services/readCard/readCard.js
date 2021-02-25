@@ -1,4 +1,6 @@
-const cards = require('../../data/cards.json');
+// const cards = require('../../data/cards.json');
+const { getObject } = require('../fileServices/readFile.js');
+
 const { getPageId } = require('../wiki-api/getPageProps');
 
 const { getPageContent } = require('../wiki-api/getPageContent');
@@ -10,11 +12,16 @@ const { parseImageInfo } = require('../extraction/imageInfoParser');
 const { sleepRandom } = require("../time/wait");
 
 const readCard = async (cardNumber) => {
+  const sourceFile = `./out/1-cards-list.json`;
+  const cards = await getObject(sourceFile);
   const card = cards.find(({ cardNum }) => cardNum === cardNumber);
   return await getCardData(card);
 };
 
 const readCards = async (fromCard, toCard) => {
+  const sourceFile = `./out/1-cards-list.json`;
+  const cards = await getObject(sourceFile);
+
   const cardsData = [];
   for (let index = fromCard - 1; index < toCard; index++) {
     const card = cards[index];

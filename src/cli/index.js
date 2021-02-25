@@ -48,7 +48,33 @@ var questions = [
       READ_CARD_LINKS,
       TRANSFORM_DATA,
     ],
-  }
+  },
+  {
+    type: 'input',
+    name: 'rangeFrom',
+    message: 'FROM which card number do you want to start?',
+    when: function (answers) {
+      return (answers.mode === MODE_TEST) && (answers.operation === READ_CARD_DETAILS);
+    },
+    validate: function (value) {
+      var valid = !isNaN(parseInt(value));
+      return valid || 'Please enter a number';
+    },
+    filter: Number,
+  },
+  {
+    type: 'input',
+    name: 'rangeTo',
+    message: 'TO which card number do you want to stop?',
+    when: function (answers) {
+      return (answers.mode === MODE_TEST) && (answers.operation === READ_CARD_DETAILS);
+    },
+    validate: function (value) {
+      var valid = !isNaN(parseInt(value));
+      return valid || 'Please enter a number';
+    },
+    filter: Number,
+  },
 ];
 
 module.exports.run = (answers) => {
@@ -72,7 +98,7 @@ const executeRequest = (answers) => {
 
     case READ_CARD_DETAILS:
       if (answers.mode === MODE_TEST)
-        extractAllCards(1, 3);
+        extractAllCards(answers.rangeFrom, answers.rangeTo);
       else
         extractAllCards(1, 42);
       break;
