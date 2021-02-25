@@ -77,10 +77,7 @@ const executeRequest = (answers) => {
         extractAllCards(1, 42);
       break;
     case READ_CARD_LINKS_ALL:
-      if (answers.mode === MODE_TEST)
-        getAllLinks(1, 3);
-      else
-        getAllLinks(1, 42);
+      getAllLinks(1, 42);
       break;
     case TRANSFORM_DATA:
       extractLinksLanguage();
@@ -179,7 +176,7 @@ const extractAllCards = async (fromCard, toCard) => {
   process.stdout.write(`\nCards data in file '${filePath}' ...`);
   const cardsData = await readCards(fromCard, toCard);
   const data = JSON.stringify(cardsData);
-  await writeFile(filePath, JSON.stringify(data));
+  await writeFile(filePath, data);
   console.log('done');
 };
 
