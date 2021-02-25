@@ -37,14 +37,14 @@ const getCardData = async (card) => {
   const relations = await getCardRelations(wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.cardWikiInternalName})`);
   const {
     cardNum,
-    cardTitle,
+    title,
     cardWikiInternalName,
     cardWikiUrl,
     cardSet
   } = card;
   return {
     cardNum,
-    cardTitle,
+    title,
     wikiId,
     cardWikiInternalName,
     cardWikiUrl,

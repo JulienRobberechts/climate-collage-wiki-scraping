@@ -3,7 +3,6 @@
 exports[`readCard read carte_9 1`] = `
 Object {
   "cardNum": 9,
-  "cardTitle": "Autres GES",
   "cardWikiInternalName": "Fr-fr adulte carte 9 autres ges",
   "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges",
   "causes": Array [
@@ -17,6 +16,7 @@ Object {
   "img": Object {
     "url": "https://fresqueduclimat.org/wiki/images/3/38/Fr-fr_adulte_carte_9_recto.png",
   },
+  "title": undefined,
   "wikiId": 26,
 }
 `;
@@ -24,7 +24,6 @@ Object {
 exports[`readCard read carte_14 1`] = `
 Object {
   "cardNum": 14,
-  "cardTitle": "Bilan énergétique",
   "cardWikiInternalName": "Fr-fr adulte carte 14 bilan énergétique",
   "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique",
   "causes": Array [
@@ -40,6 +39,7 @@ Object {
   "img": Object {
     "url": "https://fresqueduclimat.org/wiki/images/f/fe/Fr-fr_adulte_carte_14_recto.png",
   },
+  "title": undefined,
   "wikiId": 36,
 }
 `;

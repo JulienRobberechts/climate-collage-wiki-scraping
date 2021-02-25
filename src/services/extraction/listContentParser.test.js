@@ -12,7 +12,7 @@ describe('parseListContent', () => {
       cardWikiInternalName: "Fr-fr adulte carte 1 activit\\u00e9s humaines",
       cardNum: 1,
       cardSet: 1,
-      cardTitle: "Activit\\u00e9s humaines",
+      title: "Activit\\u00e9s humaines",
       cardWikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
     });
 
@@ -20,7 +20,7 @@ describe('parseListContent', () => {
       cardWikiInternalName: "Fr-fr adulte carte 1 activit\\u00e9s humaines",
       cardNum: 1,
       cardSet: 1,
-      cardTitle: "Activit\\u00e9s humaines",
+      title: "Activit\\u00e9s humaines",
       cardWikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
     });
 
