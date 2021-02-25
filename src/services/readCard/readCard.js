@@ -7,6 +7,8 @@ const { parsePageContent } = require('../extraction/pageContentParser');
 const { getImageInfo } = require('../wiki-api/getImageInfo');
 const { parseImageInfo } = require('../extraction/imageInfoParser');
 
+const { sleepRandom } = require("../time/wait");
+
 const readCard = async (cardNumber) => {
   const card = cards.find(({ cardNum }) => cardNum === cardNumber);
   return await getCardData(card);
@@ -22,15 +24,6 @@ const readCards = async (fromCard, toCard) => {
   }
   return cardsData;
 };
-
-function sleepRandom(min, max) {
-  const ms = Math.floor(Math.random() * (max - min)) + min;
-  return sleep(ms);
-}
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
 
 const getCardData = async (card) => {
   const id = await getPageId(card.wikiTitle);
