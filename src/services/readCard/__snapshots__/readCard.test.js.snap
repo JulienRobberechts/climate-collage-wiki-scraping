@@ -3,7 +3,6 @@
 exports[`readCard read carte_9 1`] = `
 Object {
   "cardNum": 9,
-  "cardSet": 2,
   "cardTitle": "Autres GES",
   "cardWikiInternalName": "Fr-fr adulte carte 9 autres ges",
   "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges",
@@ -25,7 +24,6 @@ Object {
 exports[`readCard read carte_14 1`] = `
 Object {
   "cardNum": 14,
-  "cardSet": 3,
   "cardTitle": "Bilan énergétique",
   "cardWikiInternalName": "Fr-fr adulte carte 14 bilan énergétique",
   "cardWikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique",

@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 
 const { readCardList } = require('../services/readCardList/readCardList');
 const { readCards } = require('../services/readCard/readCard');
-const { writeFile } = require('../services/fileServices/writeFile');
+const { writeObject } = require('../services/fileServices/writeFile');
 const { buildAllLinks } = require('../services/linkCalculation/buildLinks');
 const { getObject } = require('../services/fileServices/readFile');
 const { mapDataFile } = require('../services/etl/transformData');
@@ -97,10 +97,12 @@ const executeRequest = (answers) => {
       break;
 
     case READ_CARD_DETAILS:
-      if (answers.mode === MODE_TEST)
-        extractAllCards(answers.rangeFrom, answers.rangeTo);
-      else
-        extractAllCards(1, 42);
+      if (answers.mode === MODE_TEST) {
+        extractSomeCardsLangFr(answers.rangeFrom, answers.rangeTo);
+      }
+      else {
+        extractAllCards();
+      }
       break;
     case READ_CARD_LINKS_ALL:
       getAllLinks(1, 42);
@@ -109,7 +111,7 @@ const executeRequest = (answers) => {
       extractLinksLanguage();
       extractLinksStruct();
       extractCardsLanguage();
-      extractCardsStruct();
+      // extractCardsStruct();
       break;
     default:
       console.log(`Operation not implemented`);
@@ -120,7 +122,7 @@ const executeRequest = (answers) => {
 const extractCardList = async () => {
   const cardsData = await readCardList();
   const filePath = `./out/1-cards-list.json`;
-  await writeFile(filePath, JSON.stringify(cardsData));
+  await writeObject(filePath, cardsData);
 };
 
 const extractCardsLanguage = async () => {
@@ -150,19 +152,19 @@ const extractCardsLanguage = async () => {
   await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
-const extractCardsStruct = async () => {
-  const inFilePath = `./out/current-data/cards.json`;
-  const transform = (data) => data.map(({
-    cardNum,
-    cardSet,
-  }) => ({
-    cardNum,
-    cardSet,
-  }));
-  const outFilePath = `./out/targetv2/cards.json`;
-  await mapDataFile(inFilePath, transform, outFilePath);
-  console.log('done');
-};
+// const extractCardsStruct = async () => {
+//   const inFilePath = `./out/current-data/cards.json`;
+//   const transform = (data) => data.map(({
+//     cardNum,
+//     cardSet,
+//   }) => ({
+//     cardNum,
+//     cardSet,
+//   }));
+//   const outFilePath = `./out/targetv2/cards.json`;
+//   await mapDataFile(inFilePath, transform, outFilePath);
+//   console.log('done');
+// };
 
 const extractLinksLanguage = async () => {
   const inFilePath = `./out/current-data/links.json`;
@@ -197,13 +199,37 @@ const extractLinksStruct = async () => {
 };
 
 const extractAllCards = async (fromCard, toCard) => {
+  await extractCardsStruct();
+  await extractCardsLangFr();
+};
+
+const extractCardsStruct = async (fromCard, toCard) => {
+  const inFilePath = `./out/1-cards-list.json`;
+  const transform = (data) => data.map(({
+    cardNum,
+    cardSet
+  }) => ({
+    cardNum,
+    cardSet
+  }));
+  const outFilePath = `./out/2.cards.json`;
+  await mapDataFile(inFilePath, transform, outFilePath);
+};
+
+const extractCardsLangFr = async () => {
+  const filePath = `./out/2.cards-fr.json`;
+  const cardsData = await readCards(1, 42);
+  await writeObject(filePath, cardsData);
+};
+
+const extractSomeCardsLangFr = async (fromCard, toCard) => {
   const filePath = `./out/cards-${fromCard}-${toCard}.json`;
   process.stdout.write(`\nCards data in file '${filePath}' ...`);
   const cardsData = await readCards(fromCard, toCard);
-  const data = JSON.stringify(cardsData);
-  await writeFile(filePath, data);
+  await writeObject(filePath, cardsData);
   console.log('done');
 };
+
 
 const getAllLinks = async (fromCard, toCard) => {
   const filePathInput = `./out/cards-${fromCard}-${toCard}.json`;
@@ -212,6 +238,6 @@ const getAllLinks = async (fromCard, toCard) => {
   process.stdout.write(`\nWrite links data to file '${filePathOutput}' ...`);
   const cards = await getObject(filePathInput);
   const links = await buildAllLinks(cards);
-  await writeFile(filePathOutput, JSON.stringify(links));
+  await writeObject(filePathOutput, links);
   console.log('done');
 };
