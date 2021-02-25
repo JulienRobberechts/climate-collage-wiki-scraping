@@ -118,9 +118,10 @@ const executeRequest = (answers) => {
       computeCardsLinks();
       break;
     case TRANSFORM_DATA:
-      extractLinksLanguage();
-      extractLinksStruct();
-      extractCardsLanguage();
+      extractYtFr();
+      // extractLinksLanguage();
+      // extractLinksStruct();
+      // extractCardsLanguage();
       // extractCardsStruct();
       break;
     default:
@@ -133,6 +134,20 @@ const extractCardList = async () => {
   const cardsData = await readCardList();
   const filePath = `./out/1-cards-list.json`;
   await writeObject(filePath, cardsData);
+};
+
+const extractYtFr = async () => {
+  const inFilePath = `./out/current-data/cards.json`;
+  const transform = (data) => data.map(({
+    cardNum,
+    youtubeCode,
+  }) => ({
+    cardNum,
+    videoYoutubeCode: youtubeCode,
+  }));
+  const outFilePath = `./out/targetv2/cards-videos-fr.json`;
+  await mapDataFile(inFilePath, transform, outFilePath);
+  console.log('done');
 };
 
 const extractCardsLanguage = async () => {

@@ -1,7 +1,15 @@
 /**
  * @jest-environment node
  */
-const { readCard, readCards } = require('./readCard');
+const {
+  readCard,
+  readCards,
+  getCardPropsFromContent
+} = require('./readCard');
+
+const {
+  getCardsFrReferenceByCardNum
+} = require('../data-access/cardsRepo')
 
 describe('readCard', () => {
   it('read carte_1', async () => {
@@ -31,8 +39,15 @@ describe('readCard', () => {
       img: {
         url: "https://fresqueduclimat.org/wiki/images/7/7e/Fr-fr_adulte_carte_2_recto.png",
       },
-      backDescription: "L'industrie utilise des énergies fossiles et de l'électricité.\nElle représente 40% des Gaz à Effet de Serre (GES)."
+      backDescription: "L'industrie utilise des énergies fossiles et de l'électricité. Elle représente 40% des Gaz à Effet de Serre (GES)."
     });
+  });
+  it('read other props carte 4', async () => {
+    const cardNum = 4;
+    const card = await getCardsFrReferenceByCardNum(cardNum);
+    console.log('card 4', card);
+    const { backDescription } = await getCardPropsFromContent(card.wikiId);
+    expect(backDescription).toStrictEqual(card.backDescription);
   });
   it('read carte_9', async () => {
     const cardNumber = 9;

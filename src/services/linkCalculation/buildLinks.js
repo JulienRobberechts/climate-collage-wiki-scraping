@@ -1,10 +1,4 @@
-// const { getObject } = require('../fileServices/readFile.js');
 
-// const getCardsRelations = async () => {
-//   const sourceFile = `./out/1-cards-list.json`;
-//   const cards = await getObject(sourceFile);
-//   return cards;
-// }
 
 const buildAllValidLinks = (cardsRelations) => {
   const links = Array.from(new Array(cardsRelations.length), (_x, i) => i + 1)

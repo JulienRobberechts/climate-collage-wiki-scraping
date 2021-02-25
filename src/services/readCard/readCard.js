@@ -61,7 +61,12 @@ const getCardImage = async (cardNum, message) => {
 const getCardPropsFromContent = async (wikiId, message) => {
   const cardContent = await getPageContent(wikiId);
   const backDescription = parseBackDescription(cardContent, message);
-  return { backDescription };
+  return { backDescription: cleanUpString(backDescription) };
+};
+
+const cleanUpString = (input) => {
+  const regex = /\n/gi;
+  return input.replace(regex, ' ');
 };
 
 const readAllRelations = async (fromCard, toCard) => {
@@ -88,4 +93,4 @@ const getCardRelations = async (wikiId, message) => {
   return relations;
 };
 
-module.exports = { readCard, readCards, getCardData, getCardRelations, readAllRelations };
+module.exports = { readCard, readCards, getCardData, getCardRelations, readAllRelations, getCardPropsFromContent };
