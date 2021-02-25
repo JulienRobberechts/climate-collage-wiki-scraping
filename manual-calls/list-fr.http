@@ -1,0 +1,69 @@
+
+@api = fresqueduclimat.org/wiki/api.php
+@pageTitle = Jeu_adulte
+
+@pageId = 140
+
+@query = {{api}}?action=query&format=json&titles={{pageTitle}}
+
+### the page itself
+https://fresqueduclimat.org/wiki/en/index.php?title={{pageTitle}}
+
+### info, get the id
+https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=info
+
+### Links - card 10 to 18!!
+https://{{query}}&prop=links
+
+### categories - Nothing
+https://{{query}}&prop=categories
+
+
+### extlinks - OK
+https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=extlinks
+
+### images - GOOD
+https://{{query}}&prop=images
+
+### extlinks - 0
+https://{{query}}&prop=info
+
+### iwlinks - 0 ---------------------------------
+https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=iwlinks
+
+
+### pageimages - 0
+https://{{query}}&prop=pageimages
+
+### pageprops - get page id from the title
+https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=pageprops
+
+### allimages - all in namespace
+https://{{query}}&list=allimages
+
+### change tags -
+https://{{api}}?action=query&list=tags&tgprop=displayname|description|hitcount|defined
+
+### languageinfo- list all lang
+https://{{query}}&meta=languageinfo
+
+###
+
+http://{{query}}&prop=revisions&rvprop=content&rvsection=0
+
+###
+https://en.wikipedia.org/w/api.php?action=parse&page=Template:Infobox%20hydrogen&format=json
+
+### parse page (by id)
+https://{{api}}?action=parse&format=json&pageid={{pageId}}
+
+### parse section 0 - Works just need HTML parsing
+https://{{api}}?action=parse&format=json&pageid={{pageId}}&section=0&prop=text
+
+
+### parse section 1 = Description
+https://{{api}}?action=parse&format=json&pageid={{pageId}}&section=1&prop=text
+
+### parse section 2 = List
+https://{{api}}?action=parse&format=json&pageid={{pageId}}&section=2&prop=text
+

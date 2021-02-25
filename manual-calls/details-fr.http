@@ -1,0 +1,83 @@
+
+@api = fresqueduclimat.org/wiki/api.php
+@pageTitle = Fr-fr_adulte_carte_1_activités_humaines
+
+@query = {{api}}?action=query&format=json&titles={{pageTitle}}
+
+https://fresqueduclimat.org/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines
+
+###
+https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=info
+
+### get props from carte Id (KO)
+https://{{api}}?action=query&format=json&titles=Fr-fr_adulte_carte_1&prop=info
+
+### search
+https://{{api}}?action=query&list=search&srwhat=title&format=json&srsearch=Fr-fr_adulte_carte_1
+
+### Query help
+https://www.mediawiki.org/w/api.php?action=help&modules=query
+
+### Links - 9 items
+https://{{query}}&prop=links
+
+### categories - Nothing
+https://{{query}}&prop=categories
+
+
+// image
+// https://fresqueduclimat.org/wiki/index.php?title=Fichier:Fr-fr_adulte_carte_1_recto.png
+
+
+### extlinks - OK
+https://{{query}}&prop=extlinks
+
+### images - GOOD
+https://{{query}}&prop=images
+
+### imageinfo - GOOD
+@imgTitle = Fichier:Fr-fr adulte carte 1 recto.png
+https://{{api}}?action=query&format=json&titles={{imgTitle}}&prop=imageinfo&iiprop=url|size|canonicaltitle|mediatype
+
+# https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png
+# https://fresqueduclimat.org/wiki/index.php?title=Fichier:Fr-fr_adulte_carte_1_recto.png
+# https://fresqueduclimat.org/wiki/index.php?curid=11
+
+###
+
+https://fresqueduclimat.org/wiki/api.php?action=query&format=json&prop=imageinfo&iiprop=url|size|canonicaltitle|mediatype&titles=Fichier:Fr-fr%20adulte%20carte%203%20recto.png
+
+
+### extlinks - bof
+https://{{query}}&prop=info
+
+### iwlinks -nothing
+https://{{query}}&prop=iwlinks
+
+### pageimages
+https://{{query}}&prop=pageimages
+
+### pageprops - get page id from the title
+https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=pageprops
+
+### allimages - all in namespace
+https://{{query}}&list=allimages
+
+### change tags -
+https://{{api}}?action=query&list=tags&tgprop=displayname|description|hitcount|defined
+
+### languageinfo- list all lang
+https://{{query}}&meta=languageinfo
+
+###
+
+http://{{query}}&prop=revisions&rvprop=content&rvsection=0
+
+###
+https://en.wikipedia.org/w/api.php?action=parse&page=Template:Infobox%20hydrogen&format=json
+
+### parse page (by id)
+https://{{api}}?action=parse&format=json&pageid=4
+
+### parse section 0 - Works just need HTML parsing
+https://{{api}}?action=parse&format=json&pageid=4&section=0&prop=text
