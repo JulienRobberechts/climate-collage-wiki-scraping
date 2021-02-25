@@ -4,7 +4,12 @@ const { readCards } = require('../services/readCard/readCard');
 const { writeFile } = require('../services/fileServices/writeFile');
 const { buildAllLinks } = require('../services/linkCalculation/buildLinks');
 const { getObject } = require('../services/fileServices/readFile');
-const { transformData } = require('../services/etl/transformData');
+const { mapDataFile } = require('../services/etl/transformData');
+
+const TRANSFORM_DATA = 'Transform existing data';
+const READ_CARD_DETAILS_1to3 = 'Read cards details 1-3';
+const READ_CARD_DETAILS_ALL = 'Read all cards details';
+const READ_CARD_LINKS_ALL = 'Read all cards links';
 
 var questions = [
   {
@@ -12,10 +17,10 @@ var questions = [
     name: 'operation',
     message: 'What do you want?',
     choices: [
-      'Extract links',
-      'Read cards 1-3',
-      'Read all cards',
-      'Read all links',
+      TRANSFORM_DATA,
+      READ_CARD_DETAILS_1to3,
+      READ_CARD_DETAILS_ALL,
+      READ_CARD_LINKS_ALL,
     ],
   }
 ];
@@ -31,23 +36,25 @@ module.exports.run = (answers) => {
   console.log('Thank you');
 };
 
+
+
 const executeRequest = (answers) => {
   console.log('answers:', answers);
   console.log(`\noperation: ${answers.operation}`);
   switch (answers.operation) {
-    case 'Extract links':
+    case TRANSFORM_DATA:
       extractLinksLanguage();
       extractLinksStruct();
       extractCardsLanguage();
       extractCardsStruct();
       break;
-    case 'Read cards 1-3':
+    case READ_CARD_DETAILS_1to3:
       extractAllCards(1, 3);
       break;
-    case 'Read all cards':
+    case READ_CARD_DETAILS_ALL:
       extractAllCards(1, 42);
       break;
-    case 'Read all links':
+    case READ_CARD_LINKS_ALL:
       getAllLinks(1, 42);
       break;
     default:
@@ -80,7 +87,7 @@ const extractCardsLanguage = async () => {
     notes,
   }));
   const outFilePath = `./out/cards-fr.json`;
-  await transformData(inFilePath, transform, outFilePath);
+  await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
 const extractCardsStruct = async () => {
@@ -93,7 +100,7 @@ const extractCardsStruct = async () => {
     cardSet,
   }));
   const outFilePath = `./out/cards.json`;
-  await transformData(inFilePath, transform, outFilePath);
+  await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
 
@@ -109,7 +116,7 @@ const extractLinksLanguage = async () => {
     explanation: Explanation
   }));
   const outFilePath = `./out/links-fr.json`;
-  await transformData(inFilePath, transform, outFilePath);
+  await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
 
@@ -125,7 +132,7 @@ const extractLinksStruct = async () => {
     status
   }));
   const outFilePath = `./out/links.json`;
-  await transformData(inFilePath, transform, outFilePath);
+  await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
 
