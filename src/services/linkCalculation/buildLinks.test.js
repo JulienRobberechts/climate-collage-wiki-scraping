@@ -3,7 +3,7 @@
  */
 const { buildLinks, buildAllLinks } = require('./buildLinks');
 const cards1and3FilePath = './src/tests/data/cards-1-3.json';
-const { getObject } = require('../../tests/readfile');
+const { getObject } = require('../../tests/readFile');
 
 describe('buildLinks', () => {
   it('build link carte_1', async () => {

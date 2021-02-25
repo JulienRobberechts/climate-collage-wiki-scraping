@@ -1,4 +1,4 @@
-const { getContent } = require('../../tests/readfile');
+const { getContent } = require('../../tests/readFile');
 const { parseImageInfo } = require('./imageInfoParser');
 
 const imageInfo1FilePath = './src/tests/data/image1.json';

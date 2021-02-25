@@ -1,4 +1,4 @@
-const { writeFile } = require("../../tests/writefile");
+const { writeFile } = require("../../tests/writeFile");
 
 const save = (filePath, data) => {
   writeFile(filePath, data);

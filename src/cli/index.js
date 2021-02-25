@@ -1,9 +1,9 @@
 const inquirer = require('inquirer');
 
 const { readCards } = require('../services/readCard/readCard');
-const { writeFile } = require('../tests/writefile');
+const { writeFile } = require('../tests/writeFile');
 const { buildAllLinks } = require('../services/linkCalculation/buildLinks');
-const { getObject } = require('../tests/readfile');
+const { getObject } = require('../tests/readFile');
 
 var questions = [
   {
