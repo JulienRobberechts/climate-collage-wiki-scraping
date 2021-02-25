@@ -19,4 +19,11 @@ describe('getPageContent', () => {
     const pageContent = await getPageContent(pageId);
     expect(pageContent).not.toBeFalsy();
   });
+  it('get list', async () => {
+    const pageId = 140;
+    const section = 2;
+    const pageContent = await getPageContent(pageId, section);
+    expect(pageContent).not.toBeFalsy();
+    expect(pageContent).toMatchSnapshot();
+  });
 });

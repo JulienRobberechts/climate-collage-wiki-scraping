@@ -1,0 +1,365 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getPageContent get list 1`] = `
+"<div class=\\"mw-parser-output\\"><h1><span class=\\"mw-headline\\" id=\\"Le_jeu\\">Le jeu</span><span class=\\"mw-editsection\\"><span class=\\"mw-editsection-bracket\\">[</span><a href=\\"/wiki/index.php?title=Jeu_adulte&amp;veaction=edit&amp;section=1\\" class=\\"mw-editsection-visualeditor\\" title=\\"Modifier la section : Le jeu\\">modifier</a><span class=\\"mw-editsection-divider\\"> | </span><a href=\\"/wiki/index.php?title=Jeu_adulte&amp;action=edit&amp;section=1\\" title=\\"Modifier la section : Le jeu\\">modifier le wikicode</a><span class=\\"mw-editsection-bracket\\">]</span></span></h1>
+<h3><span class=\\"mw-headline\\" id=\\"Cartes\\">Cartes</span><span class=\\"mw-editsection\\"><span class=\\"mw-editsection-bracket\\">[</span><a href=\\"/wiki/index.php?title=Jeu_adulte&amp;veaction=edit&amp;section=2\\" class=\\"mw-editsection-visualeditor\\" title=\\"Modifier la section : Cartes\\">modifier</a><span class=\\"mw-editsection-divider\\"> | </span><a href=\\"/wiki/index.php?title=Jeu_adulte&amp;action=edit&amp;section=2\\" title=\\"Modifier la section : Cartes\\">modifier le wikicode</a><span class=\\"mw-editsection-bracket\\">]</span></span></h3>
+<table class=\\"wikitable sortable\\">
+<tbody><tr>
+<th>#
+</th>
+<th>Nom
+</th>
+<th>Lot
+</th></tr>
+<tr>
+<td>1
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines\\" title=\\"Fr-fr adulte carte 1 activités humaines\\">Activités humaines</a>
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>2
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie\\" title=\\"Fr-fr adulte carte 2 industrie\\">Industrie</a>
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>3
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_3_utilisation_des_b%C3%A2timents\\" title=\\"Fr-fr adulte carte 3 utilisation des bâtiments\\">Utilisation des bâtiments</a>
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>4
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_4_transport\\" title=\\"Fr-fr adulte carte 4 transport\\">Transport</a>
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>5
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_5_%C3%A9nergies_fossiles\\" title=\\"Fr-fr adulte carte 5 énergies fossiles\\">Énergies fossiles</a>
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>6
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_6_d%C3%A9forestation\\" title=\\"Fr-fr adulte carte 6 déforestation\\">Déforestation</a>
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>7
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_7_%C3%A9missions_de_co2\\" title=\\"Fr-fr adulte carte 7 émissions de co2\\">Émissions de CO<sub>2</sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub></a>
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>8
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture\\" title=\\"Fr-fr adulte carte 8 agriculture\\">Agriculture</a>
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>9
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges\\" title=\\"Fr-fr adulte carte 9 autres ges\\">Autres GES</a>
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>10
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_10_a%C3%A9rosols\\" title=\\"Fr-fr adulte carte 10 aérosols\\">Aérosols</a>
+</td>
+<td>3
+</td></tr>
+<tr>
+<td>11
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_11_concentration_en_co2\\" title=\\"Fr-fr adulte carte 11 concentration en co2\\">Concentration en CO<sub>2</sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub><sub></sub> (ppm)</a>
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>12
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_12_puits_de_carbone\\" title=\\"Fr-fr adulte carte 12 puits de carbone\\">Puits de carbone</a>
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>13
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_13_effet_de_serre_additionnel\\" title=\\"Fr-fr adulte carte 13 effet de serre additionnel\\">Effet de serre additionnel</a>
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>14
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_14_budget_%C3%A9nerg%C3%A9tique\\" class=\\"mw-redirect\\" title=\\"Fr-fr adulte carte 14 budget énergétique\\">Budget énergétique</a>
+</td>
+<td>3
+</td></tr>
+<tr>
+<td>15
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_15_for%C3%A7age_radiatif\\" title=\\"Fr-fr adulte carte 15 forçage radiatif\\">Forçage radiatif</a>
+</td>
+<td>3
+</td></tr>
+<tr>
+<td>16
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_16_fonte_des_glaciers\\" title=\\"Fr-fr adulte carte 16 fonte des glaciers\\">Fonte des glaciers</a>
+</td>
+<td>3
+</td></tr>
+<tr>
+<td>17
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_17_hausse_temp%C3%A9rature_eau\\" title=\\"Fr-fr adulte carte 17 hausse température eau\\">Hausse de la température de l'eau</a>
+</td>
+<td>3
+</td></tr>
+<tr>
+<td>18
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_18_fonte_de_la_banquise\\" title=\\"Fr-fr adulte carte 18 fonte de la banquise\\">Fonte de la banquise</a>
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>19
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_19_fonte_des_calottes_glaciaires\\" title=\\"Fr-fr adulte carte 19 fonte des calottes glaciaires\\">Fonte des calottes glaciaires</a>
+</td>
+<td>3
+</td></tr>
+<tr>
+<td>20
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_20_perturbation_cycle_eau\\" title=\\"Fr-fr adulte carte 20 perturbation cycle eau\\">Perturbation du cycle de l'eau</a>
+</td>
+<td>3
+</td></tr>
+<tr>
+<td>21
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_21_hausse_temp%C3%A9rature\\" title=\\"Fr-fr adulte carte 21 hausse température\\">Hausse de la température</a>
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>22
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_22_mont%C3%A9e_des_eaux\\" title=\\"Fr-fr adulte carte 22 montée des eaux\\">Montée des eaux</a>
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>23
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_23_probl%C3%A8mes_de_calcification\\" title=\\"Fr-fr adulte carte 23 problèmes de calcification\\">Problèmes de calcification</a>
+</td>
+<td>4
+</td></tr>
+<tr>
+<td>24
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_24_acidification_oc%C3%A9an\\" title=\\"Fr-fr adulte carte 24 acidification océan\\">Acidification de l'océan</a>
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>25
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_25_biodiversit%C3%A9_terrestre\\" title=\\"Fr-fr adulte carte 25 biodiversité terrestre\\">Biodiversité terrestre</a>
+</td>
+<td>4
+</td></tr>
+<tr>
+<td>26
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_26_crues\\" title=\\"Fr-fr adulte carte 26 crues\\">Crues</a>
+</td>
+<td>4
+</td></tr>
+<tr>
+<td>27
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_27_biodiversit%C3%A9_marine\\" title=\\"Fr-fr adulte carte 27 biodiversité marine\\">Biodiversité marine</a>
+</td>
+<td>4
+</td></tr>
+<tr>
+<td>28
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_28_vecteurs_de_maladie\\" title=\\"Fr-fr adulte carte 28 vecteurs de maladie\\">Vecteurs de maladie</a>
+</td>
+<td>5
+</td></tr>
+<tr>
+<td>29
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_29_pt%C3%A9ropodes_et_coccolithophores\\" title=\\"Fr-fr adulte carte 29 ptéropodes et coccolithophores\\">Ptéropodes et coccolithophores</a>
+</td>
+<td>4
+</td></tr>
+<tr>
+<td>30
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_30_s%C3%A9cheresses\\" title=\\"Fr-fr adulte carte 30 sécheresses\\">Sécheresses</a>
+</td>
+<td>4
+</td></tr>
+<tr>
+<td>31
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_31_ressources_eau_douce\\" title=\\"Fr-fr adulte carte 31 ressources eau douce\\">Ressources en eau douce</a>
+</td>
+<td>5
+</td></tr>
+<tr>
+<td>32
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_32_baisse_rendements_agricoles\\" title=\\"Fr-fr adulte carte 32 baisse rendements agricoles\\">Baisse des rendements agricoles</a>
+</td>
+<td>5
+</td></tr>
+<tr>
+<td>33
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_33_submersions\\" title=\\"Fr-fr adulte carte 33 submersions\\">Submersions</a>
+</td>
+<td>4
+</td></tr>
+<tr>
+<td>34
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_34_cyclones\\" title=\\"Fr-fr adulte carte 34 cyclones\\">Cyclones</a>
+</td>
+<td>4
+</td></tr>
+<tr>
+<td>35
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_35_incendies\\" title=\\"Fr-fr adulte carte 35 incendies\\">Incendies</a>
+</td>
+<td>5
+</td></tr>
+<tr>
+<td>36
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_36_canicules\\" title=\\"Fr-fr adulte carte 36 canicules\\">Canicules</a>
+</td>
+<td>5
+</td></tr>
+<tr>
+<td>37
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_37_famine\\" title=\\"Fr-fr adulte carte 37 famine\\">Famine</a>
+</td>
+<td>5
+</td></tr>
+<tr>
+<td>38
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_38_sant%C3%A9_humaine\\" title=\\"Fr-fr adulte carte 38 santé humaine\\">Santé humaine</a>
+</td>
+<td>5
+</td></tr>
+<tr>
+<td>39
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_39_r%C3%A9fugi%C3%A9s_climatiques\\" title=\\"Fr-fr adulte carte 39 réfugiés climatiques\\">Réfugiés climatiques</a>
+</td>
+<td>5
+</td></tr>
+<tr>
+<td>40
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_40_conflits_arm%C3%A9s\\" title=\\"Fr-fr adulte carte 40 conflits armés\\">Conflits armés</a>
+</td>
+<td>5
+</td></tr>
+<tr>
+<td>41
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_41_permafrost\\" title=\\"Fr-fr adulte carte 41 permafrost\\">Permafrost</a>
+</td>
+<td>5
+</td></tr>
+<tr>
+<td>42
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_carte_42_hydrates_de_m%C3%A9thane\\" title=\\"Fr-fr adulte carte 42 hydrates de méthane\\">Hydrates de méthane</a>
+</td>
+<td>5
+</td></tr>
+</tbody></table>
+<h2><span class=\\"mw-headline\\" id=\\"Lots\\">Lots</span><span class=\\"mw-editsection\\"><span class=\\"mw-editsection-bracket\\">[</span><a href=\\"/wiki/index.php?title=Jeu_adulte&amp;veaction=edit&amp;section=3\\" class=\\"mw-editsection-visualeditor\\" title=\\"Modifier la section : Lots\\">modifier</a><span class=\\"mw-editsection-divider\\"> | </span><a href=\\"/wiki/index.php?title=Jeu_adulte&amp;action=edit&amp;section=3\\" title=\\"Modifier la section : Lots\\">modifier le wikicode</a><span class=\\"mw-editsection-bracket\\">]</span></span></h2>
+<table class=\\"wikitable\\">
+<tbody><tr>
+<th>#
+</th>
+<th>Nom
+</th></tr>
+<tr>
+<td>1
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_lot_1\\" title=\\"Fr-fr adulte lot 1\\">Lot 1</a>
+</td></tr>
+<tr>
+<td>2
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_lot_2\\" title=\\"Fr-fr adulte lot 2\\">Lot 2</a>
+</td></tr>
+<tr>
+<td>3
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_lot_3\\" title=\\"Fr-fr adulte lot 3\\">Lot 3</a>
+</td></tr>
+<tr>
+<td>4
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_lot_4\\" title=\\"Fr-fr adulte lot 4\\">Lot 4</a>
+</td></tr>
+<tr>
+<td>5
+</td>
+<td><a href=\\"/wiki/index.php?title=Fr-fr_adulte_lot_5\\" title=\\"Fr-fr adulte lot 5\\">Lot 5</a>
+</td></tr>
+</tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20210225100450
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.025 seconds
+Real time usage: 0.033 seconds
+Preprocessor visited node count: 97/1000000
+Post‐expand include size: 672/2097152 bytes
+Template argument size: 3/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    8.401      1 -total
+ 99.31%    8.343      2 Modèle:CO2
+ 49.82%    4.185      1 Modèle:Formule_chimique
+-->
+</div>"
+`;

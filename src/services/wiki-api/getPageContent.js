@@ -2,12 +2,13 @@ const axios = require('axios');
 
 const rootApiUrl = 'https://fresqueduclimat.org/wiki/api.php';
 
-module.exports.getPageContent = async (pageId) => {
+module.exports.getPageContent = async (pageId, section) => {
 
   // https://{{api}}?action=parse&format=json&pageid=4
 
   try {
-    const url = `${rootApiUrl}?action=parse&format=json&pageid=${pageId}`;
+    const sectionParam = section ? `&section=${section}` : '';
+    const url = `${rootApiUrl}?action=parse&format=json&pageid=${pageId}${sectionParam}`;
     console.log("url: " + url);
     const response = await axios.get(url);
     if (response.status !== 200)
