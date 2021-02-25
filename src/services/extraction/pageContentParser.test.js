@@ -14,7 +14,7 @@ describe('parsePageContent', () => {
     expect(result).toStrictEqual({
       causes: [
       ],
-      consequences: [
+      effects: [
         "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
         "/wiki/index.php?title=Fr-fr_adulte_carte_3_b%C3%A2timent",
         "/wiki/index.php?title=Fr-fr_adulte_carte_4_transport",

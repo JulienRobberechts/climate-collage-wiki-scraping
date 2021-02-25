@@ -41,7 +41,7 @@ const buildLinks = (cards, cardNumber) => {
     fromNum: getCardByUrl(cards, cause).cardNum,
     toNum: cardNumber
   }));
-  const linkConsequences = card.consequences.map(consequence => ({
+  const linkConsequences = card.effects.map(consequence => ({
     fromNum: cardNumber,
     toNum: getCardByUrl(cards, consequence).cardNum,
   }));

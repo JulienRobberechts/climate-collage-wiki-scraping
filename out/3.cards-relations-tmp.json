@@ -2,7 +2,7 @@
   {
     "cardNum": 1,
     "causes": [],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
       "/wiki/index.php?title=Fr-fr_adulte_carte_3_b%C3%A2timent",
       "/wiki/index.php?title=Fr-fr_adulte_carte_4_transport",
@@ -14,7 +14,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_5_%C3%A9nergies_fossiles",
       "/wiki/index.php?title=Fr-fr_adulte_carte_10_a%C3%A9rosols"
     ]
@@ -24,7 +24,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_5_%C3%A9nergies_fossiles"
     ]
   },
@@ -33,7 +33,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_5_%C3%A9nergies_fossiles",
       "/wiki/index.php?title=Fr-fr_adulte_carte_10_a%C3%A9rosols"
     ]
@@ -45,7 +45,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_3_b%C3%A2timent",
       "/wiki/index.php?title=Fr-fr_adulte_carte_4_transport"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_7_%C3%A9missions_de_co2"
     ]
   },
@@ -54,7 +54,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_7_%C3%A9missions_de_co2"
     ]
   },
@@ -64,7 +64,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_5_%C3%A9nergies_fossiles",
       "/wiki/index.php?title=Fr-fr_adulte_carte_6_d%C3%A9forestation"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_12_puits_de_carbone"
     ]
   },
@@ -73,7 +73,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_6_d%C3%A9forestation",
       "/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges"
     ]
@@ -85,7 +85,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_41_permafrost",
       "/wiki/index.php?title=Fr-fr_adulte_carte_42_hydrates_de_m%C3%A9thane"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_13_effet_de_serre_additionnel"
     ]
   },
@@ -95,7 +95,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
       "/wiki/index.php?title=Fr-fr_adulte_carte_4_transport"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_15_for%C3%A7age_radiatif",
       "/wiki/index.php?title=Fr-fr_adulte_carte_38_sant%C3%A9_humaine"
     ]
@@ -105,7 +105,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_12_puits_de_carbone"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_13_effet_de_serre_additionnel"
     ]
   },
@@ -114,7 +114,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_7_%C3%A9missions_de_co2"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_11_concentration_en_co2",
       "/wiki/index.php?title=Fr-fr_adulte_carte_24_acidification_oc%C3%A9an"
     ]
@@ -125,7 +125,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges",
       "/wiki/index.php?title=Fr-fr_adulte_carte_11_concentration_en_co2"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_15_for%C3%A7age_radiatif"
     ]
   },
@@ -134,7 +134,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_15_for%C3%A7age_radiatif"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_16_fonte_des_glaciers",
       "/wiki/index.php?title=Fr-fr_adulte_carte_17_hausse_temp%C3%A9rature_eau",
       "/wiki/index.php?title=Fr-fr_adulte_carte_18_fonte_de_la_banquise",
@@ -148,7 +148,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_13_effet_de_serre_additionnel",
       "/wiki/index.php?title=Fr-fr_adulte_carte_10_a%C3%A9rosols"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique"
     ]
   },
@@ -157,7 +157,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_22_mont%C3%A9e_des_eaux",
       "/wiki/index.php?title=Fr-fr_adulte_carte_31_ressources_eau_douce"
     ]
@@ -167,7 +167,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_20_perturbation_cycle_eau",
       "/wiki/index.php?title=Fr-fr_adulte_carte_22_mont%C3%A9e_des_eaux",
       "/wiki/index.php?title=Fr-fr_adulte_carte_27_biodiversit%C3%A9_marine",
@@ -180,14 +180,14 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique"
     ],
-    "consequences": []
+    "effects": []
   },
   {
     "cardNum": 19,
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_22_mont%C3%A9e_des_eaux"
     ]
   },
@@ -197,7 +197,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_17_hausse_temp%C3%A9rature_eau",
       "/wiki/index.php?title=Fr-fr_adulte_carte_21_hausse_temp%C3%A9rature"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_25_biodiversit%C3%A9_terrestre",
       "/wiki/index.php?title=Fr-fr_adulte_carte_26_crues",
       "/wiki/index.php?title=Fr-fr_adulte_carte_30_s%C3%A9cheresses",
@@ -210,7 +210,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_20_perturbation_cycle_eau",
       "/wiki/index.php?title=Fr-fr_adulte_carte_25_biodiversit%C3%A9_terrestre",
       "/wiki/index.php?title=Fr-fr_adulte_carte_32_baisse_rendements_agricoles",
@@ -226,7 +226,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_17_hausse_temp%C3%A9rature_eau",
       "/wiki/index.php?title=Fr-fr_adulte_carte_19_fonte_des_calottes_glaciaires"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_33_submersions"
     ]
   },
@@ -235,7 +235,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_24_acidification_oc%C3%A9an"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_29_pt%C3%A9ropodes_et_coccolithophores"
     ]
   },
@@ -244,7 +244,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_12_puits_de_carbone"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_23_probl%C3%A8mes_de_calcification"
     ]
   },
@@ -254,7 +254,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_20_perturbation_cycle_eau",
       "/wiki/index.php?title=Fr-fr_adulte_carte_21_hausse_temp%C3%A9rature"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_28_vecteurs_de_maladie",
       "/wiki/index.php?title=Fr-fr_adulte_carte_32_baisse_rendements_agricoles"
     ]
@@ -265,7 +265,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_20_perturbation_cycle_eau",
       "/wiki/index.php?title=Fr-fr_adulte_carte_30_s%C3%A9cheresses"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_32_baisse_rendements_agricoles",
       "/wiki/index.php?title=Fr-fr_adulte_carte_38_sant%C3%A9_humaine"
     ]
@@ -276,7 +276,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_17_hausse_temp%C3%A9rature_eau",
       "/wiki/index.php?title=Fr-fr_adulte_carte_29_pt%C3%A9ropodes_et_coccolithophores"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_37_famine"
     ]
   },
@@ -285,7 +285,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_25_biodiversit%C3%A9_terrestre"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_38_sant%C3%A9_humaine"
     ]
   },
@@ -294,7 +294,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_23_probl%C3%A8mes_de_calcification"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_27_biodiversit%C3%A9_marine"
     ]
   },
@@ -303,7 +303,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_20_perturbation_cycle_eau"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_26_crues",
       "/wiki/index.php?title=Fr-fr_adulte_carte_31_ressources_eau_douce",
       "/wiki/index.php?title=Fr-fr_adulte_carte_32_baisse_rendements_agricoles",
@@ -316,7 +316,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_16_fonte_des_glaciers",
       "/wiki/index.php?title=Fr-fr_adulte_carte_30_s%C3%A9cheresses"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_32_baisse_rendements_agricoles",
       "/wiki/index.php?title=Fr-fr_adulte_carte_40_conflits_arm%C3%A9s"
     ]
@@ -332,7 +332,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_33_submersions",
       "/wiki/index.php?title=Fr-fr_adulte_carte_34_cyclones"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_37_famine",
       "/wiki/index.php?title=Fr-fr_adulte_carte_39_r%C3%A9fugi%C3%A9s_climatiques"
     ]
@@ -343,7 +343,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_22_mont%C3%A9e_des_eaux",
       "/wiki/index.php?title=Fr-fr_adulte_carte_34_cyclones"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_32_baisse_rendements_agricoles",
       "/wiki/index.php?title=Fr-fr_adulte_carte_39_r%C3%A9fugi%C3%A9s_climatiques"
     ]
@@ -353,7 +353,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_17_hausse_temp%C3%A9rature_eau"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_32_baisse_rendements_agricoles",
       "/wiki/index.php?title=Fr-fr_adulte_carte_33_submersions",
       "/wiki/index.php?title=Fr-fr_adulte_carte_38_sant%C3%A9_humaine"
@@ -365,14 +365,14 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_30_s%C3%A9cheresses",
       "/wiki/index.php?title=Fr-fr_adulte_carte_36_canicules"
     ],
-    "consequences": []
+    "effects": []
   },
   {
     "cardNum": 36,
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_21_hausse_temp%C3%A9rature"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_35_incendies"
     ]
   },
@@ -382,7 +382,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_27_biodiversit%C3%A9_marine",
       "/wiki/index.php?title=Fr-fr_adulte_carte_32_baisse_rendements_agricoles"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_38_sant%C3%A9_humaine",
       "/wiki/index.php?title=Fr-fr_adulte_carte_39_r%C3%A9fugi%C3%A9s_climatiques"
     ]
@@ -394,7 +394,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_31_ressources_eau_douce",
       "/wiki/index.php?title=Fr-fr_adulte_carte_37_famine"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_40_conflits_arm%C3%A9s"
     ]
   },
@@ -404,7 +404,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_37_famine",
       "/wiki/index.php?title=Fr-fr_adulte_carte_40_conflits_arm%C3%A9s"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_40_conflits_arm%C3%A9s"
     ]
   },
@@ -413,7 +413,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_39_r%C3%A9fugi%C3%A9s_climatiques"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_38_sant%C3%A9_humaine",
       "/wiki/index.php?title=Fr-fr_adulte_carte_39_r%C3%A9fugi%C3%A9s_climatiques"
     ]
@@ -424,7 +424,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_21_hausse_temp%C3%A9rature",
       "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges"
     ]
   },
@@ -434,7 +434,7 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_17_hausse_temp%C3%A9rature_eau",
       "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_9_autres_ges"
     ]
   }

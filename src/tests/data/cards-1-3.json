@@ -10,7 +10,7 @@
       "url": "https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png"
     },
     "causes": [],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
       "/wiki/index.php?title=Fr-fr_adulte_carte_3_utilisation_des_b%C3%A2timents"
     ]
@@ -28,7 +28,7 @@
     "causes": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines"
     ],
-    "consequences": [
+    "effects": [
       "/wiki/index.php?title=Fr-fr_adulte_carte_3_utilisation_des_b%C3%A2timents"
     ]
   },
@@ -46,6 +46,6 @@
       "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
       "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie"
     ],
-    "consequences": []
+    "effects": []
   }
 ]

@@ -19,20 +19,20 @@ module.exports.parsePageContent = (content, message = '') => {
   assertEqual('contentRow count' + message, contentRow.length, 3);
 
   const causesCell = contentRow[0];
-  const consequencesCell = contentRow[2];
+  const effectsCell = contentRow[2];
 
   const causesAnchors = causesCell.querySelectorAll("li a");
   // assert('causes count' + message, causesAnchors.length, 0);
 
-  const consequencesAnchors = consequencesCell.querySelectorAll("li a");
-  // assert('consequences count' + message, consequencesAnchors.length, 4);
+  const effectsAnchors = effectsCell.querySelectorAll("li a");
+  // assert('effects count' + message, effectsAnchors.length, 4);
 
   const causes = Array.from(causesAnchors).map(c => c.href);
-  const consequences = Array.from(consequencesAnchors).map(c => c.href);
+  const effects = Array.from(effectsAnchors).map(c => c.href);
 
   return {
     causes,
-    consequences,
+    effects,
   };
 };
 
