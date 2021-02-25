@@ -1,8 +1,22 @@
-const buildAllLinks = (cards) => {
-  const links = Array.from(new Array(cards.length), (_x, i) => i + 1)
-    .map((n) => buildLinks(cards, n));
+// const { getObject } = require('../fileServices/readFile.js');
+
+// const getCardsRelations = async () => {
+//   const sourceFile = `./out/1-cards-list.json`;
+//   const cards = await getObject(sourceFile);
+//   return cards;
+// }
+
+const buildAllValidLinks = (cardsRelations) => {
+  const links = Array.from(new Array(cardsRelations.length), (_x, i) => i + 1)
+    .map((n) => buildLinks(cardsRelations, n));
   const linksFlat = links.flat();
-  return dedupLinks(linksFlat);
+  const linksClean = dedupLinks(linksFlat);
+  const linksCleanValid = linksClean.map(l => ({
+    ...l,
+    status: "valid"
+  }));
+
+  return linksCleanValid;
 };
 
 const dedupLinks = (links) => {
@@ -50,4 +64,4 @@ const getCardByUrl = (cards, cardUrl) => {
   return card;
 };
 
-module.exports = { buildLinks, buildAllLinks };
+module.exports = { buildLinks, buildAllValidLinks };

@@ -59,10 +59,28 @@ const getCardImage = async (cardNum, message) => {
   return img;
 };
 
-const getCardRelations = async (id, message) => {
-  const cardContent = await getPageContent(id);
+const getCardRelations = async (wikiId, message) => {
+  const cardContent = await getPageContent(wikiId);
   const relations = parsePageContent(cardContent, message);
   return relations;
 };
 
-module.exports = { readCard, readCards, getCardData, getCardRelations };
+const readAllRelations = async (fromCard, toCard) => {
+  const sourceFile = `./out/1-cards-list.json`;
+  const cards = await getObject(sourceFile);
+
+  const relationsData = [];
+  for (let index = fromCard - 1; index < toCard; index++) {
+    const card = cards[index];
+    const wikiId = await getPageId(card.wikiInternalName);
+    const relations = await getCardRelations(wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
+    relationsData.push({
+      cardNum: card.cardNum,
+      ...relations
+    });
+    await sleepRandom(300, 800);
+  }
+  return relationsData;
+};
+
+module.exports = { readCard, readCards, getCardData, getCardRelations, readAllRelations };

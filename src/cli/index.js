@@ -1,9 +1,9 @@
 const inquirer = require('inquirer');
 
 const { readCardList } = require('../services/readCardList/readCardList');
-const { readCards } = require('../services/readCard/readCard');
+const { readCards, readAllRelations } = require('../services/readCard/readCard');
 const { writeObject } = require('../services/fileServices/writeFile');
-const { buildAllLinks } = require('../services/linkCalculation/buildLinks');
+const { buildAllValidLinks } = require('../services/linkCalculation/buildLinks');
 const { getObject } = require('../services/fileServices/readFile');
 const { mapDataFile } = require('../services/etl/transformData');
 
@@ -15,8 +15,9 @@ const MODE_PROD = 'Full';
 const MODE_TEST = 'Test (sample)';
 
 const EXTRACT_CARDS_LIST = '1. Extract Card list';
-const READ_CARD_DETAILS = '2. Read cards details';
-const READ_CARD_LINKS = '3. Read cards links';
+const EXTRACT_CARD_DETAILS = '2. Extract cards details';
+const EXTRACT_CARD_LINKS = '3. Extract cards links';
+const COMPUTE_CARD_LINKS = '4. Compute cards links';
 const TRANSFORM_DATA = '999. Transform existing data';
 
 var questions = [
@@ -44,8 +45,9 @@ var questions = [
     message: 'What do you want?',
     choices: [
       EXTRACT_CARDS_LIST,
-      READ_CARD_DETAILS,
-      READ_CARD_LINKS,
+      EXTRACT_CARD_DETAILS,
+      EXTRACT_CARD_LINKS,
+      COMPUTE_CARD_LINKS,
       TRANSFORM_DATA,
     ],
   },
@@ -54,7 +56,7 @@ var questions = [
     name: 'rangeFrom',
     message: 'FROM which card number do you want to start?',
     when: function (answers) {
-      return (answers.mode === MODE_TEST) && (answers.operation === READ_CARD_DETAILS);
+      return (answers.mode === MODE_TEST) && (answers.operation === EXTRACT_CARD_DETAILS);
     },
     validate: function (value) {
       var valid = !isNaN(parseInt(value));
@@ -67,7 +69,7 @@ var questions = [
     name: 'rangeTo',
     message: 'TO which card number do you want to stop?',
     when: function (answers) {
-      return (answers.mode === MODE_TEST) && (answers.operation === READ_CARD_DETAILS);
+      return (answers.mode === MODE_TEST) && (answers.operation === EXTRACT_CARD_DETAILS || answers.operation === EXTRACT_CARD_LINKS);
     },
     validate: function (value) {
       var valid = !isNaN(parseInt(value));
@@ -96,7 +98,7 @@ const executeRequest = (answers) => {
       extractCardList();
       break;
 
-    case READ_CARD_DETAILS:
+    case EXTRACT_CARD_DETAILS:
       if (answers.mode === MODE_TEST) {
         extractSomeCardsLangFr(answers.rangeFrom, answers.rangeTo);
       }
@@ -104,8 +106,16 @@ const executeRequest = (answers) => {
         extractAllCards();
       }
       break;
-    case READ_CARD_LINKS_ALL:
-      getAllLinks(1, 42);
+    case EXTRACT_CARD_LINKS:
+      if (answers.mode === MODE_TEST) {
+        extractCardsLinksFromFR(answers.rangeFrom, answers.rangeTo);
+      }
+      else {
+        extractCardsLinksFromFR(1, 42);
+      }
+      break;
+    case COMPUTE_CARD_LINKS:
+      computeCardsLinks();
       break;
     case TRANSFORM_DATA:
       extractLinksLanguage();
@@ -152,19 +162,6 @@ const extractCardsLanguage = async () => {
   await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
-// const extractCardsStruct = async () => {
-//   const inFilePath = `./out/current-data/cards.json`;
-//   const transform = (data) => data.map(({
-//     cardNum,
-//     cardSet,
-//   }) => ({
-//     cardNum,
-//     cardSet,
-//   }));
-//   const outFilePath = `./out/targetv2/cards.json`;
-//   await mapDataFile(inFilePath, transform, outFilePath);
-//   console.log('done');
-// };
 
 const extractLinksLanguage = async () => {
   const inFilePath = `./out/current-data/links.json`;
@@ -230,14 +227,14 @@ const extractSomeCardsLangFr = async (fromCard, toCard) => {
   console.log('done');
 };
 
+const extractCardsLinksFromFR = async (fromCard, toCard) => {
+  const cardsRelations = await readAllRelations(fromCard, toCard);
+  await writeObject(`./out/3.cards-relations-tmp.json`, cardsRelations);
+};
 
-const getAllLinks = async (fromCard, toCard) => {
-  const filePathInput = `./out/cards-${fromCard}-${toCard}.json`;
-  const filePathOutput = `./out/links-${fromCard}-${toCard}.json`;
-  process.stdout.write(`\nRead cards data from file '${filePathInput}' ...`);
-  process.stdout.write(`\nWrite links data to file '${filePathOutput}' ...`);
-  const cards = await getObject(filePathInput);
-  const links = await buildAllLinks(cards);
-  await writeObject(filePathOutput, links);
+const computeCardsLinks = async () => {
+  const cardsRelations = await getObject(`./out/3.cards-relations-tmp.json`);
+  const links = await buildAllValidLinks(cardsRelations);
+  await writeObject(`./out/4.valid-links.json`, links);
   console.log('done');
 };
