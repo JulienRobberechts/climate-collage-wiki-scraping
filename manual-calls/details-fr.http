@@ -78,6 +78,9 @@ https://en.wikipedia.org/w/api.php?action=parse&page=Template:Infobox%20hydrogen
 @wikiId = 21
 https://{{api}}?action=parse&format=json&pageid={{wikiId}}
 
+### parse section meta
+https://{{api}}?action=parse&format=json&pageid={{wikiId}}&prop=sections
+
 ### parse section 0 - Entete
 https://{{api}}?action=parse&format=json&pageid={{wikiId}}&section=0&prop=text
 
@@ -99,5 +102,11 @@ https://{{api}}?action=parse&format=json&pageid={{wikiId}}&section=3&prop=text
 # Conseils pour l'animation
 # Autres_liens_possibles
 
+### sections page 1
+https://{{api}}?action=parse&format=json&pageid=4&prop=sections
 
+### sections page 5
+https://{{api}}?action=parse&format=json&pageid=18&prop=sections
 
+### sections page 6
+https://{{api}}?action=parse&format=json&pageid=21&prop=sections

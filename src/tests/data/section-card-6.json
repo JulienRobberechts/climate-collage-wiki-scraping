@@ -1,0 +1,122 @@
+[
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Carte  adulte #6 : D\u00e9forestation",
+    "number": "1",
+    "index": "T-1",
+    "fromtitle": "Mod\u00e8le:Carte",
+    "byteoffset": null,
+    "anchor": "Carte_adulte_.236_:_D.C3.A9forestation"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "D\u00e9finition",
+    "number": "2",
+    "index": "1",
+    "fromtitle": "Fr-fr_adulte_carte_6_d\u00e9forestation",
+    "byteoffset": 59,
+    "anchor": "D.C3.A9finition"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Explications",
+    "number": "3",
+    "index": "2",
+    "fromtitle": "Fr-fr_adulte_carte_6_d\u00e9forestation",
+    "byteoffset": 414,
+    "anchor": "Explications"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Conseils pour l'animation",
+    "number": "4",
+    "index": "3",
+    "fromtitle": "Fr-fr_adulte_carte_6_d\u00e9forestation",
+    "byteoffset": 738,
+    "anchor": "Conseils_pour_l.27animation"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Autres liens possibles",
+    "number": "5",
+    "index": "4",
+    "fromtitle": "Fr-fr_adulte_carte_6_d\u00e9forestation",
+    "byteoffset": 1132,
+    "anchor": "Autres_liens_possibles"
+  },
+  {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Liens causes",
+    "number": "5.1",
+    "index": "5",
+    "fromtitle": "Fr-fr_adulte_carte_6_d\u00e9forestation",
+    "byteoffset": 1162,
+    "anchor": "Liens_causes"
+  },
+  {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Lien cons\u00e9quences",
+    "number": "5.2",
+    "index": "6",
+    "fromtitle": "Fr-fr_adulte_carte_6_d\u00e9forestation",
+    "byteoffset": 1665,
+    "anchor": "Lien_cons.C3.A9quences"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Contenu additionnel",
+    "number": "6",
+    "index": "7",
+    "fromtitle": "Fr-fr_adulte_carte_6_d\u00e9forestation",
+    "byteoffset": 3433,
+    "anchor": "Contenu_additionnel"
+  },
+  {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Utilisation du bois",
+    "number": "6.1",
+    "index": "8",
+    "fromtitle": "Fr-fr_adulte_carte_6_d\u00e9forestation",
+    "byteoffset": 3459,
+    "anchor": "Utilisation_du_bois"
+  },
+  {
+    "toclevel": 2,
+    "level": "3",
+    "line": "R\u00e9partition des causes de d\u00e9forestation",
+    "number": "6.2",
+    "index": "9",
+    "fromtitle": "Fr-fr_adulte_carte_6_d\u00e9forestation",
+    "byteoffset": 3641,
+    "anchor": "R.C3.A9partition_des_causes_de_d.C3.A9forestation"
+  },
+  {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Vitesse de perte de la for\u00eat",
+    "number": "6.3",
+    "index": "10",
+    "fromtitle": "Fr-fr_adulte_carte_6_d\u00e9forestation",
+    "byteoffset": 4179,
+    "anchor": "Vitesse_de_perte_de_la_for.C3.AAt"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "R\u00e9f\u00e9rences",
+    "number": "7",
+    "index": "11",
+    "fromtitle": "Fr-fr_adulte_carte_6_d\u00e9forestation",
+    "byteoffset": 4528,
+    "anchor": "R.C3.A9f.C3.A9rences"
+  }
+]

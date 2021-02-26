@@ -1,0 +1,52 @@
+[
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Carte  adulte #5 : \u00c9nergies Fossiles",
+    "number": "1",
+    "index": "T-1",
+    "fromtitle": "Mod\u00e8le:Carte",
+    "byteoffset": null,
+    "anchor": "Carte_adulte_.235_:_.C3.89nergies_Fossiles"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Explications",
+    "number": "2",
+    "index": "1",
+    "fromtitle": "Fr-fr_adulte_carte_5_\u00e9nergies_fossiles",
+    "byteoffset": 235,
+    "anchor": "Explications"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Autres liens possibles",
+    "number": "3",
+    "index": "2",
+    "fromtitle": "Fr-fr_adulte_carte_5_\u00e9nergies_fossiles",
+    "byteoffset": 612,
+    "anchor": "Autres_liens_possibles"
+  },
+  {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Liens cons\u00e9quences",
+    "number": "3.1",
+    "index": "3",
+    "fromtitle": "Fr-fr_adulte_carte_5_\u00e9nergies_fossiles",
+    "byteoffset": 641,
+    "anchor": "Liens_cons.C3.A9quences"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "R\u00e9f\u00e9rences",
+    "number": "4",
+    "index": "4",
+    "fromtitle": "Fr-fr_adulte_carte_5_\u00e9nergies_fossiles",
+    "byteoffset": 970,
+    "anchor": "R.C3.A9f.C3.A9rences"
+  }
+]

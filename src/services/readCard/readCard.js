@@ -65,6 +65,12 @@ const getCardImage = async (cardNum, message) => {
   return img;
 };
 
+const getExplanation = async (wikiId, message) => {
+  const cardContentSection1 = await getPageContent(wikiId, 1);
+  const explanation = parseExplanation(cardContentSection1, message);
+  return cleanUpString(explanation);
+};
+
 const getBackDescription = async (wikiId, message) => {
   const cardContentSection0 = await getPageContent(wikiId, 0);
   const backDescription = parseBackDescription(cardContentSection0, message);

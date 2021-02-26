@@ -1,0 +1,62 @@
+[
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Carte  adulte #1 : Activit\u00e9 humaines",
+    "number": "1",
+    "index": "T-1",
+    "fromtitle": "Mod\u00e8le:Carte",
+    "byteoffset": null,
+    "anchor": "Carte_adulte_.231_:_Activit.C3.A9_humaines"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Explication",
+    "number": "2",
+    "index": "1",
+    "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
+    "byteoffset": 63,
+    "anchor": "Explication"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Autres liens possibles",
+    "number": "3",
+    "index": "2",
+    "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
+    "byteoffset": 1066,
+    "anchor": "Autres_liens_possibles"
+  },
+  {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Lien causes",
+    "number": "3.1",
+    "index": "3",
+    "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
+    "byteoffset": 1096,
+    "anchor": "Lien_causes"
+  },
+  {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Lien cons\u00e9quences",
+    "number": "3.2",
+    "index": "4",
+    "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
+    "byteoffset": 2123,
+    "anchor": "Lien_cons.C3.A9quences"
+  },
+  {
+    "toclevel": 1,
+    "level": "2",
+    "line": "R\u00e9f\u00e9rences",
+    "number": "4",
+    "index": "5",
+    "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
+    "byteoffset": 2836,
+    "anchor": "R.C3.A9f.C3.A9rences"
+  }
+]
