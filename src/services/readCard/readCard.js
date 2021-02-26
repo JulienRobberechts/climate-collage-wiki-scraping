@@ -3,7 +3,11 @@ const { getObject } = require('../fileServices/readFile.js');
 const { getPageId } = require('../wiki-api/getPageProps');
 
 const { getPageContent } = require('../wiki-api/getPageContent');
-const { parseCausesEffects, parseBackDescription } = require('../extraction/pageContentParser');
+const {
+  parseCausesEffects,
+  parseBackDescription,
+  parseExplanation
+} = require('../extraction/pageContentParser');
 
 const { getImageInfo } = require('../wiki-api/getImageInfo');
 const { parseImageInfo } = require('../extraction/imageInfoParser');
@@ -34,7 +38,9 @@ const readCards = async (fromCard, toCard) => {
 const getCardData = async (card) => {
   const wikiId = await getPageId(card.wikiInternalName);
   const img = await getCardImage(card.cardNum, `image (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
-  const otherProps = await getCardPropsFromContent(wikiId, `getCardPropsFromContent (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
+
+  const backDescription = await getBackDescription(wikiId, `getBackDescription (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
+  const explanation = await getExplanation(wikiId, `getExplanation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
   const {
     cardNum,
     title,
@@ -48,7 +54,8 @@ const getCardData = async (card) => {
     wikiInternalName,
     wikiUrl,
     img,
-    ...otherProps
+    backDescription,
+    explanation
   };
 };
 
@@ -58,11 +65,16 @@ const getCardImage = async (cardNum, message) => {
   return img;
 };
 
-const getCardPropsFromContent = async (wikiId, message) => {
-  const section0 = 0;
-  const cardContent = await getPageContent(wikiId, section0);
-  const backDescription = parseBackDescription(cardContent, message);
-  return { backDescription: cleanUpString(backDescription) };
+const getBackDescription = async (wikiId, message) => {
+  const cardContentSection0 = await getPageContent(wikiId, 0);
+  const backDescription = parseBackDescription(cardContentSection0, message);
+  return cleanUpString(backDescription);
+};
+
+const getExplanation = async (wikiId, message) => {
+  const cardContentSection1 = await getPageContent(wikiId, 1);
+  const explanation = parseExplanation(cardContentSection1, message);
+  return cleanUpString(explanation);
 };
 
 const cleanUpString = (input) => {
@@ -110,4 +122,12 @@ const getCardRelations = async (wikiId, message) => {
   return relations;
 };
 
-module.exports = { readCard, readCards, getCardData, getCardRelations, readAllRelations, getCardPropsFromContent };
+module.exports = {
+  readCard,
+  readCards,
+  getCardData,
+  getCardRelations,
+  readAllRelations,
+  getBackDescription,
+  getExplanation
+};

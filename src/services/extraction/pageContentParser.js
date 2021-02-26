@@ -55,6 +55,16 @@ module.exports.parseBackDescription = (content, message = '') => {
   return backDescription;
 };
 
+module.exports.parseExplanation = (content, message = '') => {
+  const { window: { document } } = new JSDOM(content);
+  const blocks = Array.from(document.querySelectorAll("h2 ~ *"));
+  assertMore('blocks count' + message, blocks.length, 1);
+  const explanation = blocks.reduce(mergeElements, '');
+  return explanation;
+};
+
+const mergeElements = (text, p) => text + p.textContent.trim();
+
 const assertEqual = (message, actualNum, expectedNum) => {
   if (actualNum !== expectedNum) { throw new Error(`${message} is '${actualNum}' instead of '${expectedNum}'`); }
 }

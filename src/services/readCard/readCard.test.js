@@ -4,35 +4,91 @@
 const {
   readCard,
   readCards,
-  getCardPropsFromContent
+  getBackDescription,
+  getExplanation
 } = require('./readCard');
 
 const {
   getCardsFrReferenceByCardNum
 } = require('../data-access/cardsRepo')
 
-describe('target vs real', () => {
-  const nums = [...Array(41).keys()].map(n => n + 1);
-  it.each(nums)('check backDescription on card %i', async (cardNum) => {
+const oneTo42 = [...Array(41).keys()].map(n => n + 1);
+
+describe('backDescription', () => {
+  it.each(oneTo42)('check backDescription on card %i', async (cardNum) => {
     // const cardNum = 4;
     const card = await getCardsFrReferenceByCardNum(cardNum);
     console.log('card 4', card);
-    const { backDescription } = await getCardPropsFromContent(card.wikiId);
+    const backDescription = await getBackDescription(card.wikiId);
     expect(backDescription).toStrictEqual(card.backDescription);
   });
   it('check backDescription on card 15', async () => {
     const cardNum = 15;
     const card = await getCardsFrReferenceByCardNum(cardNum);
-    const { backDescription } = await getCardPropsFromContent(card.wikiId);
+    const backDescription = await getBackDescription(card.wikiId);
     expect(backDescription).toStrictEqual(card.backDescription);
+  });
+});
+
+describe('Explanation', () => {
+  it.each(oneTo42)('check Explanation on card %i', async (cardNum) => {
+    const card = await getCardsFrReferenceByCardNum(cardNum);
+    const explanation = await getExplanation(card.wikiId);
+    expect(explanation).toStrictEqual(card.explanation);
+  });
+  it('check Explanation on card 1', async () => {
+    const cardNum = 1;
+    const card = await getCardsFrReferenceByCardNum(cardNum);
+    const explanation = await getExplanation(card.wikiId);
+    expect(explanation).toStrictEqual(card.explanation);
+  });
+  it('check Explanation on card 3', async () => {
+    const cardNum = 3;
+    const card = await getCardsFrReferenceByCardNum(cardNum);
+    const explanation = await getExplanation(card.wikiId);
+    expect(explanation).toStrictEqual(card.explanation);
+  });
+  it('check Explanation on card 6', async () => {
+    const cardNum = 6;
+    const card = await getCardsFrReferenceByCardNum(cardNum);
+    const explanation = await getExplanation(card.wikiId);
+    expect(explanation).toStrictEqual(card.explanation);
+  });
+  it('check Explanation on card 7', async () => {
+    const cardNum = 7;
+    const card = await getCardsFrReferenceByCardNum(cardNum);
+    const explanation = await getExplanation(card.wikiId);
+    expect(explanation).toStrictEqual(card.explanation);
+  });
+  it('check Explanation on card 9', async () => {
+    const cardNum = 9;
+    const card = await getCardsFrReferenceByCardNum(cardNum);
+    const explanation = await getExplanation(card.wikiId);
+    expect(explanation).toStrictEqual(card.explanation);
   });
 });
 
 describe('readCard', () => {
   it('read carte_1', async () => {
     const cardNumber = 1;
-    const pageData = await readCard(cardNumber);
-    expect(pageData).toStrictEqual({
+    const {
+      wikiId,
+      cardNum,
+      wikiUrl,
+      wikiInternalName,
+      title,
+      img,
+      backDescription
+    } = await readCard(cardNumber);
+    expect({
+      wikiId,
+      cardNum,
+      wikiUrl,
+      wikiInternalName,
+      title,
+      img,
+      backDescription
+    }).toStrictEqual({
       wikiId: 4,
       cardNum: 1,
       wikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
@@ -46,8 +102,24 @@ describe('readCard', () => {
   });
   it('read carte_2', async () => {
     const cardNumber = 2;
-    const pageData = await readCard(cardNumber);
-    expect(pageData).toStrictEqual({
+    const {
+      wikiId,
+      cardNum,
+      wikiUrl,
+      wikiInternalName,
+      title,
+      img,
+      backDescription
+    } = await readCard(cardNumber);
+    expect({
+      wikiId,
+      cardNum,
+      wikiUrl,
+      wikiInternalName,
+      title,
+      img,
+      backDescription
+    }).toStrictEqual({
       wikiId: 12,
       cardNum: 2,
       wikiUrl: "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",

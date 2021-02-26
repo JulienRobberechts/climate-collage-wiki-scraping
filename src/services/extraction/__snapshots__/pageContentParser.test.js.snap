@@ -4,3 +4,15 @@ exports[`parse Page Content parse BackDescription card 3 1`] = `
 "\\\\nL\\\\u2019utilisation du b\\\\u00e2timent (logement et services) utilise des \\\\u00e9nergies fossiles et de
       l'\\\\u00e9lectricit\\\\u00e9.\\\\nCela repr\\\\u00e9sente 20% des Gaz \\\\u00e0 Effet de Serre (GES).\\\\n"
 `;
+
+exports[`parse Page Content parse Explanation card 1 1`] = `
+"C'est par l\\\\u00e0 que tout commence... C'est aussi par
+    l\\\\u00e0 que commence le 5\\\\u00e8me rapport du GIEC, dans l'avant-propos de son r\\\\u00e9sum\\\\u00e9, il est mis en
+    \\\\u00e9vidence que la science montre \\\\u00e0 pr\\\\u00e9sent avec 95 % de certitude que depuis le milieu du XXe
+      si\\\\u00e8cle, l\\\\u2019activit\\\\u00e9 humaine est la cause principale du r\\\\u00e9chauffement observ\\\\u00e9.
+
+      [1]Cette carte peut \\\\u00eatre consid\\\\u00e9r\\\\u00e9e...\\\\nsoit comme la cause de l'ensemble des cartes secteurs \\\\u00e9conomiques (Industrie, Utilisation des b\\\\u00e2timents, Transport, Agriculture),\\\\nsoit comme un titre de l'ensemble de ces cartes
+      (qui sont alors regroup\\\\u00e9es dans une grosse \\\\u201cpatate\\\\u201c).\\\\n\\\\u2191 Extraits
+            de la contribution du Groupe de travail I au cinqui\\\\u00e8me Rapport d\\\\u2019\\\\u00e9valuation du GIEC,
+            avant-propos page v\\\\n\\\\n"
+`;

@@ -1,7 +1,9 @@
 const { getContent } = require('../fileServices/readFile');
-const { parseCausesEffects, parseBackDescription } = require('./pageContentParser');
+const { parseCausesEffects, parseBackDescription, parseExplanation } = require('./pageContentParser');
 
 const cardContent1FilePath = './src/tests/data/carte1.html';
+const cardContent1Section1FilePath = './src/tests/data/carte1-1.html';
+const cardContent1Section1BisFilePath = './src/tests/data/carte1-1bis.html';
 const cardContent3FilePath = './src/tests/data/carte3-0.html';
 
 describe('parse Page Content', () => {
@@ -31,6 +33,12 @@ describe('parse Page Content', () => {
   it('parse BackDescription card 3', async () => {
     const content = await getContent(cardContent3FilePath);
     const result = parseBackDescription(content);
+    expect(result).toMatchSnapshot();
+  });
+
+  it('parse Explanation card 1', async () => {
+    const content = await getContent(cardContent1Section1FilePath);
+    const result = parseExplanation(content);
     expect(result).toMatchSnapshot();
   });
 });
