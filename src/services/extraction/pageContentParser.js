@@ -59,11 +59,23 @@ module.exports.parseExplanation = (content, message = '') => {
   const { window: { document } } = new JSDOM(content);
   const blocks = Array.from(document.querySelectorAll("h2 ~ *"));
   assertMore('blocks count' + message, blocks.length, 1);
-  const explanation = blocks.reduce(mergeElements, '');
+  const explanation = blocks
+    .map(log)
+    .filter(elementIsNotReferenceNote)
+    .map(toText)
+    .map(replaceTextReference)
+    .reduce(mergeTexts, '');
   return explanation;
 };
-
-const mergeElements = (text, p) => text + p.textContent.trim();
+const log = el => {
+  console.log(el.className);
+  console.log('isNotRef =', el.className === "mw-references-wrap");
+  return el;
+};
+const elementIsNotReferenceNote = el => el.className !== "mw-references-wrap";
+const toText = (el) => el.textContent.trim();
+const replaceTextReference = (text) => text.replace('[1]', '').replace('[2]', '');
+const mergeTexts = (sum, text) => sum + text;
 
 const assertEqual = (message, actualNum, expectedNum) => {
   if (actualNum !== expectedNum) { throw new Error(`${message} is '${actualNum}' instead of '${expectedNum}'`); }

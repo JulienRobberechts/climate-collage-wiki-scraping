@@ -11,8 +11,6 @@ exports[`parse Page Content parse Explanation card 1 1`] = `
     \\\\u00e9vidence que la science montre \\\\u00e0 pr\\\\u00e9sent avec 95 % de certitude que depuis le milieu du XXe
       si\\\\u00e8cle, l\\\\u2019activit\\\\u00e9 humaine est la cause principale du r\\\\u00e9chauffement observ\\\\u00e9.
 
-      [1]Cette carte peut \\\\u00eatre consid\\\\u00e9r\\\\u00e9e...\\\\nsoit comme la cause de l'ensemble des cartes secteurs \\\\u00e9conomiques (Industrie, Utilisation des b\\\\u00e2timents, Transport, Agriculture),\\\\nsoit comme un titre de l'ensemble de ces cartes
-      (qui sont alors regroup\\\\u00e9es dans une grosse \\\\u201cpatate\\\\u201c).\\\\n\\\\u2191 Extraits
-            de la contribution du Groupe de travail I au cinqui\\\\u00e8me Rapport d\\\\u2019\\\\u00e9valuation du GIEC,
-            avant-propos page v\\\\n\\\\n"
+    Cette carte peut \\\\u00eatre consid\\\\u00e9r\\\\u00e9e...\\\\nsoit comme la cause de l'ensemble des cartes secteurs \\\\u00e9conomiques (Industrie, Utilisation des b\\\\u00e2timents, Transport, Agriculture),\\\\nsoit comme un titre de l'ensemble de ces cartes
+      (qui sont alors regroup\\\\u00e9es dans une grosse \\\\u201cpatate\\\\u201c)."
 `;
