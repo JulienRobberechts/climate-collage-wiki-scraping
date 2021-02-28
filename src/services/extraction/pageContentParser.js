@@ -58,7 +58,7 @@ module.exports.parseBackDescription = (content, message = '') => {
 module.exports.parseExplanation = (content, message = '') => {
   const { window: { document } } = new JSDOM(content);
   const blocks = Array.from(document.querySelectorAll("h2 ~ *"));
-  assertMore('blocks count' + message, blocks.length, 1);
+  // assertMore('blocks count' + message, blocks.length, 1);
   const explanation = blocks
     .map(log)
     .filter(elementIsNotReferenceNote)

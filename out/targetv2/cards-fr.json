@@ -87,7 +87,8 @@
     },
     "videoYoutubeCode": "EMi8CNnHVmE",
     "backDescription": "La déforestation consiste à couper ou brûler des arbres au-delà de la capacité de renouvellement de la forêt. Elle est liée à 80% à l’agriculture.",
-    "explanation": "La déforestation est le phénomène de régression durable des surfaces couvertes de forêts, qu'il soit d'origine anthropique ou naturelle. Si une forêt repousse après une coupe, une attaque d'insectes xylophage ou un feu, on ne parle pas de déforestation. La déforestation peut être considérée comme une activité humaine ou comme une conséquence de l'agriculture, ou encore les deux à la fois. Attention : le problème avec la déforestation, ce n'est pas que ça détruit des puits de carbone, c'est que ça émet du CO2. C'est une différence entre flux et stock.",
+    "definition": "La déforestation est le phénomène de régression durable des surfaces couvertes de forêts, qu'il soit d'origine anthropique ou naturelle. Si une forêt repousse après une coupe, une attaque d'insectes xylophage ou un feu, on ne parle pas de déforestation.",
+    "explanation": "La déforestation peut être considérée comme une activité humaine ou comme une conséquence de l'agriculture, ou encore les deux à la fois. Attention : le problème avec la déforestation, ce n'est pas que ça détruit des puits de carbone, c'est que ça émet du CO2. C'est une différence entre flux et stock.",
     "notes": [
       "Sur la déforestation, 93% du bois est brûlé (papier, agriculture, meubles jetables ......) pour 7% utilisé de manière durable (meuble, construction ...) ",
       "Les facteurs de déforestation. sont : (moyennes mondiales)     40% pour l'agriculture commerciale : élevage, culture du soja ou de palmier à huile 33% pour l'agriculture de subsistance locale, 10% pour l'expansion urbaine, 10% pour l'expansion des infrastructures, 7% pour l'extraction minière",
@@ -172,7 +173,7 @@
     },
     "videoYoutubeCode": "--H_a7k_sQ8",
     "backDescription": "La moitié du CO2 que nous émettons chaque année est absorbée par les puits de carbone : -la végétation pour 1/4 (via la photosynthèse) -l'océan pour 1/4 Le reste (1/2) reste dans l'atmosphère.",
-    "explanation": "Dans le rapport du GIEC, le graphique est directement le rassemblement des deux cartes, la Fresque l'a 'découpé'. Il montre d'où vient le CO2 et où il va.",
+    "explanation": "Le graphique original du du GIEC représente à la fois les émissions de CO2 et les puits de carbone. La Fresque a choisi de le scinder en deux afin de montrer d'une part d'où vient le CO2 et d'autre part où il va. C'est pourquoi les deux cartes sont exactement symétriques : chaque année, le CO2 émis par l'homme doit aller quelque part. Tout le CO2 qui n'est pas absorbé par les puits de carbone demeure dans l'atmosphère.Le texte à l'arrière de la carte donne la répartition approximative des taux d'absorption. Les pourcentages plus détaillés sont de :27.9% pour l'océan 28.8% pour la photosynthèse.",
     "notes": []
   },
   {
@@ -185,7 +186,7 @@
     },
     "videoYoutubeCode": "M_bdkLnLQAE",
     "backDescription": "L'effet de serre est naturel. D’ailleurs, le premier GES naturel est la vapeur d’eau. Sans l'effet de serre, la planète serait 33°C plus froide. Mais le CO2 et les autres GES dus à l'Homme augmentent cet effet de serre naturel ce qui réchauffe le climat.",
-    "explanation": "Sur cette carte, on voit des flèches de deux couleurs : le orange pour l'énergie qui vient du soleil (UV, lumière visible et infrarouge de haute fréquence) et celle qui est réfléchie par effet albedo à la même fréquence. L'albedo est la capacité d'un corps à renvoyer la lumière (un corps noir a un albedo de 0, un miroir a un albedo de 1. La terre a un albedo moyen de 0,31). le rouge pour les infrarouges de basse fréquences, émis par la terre qui est moins chaude que le soleil, ou retenus pas l'effet de serre. L'effet de serre repose sur le fait que ce ne soit pas la même rayonnement entrant que le rayonnement sortant. Sur la droite, '-18°C', c'est la température qu'il ferait sur terre sans l'effet de serre et '15°C', c'est la température réelle aujourd'hui. Il faisait '14°C' en 1850, c'est à dire avant que l'activité humaine ne produise cet effet de serre additionnel.",
+    "explanation": "Sur cette carte, on voit des flèches de deux couleurs :le orange pour l'énergie qui vient du soleil (UV, lumière visible et infrarouge de haute fréquence) et celle qui est réfléchie par effet albedo à la même fréquence. L'albedo est la capacité d'un corps à renvoyer la lumière (un corps noir a un albedo de 0, un miroir a un albedo de 1. La terre a un albedo moyen de 0,31). le rouge pour les infrarouges de basse fréquences, émis par la terre qui est moins chaude que le soleil, ou retenus pas l'effet de serre.L'effet de serre repose sur le fait que ce ne soit pas la même rayonnement entrant que le rayonnement sortant.Sur la droite, \"-18°C\", c'est la température qu'il ferait sur terre sans l'effet de serre et \"15°C\", c'est la température réelle aujourd'hui.Il faisait \"14°C\" en 1850, c'est à dire avant que l'activité humaine ne produise cet effet de serre additionnel.",
     "notes": []
   },
   {
@@ -198,7 +199,7 @@
     },
     "videoYoutubeCode": "lFT5Mx0eK3U",
     "backDescription": "Ce graphique explique où va l’énergie qui s’accumule sur la terre à cause du forçage radiatif : elle réchauffe l’océan, fait fondre la glace, se dissipe dans le sol et réchauffe l’atmosphère.",
-    "explanation": "",
+    "explanation": "Sur le graphique, on peut voir plusieurs couleurs qui représentent, du haut vers le bas :En bleu clair, la couche supérieure de l'océan, entre 0 et 700m En bleu foncé, la couche inférieure de l'océan, entre 700m et 2000m En blanc, les différentes glaces En orange, les sols En violet, l'atmosphèreLes pointillés représentent l'incertitude.",
     "notes": []
   },
   {
@@ -211,7 +212,7 @@
     },
     "videoYoutubeCode": "WYpGFCtFuNg",
     "backDescription": "Le forçage radiatif est la mesure du déséquilibre entre l'énergie qui arrive chaque seconde sur terre et celle qui repart. Il vaut 3,1 W/m2 (Watt par métre carré) pour l’effet de serre et − 0,8 W/m2 pour les aérosols, soit 2,3 W/m2 en tout.",
-    "explanation": "La terre reçoit de l'énergie du Soleil et en réémet vers l'espace sous forme d'infrarouges. En temps normal, elle est en équilibre thermique et sa température est constante. On appelle forçage radiatif tout ce qui lui fait quitter cet équilibre thermique, que ce soit d'origine naturelle (soleil, volcans) ou anthropique (aérosols, GES).",
+    "explanation": "La terre reçoit de l'énergie du Soleil et en réémet vers l'espace sous forme d'infrarouges. En temps normal, elle est en équilibre thermique et sa température est constante.On appelle forçage radiatif tout ce qui lui fait quitter cet équilibre thermique, que ce soit d'origine naturelle (soleil, volcans) ou anthropique (aérosols, GES).Attention : on a simplifié la définition à des fins pédagogiques. Une définition rigoureuse serait la suivante : \"Le forçage radiatif est la mesure du déséquilibre entre l'énergie qui arrive chaque seconde sur Terre et celle qui repartirait si la température était restée fixe depuis 1750\". Comme la température de la terre a augmenté entre temps, le delta entre les échanges de chaleur instantanés a diminué. De la même façon, en 2050, dans le scénario RCP2.6, le forçage sera de 2,6 W/m2 , mais la température se sera stabilisée, ce qui veut dire que le delta entre l'énergie entrante et sortant sera nul.",
     "notes": []
   },
   {
@@ -224,7 +225,8 @@
     },
     "videoYoutubeCode": "zRlMGkImeUs",
     "backDescription": "Presque tous les glaciers ont perdu de la masse. Des centaines ont même déjà disparu. Or ces glaciers ont un rôle régulateur sur l'approvisionnement en eau douce.",
-    "explanation": "On appellera ici glacier une accumulation de glace continentale issue de la transformation de la neige et soumise à un écoulement lent. On parlera ici de fonte d'un glacier lorsque la masse totale de glace a diminué sur la période considérée, quel·s que soi·en·t le·s processus en cause.",
+    "definition": "On appellera ici glacier une accumulation de glace continentale issue de la transformation de la neige et soumise à un écoulement lent. On parlera ici de fonte d'un glacier lorsque la masse totale de glace a diminué sur la période considérée, quel·s que soi·en·t le·s processus en cause.",
+    "explanation": "",
     "notes": []
   },
   {
@@ -237,12 +239,8 @@
     },
     "videoYoutubeCode": "TRhhK8tJ9ds",
     "backDescription": "L'océan absorbe 93% de l'énergie qui s'accumule sur la Terre. En se réchauffant, l'eau se dilate.",
-    "explanation": "L'océan se réchauffe de l'ordre du dixième de degré en surface et encore moins en profondeur. Comment cela se fait-il alors qu'il absorbe 93% de l'énergie en excès sur la terre ? C'est parce qu'il est beaucoup plus gros que l'atmosphère. Il a une capacité calorifique beaucoup plus grande.",
-    "notes": [
-      "l'océan couvre 71% de la surface de la terre et a une profondeur de 4000m en moyenne.",
-      "L'atmosphère s'étend sur une plus grande hauteur, mais si on le ramenait à la même densité que l'eau, il ne mesurerait plus que 10m (c'est pour ça qu'on gagne un atmosphère de pression tous les 10m quand on fait de la plongée).",
-      "L'eau se dilate très peu. Comment le réchauffement de l'océan de l'ordre d'un dixième de degré peut-il se traduire par un hausse du niveau de l'eau ? Une première réponse consiste à dire que l'océan fait 4000m de profondeur en moyenne, et donc une toute petite dilatation suffit à faire quelques centimètre. L'explication plus complète fait l'objet d'une fiche pratique."
-    ]
+    "explanation": "L'océan se réchauffe de l'ordre du dixième de degré en surface et encore moins en profondeur. Comment cela se fait-il alors qu'il absorbe 93% de l'énergie en excès sur la terre ? C'est parce qu'il est beaucoup plus gros que l'atmosphère. Il a une capacité calorifique beaucoup plus grande.Pour mesurer cela, il faut se rappeler que l'océan couvre 71% de la surface de la terre et qu'il a une profondeur de 4000m en moyenne. L'atmosphère s'étend sur une plus grande hauteur, mais si on le ramenait à la même densité que l'eau, il ne mesurerait plus que 10m (c'est pour ça qu'on gagne un atmosphère de pression tous les 10m quand on fait de la plongée).L'eau se dilate très peu. Comment le réchauffement de l'océan de l'ordre d'un dixième de degré peut-il se traduire par un hausse du niveau de l'eau ? Une première réponse consiste à dire que l'océan fait 4000m de profondeur en moyenne, et donc une toute petite dilatation suffit à faire quelques centimètre. L'explication plus complète fait l'objet d'une fiche pratique.",
+    "notes": []
   },
   {
     "cardNum": 18,
@@ -254,7 +252,7 @@
     },
     "videoYoutubeCode": "qtZ3J_HEHuA",
     "backDescription": "La fonte de la banquise n'est pas responsable de la montée des eaux (un glaçon qui fond dans du pastis ne fait pas déborder le verre).",
-    "explanation": "Pour une explication plus poussée du pourquoi du comment Archimède et tout et tout.",
+    "explanation": "Le volume occupé par la glace sous la surface est exactement le même que celui de la glace une fois fondue.",
     "notes": []
   },
   {
@@ -267,10 +265,10 @@
     },
     "videoYoutubeCode": "Btoz2BU9PFo",
     "backDescription": "Les calottes glaciaires sont le Groënland et l'Antarctique. Si elles fondaient intégralement, cela représenterait une augmentation du niveau de la mer de 7m pour le Groënland, et de 54m pour l'Antarctique. Durant la dernière ère glaciaire, les calottes étaient si importantes que le niveau de la mer était 120 m plus bas qu'aujourd'hui.",
-    "explanation": "Ces illustrations représentent le gain ou la perte de masse des calottes, indiqué en centimètre d'eau par année (cm d'eau/an) et mesuré par gravimétrie. En bleu le gain de masse (parce qu'il neige davantage) et en rouge les pertes (les glaciers s'écoulent plus vite vers l'océan).",
-    "notes": [
-      "On appellera ici calotte glaciaire (ou nappe glaciaire ou inlandsis) une masse de glace terrestre d’échelle continentale, suffisamment épaisse (entre 1600 et 6400m ) pour recouvrir la majeure partie des formations rocheuses sous jacentes. Il n’existe actuellement que deux grandes nappes glaciaires, une au Groenland et une en Antarctique. On parlera ici de fonte des calottes glaciaires lorsque la masse totale de glace a diminué sur la période considérée, quel·s que soi·en·t le·s processus en cause."
-    ]
+    "legend": "Ces illustrations représentent le gain ou la perte de masse des calottes, indiqué en centimètre d'eau par année (cm d'eau/an) et mesuré par gravimétrie. En bleu le gain de masse (parce qu'il neige davantage) et en rouge les pertes (les glaciers s'écoulent plus vite vers l'océan).",
+    "explanation": "",
+    "definitions": "On appellera ici calotte glaciaire (ou nappe glaciaire ou inlandsis) une masse de glace terrestre d’échelle continentale, suffisamment épaisse (entre 1600 et 6400m ) pour recouvrir la majeure partie des formations rocheuses sous jacentes. Il n’existe actuellement que deux grandes nappes glaciaires, une au Groenland et une en Antarctique. On parlera ici de fonte des calottes glaciaires lorsque la masse totale de glace a diminué sur la période considérée, quel·s que soi·en·t le·s processus en cause.",
+    "notes": []
   },
   {
     "cardNum": 20,
@@ -282,7 +280,7 @@
     },
     "videoYoutubeCode": "m16bWEIgUnI",
     "backDescription": "L'évaporation qui a lieu à la surface de l'océan augmente si l'eau et l'air se réchauffent. Cela fait plus de nuages qui feront ensuite de la pluie. Mais si l’évaporation a lieu sur terre, cela assèche le sol.",
-    "explanation": "Cette carte est importante. Elle matérialise à elle seule pourquoi on parlait autrefois de réchauffement climatique, puis maintenant de changement climatique, voire de dérèglement climatique. L'augmentation de température est en soi un problème, mais on voit sur la fresque, à la fin, que la perturbation du cycle de l'eau a beaucoup plus d'effets.",
+    "explanation": "Cette carte est importante. Elle matérialise à elle seule pourquoi on parlait autrefois de réchauffement climatique, puis maintenant de changement climatique, voire de dérèglement climatique.L'augmentation de température est en soi un problème, mais on voit sur la fresque, à la fin, que la perturbation du cycle de l'eau a beaucoup plus d'effets.",
     "notes": []
   },
   {
@@ -295,10 +293,8 @@
     },
     "videoYoutubeCode": "X0zSLQTEHD8",
     "backDescription": "On parle ici de la température de l’air au sol, en moyenne sur la surface de la Terre. Elle a déjà augmenté de près de 1°C depuis 1900. Selon les scénarios, elle aura augmenté de 2°C à 5°C d’ici 2100. Or, lors de la dernière période glaciaire (il y a 20.000 ans), elle était seulement 5°C plus basse qu’aujourd’hui... et la déglaciation a duré 10.000 ans !",
-    "explanation": "Quand on a gardé les cartes 10, 14 et 15, (version standard) cette carte représente la température de l'air donc de l'atmosphère.",
-    "notes": [
-      "Au rythme actuel de réchauffement, 0,2°C par décennie, le réchauffement atteindra 1,5°C entre 2030 et 2050 environ"
-    ]
+    "explanation": "Cette carte peut jouer deux rôles :Soit c'est la température de l'air, donc de l'atmosphère. C'est comme ça qu'il faut l'interpréter quand on a gardé les cartes 10, 14 et 15. Dans ce cas, la carte précédente est la 14. Soit elle représente la température de la terre (et ça tombe bien parce que la définition de la température de la terre, c'est justement la température de l'air, au sol, en moyenne sur la surface de la terre). Dans ce cas, la carte précédente est la 13 et on peut faire un lien vers les cartes 16, 17, 18 et 19.Au rythme actuel de réchauffement, 0,2°C par décennie, le réchauffement atteindra 1,5°C entre 2030 et 2050 environ.",
+    "notes": []
   },
   {
     "cardNum": 22,
@@ -310,12 +306,8 @@
     },
     "videoYoutubeCode": "iypRDzcMA-o",
     "backDescription": "Depuis 1900, le niveau de l’océan a monté de 20 cm. Cela est dû à la dilatation de l'eau, la fonte des glaciers et la fonte des calottes.",
-    "explanation": "",
-    "notes": [
-      "Il est important de noter que les prévisions concernant la hausse du niveau de l'eau sont très conservatrices. Certains phénomènes, qui sont compris d'un point de vu qualitatif, mais pas quantitatif, ne sont tout simplement pas chiffrés dans le rapport du GIEC.",
-      "C'est le cas des moulins, par exemple. Ce sont des passages entre l'eau des lacs glaciaires à la surface des calottes et le socle rocheux. Une fois que l'eau s'introduit dans ces passages, elle vient lubrifier le contact entre le socle rocheux et la calotte glaciaire, ce qui facilite la dérive des glaciers vers la mer.",
-      "Les chiffres concernant la montée des eaux seront donc très probablement revus à la hausse dans les prochains rapports."
-    ]
+    "explanation": "Il est important de noter que les prévisions concernant la hausse du niveau de l'eau sont très conservatrices. Certains phénomènes, qui sont compris d'un point de vu qualitatif, mais pas quantitatif, ne sont tout simplement pas chiffrés dans le rapport du GIEC.C'est le cas des moulins, par exemple. Ce sont des passages entre l'eau des lacs glaciaires à la surface des calottes et le socle rocheux. Une fois que l'eau s'introduit dans ces passages, elle vient lubrifier le contact entre le socle rocheux et la calotte glaciaire, ce qui facilite la dérive des glaciers vers la mer.Les chiffres concernant la montée des eaux seront donc très probablement revus à la hausse dans les prochains rapports.",
+    "notes": []
   },
   {
     "cardNum": 23,
@@ -327,10 +319,8 @@
     },
     "videoYoutubeCode": "A3zQW_C7RMI",
     "backDescription": "Si le pH baisse, la formation de calcaire devient plus difficile, notamment pour les coquilles.",
-    "explanation": "",
-    "notes": [
-      "La constitution du calcaire (calcification) est la réaction chimique suivante : Ca++ + 2HCO3- ⇔ CaCO3 + H2O + CO2. Elle nécessite la présence d'ions bicarbonate HCO3–. Or la quantité de ces ions dans l'eau dépend du pH : Dans l'eau, le dioxyde de carbone, l'acide carbonique, l'ion bicarbonate et l'ion carbonate sont en équilibre, en fonction du pH : CO2 + H2O ⇔ H2CO3 ⇔ H+ + HCO3– ⇔ 2 H+ + CO32–. L'ajout d'un acide déplace les équilibres vers la gauche. Dit autrement, si le pH baisse, les ions bicarbonates sont en moins grande quantité. D'où la difficulté de fabriquer du calcaire pour les organisme qui en ont besoin."
-    ]
+    "explanation": "La constitution du calcaire (calcification) est la réaction chimique suivante : Ca++ + 2HCO3- ⇔ CaCO3 + H2O + CO2Elle nécessite la présence d'ions bicarbonate HCO3–. Or la quantité de ces ions dans l'eau dépend du pH : Dans l'eau, le dioxyde de carbone, l'acide carbonique, l'ion bicarbonate et l'ion carbonate sont en équilibre, en fonction du pH :CO2 + H2O ⇔ H2CO3 ⇔ H+ + HCO3– ⇔ 2 H+ + CO32–.L'ajout d'un acide déplace les équilibres vers la gauche.Dit autrement, si le pH baisse, les ions bicarbonates sont en moins grande quantité. D'où la difficulté de fabriquer du calcaire pour les organisme qui en ont besoin.",
+    "notes": []
   },
   {
     "cardNum": 24,
@@ -342,7 +332,7 @@
     },
     "videoYoutubeCode": "XlaLH13Pups",
     "backDescription": "Quand le CO2 se dissout dans l'océan, il se transforme en des ions acides (H2CO3 puis HCO3–). Cela a pour effet d'acidifier l'océan (le pH baisse).",
-    "explanation": "L'acidification de l'océan est parfois appelée 'l'autre problème du carbone'. En effet, ce n'est pas à proprement parler une conséquence du changement climatique, mais une autre conséquence des émissions de CO2.",
+    "explanation": "L'acidification de l'océan est parfois appelée \"l'autre problème du carbone\". En effet, ce n'est pas à proprement parler une conséquence du changement climatique, mais une autre conséquence des émissions de CO2.",
     "notes": []
   },
   {
@@ -370,7 +360,7 @@
     },
     "videoYoutubeCode": "43Hf5wnz3Wk",
     "backDescription": "La perturbation du cycle de l'eau peut amener plus d'eau ou moins d’eau. Plus d'eau, cela peut engendrer des crues (inondations dans les terres). Si le sol a été durci par une sécheresse, c'est pire car l'eau ruisselle.",
-    "explanation": "Une crue est l'élevation du niveau d'un cours d'eau du au précipatitation ou a des fontes de neige ou de glace. Celle-ci est temporaire.",
+    "explanation": "Une crue est l'élévation du niveau d'un cours d'eau due aux précipitations ou à des fontes de neige ou de glace. Une crue est temporaire.",
     "notes": []
   },
   {
@@ -383,7 +373,7 @@
     },
     "videoYoutubeCode": "mMMByJIVkhc",
     "backDescription": "Ptéropodes et coccolithophores étant à la base de la chaîne alimentaire, leur disparition menace toute la biodiversité marine. Le réchauffement de l’eau joue aussi un rôle important dans la fragilisation de la biodiversité marine.",
-    "explanation": "Aujourd'hui, la biodiversité marine est plus mise en danger par la surpêche que par le changement climatique ou l'acidification. Mais à long terme, ces derniers vont considérablement augmenter leur pression. La FAO considère que dans le monde, entre 660 et 820 million d'individus sont directement ou indirectement dépendant de la pêche et de l'aquaculture. Soit à peu près 10% de la population mondiale.",
+    "explanation": "Aujourd'hui, la biodiversité marine est plus mise en danger par la surpêche que par le changement climatique ou l'acidification. Mais à long terme, ces derniers vont considérablement augmenter leur pression. La FAO considère que dans le monde, entre 660 et 820 millions d'individus sont directement ou indirectement dépendant de la pêche et de l'aquaculture. Soit à peu près 10% de la population mondiale.",
     "notes": []
   },
   {

@@ -1,7 +1,9 @@
 
 const sectionMain = 'Carte  adulte #';
+const sectionLegend = "Légende";
 const sectionDefinition = 'D\u00e9finition';
-const sectionExplanation = 'Explication';
+const sectionExplanation = 'Explications';
+const sectionExplanationLinks = 'Explications des lien';
 const sectionAdvice = "Conseils pour l'animation";
 const sectionOtherLinks = 'Autres liens possibles';
 const sectionOtherLinksCauses = ' causes';
@@ -18,6 +20,7 @@ module.exports = {
   sectionMain,
   sectionDefinition,
   sectionExplanation,
+  sectionExplanationLinks,
   sectionAdvice,
   sectionOtherLinks,
   sectionOtherLinksCauses,
