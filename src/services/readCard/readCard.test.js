@@ -27,7 +27,7 @@ const {
 const oneTo42 = [...Array(41).keys()].map(n => n + 1);
 const cards10To20 = [...Array(10).keys()].map(n => n + 10);
 const cards20To30 = [...Array(10).keys()].map(n => n + 20);
-const cards30To42 = [...Array(12).keys()].map(n => n + 30);
+const cards30To42 = [...Array(13).keys()].map(n => n + 30);
 
 describe('backDescription', () => {
   it.each(oneTo42)('check backDescription on card %i', async (cardNum) => {
@@ -46,7 +46,7 @@ describe('backDescription', () => {
 });
 
 describe('Explanation', () => {
-  it.each(cards20To30)('check Explanation on card %i', async (cardNum) => {
+  it.each(oneTo42)('check Explanation on card %i', async (cardNum) => {
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const explanation = await getExplanation(card.wikiId);
     expect(explanation).toStrictEqual(card.explanation);
