@@ -77,12 +77,6 @@ const getBackDescription = async (wikiId, message) => {
   return cleanUpString(backDescription);
 };
 
-const getExplanation = async (wikiId, message) => {
-  const cardContentSection1 = await getPageContent(wikiId, 1);
-  const explanation = parseExplanation(cardContentSection1, message);
-  return cleanUpString(explanation);
-};
-
 const cleanUpString = (input) => {
   const newline = /\n/gi;
   const displaystyle = /\{\\\\displaystyle\sm\^\{2\}\}/gi;
