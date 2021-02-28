@@ -4,6 +4,7 @@
 const {
   readCard,
   readCards,
+  getSectionContentByName,
   getBackDescription,
   getExplanation
 } = require('./readCard');
@@ -11,6 +12,17 @@ const {
 const {
   getCardsFrReferenceByCardNum
 } = require('../data-access/cardsRepo')
+
+const {
+  sectionMain,
+  sectionDefinition,
+  sectionExplanation,
+  sectionAdvice,
+  sectionOtherLinks,
+  sectionOtherLinksCauses,
+  sectionOtherLinksEffects,
+  sectionRef,
+} = require('../extraction/sectionExtractor');
 
 const oneTo42 = [...Array(41).keys()].map(n => n + 1);
 
@@ -170,3 +182,18 @@ describe.skip('readCard by batch', () => {
     expect(cards.length).toBe(3);
   }, 99000);
 });
+
+describe('getSectionContentByName', () => {
+  it('section Main 1', async () => {
+    const content = await getSectionContentByName(4, sectionMain);
+    expect(content.length).toBeGreaterThan(50);
+    expect(content).toMatchSnapshot();
+  });
+  it('section Main 1', async () => {
+    const mainSection1 = await getSectionContentByName(4, sectionMain);
+    expect(mainSection1).toMatchSnapshot();
+  });
+
+});
+
+

@@ -1,4 +1,3 @@
-const { getPageSections } = require('../wiki-api/getPageContent');
 
 const sectionMain = 'Carte  adulte #';
 const sectionDefinition = 'D\u00e9finition';
@@ -9,20 +8,13 @@ const sectionOtherLinksCauses = ' causes';
 const sectionOtherLinksEffects = ' cons\u00e9quences';
 const sectionRef = 'R\u00e9f\u00e9rences';
 
-const getSection = async (wikiId, sectionName) => {
-  const sections = await getPageSections(wikiId);
-  const section = retrieveSection(sections, sectionName);
-  return section;
-};
-
-const retrieveSectionIndex = (sections, sectionName) => {
+const getSectionIndex = (sections, sectionName) => {
   const sectionIndex = sections.findIndex((s) => s.line.includes(sectionName));
   return sectionIndex;
 };
 
 module.exports = {
-  getSection,
-  retrieveSectionIndex,
+  getSectionIndex,
   sectionMain,
   sectionDefinition,
   sectionExplanation,
