@@ -1,6 +1,7 @@
 [
   {
     "cardNum": 1,
+    "cardSet": 1,
     "title": "Activités humaines",
     "wikiId": 4,
     "wikiInternalName": "Fr-fr adulte carte 1 activités humaines",
@@ -13,6 +14,7 @@
   },
   {
     "cardNum": 2,
+    "cardSet": 2,
     "title": "Industrie",
     "wikiId": 12,
     "wikiInternalName": "Fr-fr adulte carte 2 industrie",
@@ -25,6 +27,7 @@
   },
   {
     "cardNum": 3,
+    "cardSet": 2,
     "title": "Utilisation des bâtiments",
     "wikiId": 14,
     "wikiInternalName": "Fr-fr adulte carte 3 utilisation des bâtiments",
@@ -37,6 +40,7 @@
   },
   {
     "cardNum": 4,
+    "cardSet": 2,
     "title": "Transport",
     "wikiId": 16,
     "wikiInternalName": "Fr-fr adulte carte 4 transport",
@@ -49,6 +53,7 @@
   },
   {
     "cardNum": 5,
+    "cardSet": 1,
     "title": "Énergies fossiles",
     "wikiId": 18,
     "wikiInternalName": "Fr-fr adulte carte 5 énergies fossiles",
@@ -61,6 +66,7 @@
   },
   {
     "cardNum": 6,
+    "cardSet": 2,
     "title": "Déforestation",
     "wikiId": 21,
     "wikiInternalName": "Fr-fr adulte carte 6 déforestation",
@@ -73,6 +79,7 @@
   },
   {
     "cardNum": 7,
+    "cardSet": 1,
     "title": "Émissions de CO2",
     "wikiId": 23,
     "wikiInternalName": "Fr-fr adulte carte 7 émissions de co2",
@@ -85,6 +92,7 @@
   },
   {
     "cardNum": 8,
+    "cardSet": 2,
     "title": "Agriculture",
     "wikiId": 8,
     "wikiInternalName": "Fr-fr adulte carte 8 agriculture",
@@ -97,6 +105,7 @@
   },
   {
     "cardNum": 9,
+    "cardSet": 2,
     "title": "Autres GES",
     "wikiId": 26,
     "wikiInternalName": "Fr-fr adulte carte 9 autres ges",
@@ -109,6 +118,7 @@
   },
   {
     "cardNum": 10,
+    "cardSet": 3,
     "title": "Aérosols",
     "wikiId": 28,
     "wikiInternalName": "Fr-fr adulte carte 10 aérosols",
@@ -121,6 +131,7 @@
   },
   {
     "cardNum": 11,
+    "cardSet": 2,
     "title": "Concentration en CO2 (ppm)",
     "wikiId": 30,
     "wikiInternalName": "Fr-fr adulte carte 11 concentration en co2",
@@ -133,6 +144,7 @@
   },
   {
     "cardNum": 12,
+    "cardSet": 2,
     "title": "Puits de carbone",
     "wikiId": 32,
     "wikiInternalName": "Fr-fr adulte carte 12 puits de carbone",
@@ -145,6 +157,7 @@
   },
   {
     "cardNum": 13,
+    "cardSet": 1,
     "title": "Effet de serre additionnel",
     "wikiId": 34,
     "wikiInternalName": "Fr-fr adulte carte 13 effet de serre additionnel",
@@ -157,6 +170,7 @@
   },
   {
     "cardNum": 14,
+    "cardSet": 3,
     "title": "Bilan énergétique",
     "wikiId": 36,
     "wikiInternalName": "Fr-fr adulte carte 14 bilan énergétique",
@@ -169,6 +183,7 @@
   },
   {
     "cardNum": 15,
+    "cardSet": 3,
     "title": "Forçage radiatif",
     "wikiId": 38,
     "wikiInternalName": "Fr-fr adulte carte 15 forçage radiatif",
@@ -181,6 +196,7 @@
   },
   {
     "cardNum": 16,
+    "cardSet": 3,
     "title": "Fonte des glaciers",
     "wikiId": 40,
     "wikiInternalName": "Fr-fr adulte carte 16 fonte des glaciers",
@@ -193,6 +209,7 @@
   },
   {
     "cardNum": 17,
+    "cardSet": 3,
     "title": "Hausse de la température de l'eau",
     "wikiId": 42,
     "wikiInternalName": "Fr-fr adulte carte 17 hausse température eau",
@@ -205,6 +222,7 @@
   },
   {
     "cardNum": 18,
+    "cardSet": 1,
     "title": "Fonte de la banquise",
     "wikiId": 44,
     "wikiInternalName": "Fr-fr adulte carte 18 fonte de la banquise",
@@ -217,6 +235,7 @@
   },
   {
     "cardNum": 19,
+    "cardSet": 3,
     "title": "Fonte des calottes glaciaires",
     "wikiId": 46,
     "wikiInternalName": "Fr-fr adulte carte 19 fonte des calottes glaciaires",
@@ -229,6 +248,7 @@
   },
   {
     "cardNum": 20,
+    "cardSet": 3,
     "title": "Perturbation du cycle de l'eau",
     "wikiId": 48,
     "wikiInternalName": "Fr-fr adulte carte 20 perturbation cycle eau",
@@ -241,6 +261,7 @@
   },
   {
     "cardNum": 21,
+    "cardSet": 1,
     "title": "Hausse de la température",
     "wikiId": 50,
     "wikiInternalName": "Fr-fr adulte carte 21 hausse température",
@@ -253,6 +274,7 @@
   },
   {
     "cardNum": 22,
+    "cardSet": 1,
     "title": "Montée des eaux",
     "wikiId": 52,
     "wikiInternalName": "Fr-fr adulte carte 22 montée des eaux",
@@ -265,6 +287,7 @@
   },
   {
     "cardNum": 23,
+    "cardSet": 4,
     "title": "Problèmes de calcification",
     "wikiId": 54,
     "wikiInternalName": "Fr-fr adulte carte 23 problèmes de calcification",
@@ -277,6 +300,7 @@
   },
   {
     "cardNum": 24,
+    "cardSet": 2,
     "title": "Acidification de l'océan",
     "wikiId": 56,
     "wikiInternalName": "Fr-fr adulte carte 24 acidification océan",
@@ -289,6 +313,7 @@
   },
   {
     "cardNum": 25,
+    "cardSet": 4,
     "title": "Biodiversité terrestre",
     "wikiId": 58,
     "wikiInternalName": "Fr-fr adulte carte 25 biodiversité terrestre",
@@ -301,6 +326,7 @@
   },
   {
     "cardNum": 26,
+    "cardSet": 4,
     "title": "Crues",
     "wikiId": 60,
     "wikiInternalName": "Fr-fr adulte carte 26 crues",
@@ -313,6 +339,7 @@
   },
   {
     "cardNum": 27,
+    "cardSet": 4,
     "title": "Biodiversité marine",
     "wikiId": 62,
     "wikiInternalName": "Fr-fr adulte carte 27 biodiversité marine",
@@ -325,6 +352,7 @@
   },
   {
     "cardNum": 28,
+    "cardSet": 5,
     "title": "Vecteurs de maladie",
     "wikiId": 64,
     "wikiInternalName": "Fr-fr adulte carte 28 vecteurs de maladie",
@@ -337,6 +365,7 @@
   },
   {
     "cardNum": 29,
+    "cardSet": 4,
     "title": "Ptéropodes et coccolithophores",
     "wikiId": 66,
     "wikiInternalName": "Fr-fr adulte carte 29 ptéropodes et coccolithophores",
@@ -349,6 +378,7 @@
   },
   {
     "cardNum": 30,
+    "cardSet": 4,
     "title": "Sécheresses",
     "wikiId": 68,
     "wikiInternalName": "Fr-fr adulte carte 30 sécheresses",
@@ -361,6 +391,7 @@
   },
   {
     "cardNum": 31,
+    "cardSet": 5,
     "title": "Ressources en eau douce",
     "wikiId": 70,
     "wikiInternalName": "Fr-fr adulte carte 31 ressources eau douce",
@@ -373,6 +404,7 @@
   },
   {
     "cardNum": 32,
+    "cardSet": 5,
     "title": "Baisse des rendements agricoles",
     "wikiId": 72,
     "wikiInternalName": "Fr-fr adulte carte 32 baisse rendements agricoles",
@@ -385,6 +417,7 @@
   },
   {
     "cardNum": 33,
+    "cardSet": 4,
     "title": "Submersions",
     "wikiId": 74,
     "wikiInternalName": "Fr-fr adulte carte 33 submersions",
@@ -397,6 +430,7 @@
   },
   {
     "cardNum": 34,
+    "cardSet": 4,
     "title": "Cyclones",
     "wikiId": 76,
     "wikiInternalName": "Fr-fr adulte carte 34 cyclones",
@@ -409,6 +443,7 @@
   },
   {
     "cardNum": 35,
+    "cardSet": 5,
     "title": "Incendies",
     "wikiId": 78,
     "wikiInternalName": "Fr-fr adulte carte 35 incendies",
@@ -421,6 +456,7 @@
   },
   {
     "cardNum": 36,
+    "cardSet": 5,
     "title": "Canicules",
     "wikiId": 80,
     "wikiInternalName": "Fr-fr adulte carte 36 canicules",
@@ -433,6 +469,7 @@
   },
   {
     "cardNum": 37,
+    "cardSet": 5,
     "title": "Famine",
     "wikiId": 82,
     "wikiInternalName": "Fr-fr adulte carte 37 famine",
@@ -445,6 +482,7 @@
   },
   {
     "cardNum": 38,
+    "cardSet": 5,
     "title": "Santé humaine",
     "wikiId": 84,
     "wikiInternalName": "Fr-fr adulte carte 38 santé humaine",
@@ -457,6 +495,7 @@
   },
   {
     "cardNum": 39,
+    "cardSet": 5,
     "title": "Réfugiés climatiques",
     "wikiId": 86,
     "wikiInternalName": "Fr-fr adulte carte 39 réfugiés climatiques",
@@ -469,6 +508,7 @@
   },
   {
     "cardNum": 40,
+    "cardSet": 5,
     "title": "Conflits armés",
     "wikiId": 88,
     "wikiInternalName": "Fr-fr adulte carte 40 conflits armés",
@@ -481,6 +521,7 @@
   },
   {
     "cardNum": 41,
+    "cardSet": 5,
     "title": "Permafrost",
     "wikiId": 90,
     "wikiInternalName": "Fr-fr adulte carte 41 permafrost",
@@ -493,6 +534,7 @@
   },
   {
     "cardNum": 42,
+    "cardSet": 5,
     "title": "Hydrates de méthane",
     "wikiId": 92,
     "wikiInternalName": "Fr-fr adulte carte 42 hydrates de méthane",

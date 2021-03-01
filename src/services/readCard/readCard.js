@@ -55,12 +55,14 @@ const getCardData = async (card) => {
   const explanation = await getExplanation(wikiId, `getExplanation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
   const {
     cardNum,
+    cardSet,
     title,
     wikiInternalName,
     wikiUrl
   } = card;
   return {
     cardNum,
+    cardSet,
     title,
     wikiId,
     wikiInternalName,

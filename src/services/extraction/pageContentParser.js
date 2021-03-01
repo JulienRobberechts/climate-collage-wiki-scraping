@@ -68,7 +68,7 @@ module.exports.parseExplanation = (content, message = '') => {
   return explanation;
 };
 const log = el => {
-  console.log(el.className);
+  // console.log(el.className);
   // console.log('isNotRef =', el.className === "mw-references-wrap");
   return el;
 };

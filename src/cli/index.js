@@ -137,14 +137,14 @@ const extractCardList = async () => {
 };
 
 const mergeCardsFiles = async () => {
-  const genericData = await getObject(`./data/2.cards.json`);
+  // const genericData = await getObject(`./data/2.cards.json`);
   const videoData = await getObject(`./data/external-sources/cards-videos-fr.json`);
   const transform = (data) => data.map(cardFR => ({
     ...cardFR,
-    ...genericData.find(c => c.cardNum === cardFR.cardNum),
+    // ...genericData.find(c => c.cardNum === cardFR.cardNum),
     ...videoData.find(c => c.cardNum === cardFR.cardNum),
   }));
-  await mapDataFile(`./data/2.cards-fr.json`, transform, `./data/5.cards-fr.json`);
+  await mapDataFile(`./data/2.cards-fr-v1.json`, transform, `./data/2.cards-fr-v2.json`);
   console.log('done');
 };
 
@@ -223,26 +223,26 @@ const extractLinksStruct = async () => {
 };
 
 const extractAllCards = async (fromCard, toCard) => {
-  await extractCardsStruct();
+  // await extractCardsStruct();
   await extractCardsLangFr();
   await mergeCardsFiles();
 };
 
-const extractCardsStruct = async (fromCard, toCard) => {
-  const inFilePath = `./data/1-cards-list.json`;
-  const transform = (data) => data.map(({
-    cardNum,
-    cardSet
-  }) => ({
-    cardNum,
-    cardSet
-  }));
-  const outFilePath = `./data/2.cards.json`;
-  await mapDataFile(inFilePath, transform, outFilePath);
-};
+// const extractCardsStruct = async (fromCard, toCard) => {
+//   const inFilePath = `./data/1-cards-list.json`;
+//   const transform = (data) => data.map(({
+//     cardNum,
+//     cardSet
+//   }) => ({
+//     cardNum,
+//     cardSet
+//   }));
+//   const outFilePath = `./data/2.cards.json`;
+//   await mapDataFile(inFilePath, transform, outFilePath);
+// };
 
 const extractCardsLangFr = async () => {
-  const filePath = `./data/2.cards-fr.json`;
+  const filePath = `./data/2.cards-fr-v1.json`;
   const cardsData = await readCards(1, 42);
   await writeObject(filePath, cardsData);
 };

@@ -33,7 +33,7 @@ describe('backDescription', () => {
   it.each(oneTo42)('check backDescription on card %i', async (cardNum) => {
     // const cardNum = 4;
     const card = await getCardsFrReferenceByCardNum(cardNum);
-    console.log('card 4', card);
+    // console.log('card 4', card);
     const backDescription = await getBackDescription(card.wikiId);
     expect(backDescription).toStrictEqual(card.backDescription);
   });
