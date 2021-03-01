@@ -7,7 +7,6 @@ const { buildAllValidLinks } = require('../services/linkCalculation/buildLinks')
 const { getObject } = require('../services/fileServices/readFile');
 const { mapDataFile } = require('../services/etl/transformData');
 
-
 const LANG_FR = 'Français';
 const LANG_EN = 'English (Not supported yet)';
 
@@ -118,7 +117,8 @@ const executeRequest = (answers) => {
       computeCardsLinks();
       break;
     case TRANSFORM_DATA:
-      extractYtFr();
+      mergeCardsFiles();
+      // extractYtFr();
       // extractLinksLanguage();
       // extractLinksStruct();
       // extractCardsLanguage();
@@ -134,6 +134,18 @@ const extractCardList = async () => {
   const cardsData = await readCardList();
   const filePath = `./out/1-cards-list.json`;
   await writeObject(filePath, cardsData);
+};
+
+const mergeCardsFiles = async () => {
+  const genericData = await getObject(`./out/2.cards.json`);
+  const videoData = await getObject(`./out/targetv2/cards-videos-fr.json`);
+  const transform = (data) => data.map(cardFR => ({
+    ...cardFR,
+    ...genericData.find(c => c.cardNum === cardFR.cardNum),
+    ...videoData.find(c => c.cardNum === cardFR.cardNum),
+  }));
+  await mapDataFile(`./out/2.cards-fr.json`, transform, `./out/5.cards-fr.json`);
+  console.log('done');
 };
 
 const extractYtFr = async () => {
@@ -213,6 +225,7 @@ const extractLinksStruct = async () => {
 const extractAllCards = async (fromCard, toCard) => {
   await extractCardsStruct();
   await extractCardsLangFr();
+  await mergeCardsFiles();
 };
 
 const extractCardsStruct = async (fromCard, toCard) => {
