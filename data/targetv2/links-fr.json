@@ -81,13 +81,13 @@
     "fromNum": 3,
     "toNum": 10,
     "status": "optional",
-    "Explanation": " Les bâtiments émettent peu d'aérosols de manière directe. Les seules émissions significatives sont les feux de cheminée. A Chamonix, 85% des particules fines présentes dans l'atmosphère proviennent de chauffage au bois. De manière indirecte, via la production d'électricité, il y a bien émissions de particules."
+    "Explanation": "Les bâtiments émettent peu d'aérosols de manière directe. Les seules émissions significatives sont les feux de cheminée. A Chamonix, 85% des particules fines présentes dans l'atmosphère proviennent de chauffage au bois. De manière indirecte, via la production d'électricité, il y a bien émissions de particules."
   },
   {
     "fromNum": 3,
     "toNum": 6,
     "status": "optional",
-    "Explanation": "Les bâtiments eux même causent moins de déforestation par rapport à l'agriculture. Ce ne sont pas les mêmes échelles.",
+    "Explanation": "On pourrait dire que le chauffage au bois des bâtiments est responsable de déforestation mais ce n'est pas significatif. On pourrait dire que l'espace utilisé pour les bâtiments pousse à la déforestation mais ce n'est pas le même ordre de grandeur. L'agriculture est la cause principale de la déforestation bien avant les bâtiments.",
     "source": "guide"
   },
   {

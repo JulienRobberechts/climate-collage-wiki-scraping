@@ -60,7 +60,7 @@ module.exports.parseExplanation = (content, message = '') => {
   const blocks = Array.from(document.querySelectorAll("h2 ~ *"));
   // assertMore('blocks count' + message, blocks.length, 1);
   const explanation = blocks
-    .map(log)
+    // .map(log)
     .filter(elementIsNotReferenceNote)
     .map(toText)
     .map(replaceTextReference)
@@ -68,11 +68,12 @@ module.exports.parseExplanation = (content, message = '') => {
   return explanation;
 };
 
-const log = el => {
-  // console.log(el.className);
-  // console.log('isNotRef =', el.className === "mw-references-wrap");
-  return el;
-};
+// const log = el => {
+//   // console.log(el.className);
+//   // console.log('isNotRef =', el.className === "mw-references-wrap");
+//   return el;
+// };
+
 const elementIsNotReferenceNote = el => el.className !== "mw-references-wrap";
 const toText = (el) => el.textContent.trim();
 const replaceTextReference = (text) => text.replace('[1]', '').replace('[2]', '');
@@ -99,9 +100,14 @@ module.exports.parseLinks = (content, message = '') => {
 const parseLink = (listItem) => {
   listItem.child
   const anchor = listItem.querySelector("a");
-  const Explanation = listItem.childNodes[1].textContent.trim();
-  return {
-    href: anchor.href,
-    Explanation,
-  }
+  const Explanation = listItem.textContent
+    .replace(anchor.textContent, '')
+    .replace('[1]', '')
+    .replace('[2]', '')
+    .trim();
+
+return {
+  href: anchor.href,
+  Explanation,
+}
 };
