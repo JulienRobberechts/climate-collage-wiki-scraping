@@ -124,6 +124,7 @@ const cleanUpString = (input) => {
     .replace("0 , 8 W / m 2 {\\displaystyle -0,8W/m^{2}}", "0,8 W/m2")
     .replace("2 , 3 W / m 2 {\\displaystyle 2,3W/m^{2}}", "2,3 W/m2")
     .replace("2 , 6 W / m 2 {\\displaystyle 2,6W/m^{2}}", "2,6 W/m2")
+    .replace(/:([A-Z])/g, ": $1")
     .replace(/\.([A-Z])/g, ". $1");
 };
 

@@ -76,8 +76,8 @@ describe('Explanation', () => {
     const explanation = await getExplanation(card.wikiId);
     expect(explanation).toStrictEqual(card.explanation);
   });
-  it('check Explanation on card 15', async () => {
-    const cardNum = 15;
+  it('check Explanation on card 13', async () => {
+    const cardNum = 13;
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const explanation = await getExplanation(card.wikiId);
     expect(explanation).toStrictEqual(card.explanation);
