@@ -138,7 +138,7 @@ const extractCardList = async () => {
 
 const mergeCardsFiles = async () => {
   const genericData = await getObject(`./data/2.cards.json`);
-  const videoData = await getObject(`./data/targetv2/cards-videos-fr.json`);
+  const videoData = await getObject(`./data/external-sources/cards-videos-fr.json`);
   const transform = (data) => data.map(cardFR => ({
     ...cardFR,
     ...genericData.find(c => c.cardNum === cardFR.cardNum),
@@ -148,19 +148,19 @@ const mergeCardsFiles = async () => {
   console.log('done');
 };
 
-const extractYtFr = async () => {
-  const inFilePath = `./data/current-data/cards.json`;
-  const transform = (data) => data.map(({
-    cardNum,
-    youtubeCode,
-  }) => ({
-    cardNum,
-    videoYoutubeCode: youtubeCode,
-  }));
-  const outFilePath = `./data/targetv2/cards-videos-fr.json`;
-  await mapDataFile(inFilePath, transform, outFilePath);
-  console.log('done');
-};
+// const extractYtFr = async () => {
+//   const inFilePath = `./data/current-data/cards.json`;
+//   const transform = (data) => data.map(({
+//     cardNum,
+//     youtubeCode,
+//   }) => ({
+//     cardNum,
+//     videoYoutubeCode: youtubeCode,
+//   }));
+//   const outFilePath = `./data/external-sources/cards-videos-fr.json`;
+//   await mapDataFile(inFilePath, transform, outFilePath);
+//   console.log('done');
+// };
 
 const extractCardsLanguage = async () => {
   const inFilePath = `./data/current-data/cards.json`;
