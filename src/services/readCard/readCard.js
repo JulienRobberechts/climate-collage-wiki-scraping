@@ -6,7 +6,8 @@ const { getSectionContent, getPageSections } = require('../wiki-api/getPageConte
 const {
   parseCausesEffects,
   parseBackDescription,
-  parseExplanation
+  parseExplanation,
+  parseLinks
 } = require('../extraction/pageContentParser');
 
 const { getImageInfo } = require('../wiki-api/getImageInfo');
@@ -105,6 +106,12 @@ const getExplanation = async (wikiId, message) => {
   return cleanUpString(explanation);
 };
 
+const getLinksEffects = async (wikiId, message) => {
+  const content = await getSectionContentByName(wikiId, sectionOtherLinksEffects);
+  const links = parseLinks(content, message);
+  return links;
+};
+
 const cleanUpString = (input) => {
   const newline = /\n/gi;
   const displaystyle = /\{\\\\displaystyle\sm\^\{2\}\}/gi;
@@ -156,5 +163,6 @@ module.exports = {
   readAllRelations,
   getBackDescription,
   getExplanation,
-  getSectionContentByName
+  getSectionContentByName,
+  getLinksEffects
 };

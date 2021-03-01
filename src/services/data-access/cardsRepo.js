@@ -33,6 +33,14 @@ const getCardsFrReferenceByCardNum = async (cardNum) => {
   return cards.find(c => c.cardNum === cardNum);
 }
 
+const getLinksFrReference = () =>
+  getObject(`./data/targetv2/links-fr.json`);
+
+const getLinksEffectFrRef = async (cardNumFrom, status) => {
+  const cards = await getLinksFrReference();
+  return cards.filter(l => l.fromNum === cardNumFrom && l.status === status);
+}
+
 // const getCardsRelations = async () => {
 //   const sourceFile = `./data/3.cards-relations-tmp.json`;
 //   const cards = await getObject(sourceFile);
@@ -46,5 +54,6 @@ module.exports = {
   // getCardStructByCardNum,
   // getCardFrByCardNum,
   // getCardsFrReference,
-  getCardsFrReferenceByCardNum
+  getCardsFrReferenceByCardNum,
+  getLinksEffectFrRef
 };
