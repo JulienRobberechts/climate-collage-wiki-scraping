@@ -69,7 +69,7 @@ module.exports.parseExplanation = (content, message = '') => {
 };
 const log = el => {
   console.log(el.className);
-  console.log('isNotRef =', el.className === "mw-references-wrap");
+  // console.log('isNotRef =', el.className === "mw-references-wrap");
   return el;
 };
 const elementIsNotReferenceNote = el => el.className !== "mw-references-wrap";
