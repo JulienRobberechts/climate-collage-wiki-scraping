@@ -12,12 +12,12 @@
   {
     "toclevel": 1,
     "level": "2",
-    "line": "Explication",
+    "line": "Explications",
     "number": "2",
     "index": "1",
     "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
     "byteoffset": 63,
-    "anchor": "Explication"
+    "anchor": "Explications"
   },
   {
     "toclevel": 1,
@@ -26,7 +26,7 @@
     "number": "3",
     "index": "2",
     "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
-    "byteoffset": 1066,
+    "byteoffset": 1067,
     "anchor": "Autres_liens_possibles"
   },
   {
@@ -36,7 +36,7 @@
     "number": "3.1",
     "index": "3",
     "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
-    "byteoffset": 1096,
+    "byteoffset": 1097,
     "anchor": "Lien_causes"
   },
   {
@@ -46,7 +46,7 @@
     "number": "3.2",
     "index": "4",
     "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
-    "byteoffset": 2123,
+    "byteoffset": 2124,
     "anchor": "Lien_cons.C3.A9quences"
   },
   {
@@ -56,7 +56,7 @@
     "number": "4",
     "index": "5",
     "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
-    "byteoffset": 2836,
+    "byteoffset": 2837,
     "anchor": "R.C3.A9f.C3.A9rences"
   }
 ]

@@ -4,7 +4,8 @@ exports[`readCard read carte_9 1`] = `
 Object {
   "backDescription": "Le CO2 n'est pas le seul Gaz à Effet de Serre. Il y a aussi le méthane (CH4) et le protoxyde d'azote (N2O) (qui viennent en très grande partie de l'agriculture), ainsi que quelques autres.",
   "cardNum": 9,
-  "explanation": "Définition et origines[modifier | modifier le wikicode]Les autres GES décrits ici sont le méthane et le protoxyde d'azote. En réalité, il y en quelques autres comme les HFC (fluides réfrigérants).Il y a dégagement de méthane dès qu'il y a une décomposition anaérobie (c’est-à-dire sans oxygène) :dans la panse des vaches qu'on appelle aussi le rumen et qui donne son nom aux ruminants (dans le rumen, les bactéries \\"digèrent\\" la cellulose que la vache ne sait pas métaboliser, puis la vache régurgite cette herbe pour la mâcher et l'avaler pour de bon). dans les rizières car elles sont couvertes d'eau, et la matière organique immergée ne reçoit pas d'oxygène quand elle se décompose. dans les décharges de déchets, quand les tas sont trop grands pour que l'oxygène atteigne le fond du tas.Le méthane est aussi le composant principal du gaz naturel. Les fuites sur les gazoducs font donc aussi du méthane.Le protoxyde d’azote (N2O) est principalement dû à l’utilisation d’engrais azotés agricoles, à la production d’aliments pour bétail et à certains procédés chimiques, comme la production d’acide nitrique.Il y a encore les gaz fluorés qui sont utilisés comme réfrigérants (climatisation et chaînes du froid), extincteurs et dans certains procédés industriels et biens de consommation (comme certains dissolvants). Ils ne sont pas naturellement présents dans l’atmosphère.Potentiel de réchauffement global[modifier | modifier le wikicode]Quand on parle des émissions d'autres GES, on les mesure en CO2eq (CO2 équivalent), cela permet de ramener les émissions d'autres GES à celle de CO2 sur une base comparable. On parle alors de Potentiel de réchauffement global (PRG) d'un gaz à un certain horizon de temps.Potentiel de réchauffement global de certains gaz Durée de vie en année PRG20 PRG100 CH4 12.4 84 28 N2O 121 264 265",
+  "cardSet": 2,
+  "explanation": "Les autres GES décrits ici sont le méthane et le protoxyde d'azote. En réalité, il y en quelques autres comme les HFC (fluides réfrigérants). Il y a dégagement de méthane dès qu'il y a une décomposition anaérobie (c’est-à-dire sans oxygène) :dans la panse des vaches qu'on appelle aussi le rumen et qui donne son nom aux ruminants (dans le rumen, les bactéries \\"digèrent\\" la cellulose que la vache ne sait pas métaboliser, puis la vache régurgite cette herbe pour la mâcher et l'avaler pour de bon). dans les rizières car elles sont couvertes d'eau, et la matière organique immergée ne reçoit pas d'oxygène quand elle se décompose. dans les décharges de déchets, quand les tas sont trop grands pour que l'oxygène atteigne le fond du tas. Le méthane est aussi le composant principal du gaz naturel. Les fuites sur les gazoducs font donc aussi du méthane. Le protoxyde d’azote (N2O) est principalement dû à l’utilisation d’engrais azotés agricoles, à la production d’aliments pour bétail et à certains procédés chimiques, comme la production d’acide nitrique. Il y a encore les gaz fluorés qui sont utilisés comme réfrigérants (climatisation et chaînes du froid), extincteurs et dans certains procédés industriels et biens de consommation (comme certains dissolvants). Ils ne sont pas naturellement présents dans l’atmosphère.",
   "img": Object {
     "url": "https://fresqueduclimat.org/wiki/images/3/38/Fr-fr_adulte_carte_9_recto.png",
   },
@@ -15,17 +16,18 @@ Object {
 }
 `;
 
-exports[`readCard read carte_14 1`] = `
+exports[`readCard read carte_13 1`] = `
 Object {
-  "backDescription": "Ce graphique explique où va l’énergie qui s’accumule sur la terre à cause du forçage radiatif : elle réchauffe l’océan, fait fondre la glace, se dissipe dans le sol et réchauffe l’atmosphère.",
-  "cardNum": 14,
-  "explanation": "Sur le graphique, on peut voir plusieurs couleurs qui représentent, du haut vers le bas :En bleu clair, la couche supérieure de l'océan, entre 0 et 700m En bleu foncé, la couche inférieure de l'océan, entre 700m et 2000m En blanc, les différentes glaces En orange, les sols En violet, l'atmosphèreLes pointillés représentent l'incertitude.",
+  "backDescription": "L'effet de serre est naturel. D’ailleurs, le premier GES naturel est la vapeur d’eau. Sans l'effet de serre, la planète serait 33°C plus froide. Mais le CO2 et les autres GES dus à l'Homme augmentent cet effet de serre naturel ce qui réchauffe le climat.",
+  "cardNum": 13,
+  "cardSet": 1,
+  "explanation": "Sur cette carte, on voit des flèches de deux couleurs : Le orange pour l'énergie qui vient du soleil (UV, lumière visible et infrarouge de haute fréquence) et celle qui est réfléchie par effet albedo à la même fréquence. L'albedo est la capacité d'un corps à renvoyer la lumière (un corps noir a un albedo de 0, un miroir a un albedo de 1. La terre a un albedo moyen de 0,31). Le rouge pour les infrarouges de basse fréquences, émis par la terre qui est moins chaude que le soleil, ou retenus pas l'effet de serre. L'effet de serre repose sur le fait que ce ne soit pas la même rayonnement entrant que le rayonnement sortant. Sur la droite, \\"-18°C\\", c'est la température qu'il ferait sur terre sans l'effet de serre et \\"15°C\\", c'est la température réelle aujourd'hui. Il faisait \\"14°C\\" en 1850, c'est à dire avant que l'activité humaine ne produise cet effet de serre additionnel.",
   "img": Object {
-    "url": "https://fresqueduclimat.org/wiki/images/f/fe/Fr-fr_adulte_carte_14_recto.png",
+    "url": "https://fresqueduclimat.org/wiki/images/1/15/Fr-fr_adulte_carte_13_recto.png",
   },
-  "title": "Bilan énergétique",
-  "wikiId": 36,
-  "wikiInternalName": "Fr-fr adulte carte 14 bilan énergétique",
-  "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_14_bilan_%C3%A9nerg%C3%A9tique",
+  "title": "Effet de serre additionnel",
+  "wikiId": 34,
+  "wikiInternalName": "Fr-fr adulte carte 13 effet de serre additionnel",
+  "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_13_effet_de_serre_additionnel",
 }
 `;

@@ -4,85 +4,7 @@
 const {
   readCard,
   readCards,
-  getSectionContentByName,
-  getBackDescription,
-  getExplanation
 } = require('./readCard');
-
-const {
-  getCardsFrReferenceByCardNum
-} = require('../data-access/cardsRepo')
-
-const {
-  sectionMain,
-  sectionDefinition,
-  sectionExplanation,
-  sectionAdvice,
-  sectionOtherLinks,
-  sectionOtherLinksCauses,
-  sectionOtherLinksEffects,
-  sectionRef,
-} = require('../extraction/sectionExtractor');
-
-const oneTo42 = [...Array(41).keys()].map(n => n + 1);
-const cards10To20 = [...Array(10).keys()].map(n => n + 10);
-const cards20To30 = [...Array(10).keys()].map(n => n + 20);
-const cards30To42 = [...Array(13).keys()].map(n => n + 30);
-
-describe('backDescription', () => {
-  it.each(oneTo42)('check backDescription on card %i', async (cardNum) => {
-    // const cardNum = 4;
-    const card = await getCardsFrReferenceByCardNum(cardNum);
-    // console.log('card 4', card);
-    const backDescription = await getBackDescription(card.wikiId);
-    expect(backDescription).toStrictEqual(card.backDescription);
-  });
-  it('check backDescription on card 15', async () => {
-    const cardNum = 15;
-    const card = await getCardsFrReferenceByCardNum(cardNum);
-    const backDescription = await getBackDescription(card.wikiId);
-    expect(backDescription).toStrictEqual(card.backDescription);
-  });
-});
-
-describe('Explanation', () => {
-  it.each(oneTo42)('check Explanation on card %i', async (cardNum) => {
-    const card = await getCardsFrReferenceByCardNum(cardNum);
-    const explanation = await getExplanation(card.wikiId);
-    expect(explanation).toStrictEqual(card.explanation);
-  });
-  it('check Explanation on card 1', async () => {
-    const cardNum = 1;
-    const card = await getCardsFrReferenceByCardNum(cardNum);
-    const explanation = await getExplanation(card.wikiId);
-    expect(explanation).toStrictEqual(card.explanation);
-  });
-  it('check Explanation on card 3', async () => {
-    const cardNum = 3;
-    const card = await getCardsFrReferenceByCardNum(cardNum);
-    const explanation = await getExplanation(card.wikiId);
-    expect(explanation).toStrictEqual(card.explanation);
-  });
-  it('check Explanation on card 6', async () => {
-    const cardNum = 6;
-    const card = await getCardsFrReferenceByCardNum(cardNum);
-    const explanation = await getExplanation(card.wikiId);
-    expect(explanation).toStrictEqual(card.explanation);
-  });
-
-  it('check Explanation on card 9', async () => {
-    const cardNum = 9;
-    const card = await getCardsFrReferenceByCardNum(cardNum);
-    const explanation = await getExplanation(card.wikiId);
-    expect(explanation).toStrictEqual(card.explanation);
-  });
-  it('check Explanation on card 13', async () => {
-    const cardNum = 13;
-    const card = await getCardsFrReferenceByCardNum(cardNum);
-    const explanation = await getExplanation(card.wikiId);
-    expect(explanation).toStrictEqual(card.explanation);
-  });
-});
 
 describe('readCard', () => {
   it('read carte_1', async () => {
@@ -153,8 +75,8 @@ describe('readCard', () => {
     const pageData = await readCard(cardNumber);
     expect(pageData).toMatchSnapshot();
   });
-  it('read carte_14', async () => {
-    const cardNumber = 14;
+  it('read carte_13', async () => {
+    const cardNumber = 13;
     const pageData = await readCard(cardNumber);
     expect(pageData).toMatchSnapshot();
   });
@@ -186,18 +108,3 @@ describe.skip('readCard by batch', () => {
     expect(cards.length).toBe(3);
   }, 99000);
 });
-
-describe('getSectionContentByName', () => {
-  it('section Main 1', async () => {
-    const content = await getSectionContentByName(4, sectionMain);
-    expect(content.length).toBeGreaterThan(50);
-    expect(content).toMatchSnapshot();
-  });
-  it('section Main 1', async () => {
-    const mainSection1 = await getSectionContentByName(4, sectionMain);
-    expect(mainSection1).toMatchSnapshot();
-  });
-
-});
-
-

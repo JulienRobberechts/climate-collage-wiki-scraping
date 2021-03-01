@@ -3,7 +3,7 @@
 const buildAllValidLinks = (cardsRelations) => {
   const links = Array.from(new Array(cardsRelations.length), (_x, i) => i + 1)
     .map((n) => buildLinks(cardsRelations, n));
-  const linksFlat = links.flat();
+  const linksFlat = [].concat(...links); // links.flat();
   const linksClean = dedupLinks(linksFlat);
   const linksCleanValid = linksClean.map(l => ({
     ...l,
