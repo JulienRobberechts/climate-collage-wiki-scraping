@@ -1,7 +1,7 @@
 const { getObject } = require('../fileServices/readFile.js');
 
 const getCardsList = async () => {
-  const sourceFile = `./out/1-cards-list.json`;
+  const sourceFile = `./data/1-cards-list.json`;
   const cards = await getObject(sourceFile);
   return cards;
 }
@@ -12,7 +12,7 @@ const getCardStructByCardNum = async (cardNum) => {
 }
 
 const getCardsListFr = async () => {
-  const sourceFile = `./out/2.cards-fr.json`;
+  const sourceFile = `./data/2.cards-fr.json`;
   const cards = await getObject(sourceFile);
   return cards;
 }
@@ -23,7 +23,7 @@ const getCardFrByCardNum = async (cardNum) => {
 }
 
 const getCardsFrReference = async () => {
-  const sourceFile = `./out/targetv2/cards-fr.json`;
+  const sourceFile = `./data/targetv2/cards-fr.json`;
   const cards = await getObject(sourceFile);
   return cards;
 }
@@ -34,7 +34,7 @@ const getCardsFrReferenceByCardNum = async (cardNum) => {
 }
 
 const getCardsRelations = async () => {
-  const sourceFile = `./out/3.cards-relations-tmp.json`;
+  const sourceFile = `./data/3.cards-relations-tmp.json`;
   const cards = await getObject(sourceFile);
   return cards;
 }

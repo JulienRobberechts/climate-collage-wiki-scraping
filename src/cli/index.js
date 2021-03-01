@@ -132,24 +132,24 @@ const executeRequest = (answers) => {
 
 const extractCardList = async () => {
   const cardsData = await readCardList();
-  const filePath = `./out/1-cards-list.json`;
+  const filePath = `./data/1-cards-list.json`;
   await writeObject(filePath, cardsData);
 };
 
 const mergeCardsFiles = async () => {
-  const genericData = await getObject(`./out/2.cards.json`);
-  const videoData = await getObject(`./out/targetv2/cards-videos-fr.json`);
+  const genericData = await getObject(`./data/2.cards.json`);
+  const videoData = await getObject(`./data/targetv2/cards-videos-fr.json`);
   const transform = (data) => data.map(cardFR => ({
     ...cardFR,
     ...genericData.find(c => c.cardNum === cardFR.cardNum),
     ...videoData.find(c => c.cardNum === cardFR.cardNum),
   }));
-  await mapDataFile(`./out/2.cards-fr.json`, transform, `./out/5.cards-fr.json`);
+  await mapDataFile(`./data/2.cards-fr.json`, transform, `./data/5.cards-fr.json`);
   console.log('done');
 };
 
 const extractYtFr = async () => {
-  const inFilePath = `./out/current-data/cards.json`;
+  const inFilePath = `./data/current-data/cards.json`;
   const transform = (data) => data.map(({
     cardNum,
     youtubeCode,
@@ -157,13 +157,13 @@ const extractYtFr = async () => {
     cardNum,
     videoYoutubeCode: youtubeCode,
   }));
-  const outFilePath = `./out/targetv2/cards-videos-fr.json`;
+  const outFilePath = `./data/targetv2/cards-videos-fr.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
 
 const extractCardsLanguage = async () => {
-  const inFilePath = `./out/current-data/cards.json`;
+  const inFilePath = `./data/current-data/cards.json`;
   const transform = (data) => data.map(({
     cardNum,
     id,
@@ -185,13 +185,13 @@ const extractCardsLanguage = async () => {
     explanation,
     notes,
   }));
-  const outFilePath = `./out/targetv2/cards-fr.json`;
+  const outFilePath = `./data/targetv2/cards-fr.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
 
 const extractLinksLanguage = async () => {
-  const inFilePath = `./out/current-data/links.json`;
+  const inFilePath = `./data/current-data/links.json`;
   const transform = (data) => data.map(({
     fromNum,
     toNum,
@@ -201,13 +201,13 @@ const extractLinksLanguage = async () => {
     toNum,
     explanation: Explanation
   }));
-  const outFilePath = `./out/targetv2/links-fr.json`;
+  const outFilePath = `./data/targetv2/links-fr.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
 
 const extractLinksStruct = async () => {
-  const inFilePath = `./out/current-data/links.json`;
+  const inFilePath = `./data/current-data/links.json`;
   const transform = (data) => data.map(({
     fromNum,
     toNum,
@@ -217,7 +217,7 @@ const extractLinksStruct = async () => {
     toNum,
     status
   }));
-  const outFilePath = `./out/targetv2/links.json`;
+  const outFilePath = `./data/targetv2/links.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
   console.log('done');
 };
@@ -229,7 +229,7 @@ const extractAllCards = async (fromCard, toCard) => {
 };
 
 const extractCardsStruct = async (fromCard, toCard) => {
-  const inFilePath = `./out/1-cards-list.json`;
+  const inFilePath = `./data/1-cards-list.json`;
   const transform = (data) => data.map(({
     cardNum,
     cardSet
@@ -237,18 +237,18 @@ const extractCardsStruct = async (fromCard, toCard) => {
     cardNum,
     cardSet
   }));
-  const outFilePath = `./out/2.cards.json`;
+  const outFilePath = `./data/2.cards.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
 };
 
 const extractCardsLangFr = async () => {
-  const filePath = `./out/2.cards-fr.json`;
+  const filePath = `./data/2.cards-fr.json`;
   const cardsData = await readCards(1, 42);
   await writeObject(filePath, cardsData);
 };
 
 const extractSomeCardsLangFr = async (fromCard, toCard) => {
-  const filePath = `./out/cards-${fromCard}-${toCard}.json`;
+  const filePath = `./data/cards-${fromCard}-${toCard}.json`;
   process.stdout.write(`\nCards data in file '${filePath}' ...`);
   const cardsData = await readCards(fromCard, toCard);
   await writeObject(filePath, cardsData);
@@ -257,12 +257,12 @@ const extractSomeCardsLangFr = async (fromCard, toCard) => {
 
 const extractCardsLinksFromFR = async (fromCard, toCard) => {
   const cardsRelations = await readAllRelations(fromCard, toCard);
-  await writeObject(`./out/3.cards-relations-tmp.json`, cardsRelations);
+  await writeObject(`./data/3.cards-relations-tmp.json`, cardsRelations);
 };
 
 const computeCardsLinks = async () => {
-  const cardsRelations = await getObject(`./out/3.cards-relations-tmp.json`);
+  const cardsRelations = await getObject(`./data/3.cards-relations-tmp.json`);
   const links = await buildAllValidLinks(cardsRelations);
-  await writeObject(`./out/4.valid-links.json`, links);
+  await writeObject(`./data/4.valid-links.json`, links);
   console.log('done');
 };

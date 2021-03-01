@@ -27,14 +27,14 @@ const {
 const { sleepRandom } = require("../time/wait");
 
 const readCard = async (cardNumber) => {
-  const sourceFile = `./out/1-cards-list.json`;
+  const sourceFile = `./data/1-cards-list.json`;
   const cards = await getObject(sourceFile);
   const card = cards.find(({ cardNum }) => cardNum === cardNumber);
   return await getCardData(card);
 };
 
 const readCards = async (fromCard, toCard) => {
-  const sourceFile = `./out/1-cards-list.json`;
+  const sourceFile = `./data/1-cards-list.json`;
   const cards = await getObject(sourceFile);
 
   const cardsData = [];
@@ -126,7 +126,7 @@ const cleanUpString = (input) => {
 };
 
 const readAllRelations = async (fromCard, toCard) => {
-  const sourceFile = `./out/1-cards-list.json`;
+  const sourceFile = `./data/1-cards-list.json`;
   const cards = await getObject(sourceFile);
 
   const relationsData = [];
