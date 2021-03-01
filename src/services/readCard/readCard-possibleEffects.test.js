@@ -20,9 +20,10 @@ describe('PossibleEffects', () => {
   //   expect(explanation).toStrictEqual(card.explanation);
   // });
   it('check links effect 1', async () => {
-    const card = await getCardsFrReferenceByCardNum(1);
-    const expectedLink = await getLinksEffectFrRef(1, 'optional');
-    const actualLinks = await getLinksEffects(card.wikiId);
+    const cardNum = 1;
+    const card = await getCardsFrReferenceByCardNum(cardNum);
+    const expectedLink = await getLinksEffectFrRef(cardNum, 'optional');
+    const actualLinks = await getLinksEffects(cardNum, card.wikiId);
     expect(actualLinks.sort(linkOrder)).toStrictEqual(expectedLink.sort(linkOrder));
   });
 });

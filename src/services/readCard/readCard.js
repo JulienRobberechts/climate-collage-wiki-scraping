@@ -26,6 +26,9 @@ const {
 } = require('../extraction/sectionExtractor');
 
 const { sleepRandom } = require("../time/wait");
+const { getCardsFrReferenceByCardNum } = require('../data-access/cardsRepo.js');
+
+const { getCardNumberFromUrl } = require('../linkCalculation/buildLinks');
 
 const readCard = async (cardNumber) => {
   const sourceFile = `./data/1-cards-list.json`;
@@ -106,9 +109,14 @@ const getExplanation = async (wikiId, message) => {
   return cleanUpString(explanation);
 };
 
-const getLinksEffects = async (wikiId, message) => {
+const getLinksEffects = async (cardNum, wikiId, message) => {
   const content = await getSectionContentByName(wikiId, sectionOtherLinksEffects);
-  const links = parseLinks(content, message);
+  const links = parseLinks(content, message).map(l => ({
+    fromNum: cardNum,
+    toNum: getCardNumberFromUrl(l.href),
+    status: "optional",
+    Explanation: l.Explanation
+  }));
   return links;
 };
 

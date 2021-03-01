@@ -87,14 +87,21 @@ const assertMore = (message, actualNum, expectedNum) => {
 }
 
 module.exports.parseLinks = (content, message = '') => {
-  // const { window: { document } } = new JSDOM(content);
-  // const blocks = Array.from(document.querySelectorAll("h2 ~ *"));
-  // // assertMore('blocks count' + message, blocks.length, 1);
-  // const explanation = blocks
-  //   .map(log)
-  //   .filter(elementIsNotReferenceNote)
-  //   .map(toText)
-  //   .map(replaceTextReference)
-  //   .reduce(mergeTexts, '');
-  return [];
+  // console.log('content', content);
+  const { window: { document } } = new JSDOM(content);
+  const items = Array.from(document.querySelectorAll("ul>li"));
+  const cardLinks = items
+    .map(parseLink);
+
+  return cardLinks;
+};
+
+const parseLink = (listItem) => {
+  listItem.child
+  const anchor = listItem.querySelector("a");
+  const Explanation = listItem.childNodes[1].textContent.trim();
+  return {
+    href: anchor.href,
+    Explanation,
+  }
 };

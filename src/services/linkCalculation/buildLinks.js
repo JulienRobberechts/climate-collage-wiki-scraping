@@ -1,8 +1,8 @@
 
 
-const buildAllValidLinks = (cardsRelations) => {
-  const links = Array.from(new Array(cardsRelations.length), (_x, i) => i + 1)
-    .map((n) => buildLinks(cardsRelations, n));
+const buildAllValidLinks = (cards) => {
+  const links = Array.from(new Array(cards.length), (_x, i) => i + 1)
+    .map((n) => buildLinks(cards, n));
   const linksFlat = [].concat(...links); // links.flat();
   const linksClean = dedupLinks(linksFlat);
   const linksCleanValid = linksClean.map(l => ({
@@ -32,12 +32,12 @@ const dedupLinks = (links) => {
 const buildLinks = (cards, cardNumber) => {
   const card = getCardByNum(cards, cardNumber);
   const linkCauses = card.causes.map(cause => ({
-    fromNum: getCardByUrl(cards, cause).cardNum,
+    fromNum: getCardNumberFromUrl(cause).cardNum,
     toNum: cardNumber
   }));
   const linkConsequences = card.effects.map(consequence => ({
     fromNum: cardNumber,
-    toNum: getCardByUrl(cards, consequence).cardNum,
+    toNum: getCardNumberFromUrl(consequence).cardNum,
   }));
 
   return [...linkCauses, ...linkConsequences];
@@ -50,12 +50,12 @@ const getCardByNum = (cards, cardNumber) => {
   return card;
 };
 
-const getCardByUrl = (cards, cardUrl) => {
+const getCardNumberFromUrl = (cardUrl) => {
   const regexp = /Fr-fr_adulte_carte_(?<num>\d+)_/g;
   const found = regexp.exec(cardUrl);
   const cardNumber = found.groups['num'];
-  const card = getCardByNum(cards, cardNumber);
-  return card;
+  return parseInt(cardNumber, 10);
 };
 
-module.exports = { buildLinks, buildAllValidLinks };
+
+module.exports = { buildLinks, getCardNumberFromUrl, buildAllValidLinks };
