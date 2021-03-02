@@ -32,12 +32,12 @@ const dedupLinks = (links) => {
 const buildLinks = (cards, cardNumber) => {
   const card = getCardByNum(cards, cardNumber);
   const linkCauses = card.causes.map(cause => ({
-    fromNum: getCardNumberFromUrl(cause).cardNum,
+    fromNum: getCardNumberFromUrl(cause),
     toNum: cardNumber
   }));
   const linkConsequences = card.effects.map(consequence => ({
     fromNum: cardNumber,
-    toNum: getCardNumberFromUrl(consequence).cardNum,
+    toNum: getCardNumberFromUrl(consequence),
   }));
 
   return [...linkCauses, ...linkConsequences];
