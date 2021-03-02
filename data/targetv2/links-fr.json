@@ -536,7 +536,7 @@
   {
     "fromNum": 21,
     "toNum": 41,
-    "status": "optional",
+    "status": "valid",
     "explanation": "Si l'on veut rester dans la même logique de conservation de l'énergie, il faudrait faire le lien de fonte a partir de budget énergétique."
   },
   {
@@ -663,7 +663,7 @@
     "fromNum": 30,
     "toNum": 12,
     "status": "optional",
-    "explanation": ""
+    "explanation": "[explication à fournir...]"
   },
   {
     "fromNum": 30,
@@ -759,19 +759,19 @@
     "fromNum": 35,
     "toNum": 6,
     "status": "optional",
-    "explanation": ""
+    "explanation": "[explication à fournir...]"
   },
   {
     "fromNum": 35,
     "toNum": 10,
     "status": "optional",
-    "explanation": ""
+    "explanation": "[explication à fournir...]"
   },
   {
     "fromNum": 35,
     "toNum": 25,
     "status": "optional",
-    "explanation": "Ça reste un élément mineur. Sauf sur des hotspots particuliers de biodiversité."
+    "explanation": "Cela reste un élément mineur. Sauf sur des hotspots particuliers de biodiversité."
   },
   {
     "fromNum": 35,
@@ -855,7 +855,7 @@
     "fromNum": 40,
     "toNum": 1,
     "status": "optional",
-    "explanation": "C'est 'la boucle du club de Rome' ! Tout cela finira bien par se réguler, mais pas forcément de manière soft. Les participant·e·s font souvent ce lien, et proposent parfois de faire un rouleau avec la fresque pour mettre bord à bord la fin et le début. D'ailleurs, il est intéressant de faire remarquer qu'il y a des humains dans les cartes du début et celles de la fin, mais pas au milieu."
+    "explanation": "C'est \"la boucle du club de Rome\" ! Tout cela finira bien par se réguler, mais pas forcément de manière soft. Les participants font souvent ce lien, et proposent parfois de faire un rouleau avec la fresque pour mettre bord à bord la fin et le début. D'ailleurs, il est intéressant de remarquer qu'il y a des humains dans les cartes du début et celles de la fin, mais pas au milieu."
   },
   {
     "fromNum": 40,
@@ -886,5 +886,11 @@
     "toNum": 9,
     "status": "valid",
     "explanation": ""
+  },
+  {
+    "fromNum": 42,
+    "toNum": 14,
+    "status": "optional",
+    "explanation": "Si l'on veut rester dans la même logique de conservation de l'énergie, il faudrait faire le lien de fonte a partir de budget énérgétique."
   }
 ]
