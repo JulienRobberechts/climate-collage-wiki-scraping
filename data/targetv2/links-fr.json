@@ -793,15 +793,15 @@
   },
   {
     "fromNum": 36,
-    "toNum": 38,
-    "status": "optional",
-    "explanation": "Les canicules peuvent être très dévastatrice, notamment chez les personnes âgées."
-  },
-  {
-    "fromNum": 36,
     "toNum": 30,
     "status": "optional",
     "explanation": "Une canicule, c'est la température, une sécheresse, c'est l'humidité. Ceci étant dit, si il fait chaud, l'eau s'évapore et cela peut entraîner une sécheresse. Les deux vont de fait souvent ensemble."
+  },
+  {
+    "fromNum": 36,
+    "toNum": 38,
+    "status": "optional",
+    "explanation": "Les canicules peuvent être dévastatrices, notamment chez les personnes âgées."
   },
   {
     "fromNum": 37,

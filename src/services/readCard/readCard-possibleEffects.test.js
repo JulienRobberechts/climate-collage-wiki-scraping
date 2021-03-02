@@ -15,26 +15,20 @@ const cards20To30 = [...Array(10).keys()].map(n => n + 20);
 const cards30To42 = [...Array(13).keys()].map(n => n + 30);
 
 describe('PossibleEffects', () => {
-  it.each(cards30To42)('check links effects on card %i', async (cardNum) => {
+  it.each(oneTo42)('check links effects on card %i', async (cardNum) => {
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const expectedLink = await getLinksEffectFrRef(cardNum, 'optional');
     const actualLinks = await getLinksEffects(cardNum, card.wikiId);
     expect(actualLinks.sort(linkOrder)).toStrictEqual(expectedLink.sort(linkOrder));
   });
-  it('check links possible effects card 42', async () => {
-    const cardNum = 42;
+  it('check links possible effects card 36', async () => {
+    const cardNum = 36;
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const expectedLink = await getLinksEffectFrRef(cardNum, 'optional');
     const actualLinks = await getLinksEffects(cardNum, card.wikiId);
     expect(actualLinks.sort(linkOrder)).toStrictEqual(expectedLink.sort(linkOrder));
   });
-  it('check links possible effects card 41', async () => {
-    const cardNum = 41;
-    const card = await getCardsFrReferenceByCardNum(cardNum);
-    const expectedLink = await getLinksEffectFrRef(cardNum, 'optional');
-    const actualLinks = await getLinksEffects(cardNum, card.wikiId);
-    expect(actualLinks.sort(linkOrder)).toStrictEqual(expectedLink.sort(linkOrder));
-  });
+
 });
 
 const linkOrder = (l1, l2) => (100 * l1.fromNum + l1.toNum) - (100 * l2.fromNum + l2.toNum);
