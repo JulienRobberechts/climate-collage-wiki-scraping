@@ -100,7 +100,7 @@ module.exports.parseLinks = (content, message = '') => {
 const parseLink = (listItem) => {
   listItem.child
   const anchor = listItem.querySelector("a");
-  const Explanation = listItem.textContent
+  const explanation = listItem.textContent
     .replace(anchor.textContent, '')
     .replace(/\n/g, ' ')
     .replace(/\s*\[\d\]/gi, '')
@@ -108,6 +108,6 @@ const parseLink = (listItem) => {
 
   return {
     href: anchor.href,
-    Explanation,
+    explanation,
   }
 };

@@ -115,7 +115,7 @@ const getLinksEffects = async (cardNum, wikiId, message) => {
     fromNum: cardNum,
     toNum: getCardNumberFromUrl(l.href),
     status: "optional",
-    Explanation: l.Explanation
+    explanation: l.explanation
   }));
   return links;
 };

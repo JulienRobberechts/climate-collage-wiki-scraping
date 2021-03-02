@@ -5,7 +5,7 @@ exports[`parse Page Content parse BackDescription card 3 1`] = `
       l'\\\\u00e9lectricit\\\\u00e9.\\\\nCela repr\\\\u00e9sente 20% des Gaz \\\\u00e0 Effet de Serre (GES).\\\\n"
 `;
 
-exports[`parse Page Content parse Explanation card 1 1`] = `
+exports[`parse Page Content parse explanation card 1 1`] = `
 "C'est par l\\\\u00e0 que tout commence... C'est aussi par
     l\\\\u00e0 que commence le 5\\\\u00e8me rapport du GIEC, dans l'avant-propos de son r\\\\u00e9sum\\\\u00e9, il est mis en
     \\\\u00e9vidence que la science montre \\\\u00e0 pr\\\\u00e9sent avec 95 % de certitude que depuis le milieu du XXe

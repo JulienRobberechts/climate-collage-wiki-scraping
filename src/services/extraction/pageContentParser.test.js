@@ -36,7 +36,7 @@ describe('parse Page Content', () => {
     expect(result).toMatchSnapshot();
   });
 
-  it('parse Explanation card 1', async () => {
+  it('parse explanation card 1', async () => {
     const content = await getContent(cardContent1Section1FilePath);
     const result = parseExplanation(content);
     expect(result).toMatchSnapshot();

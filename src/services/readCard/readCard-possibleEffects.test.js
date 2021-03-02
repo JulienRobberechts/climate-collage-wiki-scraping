@@ -31,4 +31,3 @@ describe('PossibleEffects', () => {
 });
 
 const linkOrder = (l1, l2) => (100 * l1.fromNum + l1.toNum) - (100 * l2.fromNum + l2.toNum);
-const mainProps = ({ fromNum, toNum, status, Explanation }) => { fromNum, toNum, status, Explanation };

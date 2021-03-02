@@ -195,11 +195,11 @@ const extractLinksLanguage = async () => {
   const transform = (data) => data.map(({
     fromNum,
     toNum,
-    Explanation
+    explanation
   }) => ({
     fromNum,
     toNum,
-    explanation: Explanation
+    explanation
   }));
   const outFilePath = `./data/targetv2/links-fr.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
