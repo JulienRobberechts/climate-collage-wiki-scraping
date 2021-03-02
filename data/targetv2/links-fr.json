@@ -116,6 +116,12 @@
   },
   {
     "fromNum": 5,
+    "toNum": 1,
+    "status": "optional",
+    "Explanation": "On peut se demander si les activités humaines consomment des énergies fossiles ou si les énergies fossiles permettent les activités humaines. Ce débat ne doit pas prendre de temps et on peut regrouper les deux cartes au besoin. Quand je chante dans mon jardin, je réalise une activité humaine sans énergie fossile. Quand les moulins à vent ou à eau produisaient de la farine, ils n'utilisaient pas d'énergie fossile. Il reste, heureusement de nombreuses activités humaines sans énergie fossile."
+  },
+  {
+    "fromNum": 5,
     "toNum": 27,
     "status": "optional",
     "Explanation": "La marée noire qu'a provoqué le naufrage du supertanker l'Amoco Cadiz est un exemple de lien entre énergie fossile et biodiversité.",
@@ -133,34 +139,6 @@
     "toNum": 40,
     "status": "optional",
     "Explanation": "Bien que des conflits peuvent avoir lieu à cause des ressources, ce n'est pas directement causer par une perturbation du climat, mais un appauvrissement des ressources. La relation peut-être fait, mais elle est plus politique que climatique."
-  },
-  {
-    "fromNum": 5,
-    "toNum": 1,
-    "status": "optional",
-    "Explanation": "On peut se demander si les activités humaines consomment des énergies fossiles ou si les énergies fossiles permettent les activités humaines. Ce débat ne doit pas prendre de temps et on peut regrouper les deux cartes au besoin. Quand je chante dans mon jardin, je réalise une activité humaine sans énergie fossile. Quand les moulins à vent ou à eau produisaient de la farine, ils n'utilisaient pas d'énergie fossile. Il reste, heureusement de nombreuses activités humaines sans énergie fossile.",
-    "source": "guide"
-  },
-  {
-    "fromNum": 5,
-    "toNum": 2,
-    "status": "optional",
-    "Explanation": "On peut se demander si les activités humaines consomment des énergies fossiles ou si les énergies fossiles permettent les activités humaines. Ce débat ne doit pas prendre de temps et on peut regrouper les deux cartes au besoin. Quand je chante dans mon jardin, je réalise une activité humaine sans énergie fossile. Quand les moulins à vent ou à eau produisaient de la farine, ils n'utilisaient pas d'énergie fossile. Il reste, heureusement de nombreuses activités humaines sans énergie fossile.",
-    "source": "guide"
-  },
-  {
-    "fromNum": 5,
-    "toNum": 3,
-    "status": "optional",
-    "Explanation": "On peut se demander si les activités humaines consomment des énergies fossiles ou si les énergies fossiles permettent les activités humaines. Ce débat ne doit pas prendre de temps et on peut regrouper les deux cartes au besoin. Quand je chante dans mon jardin, je réalise une activité humaine sans énergie fossile. Quand les moulins à vent ou à eau produisaient de la farine, ils n'utilisaient pas d'énergie fossile. Il reste, heureusement de nombreuses activités humaines sans énergie fossile.",
-    "source": "guide"
-  },
-  {
-    "fromNum": 5,
-    "toNum": 4,
-    "status": "optional",
-    "Explanation": "On peut se demander si les activités humaines consomment des énergies fossiles ou si les énergies fossiles permettent les activités humaines. Ce débat ne doit pas prendre de temps et on peut regrouper les deux cartes au besoin. Quand je chante dans mon jardin, je réalise une activité humaine sans énergie fossile. Quand les moulins à vent ou à eau produisaient de la farine, ils n'utilisaient pas d'énergie fossile. Il reste, heureusement de nombreuses activités humaines sans énergie fossile.",
-    "source": "guide"
   },
   {
     "fromNum": 6,
