@@ -87,8 +87,7 @@
     "fromNum": 3,
     "toNum": 6,
     "status": "optional",
-    "Explanation": "On pourrait dire que le chauffage au bois des bâtiments est responsable de déforestation mais ce n'est pas significatif. On pourrait dire que l'espace utilisé pour les bâtiments pousse à la déforestation mais ce n'est pas le même ordre de grandeur. L'agriculture est la cause principale de la déforestation bien avant les bâtiments.",
-    "source": "guide"
+    "Explanation": "On pourrait dire que le chauffage au bois des bâtiments est responsable de déforestation mais ce n'est pas significatif. On pourrait dire que l'espace utilisé pour les bâtiments pousse à la déforestation mais ce n'est pas le même ordre de grandeur. L'agriculture est la cause principale de la déforestation bien avant les bâtiments."
   },
   {
     "fromNum": 4,
@@ -124,15 +123,13 @@
     "fromNum": 5,
     "toNum": 27,
     "status": "optional",
-    "Explanation": "La marée noire qu'a provoqué le naufrage du supertanker l'Amoco Cadiz est un exemple de lien entre énergie fossile et biodiversité.",
-    "source": "guide"
+    "Explanation": "La marée noire qu'a provoqué le naufrage du supertanker l'Amoco Cadiz est un exemple de lien entre énergie fossile et biodiversité."
   },
   {
     "fromNum": 5,
     "toNum": 25,
     "status": "optional",
-    "Explanation": "La marée noire qu'a provoqué le naufrage du supertanker l'Amoco Cadiz est un exemple de lien entre énergie fossile et biodiversité.",
-    "source": "guide"
+    "Explanation": "La marée noire qu'a provoqué le naufrage du supertanker l'Amoco Cadiz est un exemple de lien entre énergie fossile et biodiversité."
   },
   {
     "fromNum": 5,
@@ -162,8 +159,7 @@
     "fromNum": 6,
     "toNum": 20,
     "status": "optional",
-    "Explanation": "La végétation retiens l'eau. Si on la coupe, ça facilite les crues. De plus la déforestation peut avoir des conséquences locales sur le régime des pluies",
-    "source": "guide"
+    "Explanation": "La végétation retiens l'eau. Si on la coupe, ça facilite les crues. De plus la déforestation peut avoir des conséquences locales sur le régime des pluies."
   },
   {
     "fromNum": 6,
@@ -187,22 +183,19 @@
     "fromNum": 6,
     "toNum": 30,
     "status": "optional",
-    "Explanation": "La déforestation peut être la cause directe de sécheresses car les arbres stockent beaucoup d'eau. Si on les coupe, ils ne jouent plus ce rôle de régulateurs de l'humidité.",
-    "source": "guide"
+    "Explanation": "La déforestation peut être la cause directe de sécheresses car les arbres stockent beaucoup d'eau. Si on les coupe, ils ne jouent plus ce rôle de régulateurs de l'humidité."
   },
   {
     "fromNum": 7,
     "toNum": 11,
     "status": "invalid",
-    "Explanation": "Il faut plutôt faire un lien via la carte 12 Puits de Carbone.",
-    "source": "guide"
+    "Explanation": "Il faut plutôt faire un lien via la carte 12 Puits de Carbone."
   },
   {
     "fromNum": 7,
     "toNum": 24,
     "status": "invalid",
-    "Explanation": "Il faut plutôt faire un lien via la carte 12 Puits de Carbone.",
-    "source": "guide"
+    "Explanation": "Il faut plutôt faire un lien via la carte 12 Puits de Carbone."
   },
   {
     "fromNum": 7,
@@ -214,15 +207,13 @@
     "fromNum": 8,
     "toNum": 7,
     "status": "optional",
-    "Explanation": "L'agriculture émet peu de CO2 à part à travers la déforestation. Son empreinte carbone est surtout dûe aux autres GES.",
-    "source": "guide"
+    "Explanation": "L'agriculture émet peu de CO2 à part à travers la déforestation. Son empreinte carbone est surtout dûe aux autres GES."
   },
   {
     "fromNum": 8,
     "toNum": 10,
     "status": "optional",
-    "Explanation": "Dans l'absolu, c'est vrai : les épandages font des aérosols qui entrent en ligne de compte dans les pollutions locales aux alentours, mais c'est beaucoup moins important que la combustion incomplète des centrales thermiques.",
-    "source": "guide"
+    "Explanation": "Dans l'absolu, c'est vrai : les épandages font des aérosols qui entrent en ligne de compte dans les pollutions locales aux alentours, mais c'est beaucoup moins important que la combustion incomplète des centrales thermiques."
   },
   {
     "fromNum": 8,
@@ -258,8 +249,7 @@
     "fromNum": 9,
     "toNum": 13,
     "status": "valid",
-    "Explanation": "Le E et le S de la carte 'Autres GES' sont à mettre en lien avec Effet de Serre",
-    "source": "guide"
+    "Explanation": "Le E et le S de la carte 'Autres GES' sont à mettre en lien avec Effet de Serre."
   },
   {
     "fromNum": 10,
@@ -319,8 +309,7 @@
     "fromNum": 13,
     "toNum": 15,
     "status": "valid",
-    "Explanation": "Le mot Effet de serre est écrit des deux cotés (version > Oct 2018)",
-    "source": "guide"
+    "Explanation": "Le mot Effet de serre est écrit des deux cotés (version > Oct 2018)."
   },
   {
     "fromNum": 14,
@@ -350,8 +339,7 @@
     "fromNum": 14,
     "toNum": 21,
     "status": "valid",
-    "Explanation": "Il est précisé au dos de la carte qu'il s'agit de la température de l'air.",
-    "source": "guide"
+    "Explanation": "Il est précisé au dos de la carte qu'il s'agit de la température de l'air."
   },
   {
     "fromNum": 14,
@@ -435,8 +423,7 @@
     "fromNum": 18,
     "toNum": 25,
     "status": "optional",
-    "Explanation": "Eh oui, le pauvre ours polaire, emblématique du changement climatique...Il ne s’agit pas d’un phénomène tellement significatif sur l'équilibre de la biodiversité terrestre, mais si les participants font ce lien, proposez-leur de dessiner un ours! ;-)",
-    "source": "guide"
+    "Explanation": "Eh oui, le pauvre ours polaire, emblématique du changement climatique...Il ne s’agit pas d’un phénomène tellement significatif sur l'équilibre de la biodiversité terrestre, mais si les participants font ce lien, proposez-leur de dessiner un ours! ;-)."
   },
   {
     "fromNum": 18,
@@ -454,15 +441,13 @@
     "fromNum": 18,
     "toNum": 13,
     "status": "invalid",
-    "Explanation": "Il y a ici confusion avec l’effet d’amplification dû à l’albédo. La banquise blanche qui fond laisse place à une surface beaucoup plus foncée et l'énergie absorbée réchauffe la terre. Ce mécanisme est appelé albédo et n’a rien à voir avec l’effet de serre. Ça joue sur les flèches oranges de la carte 13 et non sur les flèches rouges.",
-    "source": "guide"
+    "Explanation": "Il y a ici confusion avec l’effet d’amplification dû à l’albédo. La banquise blanche qui fond laisse place à une surface beaucoup plus foncée et l'énergie absorbée réchauffe la terre. Ce mécanisme est appelé albédo et n’a rien à voir avec l’effet de serre. Ça joue sur les flèches oranges de la carte 13 et non sur les flèches rouges."
   },
   {
     "fromNum": 18,
     "toNum": 27,
     "status": "optional",
-    "Explanation": "Il va forcément y avoir un impact...",
-    "source": "guide"
+    "Explanation": "Il va forcément y avoir un impact..."
   },
   {
     "fromNum": 19,
@@ -486,15 +471,13 @@
     "fromNum": 20,
     "toNum": 30,
     "status": "valid",
-    "Explanation": "Le manque de pluie et l’évaporation sont les causes de sécheresses. Dans les deux cas, c’est la perturbation du cycle de l’eau qui est en cause.",
-    "source": "guide"
+    "Explanation": "Le manque de pluie et l’évaporation sont les causes de sécheresses. Dans les deux cas, c’est la perturbation du cycle de l’eau qui est en cause."
   },
   {
     "fromNum": 20,
     "toNum": 33,
     "status": "valid",
-    "Explanation": "Dans les phénomènes de submersion, la baisse de pression atmosphérique joue un rôle important. Ces dépressions sont une manifestation de la perturbation du cycle de l'eau.",
-    "source": "guide"
+    "Explanation": "Dans les phénomènes de submersion, la baisse de pression atmosphérique joue un rôle important. Ces dépressions sont une manifestation de la perturbation du cycle de l'eau."
   },
   {
     "fromNum": 20,
@@ -506,8 +489,7 @@
     "fromNum": 20,
     "toNum": 19,
     "status": "optional",
-    "Explanation": "C'est très technique, mais si on est pointilleux, la partie bleue du graphique de la carte 19 concernant l'Antarctique représente un gain de masse dû à une augmentation des précipitations. Les parties rouges représentent une perte de masse. Au total, l'Antarctique perd de la masse.",
-    "source": "guide"
+    "Explanation": "C'est très technique, mais si on est pointilleux, la partie bleue du graphique de la carte 19 concernant l'Antarctique représente un gain de masse dû à une augmentation des précipitations. Les parties rouges représentent une perte de masse. Au total, l'Antarctique perd de la masse."
   },
   {
     "fromNum": 20,
@@ -519,15 +501,13 @@
     "fromNum": 20,
     "toNum": 22,
     "status": "invalid",
-    "Explanation": "Eh non, plus de pluie ne va pas faire déborder l'océan ! Il est assez rare de voir ce lien, mais on ne sait jamais. Si c'est le cas, demandez aux participants d'où vient la pluie, ou encore d'où viennent les nuages...",
-    "source": "guide"
+    "Explanation": "Eh non, plus de pluie ne va pas faire déborder l'océan ! Il est assez rare de voir ce lien, mais on ne sait jamais. Si c'est le cas, demandez aux participants d'où vient la pluie, ou encore d'où viennent les nuages..."
   },
   {
     "fromNum": 21,
     "toNum": 20,
     "status": "valid",
-    "Explanation": "La hausse de la température sur terre augmente l'évaporation et perturbe le cycle de l'eau. D'ailleurs, autrefois, on parlait de réchauffement climatique (Global Warming) et aujourd'hui, on parle de changement climatique (Climate Change), voire de dérèglement climatique. Ce shift dans le vocabulaire est matérialisé par cette relation qui a donc une importance fondamentale. N'hésitez pas à faire une remarque sur ce point aux équipes.",
-    "source": "guide"
+    "Explanation": "La hausse de la température sur terre augmente l'évaporation et perturbe le cycle de l'eau. D'ailleurs, autrefois, on parlait de réchauffement climatique (Global Warming) et aujourd'hui, on parle de changement climatique (Climate Change), voire de dérèglement climatique. Ce shift dans le vocabulaire est matérialisé par cette relation qui a donc une importance fondamentale. N'hésitez pas à faire une remarque sur ce point aux équipes."
   },
   {
     "fromNum": 21,
@@ -545,8 +525,7 @@
     "fromNum": 21,
     "toNum": 32,
     "status": "valid",
-    "Explanation": "Dans les pays du Nord, une hausse de la température peut améliorer les rendements. Dans les pays du Sud, c'est le contraire : la moindre augmentation de température se traduit par une baisse de rendement.",
-    "source": "guide"
+    "Explanation": "Dans les pays du Nord, une hausse de la température peut améliorer les rendements. Dans les pays du Sud, c'est le contraire : la moindre augmentation de température se traduit par une baisse de rendement."
   },
   {
     "fromNum": 21,
@@ -588,8 +567,7 @@
     "fromNum": 23,
     "toNum": 27,
     "status": "optional",
-    "Explanation": "Les problèmes de calcification ne concernent pas seulement les ptéropodes et les coccolithophores. Ils peuvent aussi impacter le corail par exemple. Donc ce lien est tout à fait acceptable.",
-    "source": "guide"
+    "Explanation": "Les problèmes de calcification ne concernent pas seulement les ptéropodes et les coccolithophores. Ils peuvent aussi impacter le corail par exemple. Donc ce lien est tout à fait acceptable."
   },
   {
     "fromNum": 24,
@@ -601,15 +579,13 @@
     "fromNum": 25,
     "toNum": 28,
     "status": "valid",
-    "Explanation": "Il faut voir les vecteurs de maladie comme un sous-ensemble de la biodiversité terrestre.",
-    "source": "guide"
+    "Explanation": "Il faut voir les vecteurs de maladie comme un sous-ensemble de la biodiversité terrestre."
   },
   {
     "fromNum": 25,
     "toNum": 32,
     "status": "valid",
-    "Explanation": "Les abeilles et les vers de terre, pour ne citer qu'eux, sont indispensables à l'agriculture.",
-    "source": "guide"
+    "Explanation": "Les abeilles et les vers de terre, pour ne citer qu'eux, sont indispensables à l'agriculture."
   },
   {
     "fromNum": 25,
@@ -621,8 +597,7 @@
     "fromNum": 25,
     "toNum": 8,
     "status": "invalid",
-    "Explanation": "Il serait plus logique de faire un lien vers les rendements agricoles.",
-    "source": "guide"
+    "Explanation": "Il serait plus logique de faire un lien vers les rendements agricoles."
   },
   {
     "fromNum": 26,
@@ -634,30 +609,25 @@
     "fromNum": 26,
     "toNum": 38,
     "status": "valid",
-    "Explanation": "Les crues amènent souvent des problèmes sanitaires graves : les égouts débordent, le choléra menace.",
-    "source": "guide"
+    "Explanation": "Les crues amènent souvent des problèmes sanitaires graves : les égouts débordent, le choléra menace."
   },
   {
     "fromNum": 26,
     "toNum": 31,
     "status": "valid",
-    "Explanation": "",
-    "needExplanation": true,
-    "source": "guide"
+    "Explanation": ""
   },
   {
     "fromNum": 26,
     "toNum": 28,
     "status": "invalid",
-    "Explanation": "Attention aux associations d'idées : Crues / marécages / moustiques... Les crues peuvent amener des situations sanitaires dégradées, mais ce n'est pas de cela qu'on parle quand on évoque les vecteurs de maladie qui se déplacent à cause du changement climatique.",
-    "source": "guide"
+    "Explanation": "Attention aux associations d'idées : Crues / marécages / moustiques... Les crues peuvent amener des situations sanitaires dégradées, mais ce n'est pas de cela qu'on parle quand on évoque les vecteurs de maladie qui se déplacent à cause du changement climatique."
   },
   {
     "fromNum": 26,
     "toNum": 33,
     "status": "invalid",
-    "Explanation": "Ne pas confondre 'Crues' et 'Submersions'. Les crues, ce sont les rivières qui débordent (c'est de l'eau douce). Les submersions, c'est la mer qui entre dans les terres (c'est de l'eau salée).",
-    "source": "guide"
+    "Explanation": "Ne pas confondre 'Crues' et 'Submersions'. Les crues, ce sont les rivières qui débordent (c'est de l'eau douce). Les submersions, c'est la mer qui entre dans les terres (c'est de l'eau salée)."
   },
   {
     "fromNum": 27,
@@ -669,8 +639,7 @@
     "fromNum": 27,
     "toNum": 37,
     "status": "valid",
-    "Explanation": "Oui, à cause de la pêche...",
-    "source": "guide"
+    "Explanation": "Oui, à cause de la pêche..."
   },
   {
     "fromNum": 28,
@@ -688,8 +657,7 @@
     "fromNum": 30,
     "toNum": 26,
     "status": "valid",
-    "Explanation": "Voir la carte 26 : Si le sol a été durci par une sécheresse, c'est pire car l'eau ruisselle.",
-    "source": "guide"
+    "Explanation": "Voir la carte 26 : Si le sol a été durci par une sécheresse, c'est pire car l'eau ruisselle."
   },
   {
     "fromNum": 30,
@@ -701,9 +669,7 @@
     "fromNum": 30,
     "toNum": 12,
     "status": "optional",
-    "Explanation": "",
-    "needExplanation": true,
-    "source": "guide"
+    "Explanation": ""
   },
   {
     "fromNum": 30,
@@ -751,8 +717,7 @@
     "fromNum": 32,
     "toNum": 8,
     "status": "invalid",
-    "Explanation": "Effectivement, la baisse des rendements agricoles affecte l'agriculture. Mais la carte agriculture est plutôt là pour incarner les causes des émissions de GES.",
-    "source": "guide"
+    "Explanation": "Effectivement, la baisse des rendements agricoles affecte l'agriculture. Mais la carte agriculture est plutôt là pour incarner les causes des émissions de GES."
   },
   {
     "fromNum": 32,
@@ -812,22 +777,19 @@
     "fromNum": 35,
     "toNum": 25,
     "status": "optional",
-    "Explanation": "Ça reste un élément mineur. Sauf sur des hotspots particuliers de biodiversité.",
-    "source": "guide"
+    "Explanation": "Ça reste un élément mineur. Sauf sur des hotspots particuliers de biodiversité."
   },
   {
     "fromNum": 35,
     "toNum": 32,
     "status": "optional",
-    "Explanation": "En général, ce qui brûle bien, c'est la forêt, pas les champs de blé.",
-    "source": "guide"
+    "Explanation": "En général, ce qui brûle bien, c'est la forêt, pas les champs de blé."
   },
   {
     "fromNum": 35,
     "toNum": 38,
     "status": "optional",
-    "Explanation": "630 disparus suite aux incendies en Californie à l'automne 2018.",
-    "source": "guide"
+    "Explanation": "630 disparus suite aux incendies en Californie à l'automne 2018."
   },
   {
     "fromNum": 36,
@@ -845,8 +807,7 @@
     "fromNum": 36,
     "toNum": 30,
     "status": "optional",
-    "Explanation": "Une canicule, c'est la température, une sécheresse, c'est l'humidité. Ceci étant dit, si il fait chaud, l'eau s'évapore et cela peut entraîner une sécheresse. Les deux vont de fait souvent ensemble.",
-    "source": "guide"
+    "Explanation": "Une canicule, c'est la température, une sécheresse, c'est l'humidité. Ceci étant dit, si il fait chaud, l'eau s'évapore et cela peut entraîner une sécheresse. Les deux vont de fait souvent ensemble."
   },
   {
     "fromNum": 37,
@@ -864,8 +825,7 @@
     "fromNum": 37,
     "toNum": 40,
     "status": "valid",
-    "Explanation": "",
-    "source": "prezi"
+    "Explanation": ""
   },
   {
     "fromNum": 38,
@@ -883,8 +843,7 @@
     "fromNum": 39,
     "toNum": 38,
     "status": "valid",
-    "Explanation": "",
-    "source": "prezi"
+    "Explanation": ""
   },
   {
     "fromNum": 40,
@@ -896,8 +855,7 @@
     "fromNum": 40,
     "toNum": 38,
     "status": "valid",
-    "Explanation": "Se prendre une balle, c’est pas bon pour la santé.",
-    "source": "guide"
+    "Explanation": "Se prendre une balle, c’est pas bon pour la santé."
   },
   {
     "fromNum": 40,
