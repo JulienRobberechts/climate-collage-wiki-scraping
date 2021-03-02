@@ -254,8 +254,8 @@
   {
     "fromNum": 10,
     "toNum": 38,
-    "status": "valid",
-    "explanation": "Bien que les aérosols ne soient pas les seuls à rentrer dans la catégorie 'Particule fines', chaque année, 391 000 personnes dans les pays de l'UE décèdent de la pollution de l'air[2], et elle cause 1.1 millions décès prématurés en Inde et en Chine"
+    "status": "optional",
+    "explanation": "Bien que les aérosols ne soient pas les seuls à rentrer dans la catégorie \"Particule fines\", chaque année, 391 000 personnes dans les pays de l'UE décèdent de la pollution de l'air, et elle cause 1.1 millions décès prématurés en Inde et en Chine."
   },
   {
     "fromNum": 11,
