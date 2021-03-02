@@ -21,15 +21,15 @@ describe('PossibleEffects', () => {
     const actualLinks = await getLinksEffects(cardNum, card.wikiId);
     expect(actualLinks.sort(linkOrder)).toStrictEqual(expectedLink.sort(linkOrder));
   });
-  it('check links possible effects card 14', async () => {
-    const cardNum = 14;
+  it('check links possible effects card 17', async () => {
+    const cardNum = 17;
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const expectedLink = await getLinksEffectFrRef(cardNum, 'optional');
     const actualLinks = await getLinksEffects(cardNum, card.wikiId);
     expect(actualLinks.sort(linkOrder)).toStrictEqual(expectedLink.sort(linkOrder));
   });
-  it('check links possible effects card 16', async () => {
-    const cardNum = 16;
+  it('check links possible effects card 18', async () => {
+    const cardNum = 18;
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const expectedLink = await getLinksEffectFrRef(cardNum, 'optional');
     const actualLinks = await getLinksEffects(cardNum, card.wikiId);
