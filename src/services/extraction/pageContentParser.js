@@ -101,10 +101,7 @@ const parseLink = (listItem) => {
   listItem.child
   const anchor = listItem.querySelector("a");
   const explanation = listItem.textContent
-    .replace(anchor.textContent, '')
-    .replace(/\n/g, ' ')
-    .replace(/\s*\[\d\]/gi, '')
-    .trim();
+    .replace(anchor.textContent, '');
 
   return {
     href: anchor.href,

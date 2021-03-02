@@ -100,13 +100,13 @@ const getCardRelations = async (wikiId, message) => {
 const getBackDescription = async (wikiId, message) => {
   const content = await getSectionContentByName(wikiId, sectionMain);
   const backDescription = parseBackDescription(content, message);
-  return cleanUpString(backDescription);
+  return cleanUpStringSpecific(backDescription);
 };
 
 const getExplanation = async (wikiId, message) => {
   const content = await getSectionContentByName(wikiId, sectionExplanation);
   const explanation = parseExplanation(content, message);
-  return cleanUpString(explanation);
+  return cleanUpStringSpecific(explanation);
 };
 
 const getLinksEffects = async (cardNum, wikiId, message) => {
@@ -115,32 +115,36 @@ const getLinksEffects = async (cardNum, wikiId, message) => {
     fromNum: cardNum,
     toNum: getCardNumberFromUrl(l.href),
     status: "optional",
-    explanation: l.explanation
+    explanation: cleanUpStringBasic(l.explanation)
   }));
   return links;
 };
 
-const cleanUpString = (input) => {
-  const newline = /\n/gi;
-  const displaystyle = /\{\\\\displaystyle\sm\^\{2\}\}/gi;
-  const spaces = /\s+/gi;
-  const tab = /\t/gi;
-  const nbps = /\u00A0/gi;
-
-  return input
-    .trim()
-    .replace(spaces, ' ')
-    .replace(tab, ' ')
-    .replace(nbps, ' ')
-    .replace(displaystyle, '')
-    .replace(newline, ' ')
+const cleanUpStringSpecific = (input) => {
+  return cleanUpStringBasic(input)
     .replace("3 , 1 W / m 2 {\\displaystyle 3,1W/m^{2}}", "3,1 W/m2")
     .replace("m 2 {\\displaystyle m^{2}} ", "métre carré")
     .replace("0 , 8 W / m 2 {\\displaystyle -0,8W/m^{2}}", "0,8 W/m2")
     .replace("2 , 3 W / m 2 {\\displaystyle 2,3W/m^{2}}", "2,3 W/m2")
-    .replace("2 , 6 W / m 2 {\\displaystyle 2,6W/m^{2}}", "2,6 W/m2")
+    .replace("2 , 6 W / m 2 {\\displaystyle 2,6W/m^{2}}", "2,6 W/m2");
+};
+
+const cleanUpStringBasic = (input) => {
+  const newline = /\n/gi;
+  const spaces = /\s+/gi;
+  const tab = /\t/gi;
+  const nbsp = /\u00A0/gi;
+  const reference = /\s*\[\d\]/gi;
+
+  return input
+    .replace(reference, '')
+    .replace(spaces, ' ')
+    .replace(tab, ' ')
+    .replace(nbsp, ' ')
+    .replace(newline, ' ')
     .replace(/:([A-Z])/g, ": $1")
-    .replace(/\.([A-Z])/g, ". $1");
+    .replace(/\.([A-Z])/g, ". $1")
+    .trim();
 };
 
 const readAllRelations = async (fromCard, toCard) => {
