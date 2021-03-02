@@ -153,19 +153,7 @@
     "fromNum": 6,
     "toNum": 20,
     "status": "optional",
-    "Explanation": "La végétation retiens l'eau. Si on la coupe, ça facilite les crues. De plus la déforestation peut avoir des conséquences locales sur le régime des pluies."
-  },
-  {
-    "fromNum": 6,
-    "toNum": 26,
-    "status": "optional",
-    "Explanation": "La végétation retiens l'eau. Si on la coupe, ça facilite les crues."
-  },
-  {
-    "fromNum": 6,
-    "toNum": 35,
-    "status": "optional",
-    "Explanation": "Une partie de la déforestation est faite en brûlant la forêt qui peut ensuite dégénérer en feu non-maîtrisé. C'est ce qu'il s'est passé pendant l'été 2019 en Amazonie et en Australie."
+    "Explanation": "La déforestation peut avoir des conséquences locales sur le régime des pluies."
   },
   {
     "fromNum": 6,
@@ -175,9 +163,21 @@
   },
   {
     "fromNum": 6,
+    "toNum": 26,
+    "status": "optional",
+    "Explanation": "La végétation retiens l'eau. Si on la coupe, ça facilite les crues."
+  },
+  {
+    "fromNum": 6,
     "toNum": 30,
     "status": "optional",
     "Explanation": "La déforestation peut être la cause directe de sécheresses car les arbres stockent beaucoup d'eau. Si on les coupe, ils ne jouent plus ce rôle de régulateurs de l'humidité."
+  },
+  {
+    "fromNum": 6,
+    "toNum": 35,
+    "status": "optional",
+    "Explanation": "Une partie de la déforestation est faite en brûlant la forêt qui peut ensuite dégénérer en feu non-maîtrisé. C'est ce qu'il s'est passé pendant l'été 2019 en Amazonie et en Australie."
   },
   {
     "fromNum": 7,

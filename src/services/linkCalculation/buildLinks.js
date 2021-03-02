@@ -53,6 +53,10 @@ const getCardByNum = (cards, cardNumber) => {
 const getCardNumberFromUrl = (cardUrl) => {
   const regexp = /Fr-fr_adulte_carte_(?<num>\d+)_/g;
   const found = regexp.exec(cardUrl);
+  if (!found) {
+    throw new Error(`impossible to find the card number in this url: ${cardUrl}`);
+    // return -1;
+  }
   const cardNumber = found.groups['num'];
   return parseInt(cardNumber, 10);
 };

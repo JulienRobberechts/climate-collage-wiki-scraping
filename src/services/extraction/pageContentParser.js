@@ -90,7 +90,7 @@ const assertMore = (message, actualNum, expectedNum) => {
 module.exports.parseLinks = (content, message = '') => {
   // console.log('content', content);
   const { window: { document } } = new JSDOM(content);
-  const items = Array.from(document.querySelectorAll("ul>li"));
+  const items = Array.from(document.querySelectorAll("h3+ul>li"));
   const cardLinks = items
     .map(parseLink);
 
@@ -102,12 +102,12 @@ const parseLink = (listItem) => {
   const anchor = listItem.querySelector("a");
   const Explanation = listItem.textContent
     .replace(anchor.textContent, '')
-    .replace('[1]', '')
-    .replace('[2]', '')
+    .replace(/\n/g, ' ')
+    .replace(/\s*\[\d\]/gi, '')
     .trim();
 
-return {
-  href: anchor.href,
-  Explanation,
-}
+  return {
+    href: anchor.href,
+    Explanation,
+  }
 };
