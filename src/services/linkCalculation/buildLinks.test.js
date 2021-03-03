@@ -10,14 +10,23 @@ describe('buildLinks', () => {
     const cardNumber = 1;
     const cards = await getObject(cards1and3FilePath);
     const linksInfo = buildLinks(cards, cardNumber);
-    expect(linksInfo).toStrictEqual([{
-      fromNum: 1,
-      toNum: 2,
-    },
-    {
-      fromNum: 1,
-      toNum: 3,
-    }]);
+    expect(linksInfo).toStrictEqual([
+      {
+        fromNum: 1,
+        toNum: 2,
+      },
+      {
+        fromNum: 1,
+        toNum: 3,
+      },
+      {
+        fromNum: 1,
+        toNum: 4,
+      },
+      {
+        fromNum: 1,
+        toNum: 8,
+      }]);
   });
   it('build link carte_2', async () => {
     const cardNumber = 2;
@@ -29,7 +38,11 @@ describe('buildLinks', () => {
     },
     {
       fromNum: 2,
-      toNum: 3,
+      toNum: 5,
+    },
+    {
+      fromNum: 2,
+      toNum: 10,
     }]);
   });
 });
