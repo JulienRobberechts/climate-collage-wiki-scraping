@@ -663,7 +663,7 @@
     "fromNum": 30,
     "toNum": 12,
     "status": "optional",
-    "explanation": "[explication à fournir...]"
+    "explanation": "Si la pénurie de précipitations se produit au cours de la période de croissance de la végétation, il y a alors une diminution de la photosynthèse et donc une diminution de la capacité du puits de carbone. En Europe, en 2018, les puits de carbone ont baissé de 18 %."
   },
   {
     "fromNum": 30,
@@ -759,13 +759,13 @@
     "fromNum": 35,
     "toNum": 6,
     "status": "optional",
-    "explanation": "[explication à fournir...]"
+    "explanation": "Une partie de la déforestation est faite en brûlant la forêt qui peut ensuite dégénérer en feu non-maitrisé. C'est ce qu'il s'est passé pendant l'été 2019 en Amazonie et en Australie"
   },
   {
     "fromNum": 35,
     "toNum": 10,
     "status": "optional",
-    "explanation": "[explication à fournir...]"
+    "explanation": "Les analyses par satellite montrent dans les fumées des quantités de particules toxiques qui posent des problèmes de santé publique."
   },
   {
     "fromNum": 35,
