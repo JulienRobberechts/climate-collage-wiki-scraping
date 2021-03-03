@@ -1,10 +1,10 @@
 const { getContent } = require('../fileServices/readFile');
-const { parseImageInfo } = require('./imageInfoParser');
+const { parseImageInfo: parseImageInfoResponse } = require('./imageInfoParser');
 
 const imageInfo1FilePath = './src/tests/data/image1.json';
 const imageInfo3FilePath = './src/tests/data/image3.json';
 
-describe('parseImageInfo', () => {
+describe('parse ImageInfo response', () => {
   it('read', async () => {
     const content = await getContent(imageInfo3FilePath);
     const data = JSON.parse(content);
@@ -13,13 +13,13 @@ describe('parseImageInfo', () => {
   it('parse image 1', async () => {
     const content = await getContent(imageInfo1FilePath);
     const data = JSON.parse(content);
-    const result = parseImageInfo(data);
+    const result = parseImageInfoResponse(data);
     expect(result).toStrictEqual({ url: "https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png" });
   });
   it('parse image 3', async () => {
     const content = await getContent(imageInfo3FilePath);
     const data = JSON.parse(content);
-    const result = parseImageInfo(data);
+    const result = parseImageInfoResponse(data);
     expect(result).toStrictEqual({ url: "https://fresqueduclimat.org/wiki/images/6/60/Fr-fr_adulte_carte_3_recto.png" });
   });
 });

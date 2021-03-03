@@ -8,7 +8,7 @@ const { parseCausesEffects } = require('../extraction/mainCausesEffectsParser');
 const { parseLinks } = require('../extraction/otherLinkParser');
 
 const { getImageInfo } = require('../wiki-api/getImageInfo');
-const { parseImageInfo } = require('../extraction/imageInfoParser');
+const { parseImageInfoResponse } = require('../extraction/imageInfoParser');
 
 const {
   getSectionIndex,
@@ -76,7 +76,7 @@ const getCardData = async (card) => {
 
 const getCardImage = async (cardNum, message) => {
   const data = await getImageInfo(cardNum);
-  const img = parseImageInfo(data, message);
+  const img = parseImageInfoResponse(data, message);
   return img;
 };
 
