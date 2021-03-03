@@ -16,22 +16,11 @@ module.exports.executeRequest = (answers, cli) => {
     case cli.action.EXTRACT_CARDS_LIST:
       extractCardList();
       break;
-
     case cli.action.EXTRACT_CARD_DETAILS:
-      if (answers.mode === cli.mode.TEST) {
-        extractSomeCardsLangFr(answers.rangeFrom, answers.rangeTo);
-      }
-      else {
-        extractAllCards();
-      }
+      extractAllCards();
       break;
     case cli.action.EXTRACT_CARD_LINKS:
-      if (answers.mode === cli.mode.TEST) {
-        extractCardsLinksFromFR(answers.rangeFrom, answers.rangeTo);
-      }
-      else {
-        extractCardsLinksFromFR(1, 42);
-      }
+      extractCardsLinksFromFR(1, 42);
       break;
     case cli.action.COMPUTE_CARD_LINKS:
       computeCardsLinks();

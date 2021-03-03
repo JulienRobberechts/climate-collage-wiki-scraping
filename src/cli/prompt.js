@@ -7,10 +7,6 @@ const cli = {
     FR: 'Français',
     EN: 'English (Not supported yet)'
   },
-  mode: {
-    PROD: 'Full',
-    TEST: 'Test (sample)'
-  },
   action: {
     EXTRACT_CARDS_LIST: '1. Extract Card list',
     EXTRACT_CARD_DETAILS: '2. Extract cards details',
@@ -32,15 +28,6 @@ var questions = [
   },
   {
     type: 'list',
-    name: 'mode',
-    message: 'Which mode?',
-    choices: [
-      cli.mode.PROD,
-      cli.mode.TEST,
-    ],
-  },
-  {
-    type: 'list',
     name: 'operation',
     message: 'What do you want?',
     choices: [
@@ -50,33 +37,7 @@ var questions = [
       cli.action.COMPUTE_CARD_LINKS,
       cli.action.CUSTOM_TREATMENT,
     ],
-  },
-  {
-    type: 'input',
-    name: 'rangeFrom',
-    message: 'FROM which card number do you want to start?',
-    when: function (answers) {
-      return (answers.mode === cli.mode.TEST) && (answers.operation === cli.action.EXTRACT_CARD_DETAILS);
-    },
-    validate: function (value) {
-      var valid = !isNaN(parseInt(value));
-      return valid || 'Please enter a number';
-    },
-    filter: Number,
-  },
-  {
-    type: 'input',
-    name: 'rangeTo',
-    message: 'TO which card number do you want to stop?',
-    when: function (answers) {
-      return (answers.mode === cli.mode.TEST) && (answers.operation === cli.action.EXTRACT_CARD_DETAILS || answers.operation === EXTRACT_CARD_LINKS);
-    },
-    validate: function (value) {
-      var valid = !isNaN(parseInt(value));
-      return valid || 'Please enter a number';
-    },
-    filter: Number,
-  },
+  }
 ];
 
 const run = () => {
