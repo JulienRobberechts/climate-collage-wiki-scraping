@@ -1,6 +1,7 @@
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const { assertEqual, assertMore } = require('../../utils/assert/parserAssertions');
+const { getCardNumberFromUrl } = require('../../linkCalculation/buildLinks');
 
 module.exports.parseMainCausesEffects = (content, message = '') => {
   const { window: { document } } = new JSDOM(content);
@@ -25,8 +26,13 @@ module.exports.parseMainCausesEffects = (content, message = '') => {
 
   const effectsAnchors = effectsCell.querySelectorAll("li a");
 
-  const causes = Array.from(causesAnchors).map(c => c.href);
-  const effects = Array.from(effectsAnchors).map(c => c.href);
+  const causes = Array.from(causesAnchors)
+    .map(c => c.href)
+    .map(cardUrl => getCardNumberFromUrl(cardUrl));
+
+  const effects = Array.from(effectsAnchors)
+    .map(c => c.href)
+    .map(getCardNumberFromUrl);
 
   return {
     causes,

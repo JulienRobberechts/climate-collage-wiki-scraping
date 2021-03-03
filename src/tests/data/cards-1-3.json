@@ -1,51 +1,31 @@
 [
   {
-    "id": 4,
     "cardNum": 1,
-    "url": "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
-    "wikiTitle": "Fr-fr adulte carte 1 activités humaines",
-    "shortTitle": "Activités humaines",
-    "cardSet": 1,
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png"
-    },
     "causes": [],
     "effects": [
-      "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
-      "/wiki/index.php?title=Fr-fr_adulte_carte_3_utilisation_des_b%C3%A2timents"
+      2,
+      3,
+      4,
+      8
     ]
   },
   {
-    "id": 12,
     "cardNum": 2,
-    "url": "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
-    "wikiTitle": "Fr-fr adulte carte 2 industrie",
-    "shortTitle": "Industrie",
-    "cardSet": 2,
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/images/7/7e/Fr-fr_adulte_carte_2_recto.png"
-    },
     "causes": [
-      "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines"
+      1
     ],
     "effects": [
-      "/wiki/index.php?title=Fr-fr_adulte_carte_3_utilisation_des_b%C3%A2timents"
+      5,
+      10
     ]
   },
   {
-    "id": 14,
     "cardNum": 3,
-    "url": "/wiki/index.php?title=Fr-fr_adulte_carte_3_utilisation_des_b%C3%A2timents",
-    "wikiTitle": "Fr-fr adulte carte 3 utilisation des bâtiments",
-    "shortTitle": "Utilisation des bâtiments",
-    "cardSet": 2,
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/images/6/60/Fr-fr_adulte_carte_3_recto.png"
-    },
     "causes": [
-      "/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines",
-      "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie"
+      1
     ],
-    "effects": []
+    "effects": [
+      5
+    ]
   }
 ]

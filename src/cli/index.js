@@ -256,11 +256,13 @@ const extractSomeCardsLangFr = async (fromCard, toCard) => {
   console.log('done');
 };
 
+// 3 - EXTRACT_CARD_LINKS
 const extractCardsLinksFromFR = async (fromCard, toCard) => {
   const cardsRelations = await readAllRelations(fromCard, toCard);
   await writeObject(`./data/3.cards-relations-tmp.json`, cardsRelations);
 };
 
+// 4 - computeCardsLinks
 const computeCardsLinks = async () => {
   const cardsRelations = await getObject(`./data/3.cards-relations-tmp.json`);
   const links = await buildAllValidLinks(cardsRelations);

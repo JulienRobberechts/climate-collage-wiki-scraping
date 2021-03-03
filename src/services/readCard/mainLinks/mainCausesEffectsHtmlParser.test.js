@@ -9,26 +9,16 @@ describe('parse main Causes and Effects', () => {
     const content = await getContent(cardContent1FilePath);
     const result = parseMainCausesEffects(content);
     expect(result).toStrictEqual({
-      causes: [
-      ],
-      effects: [
-        "/wiki/index.php?title=Fr-fr_adulte_carte_2_industrie",
-        "/wiki/index.php?title=Fr-fr_adulte_carte_3_b%C3%A2timent",
-        "/wiki/index.php?title=Fr-fr_adulte_carte_4_transport",
-        "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture",
-      ],
+      causes: [],
+      effects: [2, 3, 4, 8],
     });
   });
   it('parse CausesEffects card 6', async () => {
     const content = await getContent(cardContent6FilePath);
     const result = parseMainCausesEffects(content);
     expect(result).toStrictEqual({
-      causes: [
-        "/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture",
-      ],
-      effects: [
-        "/wiki/index.php?title=Fr-fr_adulte_carte_7_%C3%A9missions_de_co2",
-      ],
+      causes: [8],
+      effects: [7],
     });
   });
 });
