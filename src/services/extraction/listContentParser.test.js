@@ -1,11 +1,11 @@
 const { getContent } = require('../fileServices/readFile');
 const { parseListContent } = require('./listContentParser');
 
-const content1FilePath = './src/tests/data/list-fr.html';
+const cardListFrFilePath = './src/services/extraction/test-data/list-fr.html';
 
 describe('parseListContent', () => {
   it('parse', async () => {
-    const content = await getContent(content1FilePath);
+    const content = await getContent(cardListFrFilePath);
     const cards = parseListContent(content);
     expect(cards).toMatchSnapshot();
     expect(cards[0]).toStrictEqual({

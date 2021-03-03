@@ -1,5 +1,10 @@
 const { assertEqual, assertMore } = require('./parserAssertions');
 
+/**
+ *
+ * @param {Json response from the getImageInfo query} response
+ * @param {debug message} message
+ */
 module.exports.parseImageInfo = (response, message = '') => {
   const { pages } = response.query;
   const pagesIds = Object.getOwnPropertyNames(pages);
