@@ -1,9 +1,9 @@
 /**
  * @jest-environment node
  */
-const { getSectionContent } = require('./getPageContent');
+const { getSectionContent } = require('./section');
 
-describe('getPageContent', () => {
+describe('getSectionContent', () => {
   it('get carte_1', async () => {
     const pageId = 4;
     const pageContent = await getSectionContent(pageId, 0);

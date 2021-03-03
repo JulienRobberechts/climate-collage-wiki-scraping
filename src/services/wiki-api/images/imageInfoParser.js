@@ -1,4 +1,4 @@
-const { assertEqual } = require('../extraction/parserAssertions');
+const { assertEqual } = require('../../extraction/parserAssertions');
 
 /**
  *
