@@ -3,14 +3,9 @@ const { getObject } = require('../fileServices/readFile.js');
 const { getPageId } = require('../wiki-api/getPageProps');
 
 const { getSectionContent, getPageSections } = require('../wiki-api/getPageContent');
-const {
-  parseCausesEffects,
-  parseBackDescription,
-  parseExplanation,
-} = require('../extraction/pageContentParser');
-const {
-  parseLinks
-} = require('../extraction/otherLinkParser');
+const { parseBackDescription, parseExplanation } = require('../extraction/pageContentParser');
+const { parseCausesEffects } = require('../extraction/mainCausesEffectsParser');
+const { parseLinks } = require('../extraction/otherLinkParser');
 
 const { getImageInfo } = require('../wiki-api/getImageInfo');
 const { parseImageInfo } = require('../extraction/imageInfoParser');
