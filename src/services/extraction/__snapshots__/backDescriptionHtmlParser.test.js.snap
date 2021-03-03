@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse BackDescription parse BackDescription card 3 1`] = `
+"\\\\nL\\\\u2019utilisation du b\\\\u00e2timent (logement et services) utilise des \\\\u00e9nergies fossiles et de
+      l'\\\\u00e9lectricit\\\\u00e9.\\\\nCela repr\\\\u00e9sente 20% des Gaz \\\\u00e0 Effet de Serre (GES).\\\\n"
+`;

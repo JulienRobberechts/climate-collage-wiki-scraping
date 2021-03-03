@@ -3,9 +3,10 @@ const { getObject } = require('../fileServices/readFile.js');
 const { getPageId } = require('../wiki-api/pages/getPageProps');
 
 const { getSectionContent, getPageSections } = require('../wiki-api/sections/section');
-const { parseBackDescription, parseExplanation } = require('../extraction/pageContentParser');
-const { parseCausesEffects } = require('../extraction/mainCausesEffectsParser');
-const { parseLinks } = require('../extraction/otherLinkParser');
+const { parseBackDescription } = require('../extraction/backDescriptionHtmlParser');
+const { parseExplanation } = require('../extraction/explanationHtmlParser');
+const { parseCausesEffects } = require('../extraction/mainCausesEffectsHtmlParser');
+const { parseLinks } = require('../extraction/otherLinkHtmlParser');
 
 const { getCardImage } = require('../wiki-api/images');
 

@@ -1,5 +1,5 @@
 const { getContent } = require('../fileServices/readFile');
-const { parseListContent } = require('./listContentParser');
+const { parseListContent } = require('./listContentHtmlParser');
 
 const cardListFrFilePath = './src/services/extraction/test-data/list-fr.html';
 

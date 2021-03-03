@@ -1,10 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`parse BackDescription parse BackDescription card 3 1`] = `
-"\\\\nL\\\\u2019utilisation du b\\\\u00e2timent (logement et services) utilise des \\\\u00e9nergies fossiles et de
-      l'\\\\u00e9lectricit\\\\u00e9.\\\\nCela repr\\\\u00e9sente 20% des Gaz \\\\u00e0 Effet de Serre (GES).\\\\n"
-`;
-
 exports[`parse Explanation parse explanation card 1 1`] = `
 "C'est par l\\\\u00e0 que tout commence... C'est aussi par
     l\\\\u00e0 que commence le 5\\\\u00e8me rapport du GIEC, dans l'avant-propos de son r\\\\u00e9sum\\\\u00e9, il est mis en

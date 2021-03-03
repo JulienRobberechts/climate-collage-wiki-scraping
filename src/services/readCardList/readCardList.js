@@ -1,5 +1,5 @@
 const { getSectionContent } = require('../wiki-api/sections/section');
-const { parseListContent } = require('../extraction/listContentParser');
+const { parseListContent } = require('../extraction/listContentHtmlParser');
 
 const readCardList = async () => {
   const pageIdFr = 140;
