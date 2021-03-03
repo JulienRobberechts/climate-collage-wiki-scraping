@@ -2,7 +2,6 @@ const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
 module.exports.parseLinks = (content, message = '') => {
-  // console.log('content', content);
   const { window: { document } } = new JSDOM(content);
   const items = Array.from(document.querySelectorAll("h3+ul>li"));
   const cardLinks = items
