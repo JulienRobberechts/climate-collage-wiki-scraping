@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { assertEqual } = require('../../extraction/parserAssertions');
+const { assertEqual } = require('../../utils/assert/parserAssertions');
 
 /**
  * Query Page Properties to get the page Id

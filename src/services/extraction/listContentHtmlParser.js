@@ -1,6 +1,6 @@
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
-const { assertEqual, assertMore } = require('./parserAssertions');
+const { assertEqual, assertMore } = require('../utils/assert/parserAssertions');
 
 /**
  * Parse the card list

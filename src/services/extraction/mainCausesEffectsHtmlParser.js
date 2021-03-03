@@ -1,6 +1,6 @@
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
-const { assertEqual, assertMore } = require('./parserAssertions');
+const { assertEqual, assertMore } = require('../utils/assert/parserAssertions');
 
 module.exports.parseCausesEffects = (content, message = '') => {
   const { window: { document } } = new JSDOM(content);
