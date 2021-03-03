@@ -1,7 +1,7 @@
 const { getContent } = require('../utils/fileServices/readFile');
 const { parseListContent } = require('./listContentHtmlParser');
 
-const cardListFrFilePath = './src/services/extraction/test-data/list-fr.html';
+const cardListFrFilePath = './src/services/readCardList/test-data/list-fr.html';
 
 describe('parseListContent', () => {
   it('parse', async () => {

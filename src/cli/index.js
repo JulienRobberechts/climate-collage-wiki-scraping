@@ -1,7 +1,8 @@
 const inquirer = require('inquirer');
 
 const { readCardList } = require('../services/readCardList/readCardList');
-const { readCards, readAllRelations } = require('../services/readCard/readCard');
+const { readCards } = require('../services/readCard/readCard');
+const { readAllRelations } = require('../services/readCard/mainLinks/mainLinks');
 const { writeObject } = require('../services/utils/fileServices/writeFile');
 const { getObject } = require('../services/utils/fileServices/readFile');
 const { buildAllValidLinks } = require('../services/linkCalculation/buildLinks');
