@@ -1,10 +1,8 @@
 const { getObject } = require('../utils/fileServices/readFile.js');
 const { getPageId } = require('../wiki-api/pages/getPageProps');
 const { getSectionContentByName } = require('../wiki-api/sections');
-const { parseExplanation } = require('../extraction/explanationHtmlParser');
 const { parseCausesEffects } = require('../extraction/mainCausesEffectsHtmlParser');
 const { getCardImage } = require('../wiki-api/images');
-const { cleanUpStringSpecific } = require('../utils/string/cleanUpString');
 const { sectionMain } = require('../wiki-api/sections/sectionNames.fr.js');
 const { sleepRandom } = require("../utils/time/wait");
 const { getBackDescription } = require('./backDescription/backDescription');
