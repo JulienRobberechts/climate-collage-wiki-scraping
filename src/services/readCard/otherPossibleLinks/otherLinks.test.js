@@ -1,12 +1,12 @@
 /**
  * @jest-environment node
  */
-const { getLinksEffects } = require('./readCard');
+const { getLinksEffects } = require('./otherLinks');
 
 const {
   getCardsFrReferenceByCardNum,
   getLinksEffectFrRef
-} = require('../data-access/cardsRepo')
+} = require('../../data-access/cardsRepo')
 
 const oneTo42 = [...Array(41).keys()].map(n => n + 1);
 const cards1To10 = [...Array(10).keys()].map(n => n + 1);

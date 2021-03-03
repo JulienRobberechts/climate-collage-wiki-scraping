@@ -1,30 +1,13 @@
 const { getObject } = require('../utils/fileServices/readFile.js');
-
 const { getPageId } = require('../wiki-api/pages/getPageProps');
-
 const { getSectionContentByName } = require('../wiki-api/sections');
 const { parseExplanation } = require('../extraction/explanationHtmlParser');
 const { parseCausesEffects } = require('../extraction/mainCausesEffectsHtmlParser');
-const { parseLinks } = require('../extraction/otherLinkHtmlParser');
-
 const { getCardImage } = require('../wiki-api/images');
-const { cleanUpStringBasic, cleanUpStringSpecific } = require('../utils/string/cleanUpString');
-
-const {
-  sectionMain,
-  sectionDefinition,
-  sectionExplanation,
-  sectionAdvice,
-  sectionOtherLinks,
-  sectionOtherLinksCauses,
-  sectionOtherLinksEffects,
-  sectionRef,
-} = require('../wiki-api/sections/sectionNames.fr.js');
-
+const { cleanUpStringSpecific } = require('../utils/string/cleanUpString');
+const { sectionMain, sectionExplanation } = require('../wiki-api/sections/sectionNames.fr.js');
 const { sleepRandom } = require("../utils/time/wait");
 const { getBackDescription } = require('./backDescription/backDescription');
-
-const { getCardNumberFromUrl } = require('../linkCalculation/buildLinks');
 
 const readCard = async (cardNumber) => {
   const sourceFile = `./data/1-cards-list.json`;
@@ -85,18 +68,6 @@ const getExplanation = async (wikiId, message) => {
   return cleanUpStringSpecific(explanation);
 };
 
-const getLinksEffects = async (cardNum, wikiId, message) => {
-  const content = await getSectionContentByName(wikiId, sectionOtherLinksEffects);
-  const links = parseLinks(content, message).map(l => ({
-    fromNum: cardNum,
-    toNum: getCardNumberFromUrl(l.href),
-    status: "optional",
-    explanation: cleanUpStringBasic(l.explanation)
-  }));
-  return links;
-};
-
-
 const readAllRelations = async (fromCard, toCard) => {
   const sourceFile = `./data/1-cards-list.json`;
   const cards = await getObject(sourceFile);
@@ -115,8 +86,6 @@ const readAllRelations = async (fromCard, toCard) => {
   return relationsData;
 };
 
-
-
 module.exports = {
   readCard,
   readCards,
@@ -124,6 +93,5 @@ module.exports = {
   getCardRelations,
   readAllRelations,
   getBackDescription,
-  getExplanation,
-  getLinksEffects
+  getExplanation
 };
