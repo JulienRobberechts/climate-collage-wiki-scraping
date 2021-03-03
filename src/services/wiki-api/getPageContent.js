@@ -2,9 +2,14 @@ const axios = require('axios');
 
 const rootApiUrl = 'https://fresqueduclimat.org/wiki/api.php';
 
-module.exports.getSectionContent = async (pageId, section) => {
+/**
+ * Query a page section by index on Wikimedia
+ * @param {Page Id = WikiId} pageId
+ * @param {Section Index} sectionIndex
+ */
+module.exports.getSectionContent = async (pageId, sectionIndex) => {
   try {
-    const sectionParam = (section === null || section === undefined) ? '' : `&section=${section}`;
+    const sectionParam = (sectionIndex === null || sectionIndex === undefined) ? '' : `&section=${sectionIndex}`;
     const url = `${rootApiUrl}?action=parse&format=json&prop=text&pageid=${pageId}${sectionParam}`;
     const response = await axios.get(url);
     if (response.status !== 200)
@@ -15,6 +20,10 @@ module.exports.getSectionContent = async (pageId, section) => {
   }
 };
 
+/**
+ * Query the list of sections metadata for a page
+ * @param {Page Id = WikiId} pageId
+ */
 module.exports.getPageSections = async (pageId) => {
   try {
     const url = `${rootApiUrl}?action=parse&format=json&prop=sections&pageid=${pageId}`;

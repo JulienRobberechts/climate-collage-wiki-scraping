@@ -2,6 +2,10 @@ const axios = require('axios');
 
 const rootApiUrl = 'https://fresqueduclimat.org/wiki/api.php';
 
+/**
+ * query the image info on Wikimedia
+ * @param {Card number} cardNum
+ */
 module.exports.getImageInfo = async (cardNum) => {
 
   try {
