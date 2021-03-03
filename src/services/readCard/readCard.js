@@ -5,16 +5,10 @@ const { sleepRandom } = require("../utils/time/wait");
 const { getBackDescription } = require('./backDescription/backDescription');
 const { getExplanation } = require('./explanation/explanation');
 
-const readCard = async (cardNumber) => {
-  const sourceFile = `./data/1-cards-list.json`;
-  const cards = await getObject(sourceFile);
-  const card = cards.find(({ cardNum }) => cardNum === cardNumber);
-  return await getCardData(card);
-};
+const cardsFilePath = `./data/1-cards-list.json`;
 
 const readCards = async (fromCard, toCard) => {
-  const sourceFile = `./data/1-cards-list.json`;
-  const cards = await getObject(sourceFile);
+  const cards = await getObject(cardsFilePath);
 
   const cardsData = [];
   for (let index = fromCard - 1; index < toCard; index++) {
@@ -24,6 +18,12 @@ const readCards = async (fromCard, toCard) => {
     await sleepRandom(300, 800);
   }
   return cardsData;
+};
+
+const readCard = async (cardNumber) => {
+  const cards = await getObject(cardsFilePath);
+  const card = cards.find(({ cardNum }) => cardNum === cardNumber);
+  return await getCardData(card);
 };
 
 const getCardData = async (card) => {
@@ -53,8 +53,7 @@ const getCardData = async (card) => {
 };
 
 module.exports = {
-  readCard,
   readCards,
-  getCardData,
-  getBackDescription
+  readCard,
+  getCardData
 };
