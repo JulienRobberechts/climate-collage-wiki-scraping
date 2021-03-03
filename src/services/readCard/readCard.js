@@ -8,7 +8,7 @@ const { parseCausesEffects } = require('../extraction/mainCausesEffectsParser');
 const { parseLinks } = require('../extraction/otherLinkParser');
 
 const { getImageInfo } = require('../wiki-api/getImageInfo');
-const { parseImageInfoResponse } = require('../extraction/imageInfoParser');
+const { parseImageInfoResponse } = require('../wiki-api/imageInfoParser');
 
 const {
   getSectionIndex,

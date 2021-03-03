@@ -1,8 +1,8 @@
 const { getContent } = require('../fileServices/readFile');
-const { parseImageInfo: parseImageInfoResponse } = require('./imageInfoParser');
+const { parseImageInfoResponse } = require('./imageInfoParser');
 
-const imageInfo1FilePath = './src/tests/data/image1.json';
-const imageInfo3FilePath = './src/tests/data/image3.json';
+const imageInfo1FilePath = './src/services/wiki-api/test-data/image1.json';
+const imageInfo3FilePath = './src/services/wiki-api/test-data/image3.json';
 
 describe('parse ImageInfo response', () => {
   it('read', async () => {
