@@ -1,6 +1,6 @@
 const { getObject } = require('../fileServices/readFile.js');
 
-const { getPageId } = require('../wiki-api/page/getPageProps');
+const { getPageId } = require('../wiki-api/pages/getPageProps');
 
 const { getSectionContent, getPageSections } = require('../wiki-api/sections/section');
 const { parseBackDescription, parseExplanation } = require('../extraction/pageContentParser');
