@@ -1,11 +1,7 @@
 /**
  * @jest-environment node
  */
-const {
-  readCards,
-  getSectionContentByName,
-} = require('./readCard');
-
+const { getSectionContentByName } = require('./cardSection');
 
 const {
   sectionMain,
@@ -16,7 +12,7 @@ const {
   sectionOtherLinksCauses,
   sectionOtherLinksEffects,
   sectionRef,
-} = require('../extraction/sectionExtractor');
+} = require('./sectionExtractor');
 
 describe('getSectionContentByName', () => {
   const checkSectionExists = async (wikiId, sectionName) => {

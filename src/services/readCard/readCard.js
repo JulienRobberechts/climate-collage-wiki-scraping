@@ -2,7 +2,7 @@ const { getObject } = require('../fileServices/readFile.js');
 
 const { getPageId } = require('../wiki-api/pages/getPageProps');
 
-const { getSectionContent, getPageSections } = require('../wiki-api/sections/section');
+const { getSectionContentByName } = require('../wiki-api/sections');
 const { parseBackDescription } = require('../extraction/backDescriptionHtmlParser');
 const { parseExplanation } = require('../extraction/explanationHtmlParser');
 const { parseCausesEffects } = require('../extraction/mainCausesEffectsHtmlParser');
@@ -11,7 +11,6 @@ const { parseLinks } = require('../extraction/otherLinkHtmlParser');
 const { getCardImage } = require('../wiki-api/images');
 
 const {
-  getSectionIndex,
   sectionMain,
   sectionDefinition,
   sectionExplanation,
@@ -20,7 +19,7 @@ const {
   sectionOtherLinksCauses,
   sectionOtherLinksEffects,
   sectionRef,
-} = require('../extraction/sectionExtractor');
+} = require('../wiki-api/sections/sectionNames.fr.js');
 
 const { sleepRandom } = require("../time/wait");
 const { getCardsFrReferenceByCardNum } = require('../data-access/cardsRepo.js');
@@ -72,15 +71,6 @@ const getCardData = async (card) => {
     backDescription,
     explanation
   };
-};
-
-
-const getSectionContentByName = async (wikiId, sectionName) => {
-  const sections = await getPageSections(wikiId);
-  const sectionIndex = getSectionIndex(sections, sectionName);
-  if (sectionIndex === -1) { return ''; }
-  const sectionContent = await getSectionContent(wikiId, sectionIndex);
-  return sectionContent;
 };
 
 const getCardRelations = async (wikiId, message) => {
@@ -167,6 +157,5 @@ module.exports = {
   readAllRelations,
   getBackDescription,
   getExplanation,
-  getSectionContentByName,
   getLinksEffects
 };

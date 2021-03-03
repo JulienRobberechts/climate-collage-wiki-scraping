@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-const { getSectionContent } = require('./section');
+const { getSectionContent } = require('./sectionApi');
 
 describe('getSectionContent', () => {
   it('get carte_1', async () => {

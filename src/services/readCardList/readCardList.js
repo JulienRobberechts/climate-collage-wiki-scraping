@@ -1,4 +1,4 @@
-const { getSectionContent } = require('../wiki-api/sections/section');
+const { getSectionContent } = require('../wiki-api/sections');
 const { parseListContent } = require('../extraction/listContentHtmlParser');
 
 const readCardList = async () => {
