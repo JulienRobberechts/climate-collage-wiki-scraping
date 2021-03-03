@@ -15,7 +15,7 @@ const cards20To30 = [...Array(10).keys()].map(n => n + 20);
 const cards30To42 = [...Array(13).keys()].map(n => n + 30);
 
 describe('backDescription', () => {
-  it.each(oneTo42)('check backDescription on card %i', async (cardNum) => {
+  it.skip.each(oneTo42)('check backDescription on card %i', async (cardNum) => {
     // const cardNum = 4;
     const card = await getCardsFrReferenceByCardNum(cardNum);
     // console.log('card 4', card);

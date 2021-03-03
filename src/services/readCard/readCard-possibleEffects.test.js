@@ -15,7 +15,7 @@ const cards20To30 = [...Array(10).keys()].map(n => n + 20);
 const cards30To42 = [...Array(13).keys()].map(n => n + 30);
 
 describe('PossibleEffects', () => {
-  it.each(oneTo42)('check links effects on card %i', async (cardNum) => {
+  it.skip.each(oneTo42)('check links effects on card %i', async (cardNum) => {
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const expectedLink = await getLinksEffectFrRef(cardNum, 'optional');
     const actualLinks = await getLinksEffects(cardNum, card.wikiId);

@@ -7,8 +7,10 @@ const {
   parseCausesEffects,
   parseBackDescription,
   parseExplanation,
-  parseLinks
 } = require('../extraction/pageContentParser');
+const {
+  parseLinks
+} = require('../extraction/otherLinkParser');
 
 const { getImageInfo } = require('../wiki-api/getImageInfo');
 const { parseImageInfo } = require('../extraction/imageInfoParser');

@@ -13,7 +13,7 @@ const cards20To30 = [...Array(10).keys()].map(n => n + 20);
 const cards30To42 = [...Array(13).keys()].map(n => n + 30);
 
 describe('explanation', () => {
-  it.each(oneTo42)('check explanation on card %i', async (cardNum) => {
+  it.skip.each(oneTo42)('check explanation on card %i', async (cardNum) => {
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const explanation = await getExplanation(card.wikiId);
     expect(explanation).toStrictEqual(card.explanation);

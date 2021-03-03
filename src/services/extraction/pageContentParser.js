@@ -86,25 +86,3 @@ const assertEqual = (message, actualNum, expectedNum) => {
 const assertMore = (message, actualNum, expectedNum) => {
   if (!(actualNum >= expectedNum)) { throw new Error(`${message} is '${actualNum}' instead of '${expectedNum}'`); }
 }
-
-module.exports.parseLinks = (content, message = '') => {
-  // console.log('content', content);
-  const { window: { document } } = new JSDOM(content);
-  const items = Array.from(document.querySelectorAll("h3+ul>li"));
-  const cardLinks = items
-    .map(parseLink);
-
-  return cardLinks;
-};
-
-const parseLink = (listItem) => {
-  listItem.child
-  const anchor = listItem.querySelector("a");
-  const explanation = listItem.textContent
-    .replace(anchor.textContent, '');
-
-  return {
-    href: anchor.href,
-    explanation,
-  }
-};
