@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse other links parse optional Effects card 1 1`] = `
+Array [
+  Object {
+    "explanation": " L'être humain occupe presque
+      tout l'espace disponible sur terre, ne laissant aucune place aux animaux et aux plantes. C'est ce qu'on appelle la
+      disparition des habitats naturels et c'est la principale cause de perte de biodiversité aujourd'hui, bien devant
+      les causes climatiques.",
+    "href": "/wiki/index.php?title=Fr-fr_adulte_carte_25_biodiversit%C3%A9_terrestre",
+  },
+  Object {
+    "explanation": " Par ce lien, on exprime toutes les
+      dégradations que l'être humain est capable d'infliger à la vie marine comme la pollution au plastique et la
+      sur-pêche. C'est hors-sujet par rapport au changement climatique, mais c'est intéressant de faire le lien
+      quand-même.",
+    "href": "/wiki/index.php?title=Fr-fr_adulte_carte_27_biodiversit%C3%A9_marine",
+  },
+]
+`;
+
+exports[`parse other links parse optional Effects card 20 1`] = `
+Array [
+  Object {
+    "explanation": " C'est tr\\\\u00e8s technique, mais si on est
+      pointilleux, la partie bleue du graphique de la carte 19 concernant l'Antarctique repr\\\\u00e9sente un gain de masse
+      d\\\\u00fb \\\\u00e0 une augmentation des pr\\\\u00e9cipitations. Les parties rouges repr\\\\u00e9sentent une perte de masse.
+      Au total, l'Antarctique perd de la masse.",
+    "href": "\\\\\\"/wiki/index.php?title=Fr-fr_adulte_carte_19_fonte_des_calottes_glaciaires\\\\\\"",
+  },
+  Object {
+    "explanation": " La carte vecteurs de maladie est en g\\\\u00e9n\\\\u00e9ral reli\\\\u00e9e \\\\u00e0 la
+      carte Biodiversit\\\\u00e9 terrestre car les vecteurs de maladie sont une
+      sous-partie de la biodiversit\\\\u00e9, mais on peut aussi la relier aux m\\\\u00eames causes que la carte
+      biodiversit\\\\u00e9, c\\\\u2019est-\\\\u00e0-dire perturbation du cycle de l'eau et hausse de la temp\\\\u00e9rature.",
+    "href": "\\\\\\"/wiki/index.php?title=Fr-fr_adulte_carte_28_vecteurs_de_maladie\\\\\\"",
+  },
+]
+`;

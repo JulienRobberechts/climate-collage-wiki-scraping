@@ -119,3 +119,9 @@ https://{{api}}?action=parse&format=json&pageid=23&section=1&prop=text
 
 ### parse  page 7 - section index 2
 https://{{api}}?action=parse&format=json&pageid=23&section=2&prop=text
+
+### sections page 20
+https://{{api}}?action=parse&format=json&pageid=48&prop=sections
+
+### parse page 20 - section index 5
+https://{{api}}?action=parse&format=json&pageid=48&section=5&prop=text
