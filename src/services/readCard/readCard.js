@@ -2,7 +2,7 @@ const { getObject } = require('../fileServices/readFile.js');
 
 const { getPageId } = require('../wiki-api/page/getPageProps');
 
-const { getSectionContent, getPageSections } = require('../wiki-api/section');
+const { getSectionContent, getPageSections } = require('../wiki-api/sections/section');
 const { parseBackDescription, parseExplanation } = require('../extraction/pageContentParser');
 const { parseCausesEffects } = require('../extraction/mainCausesEffectsParser');
 const { parseLinks } = require('../extraction/otherLinkParser');
