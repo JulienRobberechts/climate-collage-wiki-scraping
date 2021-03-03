@@ -7,8 +7,7 @@ const { parseBackDescription, parseExplanation } = require('../extraction/pageCo
 const { parseCausesEffects } = require('../extraction/mainCausesEffectsParser');
 const { parseLinks } = require('../extraction/otherLinkParser');
 
-const { getImageInfo } = require('../wiki-api/images/getImageInfo');
-const { parseImageInfoResponse } = require('../wiki-api/images/imageInfoParser');
+const { getCardImage } = require('../wiki-api/images');
 
 const {
   getSectionIndex,
@@ -74,11 +73,6 @@ const getCardData = async (card) => {
   };
 };
 
-const getCardImage = async (cardNum, message) => {
-  const data = await getImageInfo(cardNum);
-  const img = parseImageInfoResponse(data, message);
-  return img;
-};
 
 const getSectionContentByName = async (wikiId, sectionName) => {
   const sections = await getPageSections(wikiId);
