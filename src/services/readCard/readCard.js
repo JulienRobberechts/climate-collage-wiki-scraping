@@ -3,12 +3,12 @@ const { getObject } = require('../utils/fileServices/readFile.js');
 const { getPageId } = require('../wiki-api/pages/getPageProps');
 
 const { getSectionContentByName } = require('../wiki-api/sections');
-const { parseBackDescription } = require('../extraction/backDescriptionHtmlParser');
 const { parseExplanation } = require('../extraction/explanationHtmlParser');
 const { parseCausesEffects } = require('../extraction/mainCausesEffectsHtmlParser');
 const { parseLinks } = require('../extraction/otherLinkHtmlParser');
 
 const { getCardImage } = require('../wiki-api/images');
+const { cleanUpStringBasic, cleanUpStringSpecific } = require('../utils/string/cleanUpString');
 
 const {
   sectionMain,
@@ -22,7 +22,7 @@ const {
 } = require('../wiki-api/sections/sectionNames.fr.js');
 
 const { sleepRandom } = require("../utils/time/wait");
-const { getCardsFrReferenceByCardNum } = require('../data-access/cardsRepo.js');
+const { getBackDescription } = require('./backDescription/backDescription');
 
 const { getCardNumberFromUrl } = require('../linkCalculation/buildLinks');
 
@@ -79,12 +79,6 @@ const getCardRelations = async (wikiId, message) => {
   return relations;
 };
 
-const getBackDescription = async (wikiId, message) => {
-  const content = await getSectionContentByName(wikiId, sectionMain);
-  const backDescription = parseBackDescription(content, message);
-  return cleanUpStringSpecific(backDescription);
-};
-
 const getExplanation = async (wikiId, message) => {
   const content = await getSectionContentByName(wikiId, sectionExplanation);
   const explanation = parseExplanation(content, message);
@@ -102,32 +96,6 @@ const getLinksEffects = async (cardNum, wikiId, message) => {
   return links;
 };
 
-const cleanUpStringSpecific = (input) => {
-  return cleanUpStringBasic(input)
-    .replace("3 , 1 W / m 2 {\\displaystyle 3,1W/m^{2}}", "3,1 W/m2")
-    .replace("m 2 {\\displaystyle m^{2}} ", "métre carré")
-    .replace("0 , 8 W / m 2 {\\displaystyle -0,8W/m^{2}}", "0,8 W/m2")
-    .replace("2 , 3 W / m 2 {\\displaystyle 2,3W/m^{2}}", "2,3 W/m2")
-    .replace("2 , 6 W / m 2 {\\displaystyle 2,6W/m^{2}}", "2,6 W/m2");
-};
-
-const cleanUpStringBasic = (input) => {
-  const newline = /\n/gi;
-  const spaces = /\s+/gi;
-  const tab = /\t/gi;
-  const nbsp = /\u00A0/gi;
-  const reference = /\s*\[\d\]/gi;
-
-  return input
-    .replace(reference, '')
-    .replace(spaces, ' ')
-    .replace(tab, ' ')
-    .replace(nbsp, ' ')
-    .replace(newline, ' ')
-    .replace(/:([A-Z])/g, ": $1")
-    .replace(/\.([A-Z])/g, ". $1")
-    .trim();
-};
 
 const readAllRelations = async (fromCard, toCard) => {
   const sourceFile = `./data/1-cards-list.json`;

@@ -1,13 +1,8 @@
 /**
  * @jest-environment node
  */
-const {
-  getBackDescription,
-} = require('./readCard');
-
-const {
-  getCardsFrReferenceByCardNum
-} = require('../data-access/cardsRepo')
+const { getBackDescription } = require('./backDescription');
+const { getCardsFrReferenceByCardNum } = require('../../data-access/cardsRepo')
 
 const oneTo42 = [...Array(41).keys()].map(n => n + 1);
 const cards10To20 = [...Array(10).keys()].map(n => n + 10);
