@@ -35,12 +35,12 @@ const buildLinks = (cards, cardNumber) => {
     fromNum: causeCardId,
     toNum: cardNumber
   }));
-  const linkConsequences = card.effects.map(effectCardId => ({
+  const linkEffects = card.effects.map(effectCardId => ({
     fromNum: cardNumber,
     toNum: effectCardId,
   }));
 
-  return [...linkCauses, ...linkConsequences];
+  return [...linkCauses, ...linkEffects];
 };
 
 const getCardByNum = (cards, cardNumber) => {
