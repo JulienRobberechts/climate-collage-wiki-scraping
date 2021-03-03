@@ -1,4 +1,4 @@
-const { getObject } = require('../../fileServices/readFile');
+const { getObject } = require('../../utils/fileServices/readFile');
 const {
   getSectionIndex,
   sectionMain,

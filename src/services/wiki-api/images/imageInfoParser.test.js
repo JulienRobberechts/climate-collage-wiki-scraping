@@ -1,4 +1,4 @@
-const { getContent } = require('../../fileServices/readFile');
+const { getContent } = require('../../utils/fileServices/readFile');
 const { parseImageInfoResponse } = require('./imageInfoParser');
 
 const imageInfo1FilePath = './src/services/wiki-api/test-data/image1.json';

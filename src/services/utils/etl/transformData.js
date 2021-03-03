@@ -1,5 +1,5 @@
-const { getObject } = require('../fileServices/readFile');
-const { writeFile } = require('../fileServices/writeFile');
+const { getObject } = require('../utils/fileServices/readFile');
+const { writeFile } = require('../utils/fileServices/writeFile');
 
 const mapDataFile = async (inputFilePath, transform, outputFilePath) => {
   // console.log(`\nRead data from file '${inputFilePath}' ...`);

@@ -1,4 +1,4 @@
-const { getObject } = require('../fileServices/readFile.js');
+const { getObject } = require('../utils/fileServices/readFile.js');
 
 // const getCardsList = async () => {
 //   const sourceFile = `./data/1-cards-list.json`;

@@ -1,4 +1,4 @@
-const { getObject } = require('../fileServices/readFile.js');
+const { getObject } = require('../utils/fileServices/readFile.js');
 
 const { getPageId } = require('../wiki-api/pages/getPageProps');
 
@@ -21,7 +21,7 @@ const {
   sectionRef,
 } = require('../wiki-api/sections/sectionNames.fr.js');
 
-const { sleepRandom } = require("../time/wait");
+const { sleepRandom } = require("../utils/time/wait");
 const { getCardsFrReferenceByCardNum } = require('../data-access/cardsRepo.js');
 
 const { getCardNumberFromUrl } = require('../linkCalculation/buildLinks');

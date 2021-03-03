@@ -2,10 +2,10 @@ const inquirer = require('inquirer');
 
 const { readCardList } = require('../services/readCardList/readCardList');
 const { readCards, readAllRelations } = require('../services/readCard/readCard');
-const { writeObject } = require('../services/fileServices/writeFile');
+const { writeObject } = require('../services/utils/fileServices/writeFile');
+const { getObject } = require('../services/utils/fileServices/readFile');
 const { buildAllValidLinks } = require('../services/linkCalculation/buildLinks');
-const { getObject } = require('../services/fileServices/readFile');
-const { mapDataFile } = require('../services/etl/transformData');
+const { mapDataFile } = require('../services/utils/etl/transformData');
 
 const LANG_FR = 'Français';
 const LANG_EN = 'English (Not supported yet)';

@@ -1,4 +1,4 @@
-const { getContent } = require('../fileServices/readFile');
+const { getContent } = require('../utils/fileServices/readFile');
 const { parseLinks } = require('./otherLinkHtmlParser');
 
 const linksEffectsFilePathForCard =

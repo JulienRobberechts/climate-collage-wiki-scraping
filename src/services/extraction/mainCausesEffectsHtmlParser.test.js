@@ -1,4 +1,4 @@
-const { getContent } = require('../fileServices/readFile');
+const { getContent } = require('../utils/fileServices/readFile');
 const { parseCausesEffects } = require('./mainCausesEffectsHtmlParser');
 
 const cardContent1FilePath = './src/tests/data/carte1.html';
