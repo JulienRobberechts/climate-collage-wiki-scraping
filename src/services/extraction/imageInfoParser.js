@@ -1,3 +1,5 @@
+const { assertEqual, assertMore } = require('./parserAssertions');
+
 module.exports.parseImageInfo = (response, message = '') => {
   const { pages } = response.query;
   const pagesIds = Object.getOwnPropertyNames(pages);
@@ -7,7 +9,3 @@ module.exports.parseImageInfo = (response, message = '') => {
   const { url } = imageinfo[0];
   return { url };
 };
-
-const assertEqual = (message, actualNum, expectedNum) => {
-  if (actualNum !== expectedNum) { throw new Error(`${message} is '${actualNum}' instead of '${expectedNum}'`); }
-}

@@ -1,5 +1,6 @@
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
+const { assertEqual, assertMore } = require('./parserAssertions');
 
 module.exports.parseListContent = (content, message = '') => {
   const dom = new JSDOM(content);
@@ -45,11 +46,3 @@ const parseCardRow = (contentRow, expectedCardNum, message = '') => {
 
   return { cardNum, title, wikiInternalName, wikiUrl, cardSet };
 };
-
-const assertEqual = (message, actualNum, expectedNum) => {
-  if (actualNum !== expectedNum) { throw new Error(`${message} is '${actualNum}' instead of '${expectedNum}'`); }
-}
-
-const assertMore = (message, actualNum, expectedNum) => {
-  if (!(actualNum >= expectedNum)) { throw new Error(`${message} is '${actualNum}' instead of '${expectedNum}'`); }
-}

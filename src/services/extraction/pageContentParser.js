@@ -1,17 +1,6 @@
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
-
-// module.exports.parsePageContent = (content, message = '') => {
-
-//   const { causes, effects } = parseCausesEffects(document, message);
-//   const backDescription = parseBackDescription(document, message);
-
-//   return {
-//     backDescription,
-//     causes,
-//     effects,
-//   };
-// };
+const { assertEqual, assertMore } = require('./parserAssertions');
 
 module.exports.parseCausesEffects = (content, message = '') => {
   const { window: { document } } = new JSDOM(content);
@@ -68,21 +57,8 @@ module.exports.parseExplanation = (content, message = '') => {
   return explanation;
 };
 
-// const log = el => {
-//   // console.log(el.className);
-//   // console.log('isNotRef =', el.className === "mw-references-wrap");
-//   return el;
-// };
-
 const elementIsNotReferenceNote = el => el.className !== "mw-references-wrap";
 const toText = (el) => el.textContent.trim();
 const replaceTextReference = (text) => text.replace('[1]', '').replace('[2]', '');
 const mergeTexts = (sum, text) => sum + text;
 
-const assertEqual = (message, actualNum, expectedNum) => {
-  if (actualNum !== expectedNum) { throw new Error(`${message} is '${actualNum}' instead of '${expectedNum}'`); }
-}
-
-const assertMore = (message, actualNum, expectedNum) => {
-  if (!(actualNum >= expectedNum)) { throw new Error(`${message} is '${actualNum}' instead of '${expectedNum}'`); }
-}
