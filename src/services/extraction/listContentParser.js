@@ -2,12 +2,16 @@ const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const { assertEqual, assertMore } = require('./parserAssertions');
 
+/**
+ * Parse the card list
+ * @param {html content of the card section of the game page} content
+ * @param {debug message to display} message
+ */
 module.exports.parseListContent = (content, message = '') => {
   const dom = new JSDOM(content);
 
   const tables = dom.window.document.querySelectorAll("table");
   assertMore('table count' + message, tables.length, 1);
-
 
   const rows = tables[0].querySelectorAll("tr");
   assertEqual('row count' + message, rows.length, 42 + 1);
