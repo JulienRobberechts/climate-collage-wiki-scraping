@@ -5,9 +5,10 @@ const { parseExplanation } = require('../extraction/explanationHtmlParser');
 const { parseCausesEffects } = require('../extraction/mainCausesEffectsHtmlParser');
 const { getCardImage } = require('../wiki-api/images');
 const { cleanUpStringSpecific } = require('../utils/string/cleanUpString');
-const { sectionMain, sectionExplanation } = require('../wiki-api/sections/sectionNames.fr.js');
+const { sectionMain } = require('../wiki-api/sections/sectionNames.fr.js');
 const { sleepRandom } = require("../utils/time/wait");
 const { getBackDescription } = require('./backDescription/backDescription');
+const { getExplanation } = require('./explanation/explanation');
 
 const readCard = async (cardNumber) => {
   const sourceFile = `./data/1-cards-list.json`;
@@ -62,11 +63,6 @@ const getCardRelations = async (wikiId, message) => {
   return relations;
 };
 
-const getExplanation = async (wikiId, message) => {
-  const content = await getSectionContentByName(wikiId, sectionExplanation);
-  const explanation = parseExplanation(content, message);
-  return cleanUpStringSpecific(explanation);
-};
 
 const readAllRelations = async (fromCard, toCard) => {
   const sourceFile = `./data/1-cards-list.json`;
@@ -92,6 +88,5 @@ module.exports = {
   getCardData,
   getCardRelations,
   readAllRelations,
-  getBackDescription,
-  getExplanation
+  getBackDescription
 };
