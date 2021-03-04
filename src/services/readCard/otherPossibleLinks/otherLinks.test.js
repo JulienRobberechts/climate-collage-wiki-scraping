@@ -23,8 +23,8 @@ const checkOptionalEffects = async (cardNum) => {
 
 describe('Optional effects links', () => {
   it.each(oneTo42)('check links effects on card %i', checkOptionalEffects);
-  it('check links possible effects card 10', async () => {
-    await checkOptionalEffects(10);
+  it('check links possible effects card 39', async () => {
+    await checkOptionalEffects(39);
   });
 });
 
