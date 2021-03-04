@@ -4,19 +4,28 @@ const { getCardImage } = require('../wiki-api/images');
 const { sleepRandom } = require("../utils/time/wait");
 const { getBackDescription } = require('./backDescription/backDescription');
 const { getExplanation } = require('./explanation/explanation');
+const { createProgressBar } = require('../../cli/progress');
 
 const cardsFilePath = `./data/1-cards-list.json`;
-
 const readCards = async (fromCard, toCard) => {
   const cards = await getObject(cardsFilePath);
-
+  const progress = createProgressBar(toCard - fromCard+1);
   const cardsData = [];
-  for (let index = fromCard - 1; index < toCard; index++) {
-    const card = cards[index];
-    const cardData = await getCardData(card);
-    cardsData.push(cardData);
-    await sleepRandom(300, 800);
+  try {
+    for (let index = fromCard - 1; index < toCard; index++) {
+      progress.increment();
+      const card = cards[index];
+      const cardData = await getCardData(card);
+      cardsData.push(cardData);
+      await sleepRandom(200, 200);
+    }
+  } catch (error) {
+    console.log('Read Cards error: ', error);
   }
+  finally {
+    progress.stop();
+  }
+
   return cardsData;
 };
 

@@ -12,6 +12,7 @@ module.exports.executeRequest = async (answers, cli) => {
     console.log("English is not supported yet. sorry.");
     return;
   }
+  console.log("\nprocessing...");
   switch (answers.operation) {
     case cli.action.EXTRACT_GAME:
       await extractGame();
@@ -38,5 +39,6 @@ module.exports.executeRequest = async (answers, cli) => {
       console.log(`Operation not implemented`);
       break;
   }
+  console.log("\ndone.\n");
 };
 

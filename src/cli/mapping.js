@@ -11,7 +11,6 @@ module.exports.extractYtFr = async () => {
   }));
   const outFilePath = `./data/external-sources/cards-videos-fr.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
-  console.log('done');
 };
 
 module.exports.extractCardsLanguage = async () => {
@@ -39,7 +38,6 @@ module.exports.extractCardsLanguage = async () => {
   }));
   const outFilePath = `./data/targetv2/cards-fr.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
-  console.log('done');
 };
 
 module.exports.extractLinksLanguage = async () => {
@@ -55,7 +53,6 @@ module.exports.extractLinksLanguage = async () => {
   }));
   const outFilePath = `./data/targetv2/links-fr.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
-  console.log('done');
 };
 
 module.exports.extractLinksStruct = async () => {
@@ -71,5 +68,4 @@ module.exports.extractLinksStruct = async () => {
   }));
   const outFilePath = `./data/targetv2/links.json`;
   await mapDataFile(inFilePath, transform, outFilePath);
-  console.log('done');
 };

@@ -31,7 +31,7 @@ var questions = [
   {
     type: 'list',
     name: 'operation',
-    message: 'What do you want?',
+    message: 'What do you want to do?',
     choices: [
       cli.action.EXTRACT_GAME,
       cli.action.EXTRACT_CARDS_LIST,
