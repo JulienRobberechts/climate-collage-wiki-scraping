@@ -7,29 +7,29 @@ const {
   computeCardsLinks,
 } = require('../services/extraction/extractionProcess');
 
-module.exports.executeRequest = (answers, cli) => {
+module.exports.executeRequest = async (answers, cli) => {
   if (answers.langage === cli.lang.EN) {
     console.log("English is not supported yet. sorry.");
     return;
   }
   switch (answers.operation) {
     case cli.action.EXTRACT_GAME:
-      extractGame();
+      await extractGame();
       break;
     case cli.action.EXTRACT_CARDS_LIST:
-      extractCardList();
+      await extractCardList();
       break;
     case cli.action.EXTRACT_CARD_DETAILS:
-      extractAllCards();
+      await extractAllCards();
       break;
     case cli.action.EXTRACT_LINKS:
-      extractCardsLinks();
+      await extractCardsLinks();
       break;
     case cli.action.EXTRACT_CARD_LINKS:
-      extractCardsLinksFromFR();
+      await extractCardsLinksFromFR();
       break;
     case cli.action.COMPUTE_CARD_LINKS:
-      computeCardsLinks();
+      await computeCardsLinks();
       break;
     case cli.action.CUSTOM_TREATMENT:
       console.log('CUSTOM_TREATMENT');
