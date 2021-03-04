@@ -1,15 +1,14 @@
 const { getObject } = require('../../utils/fileServices/readFile');
 const {
-  getSectionIndex,
   sectionMain,
   sectionDefinition,
   sectionExplanation,
   sectionAdvice,
-  sectionOtherLinks,
   sectionOtherLinksCauses,
   sectionOtherLinksEffects,
-  sectionRef
-} = require('./sectionExtractor')
+} = require('./sectionNames.fr');
+const { getSectionIndex } = require('./sectionExtractor');
+
 
 
 async function getSectionIndexForCardNum(cardNum, sectionName) {

@@ -6,13 +6,8 @@ const { getSectionContentByName } = require('./cardSection');
 const {
   sectionMain,
   sectionDefinition,
-  sectionExplanation,
   sectionAdvice,
-  sectionOtherLinks,
-  sectionOtherLinksCauses,
-  sectionOtherLinksEffects,
-  sectionRef,
-} = require('./sectionExtractor');
+} = require('./sectionNames.fr');
 
 describe('getSectionContentByName', () => {
   const checkSectionExists = async (wikiId, sectionName) => {
