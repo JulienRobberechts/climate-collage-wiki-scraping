@@ -6,7 +6,7 @@ const { getLinksEffects } = require('./otherLinks');
 const {
   getCardsFrReferenceByCardNum,
   getLinksEffectFrRef
-} = require('../../data-access/cardsRepo')
+} = require('../../data-access/cardsRepo');
 
 const oneTo42 = [...Array(41).keys()].map(n => n + 1);
 const cards1To10 = [...Array(10).keys()].map(n => n + 1);
@@ -14,7 +14,7 @@ const cards10To20 = [...Array(10).keys()].map(n => n + 10);
 const cards20To30 = [...Array(10).keys()].map(n => n + 20);
 const cards30To42 = [...Array(13).keys()].map(n => n + 30);
 
-describe('PossibleEffects', () => {
+describe('Optional effects links', () => {
   it.skip.each(oneTo42)('check links effects on card %i', async (cardNum) => {
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const expectedLink = await getLinksEffectFrRef(cardNum, 'optional');

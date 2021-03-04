@@ -254,7 +254,7 @@
   {
     "fromNum": 10,
     "toNum": 38,
-    "status": "optional",
+    "status": "valid",
     "explanation": "Bien que les aérosols ne soient pas les seuls à rentrer dans la catégorie \"Particule fines\", chaque année, 391 000 personnes dans les pays de l'UE décèdent de la pollution de l'air, et elle cause 1.1 millions décès prématurés en Inde et en Chine."
   },
   {
@@ -511,12 +511,6 @@
   },
   {
     "fromNum": 21,
-    "toNum": 20,
-    "status": "valid",
-    "explanation": ""
-  },
-  {
-    "fromNum": 21,
     "toNum": 32,
     "status": "valid",
     "explanation": "Dans les pays du Nord, une hausse de la température peut améliorer les rendements. Dans les pays du Sud, c'est le contraire : la moindre augmentation de température se traduit par une baisse de rendement."
@@ -608,7 +602,7 @@
   {
     "fromNum": 26,
     "toNum": 31,
-    "status": "valid",
+    "status": "optional",
     "explanation": ""
   },
   {
@@ -691,15 +685,15 @@
   },
   {
     "fromNum": 31,
-    "toNum": 38,
-    "status": "valid",
-    "explanation": ""
-  },
-  {
-    "fromNum": 31,
     "toNum": 37,
     "status": "optional",
     "explanation": "Si l'on considère qu'une famine n'est pas seulement un manque de nourriture mais également un manque d'eau."
+  },
+  {
+    "fromNum": 31,
+    "toNum": 38,
+    "status": "optional",
+    "explanation": ""
   },
   {
     "fromNum": 32,
@@ -818,7 +812,7 @@
   {
     "fromNum": 37,
     "toNum": 40,
-    "status": "valid",
+    "status": "optional",
     "explanation": ""
   },
   {
@@ -836,7 +830,7 @@
   {
     "fromNum": 39,
     "toNum": 38,
-    "status": "valid",
+    "status": "optional",
     "explanation": ""
   },
   {
