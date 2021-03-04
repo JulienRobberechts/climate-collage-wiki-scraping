@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-const { getLinksEffects } = require('./otherLinks');
+const { getOptionalEffects } = require('./otherLinks');
 
 const {
   getCardsFrReferenceByCardNum,
@@ -17,7 +17,7 @@ const cards30To42 = [...Array(13).keys()].map(n => n + 30);
 const checkOptionalEffects = async (cardNum) => {
   const card = await getCardsFrReferenceByCardNum(cardNum);
   const expectedLink = await getLinksEffectFrRef(cardNum, 'optional');
-  const actualLinks = await getLinksEffects(cardNum, card.wikiId);
+  const actualLinks = await getOptionalEffects(cardNum, card.wikiId);
   expect(actualLinks.sort(linkOrder)).toStrictEqual(expectedLink.sort(linkOrder));
 };
 
