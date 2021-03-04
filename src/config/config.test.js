@@ -6,6 +6,7 @@ describe('config', () => {
     expect(config).toBeTruthy();
     expect(config).toEqual({
       lang: 'fr',
+      rootApiUrl: 'https://fresqueduclimat.org/wiki/api.php'
     });
   });
 
@@ -14,6 +15,7 @@ describe('config', () => {
     expect(config).toBeTruthy();
     expect(config).toEqual({
       lang: 'en',
+      rootApiUrl: 'https://fresqueduclimat.org/wiki/en/api.php'
     });
   });
 });
