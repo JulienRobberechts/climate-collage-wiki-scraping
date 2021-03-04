@@ -3,7 +3,7 @@ const { cleanUpStringBasic } = require('../../utils/string/cleanUpString');
 const { sectionOtherLinksEffects } = require('../../wiki-api/sections/sectionNames.fr.js');
 const { getCardNumberFromUrl } = require('../../linkCalculation/buildLinks');
 
-const { parseLinks } = require('./otherLinkHtmlParser');
+const { parseLinks } = require('./linkParagraphHtmlParser');
 
 const getOptionalEffects = async (cardNum, wikiId, message) => {
   const content = await getSectionContentByName(wikiId, sectionOtherLinksEffects);

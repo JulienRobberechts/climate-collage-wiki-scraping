@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-const { getOptionalEffects } = require('./otherLinks');
+const { getOptionalEffects } = require('./linksBuilder');
 
 const {
   getCardsFrReferenceByCardNum,
