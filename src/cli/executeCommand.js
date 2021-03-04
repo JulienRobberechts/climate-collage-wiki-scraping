@@ -1,26 +1,32 @@
 const {
+  extractGame,
   extractCardList,
   extractAllCards,
-  extractSomeCardsLangFr,
+  extractCardsLinks,
   extractCardsLinksFromFR,
   computeCardsLinks,
 } = require('../services/extraction/extractionProcess');
 
 module.exports.executeRequest = (answers, cli) => {
-  // console.log('cli', cli);
   if (answers.langage === cli.lang.EN) {
     console.log("English is not supported yet. sorry.");
     return;
   }
   switch (answers.operation) {
+    case cli.action.EXTRACT_GAME:
+      extractGame();
+      break;
     case cli.action.EXTRACT_CARDS_LIST:
       extractCardList();
       break;
     case cli.action.EXTRACT_CARD_DETAILS:
       extractAllCards();
       break;
+    case cli.action.EXTRACT_LINKS:
+      extractCardsLinks();
+      break;
     case cli.action.EXTRACT_CARD_LINKS:
-      extractCardsLinksFromFR(1, 42);
+      extractCardsLinksFromFR();
       break;
     case cli.action.COMPUTE_CARD_LINKS:
       computeCardsLinks();

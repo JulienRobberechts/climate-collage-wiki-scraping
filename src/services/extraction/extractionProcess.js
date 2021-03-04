@@ -6,6 +6,13 @@ const { getObject } = require('../utils/fileServices/readFile');
 const { buildAllValidLinks } = require('../linkCalculation/buildLinks');
 const { mapDataFile } = require('../utils/etl/transformData');
 
+// EXTRACT
+const extractGame = async () => {
+  await extractCardList();
+  await extractAllCards();
+  await extractCardsLinks();
+};
+
 // 1- EXTRACT_CARDS_LIST
 const extractCardList = async () => {
   const cardsData = await readCardList();
@@ -14,8 +21,7 @@ const extractCardList = async () => {
 };
 
 // 2- EXTRACT_CARD_DETAILS
-const extractAllCards = async (fromCard, toCard) => {
-  // await extractCardsStruct();
+const extractAllCards = async () => {
   await extractCardsLangFr();
   await mergeCardsFiles();
 };
@@ -27,32 +33,28 @@ const extractCardsLangFr = async () => {
 };
 
 const mergeCardsFiles = async () => {
-  // const genericData = await getObject(`./data/2.cards.json`);
   const videoData = await getObject(`./data/external-sources/cards-videos-fr.json`);
   const transform = (data) => data.map(cardFR => ({
     ...cardFR,
-    // ...genericData.find(c => c.cardNum === cardFR.cardNum),
     ...videoData.find(c => c.cardNum === cardFR.cardNum),
   }));
   await mapDataFile(`./data/2.cards-fr-v1.json`, transform, `./data/2.cards-fr-v2.json`);
   console.log('done');
 };
 
-const extractSomeCardsLangFr = async (fromCard, toCard) => {
-  const filePath = `./data/cards-${fromCard}-${toCard}.json`;
-  process.stdout.write(`\nCards data in file '${filePath}' ...`);
-  const cardsData = await readCards(fromCard, toCard);
-  await writeObject(filePath, cardsData);
-  console.log('done');
+// 3 - EXTRACT_LINKS
+const extractCardsLinks = async () => {
+  await extractCardsLinksFromFR();
+  await computeCardsLinks();
 };
 
-// 3 - EXTRACT_CARD_LINKS
-const extractCardsLinksFromFR = async (fromCard, toCard) => {
-  const cardsRelations = await readAllRelations(fromCard, toCard);
+// 3.1 - COMPUTE_CARD_LINKS
+const extractCardsLinksFromFR = async () => {
+  const cardsRelations = await readAllRelations();
   await writeObject(`./data/3.cards-relations-tmp.json`, cardsRelations);
 };
 
-// 4 - COMPUTE_CARD_LINKS
+// 3.2 - COMPUTE_CARD_LINKS
 const computeCardsLinks = async () => {
   const cardsRelations = await getObject(`./data/3.cards-relations-tmp.json`);
   const links = await buildAllValidLinks(cardsRelations);
@@ -61,9 +63,10 @@ const computeCardsLinks = async () => {
 };
 
 module.exports = {
+  extractGame,
   extractCardList,
   extractAllCards,
-  extractSomeCardsLangFr,
+  extractCardsLinks,
   extractCardsLinksFromFR,
   computeCardsLinks,
 };

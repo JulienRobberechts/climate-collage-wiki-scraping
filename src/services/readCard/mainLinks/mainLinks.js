@@ -11,10 +11,12 @@ const getCardRelations = async (wikiId, message) => {
   return relations;
 };
 
-const readAllRelations = async (fromCard, toCard) => {
+const readAllRelations = async () => {
   const sourceFile = `./data/1-cards-list.json`;
   const cards = await getObject(sourceFile);
 
+  const fromCard = 1;
+  const toCard = 42;
   const relationsData = [];
   for (let index = fromCard - 1; index < toCard; index++) {
     const card = cards[index];
