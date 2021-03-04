@@ -15,7 +15,7 @@ const extractGame = async () => {
 
 // 1- EXTRACT_CARDS_LIST
 const extractCardList = async () => {
-  console.log(" => 1. Read Card List");
+  console.log(" => 1.\tRead Card List");
   const cardsData = await readCardList();
   const filePath = `./data/1-cards-list.json`;
   await writeObject(filePath, cardsData);
@@ -28,14 +28,14 @@ const extractAllCards = async () => {
 };
 
 const extractCardsLangFr = async () => {
-  console.log(" => 2.a Read Cards");
+  console.log(" => 2.a\tRead Cards");
   const cardsData = await readCards(1, 42);
   const filePath = `./data/2.cards-fr-v1.json`;
   await writeObject(filePath, cardsData);
 };
 
 const mergeCardsFiles = async () => {
-  console.log(" => 2.b Add video urls");
+  console.log(" => 2.b\tAdd video urls");
   const videoData = await getObject(`./data/external-sources/cards-videos-fr.json`);
   const transform = (data) => data.map(cardFR => ({
     ...cardFR,
@@ -46,21 +46,21 @@ const mergeCardsFiles = async () => {
 
 // 3 - EXTRACT_LINKS
 const extractCardsLinks = async () => {
-  console.log(" => 3 Read Links");
+  console.log(" => 3.\tRead Links");
   await extractCardsLinksFromFR();
   await computeCardsLinks();
 };
 
 // 3.1 - COMPUTE_CARD_LINKS
 const extractCardsLinksFromFR = async () => {
-  console.log(" => 3.a Read Links on cards");
+  console.log(" => 3.a\tRead Links on cards");
   const cardsRelations = await readAllRelations();
   await writeObject(`./data/3.cards-relations-tmp.json`, cardsRelations);
 };
 
 // 3.2 - COMPUTE_CARD_LINKS
 const computeCardsLinks = async () => {
-  console.log(" => 3.b compute links");
+  console.log(" => 3.b\tCompute links");
   const cardsRelations = await getObject(`./data/3.cards-relations-tmp.json`);
   const links = await buildAllValidLinks(cardsRelations);
   await writeObject(`./data/4.valid-links.json`, links);

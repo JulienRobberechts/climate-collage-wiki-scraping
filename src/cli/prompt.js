@@ -46,7 +46,7 @@ var questions = [
 
 const run = () => {
   console.log('Hey,');
-  console.log('welcome to the Climate Collage Wiki scraper');
+  console.log('Welcome to the Climate Collage Wiki scraper\nprocessing...');
 
   inquirer.prompt(questions).then((answers) => {
     executeRequest(answers, cli);
