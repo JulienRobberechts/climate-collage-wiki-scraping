@@ -6,11 +6,21 @@ The french version is in work in progress. The goal is to have a one click impor
 
 ## launch the program
 
+#### 1. Run the start command
+
 It's suppose to run on your local machine with an internet access.
 
 ```cmd
 yarn start
 ```
+
+#### 2. You should be able to select your action in a menu:
+![prompt](./doc/assets/screenshot-1-prompt.png)
+
+#### 3. Then to see the progress of it:
+![progress-bar](./doc/assets/screenshot-2-progress-bar.png)
+
+#### 4. Then the result of the extraction should be updated in the data folder of the project.
 
 ## launch tests
 
