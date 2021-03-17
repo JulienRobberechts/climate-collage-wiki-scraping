@@ -23,6 +23,7 @@ var questions = [
     type: 'list',
     name: 'langage',
     message: 'Which langage?',
+    when: false, // the question is disabled
     choices: [
       cli.lang.FR,
       cli.lang.EN,
