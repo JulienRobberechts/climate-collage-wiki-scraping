@@ -17,3 +17,8 @@ yarn start
 ```cmd
 yarn test
 ```
+There are two types of tests:
+
+- Some tests are done to check the generic behavior of the program.
+- Some are to check that the data are what we expect. The targets used for that are files in the /data/targetv2 directory. Those targetv2 files are temporary and modified when the automatic result is better than the expected result. Those targetv2 files will probably be removed when the scrapper will be trusted enough.
+
