@@ -15,11 +15,11 @@ const getCardRelations = async (wikiId, message) => {
 const readAllRelations = async () => {
   const sourceFile = `./data/1-cards-list.json`;
   const cards = await getObject(sourceFile);
-  
+
   const fromCard = 1;
   const toCard = 42;
 
-  const progress = createProgressBar(toCard - fromCard);
+  const progress = createProgressBar(toCard - fromCard + 1);
   const relationsData = [];
   try {
     for (let index = fromCard - 1; index < toCard; index++) {
