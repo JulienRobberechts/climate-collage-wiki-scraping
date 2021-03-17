@@ -5,7 +5,7 @@ const writeFile = async (destPath, content) => {
 }
 
 const writeObject = async (destPath, data) => {
-  const content = JSON.stringify(data);
+  const content = JSON.stringify(data, null, 2);
   await fs.promises.writeFile(destPath, content, { encoding: 'UTF-8' });
 }
 

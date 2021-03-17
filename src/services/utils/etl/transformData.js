@@ -8,7 +8,7 @@ const mapDataFile = async (inputFilePath, transform, outputFilePath) => {
   const result = transform(data);
 
   // console.log(`\nWrite data to file '${outputFilePath}' ...`);
-  await writeFile(outputFilePath, JSON.stringify(result));
+  await writeFile(outputFilePath, JSON.stringify(result, null, 2));
 };
 
 module.exports = { mapDataFile };
