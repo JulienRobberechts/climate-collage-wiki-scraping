@@ -18,9 +18,14 @@ yarn start
 ![prompt](./doc/assets/screenshot-1-prompt.png)
 
 #### 3. Then to see the progress of it:
+
 ![progress-bar](./doc/assets/screenshot-2-progress-bar.png)
 
-#### 4. Then the result of the extraction should be updated in the data folder of the project.
+#### 4. Then the result of the extraction should be updated in the data folder of the project:
+
+![data-files](./doc/assets/screenshot-3-data-files.png)
+
+WARNING: It's WIP, the result is still partial and the format is still not matching the memo yet...
 
 ## launch tests
 
