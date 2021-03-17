@@ -1,4 +1,4 @@
-# Climate Collage Wiki Scrapping
+# Climate Collage Wiki Scraping
 
 This project extract some data from the ["Fresque du Climat" wiki ](https://fresqueduclimat.org/wiki/index.php?title=Jeu_adulte) to put them into a usable JSON format for the Climat Collage Memo.
 
