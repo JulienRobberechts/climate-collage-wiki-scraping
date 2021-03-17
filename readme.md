@@ -12,3 +12,8 @@ It's suppose to run on your local machine with an internet access.
 yarn start
 ```
 
+## launch tests
+
+```cmd
+yarn test
+```
