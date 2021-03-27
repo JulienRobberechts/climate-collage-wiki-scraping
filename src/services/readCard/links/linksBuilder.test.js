@@ -17,11 +17,11 @@ const checkEffects = (linkType) => async (cardNum) => {
 };
 
 describe('Main effects links', () => {
-  it.each(oneTo42)('check optional effects on card %i', checkEffects('valid'));
-  it('check links optional effects card 1 (working)', async () => {
+  it.each(oneTo42)('check valid effects on card %i', checkEffects('valid'));
+  it('check links valid effects card 1 (working)', async () => {
     await checkEffects('valid')(1);
   });
-  it('check links optional effects card 18 (Error)', async () => {
+  it('check links valid effects card 18 (Error)', async () => {
     await checkEffects('optional')(18)
       .then(() => {
         expect.toFail('no error thrown');
