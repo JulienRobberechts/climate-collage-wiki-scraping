@@ -29,15 +29,26 @@ yarn start
 
 WARNING: It's WIP, the result is still partial and the format is still not matching the memo yet...
 
-## launch tests
+## Tests
 
-```cmd
-yarn test
-```
 There are two types of tests:
 
 - Some tests are done to check the generic behavior of the program.
 - Some are to check that the data are what we expect. The targets used for that are files in the /data/targetv2 directory. Those targetv2 files are temporary and modified when the automatic result is better than the expected result. Those targetv2 files will probably be removed when the scrapper will be trusted enough.
+
+### run tests locally
+
+```cmd
+yarn test
+```
+
+### run tests on github
+
+Tests are played on github (tab Actions)
+- after each code change
+- every day at 1pm automatically to check everything is still ok.
+- manually on demand if you click on this button:
+  ![run tests manually on github](./doc/assets/screenshot-4-run-tests-github.png)
 
 ## links
 
