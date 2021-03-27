@@ -12,6 +12,9 @@ module.exports.getPageSections = async (pageId) => {
     const response = await axios.get(url);
     if (response.status !== 200)
       throw new Error(`getPageSections status code = ${response.status}`);
+    if (response.data.error) {
+      throw new Error(`getPageSections wiki error: ${response.data.error.code} - ${response.data.error.info}`);
+    }
     return response.data.parse.sections;
   } catch (error) {
     throw new Error(`getPageSections error: ${error}`);
