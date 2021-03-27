@@ -10,9 +10,9 @@ const sectionMainLinks = 'Correction'; // not used
 const sectionMainCauses = 'Causes'; // to use
 const sectionMainEffects = 'Cons\u00e9quences'; // to use
 
-const sectionOtherLinks = 'Autres liens possibles'; // not used
-const sectionOtherLinksCauses = 'Autres causes'; // up to date
-const sectionOtherLinksEffects = 'Autres cons\u00e9quences'; // up to date
+const sectionOptionalLinks = 'Autres liens possibles'; // not used
+const sectionOptionalCauses = 'Autres causes'; // up to date
+const sectionOptionalEffects = 'Autres cons\u00e9quences'; // up to date
 
 const sectionInvalidLinks = 'Faux liens'; // not used
 const sectionInvalidCauses = 'Fausses causes'; // to use
@@ -30,9 +30,9 @@ module.exports = {
   sectionMainCauses,
   sectionMainEffects,
 
-  sectionOtherLinks,
-  sectionOtherLinksCauses,
-  sectionOtherLinksEffects,
+  sectionOptionalLinks,
+  sectionOptionalCauses,
+  sectionOptionalEffects,
 
   sectionInvalidLinks,
   sectionInvalidCauses,

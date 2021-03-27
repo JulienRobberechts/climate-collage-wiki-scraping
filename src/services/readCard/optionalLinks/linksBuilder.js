@@ -1,12 +1,12 @@
 const { getSectionContentByName } = require('../../wiki-api/sections');
 const { cleanUpStringBasic } = require('../../utils/string/cleanUpString');
-const { sectionOtherLinksEffects } = require('../../wiki-api/sections/sectionNames.fr.js');
+const { sectionOptionalEffects } = require('../../wiki-api/sections/sectionNames.fr.js');
 const { getCardNumberFromUrl } = require('../../linkCalculation/buildLinks');
 
 const { parseLinks } = require('./linkParagraphHtmlParser');
 
 const getOptionalEffects = async (cardNum, wikiId, message) => {
-  const content = await getSectionContentByName(wikiId, sectionOtherLinksEffects);  console.log('content', content);
+  const content = await getSectionContentByName(wikiId, sectionOptionalEffects); console.log('content', content);
   return parseLinks(content, message)
     .map(l => ({
       fromNum: cardNum,

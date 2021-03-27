@@ -4,8 +4,8 @@ const {
   sectionDefinition,
   sectionExplanation,
   sectionAdvice,
-  sectionOtherLinksCauses,
-  sectionOtherLinksEffects,
+  sectionOptionalCauses,
+  sectionOptionalEffects,
 } = require('./sectionNames.fr');
 const { getSectionIndex } = require('./sectionExtractor');
 
@@ -31,11 +31,11 @@ describe('card 1 get section', () => {
   it('card 1 - sectionAdvice', async () => {
     expect(await getSectionIndexForCardNum(1, sectionAdvice)).toBe(-1);
   });
-  it('card 1 - sectionOtherLinksCauses', async () => {
-    expect(await getSectionIndexForCardNum(1, sectionOtherLinksCauses)).toBe(3);
+  it('card 1 - sectionOptionalCauses', async () => {
+    expect(await getSectionIndexForCardNum(1, sectionOptionalCauses)).toBe(3);
   });
-  it('card 1 - sectionOtherLinksEffects', async () => {
-    expect(await getSectionIndexForCardNum(1, sectionOtherLinksEffects)).toBe(4);
+  it('card 1 - sectionOptionalEffects', async () => {
+    expect(await getSectionIndexForCardNum(1, sectionOptionalEffects)).toBe(4);
   });
 });
 
@@ -52,11 +52,11 @@ describe('card 6 get section', () => {
   it('card 6 - sectionAdvice', async () => {
     expect(await getSectionIndexForCardNum(6, sectionAdvice)).toBe(3);
   });
-  it('card 6 - sectionOtherLinksCauses', async () => {
-    expect(await getSectionIndexForCardNum(6, sectionOtherLinksCauses)).toBe(5);
+  it('card 6 - sectionOptionalCauses', async () => {
+    expect(await getSectionIndexForCardNum(6, sectionOptionalCauses)).toBe(5);
   });
-  it('card 6 - sectionOtherLinksEffects', async () => {
-    expect(await getSectionIndexForCardNum(6, sectionOtherLinksEffects)).toBe(6);
+  it('card 6 - sectionOptionalEffects', async () => {
+    expect(await getSectionIndexForCardNum(6, sectionOptionalEffects)).toBe(6);
   });
 });
 
@@ -73,11 +73,11 @@ describe('card 5 get section', () => {
   it('card 5 - sectionAdvice', async () => {
     expect(await getSectionIndexForCardNum(5, sectionAdvice)).toBe(-1);
   });
-  it('card 5 - sectionOtherLinksCauses', async () => {
-    expect(await getSectionIndexForCardNum(5, sectionOtherLinksCauses)).toBe(-1);
+  it('card 5 - sectionOptionalCauses', async () => {
+    expect(await getSectionIndexForCardNum(5, sectionOptionalCauses)).toBe(-1);
   });
-  it('card 5 - sectionOtherLinksEffects', async () => {
-    expect(await getSectionIndexForCardNum(5, sectionOtherLinksEffects)).toBe(3);
+  it('card 5 - sectionOptionalEffects', async () => {
+    expect(await getSectionIndexForCardNum(5, sectionOptionalEffects)).toBe(3);
   });
 });
 
