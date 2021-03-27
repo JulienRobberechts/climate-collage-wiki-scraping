@@ -1,23 +1,39 @@
 const { getSectionContentByName } = require('../../wiki-api/sections');
 const { cleanUpStringBasic } = require('../../utils/string/cleanUpString');
-const { sectionOptionalEffects } = require('../../wiki-api/sections/sectionNames.fr.js');
+const { sectionMainEffects, sectionOptionalEffects } = require('../../wiki-api/sections/sectionNames.fr.js');
 const { getCardNumberFromUrl } = require('../../linkCalculation/buildLinks');
 
 const { parseLinks } = require('./linkParagraphHtmlParser');
 
-const getLinks = async (cardNum, wikiId, sectionName, message) => {
+const getLinks = async (cardNum, wikiId, linkType, message) => {
+  const sectionName = getSectionName(linkType);
   const content = await getSectionContentByName(wikiId, sectionName);
   return parseLinks(content, message)
     .map(l => ({
       fromNum: cardNum,
       toNum: getCardNumberFromUrl(l.href),
-      status: "optional",
+      status: linkType,
       explanation: cleanUpStringBasic(l.explanation)
     }));
 };
 
-const getOptionalEffects = async (cardNum, wikiId, message) => {
-  return await getLinks(cardNum, wikiId, sectionOptionalEffects, message);
+const getSectionName = (linkType) => {
+  switch (linkType) {
+    case 'valid':
+      return sectionMainEffects;
+    case 'optional':
+      return sectionOptionalEffects;
+    case 'invalid':
+      return sectionInvalidEffects;
+    default:
+      throw new Error(`linkType '${linkType}' not recognized`);
+  }
 }
+// const getMainEffects = (cardNum, wikiId, message) =>
+//   getLinks(cardNum, wikiId, sectionMainEffects, message);
 
-module.exports = { getOptionalEffects };
+// const getOptionalEffects = (cardNum, wikiId, message) =>
+//   getLinks(cardNum, wikiId, sectionOptionalEffects, message);
+
+
+module.exports = { getLinks };
