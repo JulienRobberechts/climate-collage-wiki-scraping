@@ -5,6 +5,7 @@ const {
   extractCardsLinks,
   extractCardsLinksFromFR,
   computeCardsLinks,
+  getCardLinksAsWiki,
 } = require('../services/extraction/extractionProcess');
 
 module.exports.executeRequest = async (answers, cli) => {
@@ -34,6 +35,7 @@ module.exports.executeRequest = async (answers, cli) => {
       break;
     case cli.action.CUSTOM_TREATMENT:
       console.log('CUSTOM_TREATMENT');
+      await getCardLinksAsWiki();
       break;
     default:
       console.log(`Operation not implemented`);

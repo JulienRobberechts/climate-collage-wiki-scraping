@@ -66,6 +66,15 @@ const computeCardsLinks = async () => {
   await writeObject(`./data/4.valid-links.json`, links);
 };
 
+// 999- EXTRACT_CARDS_LIST
+const getCardLinksAsWiki = async () => {
+  console.log(" => 999.\tgetCardLinksAsWiki");
+  const transform = (data) => data.map(card => ({
+    link: `* [[${card.wikiUrl.replace('/wiki/index.php?title=', '')}|${card.title}]]`
+  }));
+  await mapDataFile(`./data/1-cards-list.json`, transform, `./data/999-cards-links.json`);
+};
+
 module.exports = {
   extractGame,
   extractCardList,
@@ -73,4 +82,5 @@ module.exports = {
   extractCardsLinks,
   extractCardsLinksFromFR,
   computeCardsLinks,
+  getCardLinksAsWiki
 };
