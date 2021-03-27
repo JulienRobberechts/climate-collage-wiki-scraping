@@ -47,7 +47,7 @@ yarn test
 Tests are played on github (tab Actions)
 - after each code change
 - every day at 1pm automatically to check everything is still ok.
-- manually on demand if you click on this button:
+- manually on demand if you click on this green button "run workflow":
   ![run tests manually on github](./doc/assets/screenshot-4-run-tests-github.png)
 
 ## links
