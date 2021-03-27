@@ -37,3 +37,32 @@ Array [
   },
 ]
 `;
+
+exports[`parse other links parse optional Effects card 35 1`] = `
+Array [
+  Object {
+    "explanation": " Une partie de la déforestation est faite en brûlant la forêt qui peut ensuite
+      dégénérer en feu non-maitrisé. C'est ce qu'il s'est passé pendant l'été 2019 en Amazonie et en Australie [1]",
+    "href": "\\\\\\"/wiki/index.php?title=Fr-fr_adulte_carte_6_d%C3%A9forestation\\\\\\"",
+  },
+  Object {
+    "explanation": " Les analyses par satellite montrent dans les fumées des quantités de particules toxiques
+      qui posent des problèmes de santé publique[2].",
+    "href": "\\\\\\"/wiki/index.php?title=Fr-fr_adulte_carte_10_a%C3%A9rosols\\\\\\"",
+  },
+  Object {
+    "explanation": " Cela reste un élément mineur. Sauf sur des hotspots
+      particuliers de biodiversité.",
+    "href": "\\\\\\"/wiki/index.php?title=Fr-fr_adulte_carte_25_biodiversit%C3%A9_terrestre\\\\\\"",
+  },
+  Object {
+    "explanation": " En général, ce qui brûle bien, c'est la
+      forêt, pas les champs de blé.",
+    "href": "\\\\\\"/wiki/index.php?title=Fr-fr_adulte_carte_32_baisse_rendements_agricoles\\\\\\"",
+  },
+  Object {
+    "explanation": " 630 disparus suite aux incendies en Californie à l'automne 2018.",
+    "href": "\\\\\\"/wiki/index.php?title=Fr-fr_adulte_carte_38_sant%C3%A9_humaine\\\\\\"",
+  },
+]
+`;
