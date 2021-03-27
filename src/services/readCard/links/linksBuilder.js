@@ -6,7 +6,7 @@ const { getCardNumberFromUrl } = require('../../linkCalculation/buildLinks');
 const { parseLinks } = require('./linkParagraphHtmlParser');
 
 const getOptionalEffects = async (cardNum, wikiId, message) => {
-  const content = await getSectionContentByName(wikiId, sectionOptionalEffects); console.log('content', content);
+  const content = await getSectionContentByName(wikiId, sectionOptionalEffects);
   return parseLinks(content, message)
     .map(l => ({
       fromNum: cardNum,
