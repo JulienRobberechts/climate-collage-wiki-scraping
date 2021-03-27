@@ -3,7 +3,7 @@ const { JSDOM } = jsdom;
 
 module.exports.parseLinks = (content, message = '') => {
   const { window: { document } } = new JSDOM(content);
-  const items = Array.from(document.querySelectorAll("h3+ul>li"));
+  const items = Array.from(document.querySelectorAll("ul>li"));
   const cardLinks = items
     .map(parseLink);
 

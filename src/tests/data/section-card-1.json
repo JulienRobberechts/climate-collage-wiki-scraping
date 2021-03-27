@@ -2,12 +2,12 @@
   {
     "toclevel": 1,
     "level": "2",
-    "line": "Carte  adulte #1 : Activit\u00e9 humaines",
+    "line": "Carte  adulte #1 : Activit\u00e9s humaines",
     "number": "1",
     "index": "T-1",
     "fromtitle": "Mod\u00e8le:Carte",
     "byteoffset": null,
-    "anchor": "Carte_adulte_.231_:_Activit.C3.A9_humaines"
+    "anchor": "Carte_adulte_.231_:_Activit.C3.A9s_humaines"
   },
   {
     "toclevel": 1,
@@ -16,7 +16,7 @@
     "number": "2",
     "index": "1",
     "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
-    "byteoffset": 63,
+    "byteoffset": 64,
     "anchor": "Explications"
   },
   {
@@ -26,28 +26,28 @@
     "number": "3",
     "index": "2",
     "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
-    "byteoffset": 1067,
+    "byteoffset": 1068,
     "anchor": "Autres_liens_possibles"
   },
   {
     "toclevel": 2,
     "level": "3",
-    "line": "Lien causes",
+    "line": "Autres causes",
     "number": "3.1",
     "index": "3",
     "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
-    "byteoffset": 1097,
-    "anchor": "Lien_causes"
+    "byteoffset": 1098,
+    "anchor": "Autres_causes"
   },
   {
     "toclevel": 2,
     "level": "3",
-    "line": "Lien cons\u00e9quences",
+    "line": "Autres cons\u00e9quences",
     "number": "3.2",
     "index": "4",
     "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
-    "byteoffset": 2124,
-    "anchor": "Lien_cons.C3.A9quences"
+    "byteoffset": 2127,
+    "anchor": "Autres_cons.C3.A9quences"
   },
   {
     "toclevel": 1,
@@ -56,7 +56,7 @@
     "number": "4",
     "index": "5",
     "fromtitle": "Fr-fr_adulte_carte_1_activit\u00e9s_humaines",
-    "byteoffset": 2837,
+    "byteoffset": 3017,
     "anchor": "R.C3.A9f.C3.A9rences"
   }
 ]

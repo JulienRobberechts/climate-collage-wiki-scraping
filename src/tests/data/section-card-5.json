@@ -32,12 +32,12 @@
   {
     "toclevel": 2,
     "level": "3",
-    "line": "Liens cons\u00e9quences",
+    "line": "Autres cons\u00e9quences",
     "number": "3.1",
     "index": "3",
     "fromtitle": "Fr-fr_adulte_carte_5_\u00e9nergies_fossiles",
     "byteoffset": 641,
-    "anchor": "Liens_cons.C3.A9quences"
+    "anchor": "Autres_cons.C3.A9quences"
   },
   {
     "toclevel": 1,
@@ -46,7 +46,7 @@
     "number": "4",
     "index": "4",
     "fromtitle": "Fr-fr_adulte_carte_5_\u00e9nergies_fossiles",
-    "byteoffset": 970,
+    "byteoffset": 1730,
     "anchor": "R.C3.A9f.C3.A9rences"
   }
 ]

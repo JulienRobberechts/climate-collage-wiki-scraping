@@ -18,20 +18,20 @@ const cards10To20 = [...Array(10).keys()].map(n => n + 10);
 const cards20To30 = [...Array(10).keys()].map(n => n + 20);
 const cards30To42 = [...Array(13).keys()].map(n => n + 30);
 
-const checkOptionalEffects = async (cardNum) => {
+const checkEffects = (linkType) => async (cardNum) => {
   const card = await getCardsFrReferenceByCardNum(cardNum);
-  const expectedLink = await getLinksEffectFrRef(cardNum, 'optional');
+  const expectedLink = await getLinksEffectFrRef(cardNum, linkType);
   const actualLinks = await getOptionalEffects(cardNum, card.wikiId);
   expect(actualLinks.sort(linkOrder)).toStrictEqual(expectedLink.sort(linkOrder));
 };
 
 describe('Optional effects links', () => {
-  it.each(oneTo42)('check links effects on card %i', checkOptionalEffects);
-  it('check links possible effects card 39 (working)', async () => {
-    await checkOptionalEffects(39);
+  it.each(oneTo42)('check optional effects on card %i', checkEffects('optional'));
+  it('check links optional effects card 35 (working)', async () => {
+    await checkEffects('optional')(35);
   });
-  it('check links possible effects card 18 (Error)', async () => {
-    await checkOptionalEffects(18)
+  it('check links optional effects card 18 (Error)', async () => {
+    await checkEffects('optional')(18)
       .then(() => {
         expect.toFail('no error thrown');
       })
