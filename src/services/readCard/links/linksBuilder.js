@@ -5,8 +5,8 @@ const { getCardNumberFromUrl } = require('../../linkCalculation/buildLinks');
 
 const { parseLinks } = require('./linkParagraphHtmlParser');
 
-const getOptionalEffects = async (cardNum, wikiId, message) => {
-  const content = await getSectionContentByName(wikiId, sectionOptionalEffects);
+const getLinks = async (cardNum, wikiId, sectionName, message) => {
+  const content = await getSectionContentByName(wikiId, sectionName);
   return parseLinks(content, message)
     .map(l => ({
       fromNum: cardNum,
@@ -15,5 +15,9 @@ const getOptionalEffects = async (cardNum, wikiId, message) => {
       explanation: cleanUpStringBasic(l.explanation)
     }));
 };
+
+const getOptionalEffects = async (cardNum, wikiId, message) => {
+  return await getLinks(cardNum, wikiId, sectionOptionalEffects, message);
+}
 
 module.exports = { getOptionalEffects };
