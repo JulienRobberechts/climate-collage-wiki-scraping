@@ -16,6 +16,13 @@ describe('parse other links', () => {
   it('parse optional Effects card 20', async () => {
     const content = await getContent(linksEffectsFilePathForCard(20));
     const links = parseLinks(content);
+    expect(links.length).toBe(2);
+    expect(links).toMatchSnapshot();
+  });
+  it('parse optional Effects card 35', async () => {
+    const content = await getContent(linksEffectsFilePathForCard(35));
+    const links = parseLinks(content);
+    expect(links.length).toBe(5);
     expect(links).toMatchSnapshot();
   });
 });
