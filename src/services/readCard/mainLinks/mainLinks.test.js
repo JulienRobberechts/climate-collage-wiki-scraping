@@ -8,15 +8,7 @@ const {
   getLinksEffectFrRef
 } = require('../../data-access/cardsRepo');
 
-// to remove when the page 18 will be fixed
-// https://fresqueduclimat.org/wiki/index.php?title=Fr-fr_adulte_carte_18_fonte_de_la_banquise
-const knownErrors = [18];
-
-const oneTo42 = [...Array(41).keys()].map(n => n + 1).filter(n => !knownErrors.find(x => x === n));
-const cards1To10 = [...Array(10).keys()].map(n => n + 1);
-const cards10To20 = [...Array(10).keys()].map(n => n + 10);
-const cards20To30 = [...Array(10).keys()].map(n => n + 20);
-const cards30To42 = [...Array(13).keys()].map(n => n + 30);
+const { oneTo42 } = require('../../../tests/utils/cardsNumbers');
 
 const checkCard = async (cardNum) => {
   const card = await getCardsFrReferenceByCardNum(cardNum);
@@ -26,7 +18,7 @@ const checkCard = async (cardNum) => {
     .toStrictEqual(expectedEffects.sort(linkOrder).map(c => c.toNum));
 }
 
-describe('Main effects links', () => {
+describe('Main effects links (from top section)', () => {
   it.each(oneTo42)('check links effects on card %i', async (cardNum) => {
     await checkCard(cardNum);
   });

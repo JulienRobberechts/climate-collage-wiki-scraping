@@ -7,7 +7,8 @@ const { assertEqual } = require('../../utils/assert/parserAssertions');
  */
 module.exports.getPageId = async (pageTitle) => {
   try {
-    const url = `https://fresqueduclimat.org/wiki/api.php?action=query&format=json&titles=${pageTitle}&prop=pageprops`;    // console.log("url: " + url);
+    const url = `https://fresqueduclimat.org/wiki/api.php?action=query&format=json&titles=${pageTitle}&prop=pageprops`;
+    // console.log("url: " + url);
     const response = await axios.get(url);
     if (response.status !== 200)
       throw new Error(`getPageId status code = ${response.status}`);
