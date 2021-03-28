@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-const { getLinks } = require('./linksBuilder');
+const { getLinks, getAllLinks } = require('./linksBuilder');
 
 const {
   getCardsFrReferenceByCardNum,
@@ -35,6 +35,15 @@ describe('invalid effects links', () => {
   it('check invalid effects card 35', async () => {
     await checkEffects('invalid')(35);
   });
+});
+
+describe('getAllLinks', () => {
+  it('check getAllLinks', async () => {
+    const allLinks = await getAllLinks();
+    expect(allLinks).toBeTruthy();
+    expect(allLinks.length).toBeGreaterThan(100);
+    expect(allLinks).toMatchSnapshot();
+  }, 120000);
 });
 
 const linkOrder = (l1, l2) => (100 * l1.fromNum + l1.toNum) - (100 * l2.fromNum + l2.toNum);
