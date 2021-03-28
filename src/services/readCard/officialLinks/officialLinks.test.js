@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-const { getOfficialLinks } = require('./mainLinks');
+const { getOfficialLinks } = require('./officialLinks');
 
 const {
   getCardsFrReferenceByCardNum,

@@ -1,6 +1,6 @@
 const { readCardList } = require('../readCardList/readCardList');
 const { readCards } = require('../readCard/readCard');
-const { getAllOfficialLinks } = require('../readCard/mainLinks/mainLinks');
+const { getAllOfficialLinks } = require('../readCard/officialLinks/officialLinks');
 const { writeObject } = require('../utils/fileServices/writeFile');
 const { getObject } = require('../utils/fileServices/readFile');
 const { buildAllValidLinks } = require('../linkCalculation/buildLinks');
