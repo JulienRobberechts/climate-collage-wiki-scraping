@@ -21,7 +21,7 @@ const getOfficialLinks = async (cardNum, wikiId, message) => {
  * Now we prefer get all those link in the "Correction" section because it's easier and we can get explanation for each link !
  * use getLinks = async (cardNum, wikiId, linkType, message)
  */
-const readAllRelations = async () => {
+const getAllOfficialLinks = async () => {
   const sourceFile = `./data/1-cards-list.json`;
   const cards = await getObject(sourceFile);
 
@@ -54,5 +54,5 @@ const readAllRelations = async () => {
 
 module.exports = {
   getOfficialLinks,
-  readAllRelations
+  getAllOfficialLinks
 };

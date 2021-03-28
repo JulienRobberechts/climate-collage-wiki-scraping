@@ -1,6 +1,6 @@
 const { readCardList } = require('../readCardList/readCardList');
 const { readCards } = require('../readCard/readCard');
-const { readAllRelations } = require('../readCard/mainLinks/mainLinks');
+const { getAllOfficialLinks } = require('../readCard/mainLinks/mainLinks');
 const { writeObject } = require('../utils/fileServices/writeFile');
 const { getObject } = require('../utils/fileServices/readFile');
 const { buildAllValidLinks } = require('../linkCalculation/buildLinks');
@@ -54,7 +54,7 @@ const extractCardsLinks = async () => {
 // 3.1 - COMPUTE_CARD_LINKS
 const extractCardsLinksFromFR = async () => {
   console.log(" => 3.a\tRead Links on cards");
-  const cardsRelations = await readAllRelations();
+  const cardsRelations = await getAllOfficialLinks();
   await writeObject(`./data/3.cards-relations-tmp.json`, cardsRelations);
 };
 
