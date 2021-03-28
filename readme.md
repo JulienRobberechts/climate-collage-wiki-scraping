@@ -1,4 +1,4 @@
-[![Tests](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/test.yml/badge.svg)](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/test.yml)
+[![Tests](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/test.yml/badge.svg)](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/test.yml) but the tests are pretty unstable because they fetch the wiki api so it's better to check on your local machine !
 
 # Climate Collage Wiki Scraping
 
@@ -34,7 +34,7 @@ WARNING: It's WIP, the result is still partial and the format is still not match
 There are two types of tests:
 
 - Some tests are done to check the generic behavior of the program.
-- Some are to check that the data are what we expect. The targets used for that are files in the /data/targetv2 directory. Those targetv2 files are temporary and modified when the automatic result is better than the expected result. Those targetv2 files will probably be removed when the scrapper will be trusted enough.
+- Some are to check that the data fetched from the wiki are what we expect. The targets used for that are files in the /data/targetv2 directory. Those targetv2 files are temporary and modified when the automatic result is better than the expected result. Those targetv2 files will probably be removed when the scrapper could be trusted enough.
 
 ### run tests locally
 
@@ -49,6 +49,8 @@ Tests are played on github (tab Actions)
 - every day at 1pm automatically to check everything is still ok.
 - manually on demand if you click on this green button "run workflow":
   ![run tests manually on github](./doc/assets/screenshot-4-run-tests-github.png)
+
+but the tests are pretty unstable because they fetch the wiki api so it's better to check on your local machine !
 
 ## links
 
