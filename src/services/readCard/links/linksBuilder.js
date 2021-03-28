@@ -1,6 +1,6 @@
 const { getSectionContentByName } = require('../../wiki-api/sections');
 const { cleanUpStringBasic } = require('../../utils/string/cleanUpString');
-const { sectionMainEffects, sectionOptionalEffects } = require('../../wiki-api/sections/sectionNames.fr.js');
+const { sectionMainEffects, sectionOptionalEffects, sectionInvalidEffects } = require('../../wiki-api/sections/sectionNames.fr.js');
 const { getCardNumberFromUrl } = require('../../linkCalculation/buildLinks');
 
 const { parseLinks } = require('./linkParagraphHtmlParser');

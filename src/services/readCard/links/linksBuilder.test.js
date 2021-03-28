@@ -18,33 +18,22 @@ const checkEffects = (linkType) => async (cardNum) => {
 
 describe('Main effects links', () => {
   it.each(oneTo42)('check valid effects on card %i', checkEffects('valid'));
-  it('check links valid effects card 1 (working)', async () => {
+  it('check links valid effects card 1', async () => {
     await checkEffects('valid')(1);
-  });
-  it('check links valid effects card 18 (Error)', async () => {
-    await checkEffects('optional')(18)
-      .then(() => {
-        expect.toFail('no error thrown');
-      })
-      .catch((err) => {
-        expect(err).toBeInstanceOf(Error);
-      });
   });
 });
 
 describe('Optional effects links', () => {
   it.each(oneTo42)('check optional effects on card %i', checkEffects('optional'));
-  it('check links optional effects card 35 (working)', async () => {
+  it('check links optional effects card 35', async () => {
     await checkEffects('optional')(35);
   });
-  it('check links optional effects card 18 (Error)', async () => {
-    await checkEffects('optional')(18)
-      .then(() => {
-        expect.toFail('no error thrown');
-      })
-      .catch((err) => {
-        expect(err).toBeInstanceOf(Error);
-      });
+});
+
+describe('invalid effects links', () => {
+  it.each(oneTo42)('check invalid effects on card %i', checkEffects('invalid'));
+  it('check invalid effects card 35', async () => {
+    await checkEffects('invalid')(35);
   });
 });
 
