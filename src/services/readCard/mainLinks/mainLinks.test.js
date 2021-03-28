@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-const { getCardRelations } = require('./mainLinks');
+const { getOfficialLinks } = require('./mainLinks');
 
 const {
   getCardsFrReferenceByCardNum,
@@ -13,7 +13,7 @@ const { oneTo42 } = require('../../../tests/utils/cardsNumbers');
 const checkCard = async (cardNum) => {
   const card = await getCardsFrReferenceByCardNum(cardNum);
   const expectedEffects = await getLinksEffectFrRef(cardNum, 'valid');
-  const { effects } = await getCardRelations(card.wikiId, `getCardRelations test`);
+  const { effects } = await getOfficialLinks(cardNum, card.wikiId, `getOfficialLinks test`);
   expect(effects.sort(linkOrder))
     .toStrictEqual(expectedEffects.sort(linkOrder).map(c => c.toNum));
 }

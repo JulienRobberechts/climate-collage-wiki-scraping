@@ -6,9 +6,13 @@ const { sectionMain } = require('../../wiki-api/sections/sectionNames.fr.js');
 const { sleepRandom } = require("../../utils/time/wait");
 const { createProgressBar } = require('../../../cli/progress');
 
-const getCardRelations = async (wikiId, message) => {
+/**
+ * Get valid Official links from the Main section. (DEPRECATED)
+ * use instead getLinks = async (cardNum, wikiId, linkType, message)
+ */
+const getOfficialLinks = async (cardNum, wikiId, message) => {
   const content = await getSectionContentByName(wikiId, sectionMain);
-  const relations = parseMainCausesEffects(content, message);
+  const relations = parseMainCausesEffects(content, `card ${cardNum} - ` + message);
   return relations;
 };
 
@@ -27,11 +31,11 @@ const readAllRelations = async () => {
   const progress = createProgressBar(toCard - fromCard + 1);
   const relationsData = [];
   try {
-    for (let index = fromCard - 1; index < toCard; index++) {
+    for (let cardNum = fromCard - 1; cardNum < toCard; cardNum++) {
       progress.increment();
-      const card = cards[index];
+      const card = cards[cardNum];
       const wikiId = await getPageId(card.wikiInternalName);
-      const relations = await getCardRelations(wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
+      const relations = await getOfficialLinks(cardNum, wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
       relationsData.push({
         cardNum: card.cardNum,
         ...relations
@@ -49,6 +53,6 @@ const readAllRelations = async () => {
 };
 
 module.exports = {
-  getCardRelations,
+  getOfficialLinks,
   readAllRelations
 };
