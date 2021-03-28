@@ -29,11 +29,5 @@ const getSectionName = (linkType) => {
       throw new Error(`linkType '${linkType}' not recognized`);
   }
 }
-// const getMainEffects = (cardNum, wikiId, message) =>
-//   getLinks(cardNum, wikiId, sectionMainEffects, message);
-
-// const getOptionalEffects = (cardNum, wikiId, message) =>
-//   getLinks(cardNum, wikiId, sectionOptionalEffects, message);
-
 
 module.exports = { getLinks };

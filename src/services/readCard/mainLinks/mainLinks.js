@@ -12,6 +12,11 @@ const getCardRelations = async (wikiId, message) => {
   return relations;
 };
 
+/**
+ * Get all valid links from the Main section. (DEPRECATED)
+ * Now we prefer get all those link in the "Correction" section because it's easier and we can get explanation for each link !
+ * use getLinks = async (cardNum, wikiId, linkType, message)
+ */
 const readAllRelations = async () => {
   const sourceFile = `./data/1-cards-list.json`;
   const cards = await getObject(sourceFile);
