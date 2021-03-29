@@ -43,6 +43,18 @@
   },
   {
     "fromNum": 2,
+    "toNum": 5,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 2,
+    "toNum": 10,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 2,
     "toNum": 6,
     "status": "optional",
     "explanation": "Ce lien est possible pour les industries qui consomment du bois. Cependant, il faut faire attention, du bois utilisé par une usine dans une forêt gérée durablement n'est pas considéré comme de la déforestation."
@@ -54,18 +66,6 @@
     "explanation": "En réalité, l'industrie est responsable d'autant d'émissions de méthanes que l'agriculture à cause des émissions fugitives (les fuites de gaz naturels dans les pipelines). C'est un point qui est peu connu, donc cette relation n'est pas considérée comme incontournable. L'industrie émet également des HFC (fluides réfrigérants)."
   },
   {
-    "fromNum": 2,
-    "toNum": 5,
-    "status": "valid",
-    "explanation": ""
-  },
-  {
-    "fromNum": 2,
-    "toNum": 10,
-    "status": "valid",
-    "explanation": ""
-  },
-  {
     "fromNum": 3,
     "toNum": 5,
     "status": "valid",
@@ -73,9 +73,9 @@
   },
   {
     "fromNum": 3,
-    "toNum": 26,
+    "toNum": 6,
     "status": "optional",
-    "explanation": "L'artificialisation des sols est également responsable d'inondations car le sol n'est plus drainant."
+    "explanation": "On pourrait dire que le chauffage au bois des bâtiments est responsable de déforestation mais ce n'est pas significatif. On pourrait dire que l'espace utilisé pour les bâtiments pousse à la déforestation mais ce n'est pas le même ordre de grandeur. L'agriculture est la cause principale de la déforestation bien avant les bâtiments."
   },
   {
     "fromNum": 3,
@@ -85,9 +85,9 @@
   },
   {
     "fromNum": 3,
-    "toNum": 6,
+    "toNum": 26,
     "status": "optional",
-    "explanation": "On pourrait dire que le chauffage au bois des bâtiments est responsable de déforestation mais ce n'est pas significatif. On pourrait dire que l'espace utilisé pour les bâtiments pousse à la déforestation mais ce n'est pas le même ordre de grandeur. L'agriculture est la cause principale de la déforestation bien avant les bâtiments."
+    "explanation": "L'artificialisation des sols est également responsable d'inondations car le sol n'est plus drainant."
   },
   {
     "fromNum": 4,
