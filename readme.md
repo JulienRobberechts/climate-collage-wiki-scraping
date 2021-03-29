@@ -60,3 +60,18 @@ but the tests are pretty unstable because they fetch the wiki api so it's better
 - [Climate Collage English official page](https://climatecollage.org/)
 - [Climate Collage Wiki in French](https://fresqueduclimat.org/wiki)
 - [Climate Collage Wiki in English](https://fresqueduclimat.org/wiki/en) (beta)
+
+## Roadmap
+
+1. Succeed to finish the import 100% in French. (in progress, almost there...)
+2. automate the export to the memo (not so important because it could be done every month manually)
+3. replicate the same in English (WE NEED YOU!)
+
+## Other project ideas
+
+If you are developer and want to help, you can find here some ideas for project around the Climate Collage:
+
+### Wiki generator
+
+There are today 2 wikis in French and English but we probably need a wiki in all languages (more than 40 nowadays).
+Create a new wiki from scratch is tedious, we need to find a way to generate this work, at least 80% of it.
