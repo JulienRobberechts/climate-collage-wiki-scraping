@@ -52,7 +52,7 @@ const getSectionName = (linkType) => {
  * to replace getAllOfficialLinks
  */
 const getAllLinks = async () => {
-  const sourceFile = `./data/1-cards-list.json`;
+  const sourceFile = `./data/work/1-cards-list.json`;
   const cards = await getObject(sourceFile);
 
   const fromCard = 1;

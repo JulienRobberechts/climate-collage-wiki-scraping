@@ -22,7 +22,7 @@ const getOfficialLinks = async (cardNum, wikiId, message) => {
  * use getLinks = async (cardNum, wikiId, linkType, message)
  */
 const getAllOfficialLinks = async () => {
-  const sourceFile = `./data/1-cards-list.json`;
+  const sourceFile = `./data/work/1-cards-list.json`;
   const cards = await getObject(sourceFile);
 
   const fromCard = 1;

@@ -12,8 +12,6 @@ const cli = {
     EXTRACT_CARDS_LIST: '1. Extract Card list',
     EXTRACT_CARD_DETAILS: '2. Extract cards details',
     EXTRACT_LINKS: '3. Extract links',
-    EXTRACT_CARD_LINKS: '3.1 Extract cards links',
-    COMPUTE_CARD_LINKS: '3.2 Compute cards links',
     CUSTOM_TREATMENT: '999. CUSTOM_TREATMENT'
   }
 };
@@ -38,8 +36,6 @@ var questions = [
       cli.action.EXTRACT_CARDS_LIST,
       cli.action.EXTRACT_CARD_DETAILS,
       cli.action.EXTRACT_LINKS,
-      cli.action.EXTRACT_CARD_LINKS,
-      cli.action.COMPUTE_CARD_LINKS,
       cli.action.CUSTOM_TREATMENT,
     ],
   }

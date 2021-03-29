@@ -6,7 +6,7 @@ const { getBackDescription } = require('./backDescription/backDescription');
 const { getExplanation } = require('./explanation/explanation');
 const { createProgressBar } = require('../../cli/progress');
 
-const cardsFilePath = `./data/1-cards-list.json`;
+const cardsFilePath = `./data/work/1-cards-list.json`;
 const readCards = async (fromCard, toCard) => {
   const cards = await getObject(cardsFilePath);
   const progress = createProgressBar(toCard - fromCard+1);

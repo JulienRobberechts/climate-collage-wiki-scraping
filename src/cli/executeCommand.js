@@ -3,8 +3,7 @@ const {
   extractCardList,
   extractAllCards,
   extractCardsLinks,
-  extractCardsLinksFromFR,
-  computeCardsLinks,
+
   getCardLinksAsWiki,
 } = require('../services/extraction/extractionProcess');
 
@@ -27,12 +26,7 @@ module.exports.executeRequest = async (answers, cli) => {
     case cli.action.EXTRACT_LINKS:
       await extractCardsLinks();
       break;
-    case cli.action.EXTRACT_CARD_LINKS:
-      await extractCardsLinksFromFR();
-      break;
-    case cli.action.COMPUTE_CARD_LINKS:
-      await computeCardsLinks();
-      break;
+
     case cli.action.CUSTOM_TREATMENT:
       console.log('CUSTOM_TREATMENT');
       await getCardLinksAsWiki();

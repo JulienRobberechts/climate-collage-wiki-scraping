@@ -1,9 +1,10 @@
 const { readCardList } = require('../readCardList/readCardList');
 const { readCards } = require('../readCard/readCard');
-const { getAllOfficialLinks } = require('../readCard/officialLinks/officialLinks');
+const { getAllLinks } = require('../readCard/links/linksBuilder');
+// const { getAllOfficialLinks } = require('../readCard/officialLinks/officialLinks');
 const { writeObject } = require('../utils/fileServices/writeFile');
 const { getObject } = require('../utils/fileServices/readFile');
-const { buildAllValidLinks } = require('../linkCalculation/buildLinks');
+// const { buildAllValidLinks } = require('../linkCalculation/buildLinks');
 const { mapDataFile } = require('../utils/etl/transformData');
 
 // EXTRACT
@@ -17,7 +18,7 @@ const extractGame = async () => {
 const extractCardList = async () => {
   console.log(" => 1.\tRead Card List");
   const cardsData = await readCardList();
-  const filePath = `./data/1-cards-list.json`;
+  const filePath = `./data/work/1-cards-list.json`;
   await writeObject(filePath, cardsData);
 };
 
@@ -30,7 +31,7 @@ const extractAllCards = async () => {
 const extractCardsLangFr = async () => {
   console.log(" => 2.a\tRead Cards");
   const cardsData = await readCards(1, 42);
-  const filePath = `./data/2.cards-fr-v1.json`;
+  const filePath = `./data/work/2.cards-fr-v1.json`;
   await writeObject(filePath, cardsData);
 };
 
@@ -41,29 +42,14 @@ const mergeCardsFiles = async () => {
     ...cardFR,
     ...videoData.find(c => c.cardNum === cardFR.cardNum),
   }));
-  await mapDataFile(`./data/2.cards-fr-v1.json`, transform, `./data/2.cards-fr-v2.json`);
+  await mapDataFile(`./data/work/2.cards-fr-v1.json`, transform, `./data/results/cards-fr.json`);
 };
 
 // 3 - EXTRACT_LINKS
 const extractCardsLinks = async () => {
   console.log(" => 3.\tRead Links");
-  await extractCardsLinksFromFR();
-  await computeCardsLinks();
-};
-
-// 3.1 - COMPUTE_CARD_LINKS
-const extractCardsLinksFromFR = async () => {
-  console.log(" => 3.a\tRead Links on cards");
-  const cardsRelations = await getAllOfficialLinks();
-  await writeObject(`./data/3.cards-relations-tmp.json`, cardsRelations);
-};
-
-// 3.2 - COMPUTE_CARD_LINKS
-const computeCardsLinks = async () => {
-  console.log(" => 3.b\tCompute links");
-  const cardsRelations = await getObject(`./data/3.cards-relations-tmp.json`);
-  const links = await buildAllValidLinks(cardsRelations);
-  await writeObject(`./data/4.valid-links.json`, links);
+  const links = await getAllLinks();
+  await writeObject(`./data/results/links-fr.json`, links);
 };
 
 // 999- EXTRACT_CARDS_LIST
@@ -72,7 +58,7 @@ const getCardLinksAsWiki = async () => {
   const transform = (data) => data.map(card => ({
     link: `* [[${card.wikiUrl.replace('/wiki/index.php?title=', '')}|${card.title}]]`
   }));
-  await mapDataFile(`./data/1-cards-list.json`, transform, `./data/999-cards-links.json`);
+  await mapDataFile(`./data/work/1-cards-list.json`, transform, `./data/999-cards-links.json`);
 };
 
 module.exports = {
@@ -80,7 +66,5 @@ module.exports = {
   extractCardList,
   extractAllCards,
   extractCardsLinks,
-  extractCardsLinksFromFR,
-  computeCardsLinks,
   getCardLinksAsWiki
 };
