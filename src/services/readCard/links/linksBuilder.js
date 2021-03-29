@@ -63,7 +63,7 @@ const getAllLinks = async () => {
   try {
     for (let cardNum = fromCard; cardNum <= toCard; cardNum++) {
       progress.increment();
-      const card = cards[cardNum-1];
+      const card = cards[cardNum - 1];
       const wikiId = await getPageId(card.wikiInternalName);
       const linksForCard = await getAllTypesLinks(cardNum, wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
       links.push(...linksForCard);
@@ -76,7 +76,33 @@ const getAllLinks = async () => {
     progress.stop();
   }
 
-  return links;
+  return links.sort(linkOrder);
 };
 
-module.exports = { getLinks, getAllLinks };
+const linkOrder = (l1, l2) => {
+  return linkIndex(l1) - linkIndex(l2);
+}
+
+const linkIndex = (link) => {
+  return link.fromNum * 1000 + 100 * linkTypeIndex(link.status) + link.toNum;
+}
+
+const linkTypeIndex = (linkType) => {
+  switch (linkType) {
+    case 'valid':
+      return 0;
+    case 'optional':
+      return 1;
+    case 'invalid':
+      return 2;
+    default:
+      throw new Error(`linkType '${linkType}' not recognized`);
+  }
+}
+
+module.exports = {
+  getLinks,
+  getAllLinks,
+  linkIndex,
+  linkTypeIndex
+};

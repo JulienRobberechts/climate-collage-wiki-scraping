@@ -73,6 +73,12 @@
   },
   {
     "fromNum": 3,
+    "toNum": 6,
+    "status": "optional",
+    "explanation": "On pourrait dire que le chauffage au bois des bâtiments est responsable de déforestation mais ce n'est pas significatif. On pourrait dire que l'espace utilisé pour les bâtiments pousse à la déforestation mais ce n'est pas le même ordre de grandeur. L'agriculture est la cause principale de la déforestation bien avant les bâtiments."
+  },
+  {
+    "fromNum": 3,
     "toNum": 10,
     "status": "optional",
     "explanation": "Les bâtiments émettent peu d'aérosols de manière directe. Les seules émissions significatives sont les feux de cheminée. A Chamonix, 85% des particules fines présentes dans l'atmosphère proviennent de chauffage au bois. De manière indirecte, via la production d'électricité, il y a bien émissions de particules."
@@ -82,12 +88,6 @@
     "toNum": 26,
     "status": "optional",
     "explanation": "L'artificialisation des sols est également responsable d'inondations car le sol n'est plus drainant."
-  },
-  {
-    "fromNum": 3,
-    "toNum": 6,
-    "status": "optional",
-    "explanation": "On pourrait dire que le chauffage au bois des bâtiments est responsable de déforestation mais ce n'est pas significatif. On pourrait dire que l'espace utilisé pour les bâtiments pousse à la déforestation mais ce n'est pas le même ordre de grandeur. L'agriculture est la cause principale de la déforestation bien avant les bâtiments."
   },
   {
     "fromNum": 4,
@@ -753,7 +753,7 @@
     "fromNum": 35,
     "toNum": 6,
     "status": "optional",
-    "explanation": "Une partie de la déforestation est faite en brûlant la forêt qui peut ensuite dégénérer en feu non-maitrisé. C'est ce qu'il s'est passé pendant l'été 2019 en Amazonie et en Australie"
+    "explanation": "Une partie de la déforestation est faite en brûlant la forêt qui peut ensuite dégénérer en feu non-maîtrisé. C'est ce qu'il s'est passé pendant l'été 2019 en Amazonie et en Australie"
   },
   {
     "fromNum": 35,

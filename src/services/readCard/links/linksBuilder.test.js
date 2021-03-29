@@ -1,7 +1,11 @@
 /**
  * @jest-environment node
  */
-const { getLinks, getAllLinks } = require('./linksBuilder');
+const { getLinks,
+  getAllLinks,
+  linkIndex,
+  linkTypeIndex
+} = require('./linksBuilder');
 
 const {
   getCardsFrReferenceByCardNum,
@@ -44,6 +48,37 @@ describe('getAllLinks', () => {
     expect(allLinks.length).toBeGreaterThan(100);
     expect(allLinks).toMatchSnapshot();
   }, 120000);
+});
+
+describe('linkTypeIndex', () => {
+  it('linkTypeIndex valid', () => expect(linkTypeIndex('valid')).toBe(0));
+  it('linkTypeIndex optional', () => expect(linkTypeIndex('optional')).toBe(1));
+  it('linkTypeIndex invalid', () => expect(linkTypeIndex('invalid')).toBe(2));
+});
+
+describe('linkIndex', () => {
+  it('linkIndex 8006', () => {
+    expect(linkIndex({
+      "fromNum": 8,
+      "toNum": 3,
+      "status": "valid"
+    })).toBe(8003);
+  });
+  it('linkIndex 8106', () => {
+    expect(linkIndex({
+      "fromNum": 8,
+      "toNum": 6,
+      "status": "optional"
+    })).toBe(8106);
+  });
+  it('linkIndex 40205', () => {
+    expect(linkIndex({
+      "fromNum": 40,
+      "toNum": 5,
+      "status": "invalid"
+    })).toBe(40205);
+  });
+
 });
 
 const linkOrder = (l1, l2) => (100 * l1.fromNum + l1.toNum) - (100 * l2.fromNum + l2.toNum);
