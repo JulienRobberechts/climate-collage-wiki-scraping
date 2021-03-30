@@ -17,19 +17,19 @@ describe('explanation', () => {
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const explanation = await getExplanation(card.wikiId);
     expect(explanation).toStrictEqual(card.explanation);
-  });
+  }, 30000);
   it('check explanation on card 3', async () => {
     const cardNum = 3;
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const explanation = await getExplanation(card.wikiId);
     expect(explanation).toStrictEqual(card.explanation);
-  });
+  }, 30000);
   it('check explanation on card 6', async () => {
     const cardNum = 6;
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const explanation = await getExplanation(card.wikiId);
     expect(explanation).toStrictEqual(card.explanation);
-  });
+  }, 30000);
 
   it('check explanation on card 9', async () => {
     const cardNum = 9;
