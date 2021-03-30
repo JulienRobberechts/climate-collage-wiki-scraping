@@ -63,8 +63,8 @@ but the tests are pretty unstable because they fetch the wiki api so it's better
 
 ## Roadmap
 
-1. Succeed to finish the import 100% in French. (in progress, almost there...)
-2. automate the export to the memo (not so important because it could be done every month manually)
+1. First manual import in French. DONE
+2. automate the export to the memo (not so important because it could be done every month manually by a copy-paste)
 3. replicate the same in English (WE NEED YOU!)
 
 ## Other project ideas
