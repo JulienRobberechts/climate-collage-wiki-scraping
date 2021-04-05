@@ -2,7 +2,7 @@
 
 # Climate Collage Wiki Scraping
 
-This project extract some data from the ["Fresque du Climat" wiki ](https://fresqueduclimat.org/wiki/index.php?title=Jeu_adulte) to put them into a usable JSON format for the Climat Collage Memo.
+This project extract some data from the ["Fresque du Climat" wiki ](https://fresqueduclimat.org/wiki/index.php?title=Jeu_adulte) (french version) to put them into a usable JSON format for the Climat Collage Memo in French.
 
 The french version is in work in progress. The goal is to have a one click import in French and English.
 

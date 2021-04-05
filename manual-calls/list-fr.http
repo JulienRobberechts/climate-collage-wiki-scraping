@@ -7,7 +7,7 @@
 @query = {{api}}?action=query&format=json&titles={{pageTitle}}
 
 ### the page itself
-https://fresqueduclimat.org/wiki/en/index.php?title={{pageTitle}}
+https://fresqueduclimat.org/wiki/index.php?title={{pageTitle}}
 
 ### info, get the id
 https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=info

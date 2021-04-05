@@ -13,6 +13,6 @@ https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=info
 
 ### 4. Call get sections
 
-https://fresqueduclimat.org/wiki/api.php?action=parse&format=json&prop=sections&pageid={{pageid}}
+https://{{api}}?action=parse&format=json&prop=sections&pageid={{pageid}}
 
 ### 5. update the test file...

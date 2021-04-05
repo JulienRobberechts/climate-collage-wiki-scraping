@@ -1,0 +1,122 @@
+
+@api = fresqueduclimat.org/wiki/en/api.php
+@pageTitle = En-en_adult_card_1_human_activities
+@pageTitle2 = En-en_adult_card_14_energy_budget
+
+@query = {{api}}?action=query&format=json&titles={{pageTitle}}
+
+### get info
+https://{{api}}?action=query&format=json&titles={{pageTitle2}}&prop=info
+
+### Query help
+https://www.mediawiki.org/w/api.php?action=help&modules=query
+
+### Links - 9 items
+https://{{query}}&prop=links
+
+### categories - Nothing
+https://{{query}}&prop=categories
+
+
+// image
+// https://fresqueduclimat.org/wiki/index.php?title=Fichier:Fr-fr_adulte_carte_1_recto.png
+
+
+### extlinks - OK
+https://{{query}}&prop=extlinks
+
+### images - GOOD
+https://{{query}}&prop=images
+
+### imageinfo - GOOD
+@imgTitle = Fichier:Fr-fr adulte carte 1 recto.png
+https://{{api}}?action=query&format=json&titles={{imgTitle}}&prop=imageinfo&iiprop=url|size|canonicaltitle|mediatype
+
+# https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png
+# https://fresqueduclimat.org/wiki/index.php?title=Fichier:Fr-fr_adulte_carte_1_recto.png
+# https://fresqueduclimat.org/wiki/index.php?curid=11
+
+###
+
+https://fresqueduclimat.org/wiki/api.php?action=query&format=json&prop=imageinfo&iiprop=url|size|canonicaltitle|mediatype&titles=Fichier:Fr-fr%20adulte%20carte%203%20recto.png
+
+
+### extlinks - bof
+https://{{query}}&prop=info
+
+### iwlinks -nothing
+https://{{query}}&prop=iwlinks
+
+### pageimages
+https://{{query}}&prop=pageimages
+
+### pageprops - get page id from the title
+https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=pageprops
+
+### allimages - all in namespace
+https://{{query}}&list=allimages
+
+### change tags -
+https://{{api}}?action=query&list=tags&tgprop=displayname|description|hitcount|defined
+
+### languageinfo- list all lang
+https://{{query}}&meta=languageinfo
+
+###
+
+http://{{query}}&prop=revisions&rvprop=content&rvsection=0
+
+###
+https://en.wikipedia.org/w/api.php?action=parse&page=Template:Infobox%20hydrogen&format=json
+
+### parse page (by id)
+@wikiId = 21
+https://{{api}}?action=parse&format=json&pageid={{wikiId}}
+
+### parse section meta
+https://{{api}}?action=parse&format=json&pageid={{wikiId}}&prop=sections
+
+### parse section 0 - Entete
+https://{{api}}?action=parse&format=json&pageid={{wikiId}}&section=0&prop=text
+
+### parse section 1 - Explications
+https://{{api}}?action=parse&format=json&pageid={{wikiId}}&section=1&prop=text
+
+### parse section 2 - Autres_liens_possibles
+https://{{api}}?action=parse&format=json&pageid={{wikiId}}&section=2&prop=text
+
+### parse section 3 -
+https://{{api}}?action=parse&format=json&pageid={{wikiId}}&section=3&prop=text
+
+### parse section 4 -
+https://{{api}}?action=parse&format=json&pageid={{wikiId}}&section=3&prop=text
+
+# Entete
+# Definition
+# Explications
+# Conseils pour l'animation
+# Autres_liens_possibles
+
+### sections page 1
+https://{{api}}?action=parse&format=json&pageid=4&prop=sections
+
+### sections page 5
+https://{{api}}?action=parse&format=json&pageid=18&prop=sections
+
+### sections page 6
+https://{{api}}?action=parse&format=json&pageid=21&prop=sections
+
+### sections page 7
+https://{{api}}?action=parse&format=json&pageid=23&prop=sections
+
+### parse  page 7 - section index 1
+https://{{api}}?action=parse&format=json&pageid=23&section=1&prop=text
+
+### parse  page 7 - section index 2
+https://{{api}}?action=parse&format=json&pageid=23&section=2&prop=text
+
+### sections page 20
+https://{{api}}?action=parse&format=json&pageid=48&prop=sections
+
+### parse page 20 - section index 5
+https://{{api}}?action=parse&format=json&pageid=48&section=5&prop=text
