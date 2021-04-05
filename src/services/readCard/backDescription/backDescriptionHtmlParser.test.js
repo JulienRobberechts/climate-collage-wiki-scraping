@@ -1,8 +1,8 @@
 const { getContent } = require('../../utils/fileServices/readFile');
 const { parseBackDescription } = require('./backDescriptionHtmlParser');
 
-const cardContent1FilePath = './src/tests/data/carte1.html';
-const cardContent3FilePath = './src/tests/data/carte3-0.html';
+const cardContent1FilePath = './src/tests/data/fr/carte1.html';
+const cardContent3FilePath = './src/tests/data/fr/carte3-0.html';
 
 describe('parse BackDescription', () => {
   it('parse BackDescription card 1', async () => {

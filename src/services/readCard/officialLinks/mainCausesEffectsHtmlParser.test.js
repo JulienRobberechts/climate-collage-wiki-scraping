@@ -1,8 +1,8 @@
 const { getContent } = require('../../utils/fileServices/readFile');
 const { parseMainCausesEffects } = require('./mainCausesEffectsHtmlParser');
 
-const cardContent1FilePath = './src/tests/data/carte1.html';
-const cardContent6FilePath = './src/tests/data/carte6-0.html';
+const cardContent1FilePath = './src/tests/data/fr/carte1.html';
+const cardContent6FilePath = './src/tests/data/fr/carte6-0.html';
 
 describe('parse main Causes and Effects', () => {
   it('parse CausesEffects card 1', async () => {

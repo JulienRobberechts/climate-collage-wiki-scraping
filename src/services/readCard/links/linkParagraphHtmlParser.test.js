@@ -2,7 +2,7 @@ const { getContent } = require('../../utils/fileServices/readFile');
 const { parseLinks } = require('./linkParagraphHtmlParser');
 
 const linksEffectsFilePathForCard =
-  cardNum => `./src/services/readCard/links/test-data/linksEffects${cardNum}.html`;
+  cardNum => `./src/services/readCard/links/test-data/fr/linksEffects${cardNum}.html`;
 
 describe('parse other links', () => {
   it('parse optional Effects card 1', async () => {

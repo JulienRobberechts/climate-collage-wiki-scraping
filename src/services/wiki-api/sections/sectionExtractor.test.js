@@ -13,7 +13,7 @@ const { getSectionIndex } = require('./sectionExtractor');
 
 async function getSectionIndexForCardNum(cardNum, sectionName) {
   // to update those files check manual-calls/get -card-sections.http
-  const sourceFile = `./src/tests/data/section-card-${cardNum}.json`;
+  const sourceFile = `./src/tests/data/fr/section-card-${cardNum}.json`;
   const sections = await getObject(sourceFile);
   return getSectionIndex(sections, sectionName);
 };
