@@ -41,14 +41,15 @@ describe('invalid effects links', () => {
   });
 });
 
-describe('getAllLinks', () => {
-  it('check getAllLinks', async () => {
-    const allLinks = await getAllLinks();
-    expect(allLinks).toBeTruthy();
-    expect(allLinks.length).toBeGreaterThan(100);
-    expect(allLinks).toMatchSnapshot();
-  }, 120000);
-});
+// TOO BIG
+// describe('getAllLinks', () => {
+//   it('check getAllLinks', async () => {
+//     const allLinks = await getAllLinks();
+//     expect(allLinks).toBeTruthy();
+//     expect(allLinks.length).toBeGreaterThan(100);
+//     expect(allLinks).toMatchSnapshot();
+//   }, 120000);
+// });
 
 describe('linkTypeIndex', () => {
   it('linkTypeIndex valid', () => expect(linkTypeIndex('valid')).toBe(0));
