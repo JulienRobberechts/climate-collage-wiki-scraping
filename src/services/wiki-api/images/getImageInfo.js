@@ -1,14 +1,13 @@
 const axios = require('axios');
-
-const rootApiUrl = 'https://fresqueduclimat.org/wiki/api.php';
+const { getConfig } = require("../../../config/config");
 
 /**
  * query the image info on Wikimedia
  * @param {Card number} cardNum
  */
-module.exports.getImageInfo = async (cardNum) => {
-
+module.exports.getImageInfo = async (cardNum, lang = 'fr') => {
   try {
+    const { rootApiUrl } = getConfig(lang);
     const imgTitle = `Fichier:Fr-fr%20adulte%20carte%20${cardNum}%20recto.png`;
     const url = `${rootApiUrl}?action=query&format=json&prop=imageinfo&iiprop=url|size|canonicaltitle|mediatype&titles=${imgTitle}`;
     // console.log("url: " + url);

@@ -1,13 +1,15 @@
 const axios = require('axios');
+const { getConfig } = require("../../../config/config");
 const { assertEqual } = require('../../utils/assert/parserAssertions');
 
 /**
  * Query Page Properties to get the page Id
  * @param {wikiInternalName} pageTitle
  */
-module.exports.getPageId = async (pageTitle) => {
+module.exports.getPageId = async (pageTitle, lang = 'fr') => {
   try {
-    const url = `https://fresqueduclimat.org/wiki/api.php?action=query&format=json&titles=${pageTitle}&prop=pageprops`;
+    const { rootApiUrl } = getConfig(lang);
+    const url = `${rootApiUrl}?action=query&format=json&titles=${pageTitle}&prop=pageprops`;
     // console.log("url: " + url);
     const response = await axios.get(url);
     if (response.status !== 200)

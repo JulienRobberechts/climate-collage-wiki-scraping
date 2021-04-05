@@ -1,13 +1,13 @@
 const axios = require('axios');
-
-const rootApiUrl = 'https://fresqueduclimat.org/wiki/api.php';
+const { getConfig } = require("../../../config/config");
 
 /**
  * Query the list of sections metadata for a page
  * @param {Page Id = WikiId} pageId
  */
-module.exports.getPageSections = async (pageId) => {
+module.exports.getPageSections = async (pageId, lang = 'fr') => {
   try {
+    const { rootApiUrl } = getConfig(lang);
     const url = `${rootApiUrl}?action=parse&format=json&prop=sections&pageid=${pageId}`;
     const response = await axios.get(url);
     if (response.status !== 200)
@@ -26,8 +26,9 @@ module.exports.getPageSections = async (pageId) => {
  * @param {Page Id = WikiId} pageId
  * @param {Section Index} sectionIndex
  */
-module.exports.getSectionContent = async (pageId, sectionIndex) => {
+module.exports.getSectionContent = async (pageId, sectionIndex, lang = 'fr') => {
   try {
+    const { rootApiUrl } = getConfig(lang);
     const sectionParam = (sectionIndex === null || sectionIndex === undefined) ? '' : `&section=${sectionIndex}`;
     const url = `${rootApiUrl}?action=parse&format=json&prop=text&pageid=${pageId}${sectionParam}`;
     const response = await axios.get(url);

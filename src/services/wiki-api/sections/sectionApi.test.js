@@ -25,7 +25,7 @@ describe('getSectionContent', () => {
   it('get list', async () => {
     const pageId = 140;
     const section = 2;
-    const pageContent = await getSectionContent(pageId, section, 2);
+    const pageContent = await getSectionContent(pageId, section);
     expect(pageContent).not.toBeFalsy();
     // expect(pageContent).toMatchSnapshot();
   });
