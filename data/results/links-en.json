@@ -1,1 +1,602 @@
-[]
+[
+  {
+    "fromNum": 1,
+    "toNum": 2,
+    "status": "valid",
+    "explanation": "accounts for 40% of greenhouse gas (GHG) emissions"
+  },
+  {
+    "fromNum": 1,
+    "toNum": 3,
+    "status": "valid",
+    "explanation": "accounts for 20% of GHG emissions"
+  },
+  {
+    "fromNum": 1,
+    "toNum": 4,
+    "status": "valid",
+    "explanation": "accounts for 15% of GHG emissions"
+  },
+  {
+    "fromNum": 1,
+    "toNum": 8,
+    "status": "valid",
+    "explanation": "accounts for 25% of GHGs if we include induced deforestation."
+  },
+  {
+    "fromNum": 1,
+    "toNum": 25,
+    "status": "optional",
+    "explanation": "Humans occupy almost all available space on Earth, leaving no room for animals and plants. This entails the disappearance of natural habitats and it is the main cause of biodiversity loss today, well ahead of climate change."
+  },
+  {
+    "fromNum": 1,
+    "toNum": 27,
+    "status": "optional",
+    "explanation": "With this link, we highlight all the degradations that humans are inflicting on marine life such as plastic pollution and overfishing. It's irrelevant to climate change, but it's interesting to make the connection anyway."
+  },
+  {
+    "fromNum": 2,
+    "toNum": 5,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 2,
+    "toNum": 10,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 2,
+    "toNum": 6,
+    "status": "optional",
+    "explanation": "This link is possible for wood-consuming industries. However, wood used by a factory in a sustainably managed forest would not be considered as deforestation."
+  },
+  {
+    "fromNum": 2,
+    "toNum": 9,
+    "status": "optional",
+    "explanation": "In fact, methane emissions from industry are as strong as emissions from agriculture because of fugitive emissions (natural gas leaks from pipelines). This is a point that is little known, so this relationship is not considered strongly relevant. Industry also emits HFCs (refrigerants)."
+  },
+  {
+    "fromNum": 3,
+    "toNum": 5,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 3,
+    "toNum": 10,
+    "status": "optional",
+    "explanation": "Buildings emit few aerosols directly. The only significant emissions are chimney fires. In Chamonix, 85% of the fine particles present in the atmosphere come from wood heating."
+  },
+  {
+    "fromNum": 3,
+    "toNum": 26,
+    "status": "optional",
+    "explanation": "Soil artificialisation is also responsible for flooding because the soil is no longer able to absorb rain water."
+  },
+  {
+    "fromNum": 4,
+    "toNum": 5,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 4,
+    "toNum": 10,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 5,
+    "toNum": 7,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 5,
+    "toNum": 40,
+    "status": "optional",
+    "explanation": "Although conflicts may occur because of resources, they are not directly caused by climate change, rather by resource depletion or scarcity. The relationship can be made, but it is due more to politics than to the climate crisis."
+  },
+  {
+    "fromNum": 6,
+    "toNum": 7,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 7,
+    "toNum": 12,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 8,
+    "toNum": 6,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 8,
+    "toNum": 9,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 8,
+    "toNum": 12,
+    "status": "optional",
+    "explanation": "It doesn't matter if this link is not made, but it is true that agriculture can improve storage capacity through photosynthesis. This is the 0.4% principle (if we increased the soil's capacity to sequester carbon by even 0,4%, we would have a significant impact on CO2)."
+  },
+  {
+    "fromNum": 8,
+    "toNum": 25,
+    "status": "optional",
+    "explanation": "Here, we are thinking mainly of pesticides (especially Roundup or neonicotinoids). No link with the climate, but an interesting relation to make."
+  },
+  {
+    "fromNum": 9,
+    "toNum": 13,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 10,
+    "toNum": 15,
+    "status": "valid",
+    "explanation": "Aerosols cool down the climate."
+  },
+  {
+    "fromNum": 10,
+    "toNum": 38,
+    "status": "valid",
+    "explanation": "Although aerosols are not alone in the \"fine particle\" category, every year 391,000 people in EU countries die from air pollution, and it causes 1.1 million premature deaths in India and China."
+  },
+  {
+    "fromNum": 11,
+    "toNum": 13,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 12,
+    "toNum": 11,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 12,
+    "toNum": 24,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 12,
+    "toNum": 32,
+    "status": "optional",
+    "explanation": "Studies have shown that yields increase with increased CO2, but that the nutrient content of vegetables is reduced as a result, because trace elements are not more abundant when yields increase."
+  },
+  {
+    "fromNum": 13,
+    "toNum": 15,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 14,
+    "toNum": 16,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 14,
+    "toNum": 17,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 14,
+    "toNum": 18,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 14,
+    "toNum": 19,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 14,
+    "toNum": 21,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 14,
+    "toNum": 41,
+    "status": "optional",
+    "explanation": "If we take the idea of energy conservation all the way, we can link the energy budget to the thawing of permafrost."
+  },
+  {
+    "fromNum": 14,
+    "toNum": 42,
+    "status": "optional",
+    "explanation": "If we take the idea of energy conservation all the way, we can link the energy budget to the thawing of methane hydrates."
+  },
+  {
+    "fromNum": 15,
+    "toNum": 14,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 15,
+    "toNum": 6,
+    "status": "optional",
+    "explanation": "When the forest is cut down and replaced by a meadow, it is the opposite, a dark surface (the foliage) is replaced by a light surface (the meadow). All in all, the artificialization of the soil has a cooling effect on the climate."
+  },
+  {
+    "fromNum": 15,
+    "toNum": 18,
+    "status": "optional",
+    "explanation": "When sea ice melts, a white surface is replaced by a navy blue surface, which has a lower albedo and therefore absorbs more energy."
+  },
+  {
+    "fromNum": 16,
+    "toNum": 22,
+    "status": "valid",
+    "explanation": "A melting of 100 gigatons of ice per year is equivalent to about 0.28 mm per year of mean sea level rise. Thus, 15 to 35% of sea level rise is linked to the melting of glaciers, according the IPCC scenarios. 30% to 35% is linked to the expansion of water. The remainder is linked to the melting of the ice caps."
+  },
+  {
+    "fromNum": 16,
+    "toNum": 31,
+    "status": "valid",
+    "explanation": "Melting glaciers threaten water supplies. Indeed, the relative importance of glacier melt water in summer can be considerable, contributing for example to 25% of August flows in the basins draining the European Alps, with an area of about 105 km2 and only 1% glacial cover. Their disappearance could be catastrophic for cities located in valleys watered by rivers flowing down from the surrounding mountains and for freshwater fauna. Glacier meltwater also increases in importance during droughts and heat waves."
+  },
+  {
+    "fromNum": 16,
+    "toNum": 26,
+    "status": "optional",
+    "explanation": "It is possible, in certain circumstances of high heat, that very fast rapid melting of glaciers may cause flooding. But the real concern about these glaciers is that they are gradually disappearing, depriving downstream irrigation of a top-up in summer."
+  },
+  {
+    "fromNum": 17,
+    "toNum": 20,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 17,
+    "toNum": 22,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 17,
+    "toNum": 27,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 17,
+    "toNum": 34,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 17,
+    "toNum": 42,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 18,
+    "toNum": 15,
+    "status": "optional",
+    "explanation": "When the ice pack melts, a white surface is replaced by a dark blue surface, which has a lower albedo and therefore absorbs more energy. This relationship is not essential but it does allow another feedback loop of the game to be put forward."
+  },
+  {
+    "fromNum": 18,
+    "toNum": 20,
+    "status": "invalid",
+    "explanation": "The melting of the Arctic ice pack, but also the melting of Greenland's glaciers may lead, in the distant future, to a disruption of the thermohaline circulation (which gives rise to the Gulf Stream). But beware, the \"Water Cycle\" card does not refer at all to the thermohaline circulation."
+  },
+  {
+    "fromNum": 18,
+    "toNum": 22,
+    "status": "invalid",
+    "explanation": "The melting of the ice pack is not responsible for the Sea Level Rise."
+  },
+  {
+    "fromNum": 19,
+    "toNum": 22,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 20,
+    "toNum": 25,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 20,
+    "toNum": 26,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 20,
+    "toNum": 30,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 20,
+    "toNum": 33,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 20,
+    "toNum": 34,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 20,
+    "toNum": 28,
+    "status": "optional",
+    "explanation": "The Vectors of disease card is generally linked to the Terrestrial Biodiversity card because disease vectors are a sub-part of biodiversity, but it can also be linked to the same causes as the biodiversity card, i.e. Disruption of the Water Cycle and Temperature Rise."
+  },
+  {
+    "fromNum": 21,
+    "toNum": 20,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
+    "toNum": 25,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
+    "toNum": 32,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
+    "toNum": 36,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
+    "toNum": 38,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
+    "toNum": 41,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
+    "toNum": 28,
+    "status": "optional",
+    "explanation": "The vectors of disease card is generally linked to the Terrestrial Biodiversity card because disease vectors are a sub-part of biodiversity, but it can also be linked to the same causes as the biodiversity card, i.e. Disruption of the Water Cycle and Temperature Rise."
+  },
+  {
+    "fromNum": 22,
+    "toNum": 33,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 23,
+    "toNum": 29,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 24,
+    "toNum": 23,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 25,
+    "toNum": 28,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 25,
+    "toNum": 32,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 26,
+    "toNum": 32,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 26,
+    "toNum": 38,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 27,
+    "toNum": 37,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 28,
+    "toNum": 38,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 29,
+    "toNum": 27,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 30,
+    "toNum": 26,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 30,
+    "toNum": 31,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 30,
+    "toNum": 32,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 30,
+    "toNum": 35,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 31,
+    "toNum": 32,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 31,
+    "toNum": 40,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 31,
+    "toNum": 37,
+    "status": "optional",
+    "explanation": "If we consider that a famine is not only a lack of food but also a lack of water."
+  },
+  {
+    "fromNum": 32,
+    "toNum": 37,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 32,
+    "toNum": 39,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 33,
+    "toNum": 32,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 33,
+    "toNum": 39,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 34,
+    "toNum": 32,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 34,
+    "toNum": 33,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 34,
+    "toNum": 38,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 36,
+    "toNum": 35,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 36,
+    "toNum": 38,
+    "status": "optional",
+    "explanation": ": Heat waves can be devastating, especially for the elderly."
+  },
+  {
+    "fromNum": 37,
+    "toNum": 38,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 37,
+    "toNum": 39,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 38,
+    "toNum": 40,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 39,
+    "toNum": 40,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 40,
+    "toNum": 38,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 40,
+    "toNum": 39,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 41,
+    "toNum": 9,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 42,
+    "toNum": 9,
+    "status": "valid",
+    "explanation": ""
+  }
+]
