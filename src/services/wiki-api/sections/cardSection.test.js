@@ -2,12 +2,7 @@
  * @jest-environment node
  */
 const { getSectionContentByName } = require('./cardSection');
-
-const {
-  sectionMain,
-  sectionDefinition,
-  sectionAdvice,
-} = require('./sectionNames.fr');
+const { getSectionNames } = require('./sectionNames');
 
 const lang = 'fr';
 
@@ -23,13 +18,16 @@ describe('getSectionContentByName FR', () => {
     return content;
   }
   it('section Main 1', async () => {
-    const content = await checkSectionExists(4, sectionMain);
+    const lang = 'fr';
+    const content = await checkSectionExists(4, getSectionNames(lang).sectionMain);
     // expect(content).toMatchSnapshot();
   });
   it('section Definition 1', async () => {
-    await checkSectionNOTExists(4, sectionDefinition);
+    const lang = 'fr';
+    await checkSectionNOTExists(4, getSectionNames(lang).sectionDefinition);
   }); it('section Advice 1', async () => {
-    await checkSectionNOTExists(4, sectionAdvice);
+    const lang = 'fr';
+    await checkSectionNOTExists(4, getSectionNames(lang).sectionAdvice);
   });
 
 });

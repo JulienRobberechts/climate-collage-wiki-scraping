@@ -1,10 +1,10 @@
 const { getSectionContentByName } = require('../../wiki-api/sections');
 const { parseBackDescription } = require('./backDescriptionHtmlParser');
-const { sectionMain } = require('../../wiki-api/sections/sectionNames.fr.js');
+const { getSectionNames } = require('../../wiki-api/sections/sectionNames.js');
 const { cleanUpStringSpecific } = require('../../utils/string/cleanUpString');
 
 const getBackDescription = async (wikiId, message, lang = 'fr') => {
-  const content = await getSectionContentByName(wikiId, sectionMain, lang);
+  const content = await getSectionContentByName(wikiId, getSectionNames(lang).sectionMain, lang);
   const backDescription = parseBackDescription(content, message);
   return cleanUpStringSpecific(backDescription);
 };

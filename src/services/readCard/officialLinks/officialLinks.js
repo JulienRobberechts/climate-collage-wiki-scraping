@@ -2,7 +2,7 @@ const { getObject } = require('../../utils/fileServices/readFile.js');
 const { getPageId } = require('../../wiki-api/pages/getPageProps');
 const { getSectionContentByName } = require('../../wiki-api/sections');
 const { parseMainCausesEffects } = require('./mainCausesEffectsHtmlParser');
-const { sectionMain } = require('../../wiki-api/sections/sectionNames.fr.js');
+const { getSectionNames } = require('../../wiki-api/sections/sectionNames.js');
 const { sleepRandom } = require("../../utils/time/wait");
 const { createProgressBar } = require('../../../cli/progress');
 
@@ -11,7 +11,7 @@ const { createProgressBar } = require('../../../cli/progress');
  * use instead getLinks = async (cardNum, wikiId, linkType, message)
  */
 const getOfficialLinks = async (cardNum, wikiId, message, lang = 'fr') => {
-  const content = await getSectionContentByName(wikiId, sectionMain, lang);
+  const content = await getSectionContentByName(wikiId, getSectionNames(lang).sectionMain, lang);
   const relations = parseMainCausesEffects(content, `card ${cardNum} - ` + message);
   return relations;
 };

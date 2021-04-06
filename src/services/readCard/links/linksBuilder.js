@@ -1,6 +1,6 @@
 const { getSectionContentByName } = require('../../wiki-api/sections');
 const { cleanUpStringBasic } = require('../../utils/string/cleanUpString');
-const { sectionMainEffects, sectionOptionalEffects, sectionInvalidEffects } = require('../../wiki-api/sections/sectionNames.fr.js');
+const { getSectionNames } = require('../../wiki-api/sections/sectionNames.js');
 const { getCardNumberFromUrl } = require('../../linkCalculation/buildLinks');
 const { getObject } = require('../../utils/fileServices/readFile.js');
 const { parseLinks } = require('./linkParagraphHtmlParser');
@@ -9,7 +9,7 @@ const { sleepRandom } = require("../../utils/time/wait");
 const { createProgressBar } = require('../../../cli/progress');
 
 const getLinks = async (cardNum, wikiId, linkType, message, lang = 'fr') => {
-  const sectionName = getSectionName(linkType);
+  const sectionName = getSectionName(linkType, lang);
   const content = await getSectionContentByName(wikiId, sectionName, lang);
   return parseLinks(content, message)
     .map(l => ({
@@ -35,14 +35,15 @@ const getAllTypesLinks = async (cardNum, wikiId, message, lang = 'fr') => {
   }
 };
 
-const getSectionName = (linkType) => {
+const getSectionName = (linkType, lang = 'fr') => {
+  const sectionsNames = getSectionNames(lang);
   switch (linkType) {
     case 'valid':
-      return sectionMainEffects;
+      return sectionsNames.sectionMainEffects;
     case 'optional':
-      return sectionOptionalEffects;
+      return sectionsNames.sectionOptionalEffects;
     case 'invalid':
-      return sectionInvalidEffects;
+      return sectionsNames.sectionInvalidEffects;
     default:
       throw new Error(`linkType '${linkType}' not recognized`);
   }
