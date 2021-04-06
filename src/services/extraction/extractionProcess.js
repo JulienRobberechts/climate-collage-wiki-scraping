@@ -8,48 +8,48 @@ const { getObject } = require('../utils/fileServices/readFile');
 const { mapDataFile } = require('../utils/etl/transformData');
 
 // EXTRACT
-const extractGame = async () => {
-  await extractCardList();
-  await extractAllCards();
-  await extractCardsLinks();
+const extractGame = async (lang = 'fr') => {
+  await extractCardList(lang);
+  await extractAllCards(lang);
+  await extractCardsLinks(lang);
 };
 
 // 1- EXTRACT_CARDS_LIST
 const extractCardList = async (lang = 'fr') => {
   console.log(" => 1.\tRead Card List");
   const cardsData = await readCardList(lang);
-  const filePath = `./data/work/1-cards-list.json`;
+  const filePath = `./data/work/1-cards-list-${lang}.json`;
   await writeObject(filePath, cardsData);
 };
 
 // 2- EXTRACT_CARD_DETAILS
-const extractAllCards = async () => {
-  await extractCardsLangFr();
-  await mergeCardsFiles();
+const extractAllCards = async (lang = 'fr') => {
+  await extractCardsDetails(lang);
+  await mergeCardsFiles(lang);
 };
 
-const extractCardsLangFr = async () => {
+const extractCardsDetails = async (lang = 'fr') => {
   console.log(" => 2.a\tRead Cards");
-  const cardsData = await readCards(1, 42);
-  const filePath = `./data/work/2.cards-fr-v1.json`;
+  const cardsData = await readCards(1, 42, lang);
+  const filePath = `./data/work/2.cards-${lang}-v1.json`;
   await writeObject(filePath, cardsData);
 };
 
-const mergeCardsFiles = async () => {
+const mergeCardsFiles = async (lang = 'fr') => {
   console.log(" => 2.b\tAdd video urls");
-  const videoData = await getObject(`./data/external-sources/cards-videos-fr.json`);
-  const transform = (data) => data.map(cardFR => ({
-    ...cardFR,
-    ...videoData.find(c => c.cardNum === cardFR.cardNum),
+  const videoData = await getObject(`./data/external-sources/cards-videos-${lang}.json`);
+  const transform = (data) => data.map(card => ({
+    ...card,
+    ...videoData.find(c => c.cardNum === card.cardNum),
   }));
-  await mapDataFile(`./data/work/2.cards-fr-v1.json`, transform, `./data/results/cards-fr.json`);
+  await mapDataFile(`./data/work/2.cards-${lang}-v1.json`, transform, `./data/results/cards-${lang}.json`);
 };
 
 // 3 - EXTRACT_LINKS
 const extractCardsLinks = async (lang = 'fr') => {
   console.log(" => 3.\tRead Links");
   const links = await getAllLinks(lang);
-  await writeObject(`./data/results/links-fr.json`, links);
+  await writeObject(`./data/results/links-${lang}.json`, links);
 };
 
 // 999- EXTRACT_CARDS_LIST

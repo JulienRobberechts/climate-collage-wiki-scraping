@@ -7,29 +7,25 @@ const {
   getCardLinksAsWiki,
 } = require('../services/extraction/extractionProcess');
 
-module.exports.executeRequest = async (answers, cli) => {
-  if (answers.langage === cli.lang.EN) {
-    console.log("English is not supported yet. sorry.");
-    return;
-  }
+module.exports.executeRequest = async ({ operation, lang }, cli) => {
   console.log("\nprocessing...\n");
-  switch (answers.operation) {
+  switch (operation) {
     case cli.action.EXTRACT_GAME:
-      await extractGame();
+      await extractGame(lang);
       break;
     case cli.action.EXTRACT_CARDS_LIST:
-      await extractCardList();
+      await extractCardList(lang);
       break;
     case cli.action.EXTRACT_CARD_DETAILS:
-      await extractAllCards();
+      await extractAllCards(lang);
       break;
     case cli.action.EXTRACT_LINKS:
-      await extractCardsLinks();
+      await extractCardsLinks(lang);
       break;
 
     case cli.action.CUSTOM_TREATMENT:
-      console.log('CUSTOM_TREATMENT');
-      await getCardLinksAsWiki();
+      console.log('CUSTOM_TREATMENT - DISABLED');
+      // await getCardLinksAsWiki();
       break;
     default:
       console.log(`Operation not implemented`);

@@ -4,8 +4,8 @@ const { executeRequest } = require('./executeCommand');
 
 const cli = {
   lang: {
-    FR: 'Français',
-    EN: 'English (Not supported yet)'
+    FR: 'fr',
+    EN: 'en'
   },
   action: {
     EXTRACT_GAME: 'Extract Game (ALL)',
@@ -19,9 +19,8 @@ const cli = {
 var questions = [
   {
     type: 'list',
-    name: 'langage',
+    name: 'lang',
     message: 'Which langage?',
-    when: false, // the question is disabled
     choices: [
       cli.lang.FR,
       cli.lang.EN,
