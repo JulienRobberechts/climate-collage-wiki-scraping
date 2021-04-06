@@ -2,7 +2,7 @@ const { getSectionContentByName } = require('../../wiki-api/sections');
 const { cleanUpStringBasic } = require('../../utils/string/cleanUpString');
 const { getSectionNames } = require('../../wiki-api/sections/sectionNames.js');
 const { getCardNumberFromUrl } = require('../../linkCalculation/buildLinks');
-const { getObject } = require('../../utils/fileServices/readFile.js');
+// const { getObject } = require('../../utils/fileServices/readFile.js');
 const { parseLinks } = require('./linkParagraphHtmlParser');
 const { getPageId } = require('../../wiki-api/pages/getPageProps');
 const { sleepRandom } = require("../../utils/time/wait");
@@ -14,7 +14,7 @@ const getLinks = async (cardNum, wikiId, linkType, message, lang = 'fr') => {
   return parseLinks(content, message)
     .map(l => ({
       fromNum: cardNum,
-      toNum: getCardNumberFromUrl(l.href),
+      toNum: getCardNumberFromUrl(l.href, lang),
       status: linkType,
       explanation: cleanUpStringBasic(l.explanation)
     }));

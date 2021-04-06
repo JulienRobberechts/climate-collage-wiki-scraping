@@ -1,4 +1,5 @@
 
+const { getConfig } = require('../../config/config');
 
 const buildAllValidLinks = (cards) => {
   const links = Array.from(new Array(cards.length), (_x, i) => i + 1)
@@ -50,9 +51,9 @@ const getCardByNum = (cards, cardNumber) => {
   return card;
 };
 
-const getCardNumberFromUrl = (cardUrl) => {
-  const regexp = /Fr-fr_adulte_carte_(?<num>\d+)_/g;
-  const found = regexp.exec(cardUrl);
+const getCardNumberFromUrl = (cardUrl, lang = 'fr') => {
+  const { cardUrlRegexp } = getConfig(lang);
+  const found = cardUrlRegexp.exec(cardUrl);
   if (!found) {
     throw new Error(`impossible to find the card number in this url: ${cardUrl}`);
     // return -1;

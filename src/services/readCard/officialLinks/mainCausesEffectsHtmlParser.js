@@ -3,7 +3,7 @@ const { JSDOM } = jsdom;
 const { assertEqual, assertMore } = require('../../utils/assert/parserAssertions');
 const { getCardNumberFromUrl } = require('../../linkCalculation/buildLinks');
 
-module.exports.parseMainCausesEffects = (content, message = '') => {
+module.exports.parseMainCausesEffects = (content, message = '', lang = 'fr') => {
   const { window: { document } } = new JSDOM(content);
   const tables = document.querySelectorAll("table");
   assertMore('table count' + message, tables.length, 1);
@@ -28,11 +28,11 @@ module.exports.parseMainCausesEffects = (content, message = '') => {
 
   const causes = Array.from(causesAnchors)
     .map(c => c.href)
-    .map(cardUrl => getCardNumberFromUrl(cardUrl));
+    .map(cardUrl => getCardNumberFromUrl(cardUrl, lang));
 
   const effects = Array.from(effectsAnchors)
     .map(c => c.href)
-    .map(getCardNumberFromUrl);
+    .map(cardUrl => getCardNumberFromUrl(cardUrl, lang));
 
   return {
     causes,

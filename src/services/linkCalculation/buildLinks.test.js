@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-const { buildLinks, buildAllValidLinks } = require('./buildLinks');
+const { buildLinks, getCardNumberFromUrl, buildAllValidLinks } = require('./buildLinks');
 const cards1and3FilePath = './src/tests/data/cards-1-3.json';
 const { getObject } = require('../utils/fileServices/readFile');
 
@@ -56,5 +56,14 @@ describe('buildAllLinks', () => {
     expect(linksInfo.filter(c => c.fromNum === 2).length).toBe(2);
     expect(linksInfo.filter(c => c.fromNum === 3).length).toBe(1);
     expect(linksInfo).toMatchSnapshot();
+  });
+});
+
+describe('getCardNumberFromUrl', () => {
+  it('card 24 fr', async () => {
+    expect(getCardNumberFromUrl('Fr-fr_adulte_carte_24_acidification_océan', 'fr')).toBe(24);
+  });
+  it('card 2 En', async () => {
+    expect(getCardNumberFromUrl('En-en_adult_card_2_industry', 'en')).toBe(2);
   });
 });

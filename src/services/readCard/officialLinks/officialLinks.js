@@ -12,7 +12,7 @@ const { createProgressBar } = require('../../../cli/progress');
  */
 const getOfficialLinks = async (cardNum, wikiId, message, lang = 'fr') => {
   const content = await getSectionContentByName(wikiId, getSectionNames(lang).sectionMain, lang);
-  const relations = parseMainCausesEffects(content, `card ${cardNum} - ` + message);
+  const relations = parseMainCausesEffects(content, `card ${cardNum} - ` + message, lang);
   return relations;
 };
 
