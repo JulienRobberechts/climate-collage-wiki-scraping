@@ -6,10 +6,7 @@ const { getBackDescription } = require('./backDescription/backDescription');
 const { getExplanation } = require('./explanation/explanation');
 const { createProgressBar } = require('../../cli/progress');
 
-const cardsFilePath = `./data/work/1-cards-list.json`;
-
-const readCards = async (fromCard, toCard, lang = 'fr') => {
-  const cards = await getObject(cardsFilePath);
+const readCards = async (cards, fromCard, toCard, lang = 'fr') => {
   const progress = createProgressBar(toCard - fromCard + 1);
   const cardsData = [];
   try {
@@ -28,12 +25,6 @@ const readCards = async (fromCard, toCard, lang = 'fr') => {
   }
 
   return cardsData;
-};
-
-const readCard = async (cardNumber, lang = 'fr') => {
-  const cards = await getObject(cardsFilePath);
-  const card = cards.find(({ cardNum }) => cardNum === cardNumber);
-  return await getCardData(card, lang);
 };
 
 const getCardData = async (card, lang = 'fr') => {
@@ -64,6 +55,5 @@ const getCardData = async (card, lang = 'fr') => {
 
 module.exports = {
   readCards,
-  readCard,
   getCardData
 };

@@ -1,14 +1,26 @@
 /**
  * @jest-environment node
  */
-const {
-  readCard,
-  readCards,
-} = require('./readCard');
+const { readCards, getCardData } = require('./readCard');
+const { getObject } = require('../utils/fileServices/readFile.js');
+
+const getAllCards = async (lang) => {
+  const cardsFilePath = `./data/work/1-cards-list-${lang}.json`;
+  const allCards = await getObject(cardsFilePath);
+  return allCards;
+};
+
+const getOneCard = async (cardNumber, lang = 'fr') => {
+  const cards = await getAllCards(lang);
+  return cards.find(({ cardNum }) => cardNum === cardNumber);
+};
 
 describe('readCard', () => {
   it('read carte_1', async () => {
     const cardNumber = 1;
+    const lang = 'fr';
+
+    const card = await getOneCard(cardNumber, lang);
     const {
       wikiId,
       cardNum,
@@ -17,7 +29,7 @@ describe('readCard', () => {
       title,
       img,
       backDescription
-    } = await readCard(cardNumber);
+    } = await getCardData(card, lang);
     expect({
       wikiId,
       cardNum,
@@ -40,6 +52,8 @@ describe('readCard', () => {
   });
   it('read carte_2', async () => {
     const cardNumber = 2;
+    const lang = 'fr';
+    const card = await getOneCard(cardNumber, lang);
     const {
       wikiId,
       cardNum,
@@ -48,7 +62,7 @@ describe('readCard', () => {
       title,
       img,
       backDescription
-    } = await readCard(cardNumber);
+    } = await getCardData(card, lang);
     expect({
       wikiId,
       cardNum,
@@ -72,39 +86,34 @@ describe('readCard', () => {
 
   it('read carte_9', async () => {
     const cardNumber = 9;
-    const pageData = await readCard(cardNumber);
+    const lang = 'fr';
+    const card = await getOneCard(cardNumber, lang);
+    const pageData = await getCardData(card, lang);
     expect(pageData).toMatchSnapshot();
   });
   it('read carte_13', async () => {
     const cardNumber = 13;
-    const pageData = await readCard(cardNumber);
+    const lang = 'fr';
+    const card = await getOneCard(cardNumber, lang);
+    const pageData = await getCardData(card, lang);
     expect(pageData).toMatchSnapshot();
   });
   it('read all cards 1-2', async () => {
-    const cards = await readCards(1, 2);
+    const lang = 'fr';
+    const cardsFilePath = `./data/work/1-cards-list-${lang}.json`;
+    const allCards = await getObject(cardsFilePath);
+    const cards = await readCards(allCards, 1, 2, lang);
     expect(cards.length).toBe(2);
   }, 99000);
 });
 
 describe.skip('readCard by batch', () => {
   it.skip('read all cards 1-10', async () => {
-    const cards = await readCards(1, 10);
+    const lang = 'fr';
+    const allCards = await getAllCards(lang);
+    const cards = await readCards(allCards, 1, 10, lang);
     expect(cards.length).toBe(10);
-  }, 99000);
-  it.skip('read all cards 10-19', async () => {
-    const cards = await readCards(10, 19);
-    expect(cards.length).toBe(10);
-  }, 99000);
-  it.skip('read all cards 20-29', async () => {
-    const cards = await readCards(20, 29);
-    expect(cards.length).toBe(10);
-  }, 99000);
-  it.skip('read all cards 30-39', async () => {
-    const cards = await readCards(30, 39);
-    expect(cards.length).toBe(10);
-  }, 99000);
-  it.skip('read all cards 40-42', async () => {
-    const cards = await readCards(40, 42);
-    expect(cards.length).toBe(3);
   }, 99000);
 });
+
+

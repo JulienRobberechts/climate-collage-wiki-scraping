@@ -30,7 +30,9 @@ const extractAllCards = async (lang = 'fr') => {
 
 const extractCardsDetails = async (lang = 'fr') => {
   console.log(" => 2.a\tRead Cards");
-  const cardsData = await readCards(1, 42, lang);
+  const cardsFilePath = `./data/work/1-cards-list-${lang}.json`;
+  const cards = await getObject(cardsFilePath);
+  const cardsData = await readCards(cards, 1, 42, lang);
   const filePath = `./data/work/2.cards-${lang}-v1.json`;
   await writeObject(filePath, cardsData);
 };
@@ -53,18 +55,18 @@ const extractCardsLinks = async (lang = 'fr') => {
 };
 
 // 999- EXTRACT_CARDS_LIST
-const getCardLinksAsWiki = async () => {
-  console.log(" => 999.\tgetCardLinksAsWiki");
-  const transform = (data) => data.map(card => ({
-    link: `* [[${card.wikiUrl.replace('/wiki/index.php?title=', '')}|${card.title}]]`
-  }));
-  await mapDataFile(`./data/work/1-cards-list.json`, transform, `./data/999-cards-links.json`);
-};
+// const getCardLinksAsWiki = async () => {
+//   console.log(" => 999.\tgetCardLinksAsWiki");
+//   const transform = (data) => data.map(card => ({
+//     link: `* [[${card.wikiUrl.replace('/wiki/index.php?title=', '')}|${card.title}]]`
+//   }));
+//   await mapDataFile(`./data/work/1-cards-list.json`, transform, `./data/999-cards-links.json`);
+// };
 
 module.exports = {
   extractGame,
   extractCardList,
   extractAllCards,
-  extractCardsLinks,
-  getCardLinksAsWiki
+  extractCardsLinks
+  // getCardLinksAsWiki
 };
