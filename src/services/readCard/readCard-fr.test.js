@@ -4,11 +4,7 @@
 const { readCards, getCardData } = require('./readCard');
 const { getObject } = require('../utils/fileServices/readFile.js');
 
-const getAllCards = async (lang) => {
-  const cardsFilePath = `./data/work/1-cards-list-${lang}.json`;
-  const allCards = await getObject(cardsFilePath);
-  return allCards;
-};
+const getAllCards = (lang) => getObject(`./data/work/1-cards-list-${lang}.json`);
 
 const getOneCard = async (cardNumber, lang = 'fr') => {
   const cards = await getAllCards(lang);
@@ -100,8 +96,7 @@ describe('readCard', () => {
   });
   it('read all cards 1-2', async () => {
     const lang = 'fr';
-    const cardsFilePath = `./data/work/1-cards-list-${lang}.json`;
-    const allCards = await getObject(cardsFilePath);
+    const allCards = await getAllCards(lang);
     const cards = await readCards(allCards, 1, 2, lang);
     expect(cards.length).toBe(2);
   }, 99000);

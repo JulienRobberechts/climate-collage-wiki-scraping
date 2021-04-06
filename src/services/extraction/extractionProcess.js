@@ -14,6 +14,8 @@ const extractGame = async (lang = 'fr') => {
   await extractCardsLinks(lang);
 };
 
+const getAllCards = (lang) => getObject(`./data/work/1-cards-list-${lang}.json`);
+
 // 1- EXTRACT_CARDS_LIST
 const extractCardList = async (lang = 'fr') => {
   console.log(" => 1.\tRead Card List");
@@ -30,9 +32,8 @@ const extractAllCards = async (lang = 'fr') => {
 
 const extractCardsDetails = async (lang = 'fr') => {
   console.log(" => 2.a\tRead Cards");
-  const cardsFilePath = `./data/work/1-cards-list-${lang}.json`;
-  const cards = await getObject(cardsFilePath);
-  const cardsData = await readCards(cards, 1, 42, lang);
+  const allCards = await getAllCards(lang);
+  const cardsData = await readCards(allCards, 1, 42, lang);
   const filePath = `./data/work/2.cards-${lang}-v1.json`;
   await writeObject(filePath, cardsData);
 };
@@ -50,9 +51,8 @@ const mergeCardsFiles = async (lang = 'fr') => {
 // 3 - EXTRACT_LINKS
 const extractCardsLinks = async (lang = 'fr') => {
   console.log(" => 3.\tRead Links");
-  const cardsFilePath = `./data/work/1-cards-list-${lang}.json`;
-  const cards = await getObject(cardsFilePath);
-  const links = await getAllLinks(cards, lang);
+  const allCards = await getAllCards(lang);
+  const links = await getAllLinks(allCards, lang);
   await writeObject(`./data/results/links-${lang}.json`, links);
 };
 
