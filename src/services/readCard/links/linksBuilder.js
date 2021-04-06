@@ -20,11 +20,11 @@ const getLinks = async (cardNum, wikiId, linkType, message, lang = 'fr') => {
     }));
 };
 
-const getAllTypesLinks = async (cardNum, wikiId, message) => {
+const getAllTypesLinks = async (cardNum, wikiId, message, lang = 'fr') => {
   try {
-    const relationsValid = await getLinks(cardNum, wikiId, 'valid', message);
-    const relationsOptional = await getLinks(cardNum, wikiId, 'optional', message);
-    const relationsInvalid = await getLinks(cardNum, wikiId, 'invalid', message);
+    const relationsValid = await getLinks(cardNum, wikiId, 'valid', message, lang);
+    const relationsOptional = await getLinks(cardNum, wikiId, 'optional', message, lang);
+    const relationsInvalid = await getLinks(cardNum, wikiId, 'invalid', message, lang);
     return [
       ...relationsValid,
       ...relationsOptional,
@@ -65,7 +65,7 @@ const getAllLinks = async (lang = 'fr') => {
       progress.increment();
       const card = cards[cardNum - 1];
       const wikiId = await getPageId(card.wikiInternalName, lang);
-      const linksForCard = await getAllTypesLinks(cardNum, wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
+      const linksForCard = await getAllTypesLinks(cardNum, wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`, lang);
       links.push(...linksForCard);
       await sleepRandom(300, 800);
     }

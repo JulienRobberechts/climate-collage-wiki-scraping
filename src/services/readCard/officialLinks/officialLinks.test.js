@@ -9,11 +9,12 @@ const {
 } = require('../../data-access/cardsRepo');
 
 const { oneTo42 } = require('../../../tests/utils/cardsNumbers');
+const lang = 'fr';
 
 const checkCard = async (cardNum) => {
   const card = await getCardsFrReferenceByCardNum(cardNum);
   const expectedEffects = await getLinksEffectFrRef(cardNum, 'valid');
-  const { effects } = await getOfficialLinks(cardNum, card.wikiId, `getOfficialLinks test`);
+  const { effects } = await getOfficialLinks(cardNum, card.wikiId, `getOfficialLinks test`, lang);
   expect(effects.sort(linkOrder))
     .toStrictEqual(expectedEffects.sort(linkOrder).map(c => c.toNum));
 }

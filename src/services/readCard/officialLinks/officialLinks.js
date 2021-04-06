@@ -35,7 +35,7 @@ const getAllOfficialLinks = async (lang = 'fr') => {
       progress.increment();
       const card = cards[cardNum];
       const wikiId = await getPageId(card.wikiInternalName, lang);
-      const relations = await getOfficialLinks(cardNum, wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
+      const relations = await getOfficialLinks(cardNum, wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`, lang);
       relationsData.push({
         cardNum: card.cardNum,
         ...relations

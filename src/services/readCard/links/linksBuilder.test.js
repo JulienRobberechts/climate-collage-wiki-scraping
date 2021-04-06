@@ -11,11 +11,12 @@ const {
   getLinksEffectFrRef
 } = require('../../data-access/cardsRepo');
 const { oneTo42 } = require('../../../tests/utils/cardsNumbers');
+const lang = 'fr';
 
 const checkEffects = (linkType) => async (cardNum) => {
   const card = await getCardsFrReferenceByCardNum(cardNum);
   const expectedLink = await getLinksEffectFrRef(cardNum, linkType);
-  const actualLinks = await getLinks(cardNum, card.wikiId, linkType, `link '${linkType}'`);
+  const actualLinks = await getLinks(cardNum, card.wikiId, linkType, `link '${linkType}'`, lang);
   expect(actualLinks.sort(linkOrder)).toStrictEqual(expectedLink.sort(linkOrder));
 };
 
