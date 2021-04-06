@@ -50,7 +50,9 @@ const mergeCardsFiles = async (lang = 'fr') => {
 // 3 - EXTRACT_LINKS
 const extractCardsLinks = async (lang = 'fr') => {
   console.log(" => 3.\tRead Links");
-  const links = await getAllLinks(lang);
+  const cardsFilePath = `./data/work/1-cards-list-${lang}.json`;
+  const cards = await getObject(cardsFilePath);
+  const links = await getAllLinks(cards, lang);
   await writeObject(`./data/results/links-${lang}.json`, links);
 };
 
