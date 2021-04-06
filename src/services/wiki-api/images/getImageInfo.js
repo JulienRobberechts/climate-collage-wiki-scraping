@@ -7,8 +7,12 @@ const { getConfig } = require("../../../config/config");
  */
 module.exports.getImageInfo = async (cardNum, lang = 'fr') => {
   try {
-    const { rootApiUrl } = getConfig(lang);
-    const imgTitle = `Fichier:Fr-fr%20adulte%20carte%20${cardNum}%20recto.png`;
+    const { rootApiUrl, imgTitleTemplate } = getConfig(lang);
+
+    // const imgTitle = `Fichier:Fr-fr%20adulte%20carte%20${cardNum}%20recto.png`;
+    // const imgTitle = `File:En-en%20adult%20card%20${cardNum}%20front.png`;
+    const imgTitle = imgTitleTemplate.replace('${cardNum}', cardNum);
+
     const url = `${rootApiUrl}?action=query&format=json&prop=imageinfo&iiprop=url|size|canonicaltitle|mediatype&titles=${imgTitle}`;
     // console.log("url: " + url);
     const response = await axios.get(url);

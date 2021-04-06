@@ -5,7 +5,16 @@
 
 @query = {{api}}?action=query&format=json&titles={{pageTitle}}
 
-https://fresqueduclimat.org/wiki/index.php?title=Fr-fr_adulte_carte_1_activit%C3%A9s_humaines
+@pageTitle_CardsList = Jeu_adulte
+
+### get info CardsList Page
+https://{{api}}?action=query&format=json&titles={{pageTitle_CardsList}}&prop=info
+# Get the pageid to put it in config cardsListPageId=140
+
+### getImageInfo (card 3)
+@imgTitle = Fichier:Fr-fr adulte carte 3 recto.png
+https://{{api}}?action=query&format=json&prop=imageinfo&iiprop=url|size|canonicaltitle|mediatype&titles={{imgTitle}}
+# Get the pageid to put in src/services/wiki-api/images/getImageInfo-en.test.js
 
 ### get info
 https://{{api}}?action=query&format=json&titles={{pageTitle2}}&prop=info;redirects
@@ -33,9 +42,6 @@ https://{{query}}&prop=extlinks
 ### images - GOOD
 https://{{query}}&prop=images
 
-### imageinfo - GOOD
-@imgTitle = Fichier:Fr-fr adulte carte 1 recto.png
-https://{{api}}?action=query&format=json&titles={{imgTitle}}&prop=imageinfo&iiprop=url|size|canonicaltitle|mediatype
 
 # https://fresqueduclimat.org/wiki/images/0/01/Fr-fr_adulte_carte_1_recto.png
 # https://fresqueduclimat.org/wiki/index.php?title=Fichier:Fr-fr_adulte_carte_1_recto.png

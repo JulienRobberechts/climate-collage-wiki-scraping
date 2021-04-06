@@ -3,10 +3,12 @@
  */
 const { getImageInfo } = require('./getImageInfo');
 
+const lang = 'fr';
+
 describe('getImageInfo', () => {
   it('get carte_3', async () => {
     const cardNum = 3;
-    const response = await getImageInfo(cardNum);
+    const response = await getImageInfo(cardNum, lang);
     expect(response).not.toBeFalsy();
     const pageInfo = response.query.pages['15'];
     expect(pageInfo).not.toBeFalsy();

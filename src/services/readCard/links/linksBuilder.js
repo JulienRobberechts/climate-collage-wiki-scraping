@@ -51,7 +51,7 @@ const getSectionName = (linkType) => {
 /**
  * to replace getAllOfficialLinks
  */
-const getAllLinks = async () => {
+const getAllLinks = async (lang = 'fr') => {
   const sourceFile = `./data/work/1-cards-list.json`;
   const cards = await getObject(sourceFile);
 
@@ -64,7 +64,7 @@ const getAllLinks = async () => {
     for (let cardNum = fromCard; cardNum <= toCard; cardNum++) {
       progress.increment();
       const card = cards[cardNum - 1];
-      const wikiId = await getPageId(card.wikiInternalName);
+      const wikiId = await getPageId(card.wikiInternalName, lang);
       const linksForCard = await getAllTypesLinks(cardNum, wikiId, `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
       links.push(...linksForCard);
       await sleepRandom(300, 800);

@@ -9,7 +9,7 @@ const { createProgressBar } = require('../../cli/progress');
 const cardsFilePath = `./data/work/1-cards-list.json`;
 const readCards = async (fromCard, toCard) => {
   const cards = await getObject(cardsFilePath);
-  const progress = createProgressBar(toCard - fromCard+1);
+  const progress = createProgressBar(toCard - fromCard + 1);
   const cardsData = [];
   try {
     for (let index = fromCard - 1; index < toCard; index++) {
@@ -35,8 +35,8 @@ const readCard = async (cardNumber) => {
   return await getCardData(card);
 };
 
-const getCardData = async (card) => {
-  const wikiId = await getPageId(card.wikiInternalName);
+const getCardData = async (card, lang = 'fr') => {
+  const wikiId = await getPageId(card.wikiInternalName, lang);
   const img = await getCardImage(card.cardNum, `image (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
 
   const backDescription = await getBackDescription(wikiId, `getBackDescription (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
