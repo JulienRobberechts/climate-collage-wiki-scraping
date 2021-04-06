@@ -1,9 +1,31 @@
-const assertEqual = (message, actualNum, expectedNum) => {
-  if (actualNum !== expectedNum) { throw new Error(`${message} is '${actualNum}' instead of '${expectedNum}'`); }
+/**
+ * Assert the actualValue is equal the expectedValue
+ * @param {*} message
+ * @param {*} actualValue
+ * @param {*} expectedValue
+ */
+const assertEqual = (message, actualValue, expectedValue) => {
+  if (actualValue !== expectedValue) { throw new Error(`${message} is '${actualValue}' instead of '${expectedValue}'`); }
 }
 
-const assertMore = (message, actualNum, expectedNum) => {
-  if (!(actualNum >= expectedNum)) { throw new Error(`${message} is '${actualNum}' instead of '${expectedNum}'`); }
+/**
+ * Assert the actualValue is more than the minExpectedValue
+ * @param {*} message
+ * @param {*} actualValue
+ * @param {*} minExpectedValue
+ */
+const assertMore = (message, actualValue, minExpectedValue) => {
+  if (!(actualValue >= minExpectedValue)) { throw new Error(`${message} is '${actualValue}' less than '${minExpectedValue}'`); }
 }
 
-module.exports = { assertEqual, assertMore };
+/**
+ * Assert the actualValue is one of the expectedValues
+ * @param {*} message
+ * @param {*} actualValue
+ * @param {*} expectedValues
+ */
+const assertEqualOneOf = (message, actualValue, expectedValues) => {
+  if (!expectedValues.includes(actualValue)) { throw new Error(`${message} is '${actualValue}' instead of one of those values [${expectedValues}]`); }
+}
+
+module.exports = { assertEqual, assertMore, assertEqualOneOf };

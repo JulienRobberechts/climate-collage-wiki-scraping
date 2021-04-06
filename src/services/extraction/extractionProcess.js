@@ -15,9 +15,9 @@ const extractGame = async () => {
 };
 
 // 1- EXTRACT_CARDS_LIST
-const extractCardList = async () => {
+const extractCardList = async (lang = 'fr') => {
   console.log(" => 1.\tRead Card List");
-  const cardsData = await readCardList();
+  const cardsData = await readCardList(lang);
   const filePath = `./data/work/1-cards-list.json`;
   await writeObject(filePath, cardsData);
 };

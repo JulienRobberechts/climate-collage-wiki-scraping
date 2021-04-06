@@ -1,6 +1,6 @@
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
-const { assertEqual, assertMore } = require('../utils/assert/parserAssertions');
+const { assertEqual, assertMore, assertEqualOneOf } = require('../utils/assert/parserAssertions');
 
 /**
  * Parse the card list
@@ -19,8 +19,8 @@ module.exports.parseListContent = (content, message = '') => {
   const headers = rows[0].querySelectorAll("th");
   assertEqual('row count' + message, headers.length, 3);
   assertEqual('Number header' + message, headers[0].textContent.trim(), "#");
-  assertEqual('Name header' + message, headers[1].textContent.trim(), "Nom");
-  assertEqual('Set header' + message, headers[2].textContent.trim(), "Lot");
+  assertEqualOneOf('Name header' + message, headers[1].textContent.trim(), ["Name", "Nom"]);
+  assertEqualOneOf('Set header' + message, headers[2].textContent.trim(), ["Batch", "Lot"]);
 
   // For each row
   const cards = [];

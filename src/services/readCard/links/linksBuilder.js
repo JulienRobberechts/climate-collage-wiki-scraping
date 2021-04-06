@@ -8,9 +8,9 @@ const { getPageId } = require('../../wiki-api/pages/getPageProps');
 const { sleepRandom } = require("../../utils/time/wait");
 const { createProgressBar } = require('../../../cli/progress');
 
-const getLinks = async (cardNum, wikiId, linkType, message) => {
+const getLinks = async (cardNum, wikiId, linkType, message, lang = 'fr') => {
   const sectionName = getSectionName(linkType);
-  const content = await getSectionContentByName(wikiId, sectionName);
+  const content = await getSectionContentByName(wikiId, sectionName, lang);
   return parseLinks(content, message)
     .map(l => ({
       fromNum: cardNum,

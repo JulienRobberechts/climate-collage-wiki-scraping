@@ -10,8 +10,8 @@ const { createProgressBar } = require('../../../cli/progress');
  * Get valid Official links from the Main section. (DEPRECATED)
  * use instead getLinks = async (cardNum, wikiId, linkType, message)
  */
-const getOfficialLinks = async (cardNum, wikiId, message) => {
-  const content = await getSectionContentByName(wikiId, sectionMain);
+const getOfficialLinks = async (cardNum, wikiId, message, lang = 'fr') => {
+  const content = await getSectionContentByName(wikiId, sectionMain, lang);
   const relations = parseMainCausesEffects(content, `card ${cardNum} - ` + message);
   return relations;
 };

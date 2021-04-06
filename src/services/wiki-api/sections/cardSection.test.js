@@ -9,14 +9,16 @@ const {
   sectionAdvice,
 } = require('./sectionNames.fr');
 
-describe('getSectionContentByName', () => {
+const lang = 'fr';
+
+describe('getSectionContentByName FR', () => {
   const checkSectionExists = async (wikiId, sectionName) => {
-    const content = await getSectionContentByName(wikiId, sectionName);
+    const content = await getSectionContentByName(wikiId, sectionName, lang);
     expect(content.length).toBeGreaterThan(50);
     return content;
   }
   const checkSectionNOTExists = async (wikiId, sectionName) => {
-    const content = await getSectionContentByName(wikiId, sectionName);
+    const content = await getSectionContentByName(wikiId, sectionName, lang);
     expect(content.length).toBe(0);
     return content;
   }
