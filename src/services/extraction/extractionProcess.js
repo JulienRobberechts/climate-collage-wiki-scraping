@@ -46,9 +46,9 @@ const mergeCardsFiles = async () => {
 };
 
 // 3 - EXTRACT_LINKS
-const extractCardsLinks = async () => {
+const extractCardsLinks = async (lang = 'fr') => {
   console.log(" => 3.\tRead Links");
-  const links = await getAllLinks();
+  const links = await getAllLinks(lang);
   await writeObject(`./data/results/links-fr.json`, links);
 };
 

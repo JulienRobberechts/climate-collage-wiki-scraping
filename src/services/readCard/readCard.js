@@ -7,7 +7,7 @@ const { getExplanation } = require('./explanation/explanation');
 const { createProgressBar } = require('../../cli/progress');
 
 const cardsFilePath = `./data/work/1-cards-list.json`;
-const readCards = async (fromCard, toCard) => {
+const readCards = async (fromCard, toCard, lang = 'fr') => {
   const cards = await getObject(cardsFilePath);
   const progress = createProgressBar(toCard - fromCard + 1);
   const cardsData = [];
@@ -15,7 +15,7 @@ const readCards = async (fromCard, toCard) => {
     for (let index = fromCard - 1; index < toCard; index++) {
       progress.increment();
       const card = cards[index];
-      const cardData = await getCardData(card);
+      const cardData = await getCardData(card, lang);
       cardsData.push(cardData);
       await sleepRandom(200, 200);
     }
@@ -29,15 +29,15 @@ const readCards = async (fromCard, toCard) => {
   return cardsData;
 };
 
-const readCard = async (cardNumber) => {
+const readCard = async (cardNumber, lang = 'fr') => {
   const cards = await getObject(cardsFilePath);
   const card = cards.find(({ cardNum }) => cardNum === cardNumber);
-  return await getCardData(card);
+  return await getCardData(card, lang);
 };
 
 const getCardData = async (card, lang = 'fr') => {
   const wikiId = await getPageId(card.wikiInternalName, lang);
-  const img = await getCardImage(card.cardNum, `image (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
+  const img = await getCardImage(card.cardNum, `image (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`, lang);
 
   const backDescription = await getBackDescription(wikiId, `getBackDescription (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);
   const explanation = await getExplanation(wikiId, `getExplanation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`);

@@ -2,7 +2,6 @@
  * @jest-environment node
  */
 const { getLinks,
-  getAllLinks,
   linkIndex,
   linkTypeIndex
 } = require('./linksBuilder');
@@ -40,16 +39,6 @@ describe('invalid effects links', () => {
     await checkEffects('invalid')(35);
   });
 });
-
-// TOO BIG
-// describe('getAllLinks', () => {
-//   it('check getAllLinks', async () => {
-//     const allLinks = await getAllLinks();
-//     expect(allLinks).toBeTruthy();
-//     expect(allLinks.length).toBeGreaterThan(100);
-//     expect(allLinks).toMatchSnapshot();
-//   }, 120000);
-// });
 
 describe('linkTypeIndex', () => {
   it('linkTypeIndex valid', () => expect(linkTypeIndex('valid')).toBe(0));
