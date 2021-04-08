@@ -6,7 +6,7 @@ None
 
 ## Missing OPTIONAL links in English version (37)
 
-```json
+```js
     [
       {
         fromNum: 1,
@@ -235,7 +235,7 @@ None
 
 # Missing INVALID links in English version (19)
 
-```json
+```js
     [
       {
         fromNum: 7,
