@@ -233,7 +233,7 @@ None
     ]
 ```
 
-# Missing INVALID links in English version (19)
+# Missing INVALID links in English version (12)
 
 ```js
     [
