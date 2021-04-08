@@ -234,18 +234,6 @@
     "explanation": ""
   },
   {
-    "fromNum": 15,
-    "toNum": 6,
-    "status": "optional",
-    "explanation": "When the forest is cut down and replaced by a meadow, it is the opposite, a dark surface (the foliage) is replaced by a light surface (the meadow). All in all, the artificialization of the soil has a cooling effect on the climate."
-  },
-  {
-    "fromNum": 15,
-    "toNum": 18,
-    "status": "optional",
-    "explanation": "When sea ice melts, a white surface is replaced by a navy blue surface, which has a lower albedo and therefore absorbs more energy."
-  },
-  {
     "fromNum": 16,
     "toNum": 22,
     "status": "valid",
