@@ -102,6 +102,12 @@
     "explanation": ""
   },
   {
+    "fromNum": 4,
+    "toNum": 6,
+    "status": "optional",
+    "explanation": "Road construction sometimes requires deforestation, but the one-dimensional aspect of the road makes it almost negligible compared to deforestation linked to agriculture."
+  },
+  {
     "fromNum": 5,
     "toNum": 7,
     "status": "valid",
