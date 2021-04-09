@@ -36,7 +36,7 @@ module.exports.getSectionContent = async (pageId, sectionIndex, lang = 'fr') => 
       throw new Error(`getSectionContent status code = ${response.status}`);
     return response.data.parse.text['*'];
   } catch (error) {
-    throw new Error(`getSectionContent error: ${error}`);
+    throw new Error(`getSectionContent error (pageId=${pageId} sectionIndex=${sectionIndex}): ${error}`);
   }
 };
 

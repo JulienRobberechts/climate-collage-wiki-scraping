@@ -1,0 +1,8 @@
+### getSectionContent(pageId, sectionIndex)
+
+@apiFr = fresqueduclimat.org/wiki/api.php
+@apiEn = fresqueduclimat.org/wiki/en/api.php
+
+@pageId = 1
+@sectionIndex = 1
+https://{{apiFr}}?action=parse&format=json&prop=text&pageid={{pageId}}&section={{sectionIndex}}
