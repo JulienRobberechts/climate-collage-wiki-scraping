@@ -3,7 +3,7 @@ const linksResultsFilePath = (lang) => `./data/results/links-${lang}.json`;
 
 
 describe('Links', () => {
-  it.skip('Missing links in English version (49 error now)', async () => {
+  it('Missing links in English version (36 error now)', async () => {
     const linksFR = await getObject(linksResultsFilePath('fr'));
     const linksEN = await getObject(linksResultsFilePath('en'));
 
