@@ -25,6 +25,12 @@
   },
   {
     "fromNum": 1,
+    "toNum": 6,
+    "status": "optional",
+    "explanation": "Deforestation can be considered either as a human activity, or as a consequence of agriculture, or both."
+  },
+  {
+    "fromNum": 1,
     "toNum": 25,
     "status": "optional",
     "explanation": "Humans occupy almost all available space on Earth, leaving no room for animals and plants. This entails the disappearance of natural habitats and it is the main cause of biodiversity loss today, well ahead of climate change."
@@ -67,6 +73,12 @@
   },
   {
     "fromNum": 3,
+    "toNum": 6,
+    "status": "optional",
+    "explanation": "It can be said that heating buildings with wood is in part responsible for deforestation, but it is not significant. Neither is building a major cause of deforestation. Agriculture is the main cause of deforestation, way in front of buildings and their usage."
+  },
+  {
+    "fromNum": 3,
     "toNum": 10,
     "status": "optional",
     "explanation": "Buildings emit few aerosols directly. The only significant emissions are chimney fires. In Chamonix, 85% of the fine particles present in the atmosphere come from wood heating."
@@ -97,6 +109,18 @@
   },
   {
     "fromNum": 5,
+    "toNum": 1,
+    "status": "optional",
+    "explanation": "What comes first? Do human activities cause the use of fossil fuels or do fossil fuels ensable human activities? Don't waste time on this and group the two cards together if necessary. Plenty of activities, happily, do not require burning fossil fuels, like windmills and watermills grinding grains for flour."
+  },
+  {
+    "fromNum": 5,
+    "toNum": 27,
+    "status": "optional",
+    "explanation": "Oils slicks in the ocean are an example of a link between fossil fuels and marine biodiversity."
+  },
+  {
+    "fromNum": 5,
     "toNum": 40,
     "status": "optional",
     "explanation": "Although conflicts may occur because of resources, they are not directly caused by climate change, rather by resource depletion or scarcity. The relationship can be made, but it is due more to politics than to the climate crisis."
@@ -106,6 +130,42 @@
     "toNum": 7,
     "status": "valid",
     "explanation": ""
+  },
+  {
+    "fromNum": 6,
+    "toNum": 12,
+    "status": "optional",
+    "explanation": "Participants often think that deforestation reduces carbon sinks. In reality, the impact is minimal because deforested areas represent a very small part of the total forest area. Moreover, a mature forest has reached its equilibrium and no longer absorbs carbon. Therefore, as mainly mature forests are deforested, this does not impact carbon sinks. On the other hand, the amount CO2 released is very high."
+  },
+  {
+    "fromNum": 6,
+    "toNum": 15,
+    "status": "optional",
+    "explanation": "When forests are cut down, a dark green surface is replaced by a light green one, which has a higher albedo and therefore absorbs less energy."
+  },
+  {
+    "fromNum": 6,
+    "toNum": 20,
+    "status": "optional",
+    "explanation": "Deforestation can perturb local precipitation."
+  },
+  {
+    "fromNum": 6,
+    "toNum": 25,
+    "status": "optional",
+    "explanation": "Deforestation causes huge losses of biodiversity: 1/ Animal biodiversity because the forest is host to many species. The forest biodiversity index fell by 53% between 1970 and 2014. 2/ Plant biodiversity, as 8,000 of the 60,000 known tree species are considered endangered.."
+  },
+  {
+    "fromNum": 6,
+    "toNum": 26,
+    "status": "optional",
+    "explanation": "Vegetation retains water. Cutting it down can lead to flooding."
+  },
+  {
+    "fromNum": 6,
+    "toNum": 35,
+    "status": "optional",
+    "explanation": "One way of clearing forests is to burn them down, with the risk of losing control of the fire. This is what happened in the summer of 2019 in the Amazon forest and in Australia."
   },
   {
     "fromNum": 7,
@@ -124,6 +184,24 @@
     "toNum": 9,
     "status": "valid",
     "explanation": ""
+  },
+  {
+    "fromNum": 8,
+    "toNum": 5,
+    "status": "optional",
+    "explanation": "Agriculture does not use much fossil fuel, just enough to keep tractors running. Its carbon emissions are high, bu mainly because of methane and nitrous oxide."
+  },
+  {
+    "fromNum": 8,
+    "toNum": 7,
+    "status": "optional",
+    "explanation": "Agriculture does not emit much CO2 except from deforestation. Its carbon emissions mainly come from othe GHGs."
+  },
+  {
+    "fromNum": 8,
+    "toNum": 10,
+    "status": "optional",
+    "explanation": "Spraying crops does result in aerosols and air pollution, but not to the same extent as incomplete combustion from power plants."
   },
   {
     "fromNum": 8,
