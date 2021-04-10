@@ -159,13 +159,19 @@
     "fromNum": 6,
     "toNum": 25,
     "status": "optional",
-    "explanation": "Deforestation causes huge losses of biodiversity: 1/ Animal biodiversity because the forest is host to many species. The forest biodiversity index fell by 53% between 1970 and 2014. 2/ Plant biodiversity, as 8,000 of the 60,000 known tree species are considered endangered.."
+    "explanation": "Deforestation causes huge losses of biodiversity. To animal biodiversity because forests are hosts to many species. The forest biodiversity index fell by 53% between 1970 and 2014. And also to plant biodiversity, as 8,000 of the 60,000 known tree species are considered endangered.."
   },
   {
     "fromNum": 6,
     "toNum": 26,
     "status": "optional",
     "explanation": "Vegetation retains water. Cutting it down can lead to flooding."
+  },
+  {
+    "fromNum": 6,
+    "toNum": 30,
+    "status": "optional",
+    "explanation": "Deforestation can be the direct cause of droughts because trees stock a lot of water. If they are cut down, they no longer play their part as humidity regulators."
   },
   {
     "fromNum": 6,
@@ -373,6 +379,24 @@
   },
   {
     "fromNum": 18,
+    "toNum": 25,
+    "status": "optional",
+    "explanation": "The poor polar bear is a powerful symbol of the climat. If players make this connection, suggest they draw a bear!"
+  },
+  {
+    "fromNum": 18,
+    "toNum": 27,
+    "status": "optional",
+    "explanation": "There's probably some sort of link here..."
+  },
+  {
+    "fromNum": 18,
+    "toNum": 13,
+    "status": "invalid",
+    "explanation": "This link would mark confusion with the amplifying effect due to albedo. The white sea ice melts to reveal a darker surface underneath and the extra energy absorbed warms the Earth. This mechanism is called albedo and has nothing to do with the greenhouse effect. It belongs to the orange arrows on card 13, not to the red arrows."
+  },
+  {
+    "fromNum": 18,
     "toNum": 20,
     "status": "invalid",
     "explanation": "The melting of the Arctic ice pack, but also the melting of Greenland's glaciers may lead, in the distant future, to a disruption of the thermohaline circulation (which gives rise to the Gulf Stream). But beware, the \"Water Cycle\" card does not refer at all to the thermohaline circulation."
@@ -421,9 +445,21 @@
   },
   {
     "fromNum": 20,
+    "toNum": 19,
+    "status": "optional",
+    "explanation": "It's a bit technical, but the blue part of the map of Antarctica on card 19 represents a gain in mass due to an increase of precipitations. The red part represents a loss in mass. In total, Antarctica is losing mass."
+  },
+  {
+    "fromNum": 20,
     "toNum": 28,
     "status": "optional",
     "explanation": "The Vectors of disease card is generally linked to the Terrestrial Biodiversity card because disease vectors are a sub-part of biodiversity, but it can also be linked to the same causes as the biodiversity card, i.e. Disruption of the Water Cycle and Temperature Rise."
+  },
+  {
+    "fromNum": 20,
+    "toNum": 22,
+    "status": "invalid",
+    "explanation": "No, more rain is not going to cause the oceans to overflow! This is a rare mistake to be made, but if it happens to you, ask the players where rainclouds come from..."
   },
   {
     "fromNum": 21,
@@ -480,6 +516,12 @@
     "explanation": ""
   },
   {
+    "fromNum": 23,
+    "toNum": 27,
+    "status": "optional",
+    "explanation": "Calcification problems do not only affect pteropods and coccolithophores. Coral reefs are also affected, for example, so this link is acceptable."
+  },
+  {
     "fromNum": 24,
     "toNum": 23,
     "status": "valid",
@@ -498,6 +540,12 @@
     "explanation": ""
   },
   {
+    "fromNum": 25,
+    "toNum": 27,
+    "status": "optional",
+    "explanation": "The two types of biodiversity can interact with each other."
+  },
+  {
     "fromNum": 26,
     "toNum": 32,
     "status": "valid",
@@ -510,10 +558,22 @@
     "explanation": ""
   },
   {
+    "fromNum": 26,
+    "toNum": 31,
+    "status": "optional",
+    "explanation": "Flooding can lead in some cases to contamination of freshwater resources and affect drinking water systems."
+  },
+  {
     "fromNum": 27,
     "toNum": 37,
     "status": "valid",
     "explanation": ""
+  },
+  {
+    "fromNum": 27,
+    "toNum": 25,
+    "status": "optional",
+    "explanation": "The two types of biodiversity can interact with each other."
   },
   {
     "fromNum": 28,
@@ -552,6 +612,12 @@
     "explanation": ""
   },
   {
+    "fromNum": 30,
+    "toNum": 12,
+    "status": "optional",
+    "explanation": "If a lack of rain occurs while plants are growing, there is less photosynthesis and therefore a reduction in capacity of the carbon sink. In Europe, in 2018, carbon sinks declined by 18%."
+  },
+  {
     "fromNum": 31,
     "toNum": 32,
     "status": "valid",
@@ -570,6 +636,12 @@
     "explanation": "If we consider that a famine is not only a lack of food but also a lack of water."
   },
   {
+    "fromNum": 31,
+    "toNum": 38,
+    "status": "optional",
+    "explanation": "A lack of drinking water will have impacts on human health."
+  },
+  {
     "fromNum": 32,
     "toNum": 37,
     "status": "valid",
@@ -592,6 +664,12 @@
     "toNum": 39,
     "status": "valid",
     "explanation": ""
+  },
+  {
+    "fromNum": 33,
+    "toNum": 31,
+    "status": "optional",
+    "explanation": "If seawater rises, it can penetrate the water tables, which are freshwater reserves."
   },
   {
     "fromNum": 34,
