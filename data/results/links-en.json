@@ -690,6 +690,36 @@
     "explanation": ""
   },
   {
+    "fromNum": 35,
+    "toNum": 6,
+    "status": "optional",
+    "explanation": "Deforestation is partly done by burning the forest, which can then degenerate into uncontrolled fire. This is what happened in the summer of 2019 in the Amazon and Australia."
+  },
+  {
+    "fromNum": 35,
+    "toNum": 10,
+    "status": "optional",
+    "explanation": "Smoke from wildfires has been shown to carry toxic particles."
+  },
+  {
+    "fromNum": 35,
+    "toNum": 25,
+    "status": "optional",
+    "explanation": "This is a more minor link, except for specific biodiversity-rich areas."
+  },
+  {
+    "fromNum": 35,
+    "toNum": 32,
+    "status": "optional",
+    "explanation": "Generally forests burn better than wheat fields."
+  },
+  {
+    "fromNum": 35,
+    "toNum": 38,
+    "status": "optional",
+    "explanation": "630 people died in Californian wildfires in autumn 2018."
+  },
+  {
     "fromNum": 36,
     "toNum": 35,
     "status": "valid",
@@ -697,9 +727,15 @@
   },
   {
     "fromNum": 36,
+    "toNum": 30,
+    "status": "optional",
+    "explanation": "Heatwaves can cause droughts. They often go together."
+  },
+  {
+    "fromNum": 36,
     "toNum": 38,
     "status": "optional",
-    "explanation": ": Heat waves can be devastating, especially for the elderly."
+    "explanation": "Heat waves can be devastating, especially for the elderly."
   },
   {
     "fromNum": 37,
@@ -711,6 +747,12 @@
     "fromNum": 37,
     "toNum": 39,
     "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 37,
+    "toNum": 40,
+    "status": "optional",
     "explanation": ""
   },
   {
@@ -726,6 +768,12 @@
     "explanation": ""
   },
   {
+    "fromNum": 39,
+    "toNum": 38,
+    "status": "optional",
+    "explanation": ""
+  },
+  {
     "fromNum": 40,
     "toNum": 38,
     "status": "valid",
@@ -736,6 +784,18 @@
     "toNum": 39,
     "status": "valid",
     "explanation": ""
+  },
+  {
+    "fromNum": 40,
+    "toNum": 1,
+    "status": "optional",
+    "explanation": "It's the final loop of the Club of Rome. All this will eventually regulate itself, but not necessarily peacefully. The players often make this link and sometimes propose to roll up the Collage to connect the beginning and ending edges. Moreover, it is noteworthy that humankind appears in the first and last cards, but not in the middle of the Collage."
+  },
+  {
+    "fromNum": 40,
+    "toNum": 5,
+    "status": "optional",
+    "explanation": "Conflicts are often linked to fossil fuels, but the link is more the other way round."
   },
   {
     "fromNum": 41,
