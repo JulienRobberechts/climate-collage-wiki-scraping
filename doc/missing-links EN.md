@@ -4,160 +4,10 @@
 
 None
 
-## Missing OPTIONAL links in English version (37)
+## Missing OPTIONAL links in English version (12)
 
 ```js
-    [
-      {
-        fromNum: 1,
-        toNum: 6,
-        status: 'optional',
-        explanation: "La déforestation peut être considérée comme une activité humaine ou comme une conséquence de l'agriculture ou les deux."
-      },
-      {
-        fromNum: 3,
-        toNum: 6,
-        status: 'optional',
-        explanation: "On pourrait dire que le chauffage au bois des bâtiments est responsable de déforestation mais ce n'est pas significatif. On pourrait dire que l'espace utilisé pour les bâtiments pousse à la déforestation mais ce n'est pas le même ordre de grandeur. L'agriculture est la cause principale de la déforestation bien avant les bâtiments."
-      },
-      {
-        fromNum: 4,
-        toNum: 6,
-        status: 'optional',
-        explanation: "La construction de route nécessite parfois de déforester, mais l'aspect unidimensionnelle de la route la rend quasiment négligeable devant la déforestation lié à l'agriculture."
-      },
-      {
-        fromNum: 5,
-        toNum: 1,
-        status: 'optional',
-        explanation: "On peut se demander si les activités humaines consomment des énergies fossiles ou si les énergies fossiles permettent les activités humaines. Ce débat ne doit pas prendre de temps et on peut regrouper les deux cartes au besoin. Quand je chante dans mon jardin, je réalise une activité humaine sans énergie fossile. Quand les moulins à vent ou à eau produisaient de la farine, ils n'utilisaient pas d'énergie fossile. Il reste, heureusement de nombreuses activités humaines sans énergie fossile."
-      },
-      {
-        fromNum: 5,
-        toNum: 27,
-        status: 'optional',
-        explanation: "La marée noire qu'a provoqué le naufrage du supertanker l'Amoco Cadiz est un exemple de lien entre énergie fossile et biodiversité."
-      },
-      {
-        fromNum: 6,
-        toNum: 12,
-        status: 'optional',
-        explanation: "Les participants pensent souvent que la déforestation réduit les puits de carbone. En réalité, l'impact est minime car les zones déforestées représentent une toute petite partie de la surface totale de forêt. De plus, une forêt à l'équilibre n'absorbe plus de carbone. Or, on déforeste souvent des forêts à l'équilibre, ce qui n'impacte pas les puits de carbone. Par contre le CO2 dégagé est très important."
-      },
-      {
-        fromNum: 6,
-        toNum: 15,
-        status: 'optional',
-        explanation: "Quand la forêt est coupée, une surface vert foncé est remplacée par une surface vert clair, qui à un albédo plus élevé, donc absorbe moins d'énergie."
-      },
-      {
-        fromNum: 6,
-        toNum: 20,
-        status: 'optional',
-        explanation: 'La déforestation peut avoir des conséquences locales sur le régime des pluies.'
-      },
-      {
-        fromNum: 6,
-        toNum: 25,
-        status: 'optional',
-        explanation: "La déforestation cause énormément de perte de biodiversité : Animale car la forêt est un hôte de beaucoup d'espèce. L'indice de biodiversité des forêts a chuté de 53% entre 1970 et 2014. Végétale car sur les 60 000 espèces d'arbres connus, 8000 sont considérées comme menacés."
-      },
-      {
-        fromNum: 6,
-        toNum: 26,
-        status: 'optional',
-        explanation: "La végétation retiens l'eau. Si on la coupe, ça facilite les crues."
-      },
-      {
-        fromNum: 6,
-        toNum: 30,
-        status: 'optional',
-        explanation: "La déforestation peut être la cause directe de sécheresses car les arbres stockent beaucoup d'eau. Si on les coupe, ils ne jouent plus ce rôle de régulateurs de l'humidité."
-      },
-      {
-        fromNum: 6,
-        toNum: 35,
-        status: 'optional',
-        explanation: "Une partie de la déforestation est faite en brûlant la forêt qui peut ensuite dégénérer en feu non-maîtrisé. C'est ce qu'il s'est passé pendant l'été 2019 en Amazonie et en Australie."
-      },
-      {
-        fromNum: 8,
-        toNum: 5,
-        status: 'optional',
-        explanation: "L'agriculture n'utilise pas beaucoup d'énergies fossiles. Tout juste un peu d'essence pour mettre dans les tracteurs. Attention, ça ne veut pas dire qu'elle n'a pas une empreinte carbone importante, mais c'est surtout du méthane et du protoxyde d'azote (lire les cartes 8 et 9)."
-      },
-      {
-        fromNum: 8,
-        toNum: 7,
-        status: 'optional',
-        explanation: "L'agriculture émet peu de CO2 à part à travers la déforestation. Son empreinte carbone est surtout dûe aux autres GES."
-      },
-      {
-        fromNum: 8,
-        toNum: 10,
-        status: 'optional',
-        explanation: "Dans l'absolu, c'est vrai : les épandages font des aérosols qui entrent en ligne de compte dans les pollutions locales aux alentours, mais c'est beaucoup moins important que la combustion incomplète des centrales thermiques."
-      },
-      {
-        fromNum: 18,
-        toNum: 25,
-        status: 'optional',
-        explanation: "Eh oui, le pauvre ours polaire, emblématique du changement climatique... Il ne s’agit pas d’un phénomène tellement significatif sur l'équilibre de la biodiversité terrestre, mais si les participants font ce lien, proposez-leur de dessiner un ours! ;-)."
-      },
-      {
-        fromNum: 18,
-        toNum: 27,
-        status: 'optional',
-        explanation: 'Il va forcément y avoir un impact...'
-      },
-      {
-        fromNum: 20,
-        toNum: 19,
-        status: 'optional',
-        explanation: "C'est très technique, mais si on est pointilleux, la partie bleue du graphique de la carte 19 concernant l'Antarctique représente un gain de masse dû à une augmentation des précipitations. Les parties rouges représentent une perte de masse. Au total, l'Antarctique perd de la masse."
-      },
-      {
-        fromNum: 23,
-        toNum: 27,
-        status: 'optional',
-        explanation: 'Les problèmes de calcification ne concernent pas seulement les ptéropodes et les coccolithophores. Ils peuvent aussi impacter le corail par exemple. Donc ce lien est tout à fait acceptable.'
-      },
-      {
-        fromNum: 25,
-        toNum: 27,
-        status: 'optional',
-        explanation: 'Les deux types de biodiversité peuvent interagir entres elles.'
-      },
-      {
-        fromNum: 26,
-        toNum: 31,
-        status: 'optional',
-        explanation: '[explication en cours...]'
-      },
-      {
-        fromNum: 27,
-        toNum: 25,
-        status: 'optional',
-        explanation: 'Les deux types de biodiversité peuvent interagir entres elles.'
-      },
-      {
-        fromNum: 30,
-        toNum: 12,
-        status: 'optional',
-        explanation: 'Si la pénurie de précipitations se produit au cours de la période de croissance de la végétation, il y a alors une diminution de la photosynthèse et donc une diminution de la capacité du puits de carbone. En Europe, en 2018, les puits de carbone ont baissé de 18 %.'
-      },
-      {
-        fromNum: 31,
-        toNum: 38,
-        status: 'optional',
-        explanation: '[explication en cours...]'
-      },
-      {
-        fromNum: 33,
-        toNum: 31,
-        status: 'optional',
-        explanation: "Si l'eau de mer monte, elle peut pénétrer les nappes phréatiques qui sont des réserves d'eau douce."
-      },
+[
       {
         fromNum: 35,
         toNum: 6,
@@ -233,7 +83,7 @@ None
     ]
 ```
 
-# Missing INVALID links in English version (12)
+# Missing INVALID links in English version (10)
 
 ```js
     [
@@ -272,18 +122,6 @@ None
         toNum: 24,
         status: 'invalid',
         explanation: "La hausse de la température de l'eau n'a aucun lien avec l'acidification de l'océan, du moins à court terme. A plus long terme (sur plusieurs centaines d'années), en se réchauffant, l'océan perd sa capacité à dissoudre le CO2 atmosphérique. Le puits océan perd donc de son efficacité au fur et à mesure que l'océan se réchauffe. La hausse de la température de l'eau a donc un effet sur l'acidification, inhibiteur en l'occurrence."
-      },
-      {
-        fromNum: 18,
-        toNum: 13,
-        status: 'invalid',
-        explanation: "Il y a ici confusion avec l’effet d’amplification dû à l’albédo. La banquise blanche qui fond laisse place à une surface beaucoup plus foncée et l'énergie absorbée réchauffe la terre. Ce mécanisme est appelé albédo et n’a rien à voir avec l’effet de serre. Ça joue sur les flèches oranges de la carte 13 et non sur les flèches rouges."
-      },
-      {
-        fromNum: 20,
-        toNum: 22,
-        status: 'invalid',
-        explanation: "Eh non, plus de pluie ne va pas faire déborder l'océan ! Il est assez rare de voir ce lien, mais on ne sait jamais. Si c'est le cas, demandez aux participants d'où vient la pluie, ou encore d'où viennent les nuages..."
       },
       {
         fromNum: 25,
