@@ -1,4 +1,4 @@
-## Missing links in English version
+# Missing links in English version
 
 ## Missing VALID links in English version
 
@@ -8,7 +8,7 @@ None
 
 None
 
-# Missing INVALID links in English version (2)
+## Missing INVALID links in English version (2)
 
 ```js
     [
