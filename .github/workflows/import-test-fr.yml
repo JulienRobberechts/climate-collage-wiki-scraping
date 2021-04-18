@@ -2,13 +2,11 @@ name: Tests
 
 # Controls when the action will run.
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  schedule:
+    # Runs every day at 1pm
+    - cron: "0 13 * * *"
 
-  # Allows you to run this workflow manually from the Actions tab
+  # to run the workflow manually from the Actions tab
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -26,7 +24,12 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Run tests
-        run: yarn test
+      - name: import FR
+        run: yarn import-fr
+        env:
+          CI: true
+
+      - name: check import FR
+        run: yarn test-res-fr
         env:
           CI: true
