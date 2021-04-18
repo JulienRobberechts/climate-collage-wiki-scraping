@@ -3,27 +3,26 @@ const {
   extractCardList,
   extractAllCards,
   extractCardsLinks,
-
   getCardLinksAsWiki,
 } = require('../services/extraction/extractionProcess');
+const { ui } = require('./ui-data');
 
-module.exports.executeRequest = async ({ operation, lang }, cli) => {
-  console.log("\nprocessing...\n");
+module.exports.executeRequest = async ({ operation, lang }) => {
   switch (operation) {
-    case cli.action.EXTRACT_GAME:
+    case ui.action.EXTRACT_GAME:
       await extractGame(lang);
       break;
-    case cli.action.EXTRACT_CARDS_LIST:
+    case ui.action.EXTRACT_CARDS_LIST:
       await extractCardList(lang);
       break;
-    case cli.action.EXTRACT_CARD_DETAILS:
+    case ui.action.EXTRACT_CARD_DETAILS:
       await extractAllCards(lang);
       break;
-    case cli.action.EXTRACT_LINKS:
+    case ui.action.EXTRACT_LINKS:
       await extractCardsLinks(lang);
       break;
 
-    case cli.action.CUSTOM_TREATMENT:
+    case ui.action.CUSTOM_TREATMENT:
       console.log('CUSTOM_TREATMENT - DISABLED');
       // await getCardLinksAsWiki();
       break;
