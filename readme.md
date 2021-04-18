@@ -6,28 +6,35 @@ This project extract some data from the ["Fresque du Climat" wiki ](https://fres
 
 The french version is in work in progress. The goal is to have a one click import in French and English.
 
-## launch the program
+## Launch the program
 
 #### 1. Run the start command
 
-It's suppose to run on your local machine with an internet access.
+It's supposed to run on your local machine with an internet access.
 
+#### 1.A With Prompt
 ```cmd
 yarn start
 ```
 
-#### 2. You should be able to select your action in a menu:
+You should be able to select your action in a menu:
+
 ![prompt](./doc/assets/screenshot-1-prompt.png)
 
-#### 3. Then to see the progress of it:
+#### 1.B With on of the direct command
+
+```cmd
+yarn start import --lang fr
+yarn start import -l fr
+yarn start import -l en
+```
+#### 2. Then to see the execution progress
 
 ![progress-bar](./doc/assets/screenshot-2-progress-bar.png)
 
-#### 4. Then the result of the extraction should be updated in the data folder of the project:
+#### 3. Then the result of the extraction should be updated in the data/results folder of the project:
 
 ![data-files](./doc/assets/screenshot-3-data-files.png)
-
-WARNING: It's WIP, the result is still partial and the format is still not matching the memo yet...
 
 ## Tests
 
