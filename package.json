@@ -1,7 +1,7 @@
 {
   "name": "climate-collage-wiki-scraping",
-  "version": "1.1.0",
-  "description": "",
+  "version": "1.2.0",
+  "description": "Scrapping tool to extract data from the Climat Collage Wiki.",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -12,7 +12,7 @@
     "test-res-en": "jest src/tests/on-results/en",
     "test-update": "jest src -u"
   },
-  "author": "",
+  "author": "La fresque du Climat - Julien Robberechts",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
@@ -20,6 +20,6 @@
     "commander": "^7.2.0",
     "inquirer": "^8.0.0",
     "jest": "^26.6.3",
-    "jsdom": "^16.5.1"
+    "jsdom": "^16.5.3"
   }
 }
