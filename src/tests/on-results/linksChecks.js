@@ -9,22 +9,25 @@ module.exports = {
 
     const missingLinks = linksRef.filter(linkRef => !hasSimilarLink(linkRef, linksTar));
     if (missingLinks.length > 0) {
-      console.log(`Missing links in '${linksTar}' version:`, missingLinks.length);
       const validLinks = missingLinks.filter(l => l.status === 'valid');
       const optionalLinks = missingLinks.filter(l => l.status === 'optional');
       const invalidLinks = missingLinks.filter(l => l.status === 'invalid');
-      console.log(` valid=${validLinks.length} optional=${optionalLinks.length} invalid=${invalidLinks.length} `);
 
-      console.log(`Missing links in '${linksTar}' version:`);
-      console.log(validLinks);
-      console.log(`Missing OPTIONAL links in '${linksTar}' version:`);
-      console.log(optionalLinks);
-      console.log(`Missing INVALID links in '${linksTar}' version:`);
-      console.log(invalidLinks);
+      if (validLinks.length > 0) {
+        console.log(`Missing VALID links in '${langCheck}' version: ${validLinks.length}`);
+        console.log(validLinks);
+      }
+      if (optionalLinks.length > 0) {
+        console.log(`Missing OPTIONAL links in '${langCheck}' version: ${optionalLinks.length}`);
+        console.log(optionalLinks);
+      }
+      if (invalidLinks.length > 0) {
+        console.log(`Missing INVALID links in '${langCheck}' version: ${invalidLinks.length}`);
+        console.log(invalidLinks);
+      }
     }
 
     expect(missingLinks.length).toBe(0);
-
   }
 }
 
