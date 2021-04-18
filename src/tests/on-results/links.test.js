@@ -3,7 +3,7 @@ const linksResultsFilePath = (lang) => `./data/results/links-${lang}.json`;
 
 
 describe('Links', () => {
-  it('Missing links in English version (22 error now)', async () => {
+  it('Missing links in English version (1 error now)', async () => {
     const linksFR = await getObject(linksResultsFilePath('fr'));
     const linksEN = await getObject(linksResultsFilePath('en'));
 
@@ -38,11 +38,11 @@ describe('Links', () => {
       const invalidLinks = linksEnMissingInFr.filter(l => l.status === 'invalid');
       console.log(` valid=${validLinks.length} optional=${optionalLinks.length} invalid=${invalidLinks.length} `);
 
-      console.log(`Missing VALID links in English version:`);
+      console.log(`Missing VALID links in French version:`);
       console.log(validLinks);
-      console.log(`Missing OPTIONAL links in English version:`);
+      console.log(`Missing OPTIONAL links in French version:`);
       console.log(optionalLinks);
-      console.log(`Missing INVALID links in English version:`);
+      console.log(`Missing INVALID links in French version:`);
       console.log(invalidLinks);
     }
     expect(linksEnMissingInFr.length).toBe(0);
@@ -61,10 +61,10 @@ const getSimilarLink = (link, linksList) => {
 }
 
 const linksAreSimilar = (linkA, linkB) => {
-  if (!linkA || !linkA.fromNum || !linkA.toNum)
+  if (!linkA || !linkA.fromNum || !linkA.toNum || !linkA.status)
     throw new Error('invalid link A');
-  if (!linkB || !linkB.fromNum || !linkB.toNum)
+  if (!linkB || !linkB.fromNum || !linkB.toNum || !linkB.status)
     throw new Error('invalid link B');
 
-  return linkA.fromNum === linkB.fromNum && linkA.toNum === linkB.toNum;
+  return linkA.fromNum === linkB.fromNum && linkA.toNum === linkB.toNum && linkA.status === linkB.status;
 }
