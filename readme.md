@@ -23,12 +23,15 @@ You should be able to select your action in a menu:
 
 ![prompt](./doc/assets/screenshot-1-prompt.png)
 
-#### 1.B With on of the direct command
+#### 1.B OR with one of the direct commands
 
 ```cmd
 yarn start import --lang fr
+yarn start import --lang en
 yarn start import -l fr
 yarn start import -l en
+yarn import-fr
+yarn import-en
 ```
 #### 2. Then to see the execution progress
 
