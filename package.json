@@ -7,7 +7,7 @@
     "start": "node src/index.js",
     "import-fr": "node src/index.js import --lang fr",
     "import-en": "node src/index.js import --lang en",
-    "test": "jest src",
+    "test": "jest src/services src/config",
     "test-res-fr": "jest src/tests/on-results/fr",
     "test-res-en": "jest src/tests/on-results/en",
     "test-update": "jest src -u"
