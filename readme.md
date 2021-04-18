@@ -1,4 +1,6 @@
-[![Tests](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/test.yml/badge.svg)](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/test.yml) but the tests are pretty unstable because they fetch the wiki API so it's better to check on your local machine !
+[![Tests import FR](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/import-test-fr.yml/badge.svg)](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/import-test-fr.yml) [![Tests import EN](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/import-test-en.yml/badge.svg)](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/import-test-en.yml) [![Tests](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/test.yml/badge.svg)](https://github.com/JulienRobberechts/climate-collage-wiki-scraping/actions/workflows/test.yml)
+
+(but tests could be unstable so it's better to check on your local machine !)
 
 # Climate Collage Wiki Scraping
 
