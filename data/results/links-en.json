@@ -607,15 +607,15 @@
   },
   {
     "fromNum": 26,
-    "toNum": 33,
+    "toNum": 28,
     "status": "invalid",
-    "explanation": "No, these are two different phenomena and should not be conflated."
+    "explanation": "Be wary of common misconceptions about flooding, marshes, mosquitos... Flooding can cause sanitation issues, but that is not what we are talking about here."
   },
   {
     "fromNum": 26,
-    "toNum": 38,
+    "toNum": 33,
     "status": "invalid",
-    "explanation": "Be wary of common misconceptions about flooding, marshes, mosquitos... Flooding can cause sanitation issues, but that is not what we are talking about here."
+    "explanation": "No, these are two different phenomena and should not be conflated."
   },
   {
     "fromNum": 27,
