@@ -2,12 +2,10 @@
  * @jest-environment node
  */
 const { readCards, getCardData } = require('./readCard');
-const { getObject } = require('../utils/fileServices/readFile.js');
-
-const getAllCards = (lang) => getObject(`./data/work/1-cards-list-${lang}.json`);
+const { getCardsFrReference } = require('../data-access/cardsRepo');
 
 const getOneCard = async (cardNumber, lang = 'fr') => {
-  const cards = await getAllCards(lang);
+  const cards = await getCardsFrReference(lang);
   return cards.find(({ cardNum }) => cardNum === cardNumber);
 };
 
@@ -96,7 +94,7 @@ describe('readCard', () => {
   });
   it('read all cards 1-2', async () => {
     const lang = 'fr';
-    const allCards = await getAllCards(lang);
+    const allCards = await getCardsFrReference(lang);
     const cards = await readCards(allCards, 1, 2, lang);
     expect(cards.length).toBe(2);
   }, 99000);
@@ -105,7 +103,7 @@ describe('readCard', () => {
 describe.skip('readCard by batch', () => {
   it.skip('read all cards 1-10', async () => {
     const lang = 'fr';
-    const allCards = await getAllCards(lang);
+    const allCards = await getCardsFrReference(lang);
     const cards = await readCards(allCards, 1, 10, lang);
     expect(cards.length).toBe(10);
   }, 99000);
