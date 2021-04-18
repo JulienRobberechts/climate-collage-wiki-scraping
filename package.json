@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
+    "import-fr": "node src/index.js import --lang fr",
+    "import-en": "node src/index.js import --lang en",
     "test": "jest src",
+    "test-res": "jest src",
     "test-update": "jest src -u"
   },
   "author": "",
