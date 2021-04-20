@@ -1,2 +1,2 @@
-const { getCardImage } = require('./cardImage');
-module.exports = { getCardImage };
+const { getCardImageUrl, downloadImage } = require('./cardImage');
+module.exports = { getCardImageUrl, downloadImage };

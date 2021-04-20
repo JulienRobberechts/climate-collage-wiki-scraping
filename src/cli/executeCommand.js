@@ -1,5 +1,6 @@
 const {
   extractGame,
+  extractImages,
   extractCardList,
   extractAllCards,
   extractCardsLinks,
@@ -11,6 +12,9 @@ module.exports.executeRequest = async ({ operation, lang }) => {
   switch (operation) {
     case ui.action.EXTRACT_GAME:
       await extractGame(lang);
+      break;
+    case ui.action.EXTRACT_IMAGES:
+      await extractImages(lang);
       break;
     case ui.action.EXTRACT_CARDS_LIST:
       await extractCardList(lang);
