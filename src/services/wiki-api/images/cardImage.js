@@ -10,7 +10,7 @@ const getCardImageUrl = async (cardNum, message, lang = 'fr') => {
 
 const downloadImage = async (card, lang) => {
   const imageUrl = card.img.url;
-  const filePath = `./data/images/${lang}/wiki-v1/${lang}-front-${card.cardNum}.png`;
+  const filePath = `./data/images/${lang}/wiki-v1/${card.cardNum}.png`;
   await downloadFile(imageUrl, filePath);
 };
 
