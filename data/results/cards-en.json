@@ -6,9 +6,6 @@
     "wikiId": 7,
     "wikiInternalName": "En-en adult card 1 human activities",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_1_human_activities",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/a/ae/En-en_adult_card_1_front.png"
-    },
     "backDescription": "This is where it all begins...",
     "explanation": "This is where it all begins... It is also where 5th IPCC report begins. In the foreword of the report, it is stated that \"the IPCC is now 95 percent certain that human beings are the main cause of current global warming\". This card can be considered:either as the cause of all the economic sector cards (Industry, Building Usage, Transportation, Agriculture), or as a heading for these cards (in which case they can be grouped together and circled).",
     "videoYoutubeCode": "fVcxeM0Ljh0"
@@ -20,9 +17,6 @@
     "wikiId": 5,
     "wikiInternalName": "En-en adult card 2 industry",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_2_industry",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/7/78/En-en_adult_card_2_front.png"
-    },
     "backDescription": "Industry uses fossil fuels and electricity. It accounts for 40% of greenhouse gas (GHG) emissions.",
     "explanation": "This is the manufacturing of all consumer goods. Industry is comprised of many different sectors, the most prominent in terms of GHG emissions being the paper, cement, steel, aluminium and chemicals industries. In order to reduce emissions from industry, the solution lies in extending the lifespan of products and reducing consumption.",
     "videoYoutubeCode": "-Hbo56WQ3zo"
@@ -34,9 +28,6 @@
     "wikiId": 10,
     "wikiInternalName": "En-en adult card 3 building",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_3_building",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/d/d9/En-en_adult_card_3_front.png"
-    },
     "backDescription": "The building sector (housing and commercial use) uses fossil fuels and electricity. It accounts for 20% of greenhouse gas (GHG) emissions.",
     "explanation": "We consider here buildings' usage, not their construction (which is included in the card on Industry). This includes heating, air-conditioning, lighting, electronics, etc. The big topic in Europe and the US is the thermal insulation of buildings. As far as new construction is concerned, it is vital to build well-insulated buildings. However, the stakes are limited as the standards for new buildings are much higher than in the past and only a small proportion (1%) of buildings are constructed each year. The challenge is therefore much more in the thermal renovation of buildings.",
     "videoYoutubeCode": "csAunDBa8vY"
@@ -48,9 +39,6 @@
     "wikiId": 14,
     "wikiInternalName": "En-en adult card 4 transportation",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_4_transportation",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/c/cc/En-en_adult_card_4_front.png"
-    },
     "backDescription": "The transportation sector is highly dependent on oil. It accounts for 15% of greenhouse gas emissions.",
     "explanation": "15% is not much, but it varies a lot depending on the country and lifestyle. In Western countries, the share of transportation, especially air travel, can account for a significant part of people's carbon footprint. If you take one or more long haul flights a year, that's the bulk of your carbon footprint.",
     "videoYoutubeCode": "oUx3gsVREKw"
@@ -62,9 +50,6 @@
     "wikiId": 16,
     "wikiInternalName": "En-en adult card 5 fossil fuels",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_5_fossil_fuels",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/c/ce/En-en_adult_card_5_front.png"
-    },
     "backDescription": "Fossil fuels are coal, oil, and natural gas. They are used mainly in buildings, transportation, and industry. They emit CO2 when burned.",
     "explanation": "There is often a debate between placing the fossil fuels cards before or after human activities. Like the chicken and the egg, there is no definitive answer. One should not waste time on this. The graph represents the emissions of fossil fuels. In a +2°C scenario, they should reach zero by 2070.",
     "videoYoutubeCode": "Cm6x4ikTUho"
@@ -76,9 +61,6 @@
     "wikiId": 19,
     "wikiInternalName": "En-en adult card 6 deforestation",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_6_deforestation",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/3/34/En-en_adult_card_6_front.png"
-    },
     "backDescription": "Deforestation consists in cutting or burning trees beyond the ability to restore the forest. 80% of the deforestation is related to agriculture.",
     "explanation": "Deforestation can be seen as a human activity, as a consequence of agriculture, or both. However, the main issue with deforestation is not so much that it destroys carbon sinks, but that it emits CO2 that took decades or centuries to capture. It's a question of flow vs. stock.",
     "videoYoutubeCode": "uq2Ypdj-5Oo"
@@ -90,9 +72,6 @@
     "wikiId": 21,
     "wikiInternalName": "En-en adult card 7 co2 emissions",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_7_co2_emissions",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/8/85/En-en_adult_card_7_front.png"
-    },
     "backDescription": "CO2 (or carbon dioxide) is the first anthropogenic (ie linked to human activity) greenhouse gas in terms of emissions. These emissions come from our use of fossil fuels and deforestation.",
     "explanation": "",
     "videoYoutubeCode": "vA7BJ8f8t8o"
@@ -104,9 +83,6 @@
     "wikiId": 23,
     "wikiInternalName": "En-en adult card 8 agriculture",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_8_agriculture",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/5/5f/En-en_adult_card_8_front.png"
-    },
     "backDescription": "Agriculture does not emit a lot of CO2, but is responsible for the emission of large quantities of methane (from cows and rice paddies) and of nitrous oxide (from fertilizers). In all, agriculture amounts for 25% of GHGs if we include induced deforestation.",
     "explanation": "Agriculture uses very little fossil fuel compared to the emissions of other GHGs for which it is responsible. It is responsible for 80% of deforestation because of the large areas needed to grow crops, especially to feed farm animals. Agriculture is a human activity that began as soon as the climate stabilised, at the beginning of the Neolithic period 10,000 years ago, after the last deglaciation, which itself lasted 10,000 years. Since then, the impact of human activity on its environment has been growing. Plant species have been domesticated (today, domesticated rice is no longer able to reproduce without human intervention), forests have been cleared to expand cultivated areas, depriving animal species of their natural habitat, and since the Green Revolution (green for agricultural, not for ecological), we have been using pesticides and inputs that are harmful to the environment and to our health.",
     "videoYoutubeCode": "ZOTCm-J_YVU"
@@ -118,9 +94,6 @@
     "wikiId": 32,
     "wikiInternalName": "En-en adult card 9 other ghgs",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_9_other_ghgs",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/a/ae/En-en_adult_card_9_front.png"
-    },
     "backDescription": "CO2 is not the only greenhouse gas (GHG). Among others are methane (CH4 ), and nitrous oxide (N2O), two gases mainly emitted by agricultural activities.",
     "explanation": "Definition and origins[edit | edit source]The other GHGs described here are methane and nitrous oxide. In fact, there are a few others such as HFCs (refrigerants). Methane is released as soon as there is anaerobic decomposition (i.e. in the absence of oxygen):in a cow’s belly, also known as the rumen, which gives its name to ruminants (in the rumen, bacteria digest the cellulose that the cow cannot metabolise, then the cow regurgitates this grass to chew it again and swallow it for good) in rice fields because they are covered with water, and the organic matter underwater does not receive oxygen when it decomposes in waste dumps, when the piles are too deep for oxygen to reach the bottom of the pile. Methane is also the main component of natural gas. Leaks on gas pipelines therefore also release methane into the atmosphere. Emissions of nitrous oxide (N2O) are mainly due to the use of agricultural nitrogen fertilizers, the production of animal feed and certain chemical processes, such as the production of nitric acid. There are also fluorinated gases which are used as refrigerants (air conditioning and cold chains), fire extinguishers and in certain industrial processes and consumer goods (such as certain solvents). They are not naturally present in the atmosphere. Global warming potential[edit | edit source]When we talk about emissions of other GHGs, we measure them in CO2eq (CO2 equivalent). This allows us to equate the emissions of other GHGs to CO2 emissions on a comparable basis. We then define the Global Warming Potential (GWP) of a gas over a certain period of time. Global warming potential of some GHGs GHG Life span (years) GWP20 GWP100 CH4 12.4 84 28 N2O 121 264 265",
     "videoYoutubeCode": "LN7lPIUWPuQ"
@@ -132,9 +105,6 @@
     "wikiId": 36,
     "wikiInternalName": "En-en adult card 10 aerosols",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_10_aerosols",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/d/dd/En-en_adult_card_10_front.png"
-    },
     "backDescription": "Nothing to do with aerosol spray cans. Aerosols are a type of local pollution that comes from the incomplete combustion of fossil fuels. They are bad for human health and they contribute negatively to radiative forcing (they cool the climate).",
     "explanation": "",
     "videoYoutubeCode": "-RE5I12XKJQ"
@@ -146,9 +116,6 @@
     "wikiId": 42,
     "wikiInternalName": "En-en adult card 11 concentration of co2",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_11_concentration_of_co2",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/e/ef/En-en_adult_card_11_front.png"
-    },
     "backDescription": "About half of our CO2 emissions are captured by natural carbon sinks. The other half remains in the atmosphere ; the concentration of CO2 in the air has increased from 280 to 410 ppm (parts per million) in 150 years.",
     "explanation": "CO2 measurements have been taken since 1958 in Hawaii, on Big Island, on the flanks of the Mauna Loa volcano. They were initiated by Charles Keeling. In the blue scenario (2°C) they increase until 2040-2050, then they decrease because emissions will have been reduced so much that natural sinks no longer absorb them.",
     "videoYoutubeCode": "cUPYgpbTBAA"
@@ -160,9 +127,6 @@
     "wikiId": 44,
     "wikiInternalName": "En-en adult card 12 carbon sinks",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_12_carbon_sinks",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/1/18/En-en_adult_card_12_front.png"
-    },
     "backDescription": "Half of the CO2 we emit every year is absorbed by carbon sinks : - 1/4 by the vegetation (through photosynthesis) - 1/4 by the ocean The remaining half (1/2) stays in the atmosphere.",
     "explanation": "The original IPCC graph represents both CO2 emissions and carbon sinks. The Climate Fresk has chosen to split it in two to show where CO2 comes from and where it goes. This is why the two cards are symmetrical: every year, the CO2 emitted by humankind has to go somewhere. Any CO2 that is not absorbed by the other carbon sinks remains in the atmosphere. The text at the back of the card gives approximate absorption rates. The more detailed percentages are:27.9% for the ocean 28.8% for photosynthesis.",
     "videoYoutubeCode": "G9dyMMQideU"
@@ -174,9 +138,6 @@
     "wikiId": 40,
     "wikiInternalName": "En-en adult card 13 additional greenhouse effect",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_13_additional_greenhouse_effect",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/7/7e/En-en_adult_card_13_front.png"
-    },
     "backDescription": "The greenhouse effect is a natural phenomenon – and incidentally, the first of the GHGs is water vapor. Without greenhouse effect, the planet would be 33°C colder and life as we know it would not be possible. But CO2 and other GHGs related to human activity increase the natural greenhouse effect and unbalance the climate.",
     "explanation": "On this card, we can see arrows of two colours: The orange arrows represent the energy that comes from the sun (UV, visible light and high-frequency infrared) and that which is reflected by the albedo effect at the same frequency. Albedo is the ability of a body to reflect light (a black body has an albedo of 0, a mirror has an albedo of 1, the earth has an average albedo of 0.31). The red arrows represent low frequency infrared energy, emitted by the Earth, which is less warm than the sun, or retained by the greenhouse effect. The greenhouse effect is based on the fact that it is not the same incoming radiation as outgoing radiation. On the right, -18°C is the temperature we would have on Earth without the greenhouse effect and 15°C is the planet's average temperature today. It was 14°C in 1850, i.e. before human activity produced this additional greenhouse effect.",
     "videoYoutubeCode": "1LxOZMKX8R8"
@@ -188,9 +149,6 @@
     "wikiId": 46,
     "wikiInternalName": "En-en adult card 14 energy budget",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_14_energy_budget",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/8/8b/En-en_adult_card_14_front.png"
-    },
     "backDescription": "This graph explains where the energy accumulated on Earth due to radiative forcing goes : it warms up the ocean, melts ice, dissipates into the ground, and warms up the atmosphere.",
     "explanation": "On the graph, you can see several colours that represent, from top to bottom: In light blue, the upper layer of the ocean, between 0 and 700m In dark blue, the lower layer of the ocean, between 700m and 2000m In white, the different types of ice In orange, the soil In purple, the atmosphere. The dotted lines represent uncertainty.",
     "videoYoutubeCode": "tnMmouVM-Lg"
@@ -202,9 +160,6 @@
     "wikiId": 38,
     "wikiInternalName": "En-en adult card 15 radiative forcing",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_15_radiative_forcing",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/c/cc/En-en_adult_card_15_front.png"
-    },
     "backDescription": "Radiative forcing represents the difference (caused by humans) between the energy that arrives on Earth each second and the energy that is released. In the 5 th assessment report of IPCC, it is rated at 2.3 W / m 2 {\\displaystyle 2.3W/m^{2}} (Watt per square meter).",
     "explanation": "Together with the coccolithophores, this card is the one that impresses the players the most. It is important to explain it well. One way to play it down is to say that Radiative Forcing is just a measurement. The Earth receives energy from the Sun and radiates it back to space in the form of infrared rays. It should be in a state of in thermal equilibrium and the average temperature should be constant. Anything that causes the Earth to move away from this thermal equilibrium, whether natural (sun, volcanoes) or anthropogenic (aerosols, GHGs), is called radiative forcing. Caution: the definition has been simplified for educational purposes. A rigorous definition would be as follows: \"Radiative forcing is the measure of the imbalance between the energy that arrives every second on Earth and the energy that would leave if the temperature had remained fixed since 1750\". As the earth's temperature has risen in the meantime, the delta between instantaneous heat exchanges has decreased. Similarly, in 2050, in the RCP2.6 scenario, the forcing will be 2.6 W/m2, but the temperature will have stabilised, meaning that the delta between incoming and outgoing energy will be zero. On the main graph, we can see the different components of the radiative forcing :in the upper part, the warming effects in the lower part, the cooling effectsThe greenhouse effect (CO2 + Other WMGHG + Trop O3) represents a positive forcing of 3.1 W/m2 . It is therefore in the upper part of the graph. Aerosols (Aer - Rad Int. + Aer - Cld Int.) have a cooling effect and are therefore in the lower part of the graph. For more details on this graph, see the Radiative Forcing fact sheet. The secondary graph represents the radiative forcing over two and a half centuries (history and projections). In the 5th IPCC report, the radiative forcing is 2.3 W/m2. The values of the forcing in 2100 gave their name to the IPCC scenarios (RCP 2.6, RCP 4.5 etc.). The colours of these scenarios can be found in the graphs of maps n°5, 11, 15, 21, 22 and 24. For more details on this graph, see the fact sheet on PCR scenarios.",
     "videoYoutubeCode": "zR1HJG8UPKE"
@@ -216,9 +171,6 @@
     "wikiId": 48,
     "wikiInternalName": "En-en adult card 16 melting of glaciers",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_16_melting_of_glaciers",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/4/49/En-en_adult_card_16_front.png"
-    },
     "backDescription": "Almost all glaciers have lost mass. Hundreds of them have already disappeared. These glaciers play a regulating role in the provision of fresh water.",
     "explanation": "",
     "videoYoutubeCode": "LmaMIdQN_40"
@@ -230,9 +182,6 @@
     "wikiId": 52,
     "wikiInternalName": "En-en adult card 17 increase in water temperature",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_17_increase_in_water_temperature",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/9/9b/En-en_adult_card_17_front.png"
-    },
     "backDescription": "Oceans absorb 93% of the energy accumulated on Earth. Their temperature has therefore increased, especially in the upper layers. The water expands as it warms up.",
     "explanation": "The ocean is warming by only about a tenth of a degree at the surface and even less under water. Why so little when it absorbs 93% of the excess energy on Earth? This is because it is much larger than the atmosphere and it has a much greater calorific capacity. To measure this, you need to remember that the ocean covers 71% of the Earth's surface and that it has a depth of 4000 m on average. The atmosphere extends over a greater height, but if brought it back to the same density as water, it would only be 10 m thick. (That's why we gain one atmosphere of pressure every 10 m when we dive.)The water expands very little. How can warming the ocean by a tenth of a degree result in a rise in the water level? A first answer is that the ocean is 4000 m deep on average, so a very small expansion is enough to amount to a few centimetres.",
     "videoYoutubeCode": "hTmQXSS0lWs"
@@ -244,9 +193,6 @@
     "wikiId": 50,
     "wikiInternalName": "En-en adult card 18 melting of sea ice",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_18_melting_of_sea_ice",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/a/a8/En-en_adult_card_18_front.png"
-    },
     "backDescription": "Sea ice melting does not make the sea level rise (just as a melting ice cube does not make a glass overflow). However, when it melts, it gives way to the much darker sea, which goes on to absorb more sun rays than white ice.",
     "explanation": "For a further explanation of why melting sea ice does not raise de sea level, Archimedes and all that, see the explanation page. For some great graphics that illustrate Earth's ice loss, check out this article from ESA.",
     "videoYoutubeCode": "3cR2lvo0TJw"
@@ -258,9 +204,6 @@
     "wikiId": 54,
     "wikiInternalName": "En-en adult card 19 melting of ice sheets",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_19_melting_of_ice_sheets",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/5/54/En-en_adult_card_19_front.png"
-    },
     "backDescription": "Continental glaciers (or ice sheets) are in Greenland and Antarctica. If they melt completely, they will cause a rise in ocean levels of 7 meters for Greenland and 54 meters for Antarctica. During the last ice age, ice sheets were so much larger that the sea level was 120 m lower than today.",
     "explanation": "These illustrations represent the gain or loss of mass of the caps, indicated in centimetres of water per year (cm of water/year) and measured gravimetrically. In blue the mass gain (because it snows more) and in red the losses (glaciers flow faster towards the ocean).",
     "videoYoutubeCode": "J-vm_DSJRjc"
@@ -272,9 +215,6 @@
     "wikiId": 58,
     "wikiInternalName": "En-en adult card 20 disruption water cycle",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_20_disruption_water_cycle",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/2/29/En-en_adult_card_20_front.png"
-    },
     "backDescription": "If the oceans and the atmosphere are hotter, the evaporation that takes place at the ocean surface increases. This means more rain clouds and more rain. If this happens on land, then the soils dries out.",
     "explanation": "This card is important. It alone shows why we used to talk about global warming and now about climate change. Temperature increase is in itself a problem, but you can see on the Fresk at the end that disruption of the water cycle has much more effect.",
     "videoYoutubeCode": "T13hvxFrBfA"
@@ -286,9 +226,6 @@
     "wikiId": 60,
     "wikiInternalName": "En-en adult card 21 temperature rise",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_21_temperature_rise",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/e/ea/En-en_adult_card_21_front.png"
-    },
     "backDescription": "Here we are referring to the average temperature of air above the ground on Earth. It has increased by 1°C since 1900. Depending on the scenarios, the rise in temperature could reach 2°C to 5°C by 2100. At the end of the last ice age years, the average temperature was only 5°C lower than today... and deglaciation took 10,000 years!",
     "explanation": "This card can play two roles: Either it's the temperature of the air, and therefore of the atmosphere. This is how it should be interpreted when you have kept cards 10, 14 and 15 in the game. In this case, the previous card is 14. Either it represents the temperature of the Earth (and this is good because the definition of the temperature of the Earth is precisely the temperature of the air, at ground level, on average at the surface of the Earth). In this case, the previous card is 13 and we can link to cards 16, 17, 18 and 19. At the current rate of warming, 0.2°C per decade, the warming will reach 1.5°C between 2030 and 2050.",
     "videoYoutubeCode": "nuACnopTT_g"
@@ -300,9 +237,6 @@
     "wikiId": 61,
     "wikiInternalName": "En-en adult card 22 sea level rise",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_22_sea_level_rise",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/2/2e/En-en_adult_card_22_front.png"
-    },
     "backDescription": "Since 1900, sea level has risen by 20 cm. Sea level rise is caused by the thermal expansion of ocean waters, and the melting of glaciers and continental glaciers.",
     "explanation": "It is important to note that the forecasts for the rise in water levels are very conservative. Some phenomena, understood qualitatively but not quantitatively, are simply not quantified in the IPCC report. This is the case for moulins, for example. Moulins, or glacier mills, are shafts that carry melted water from the surface of a glacier or an ice sheet down to the bedrock. Once the water enters these passages, it lubricates the contact between the bedrock and the ice sheet, making it easier for the glaciers to drift towards the sea. The figures for sea level rise will therefore most likely be revised upwards in future reports. For the US, you can use the Sea Level Rise Viewer to show the extent of the phenomenon.",
     "videoYoutubeCode": "PwC6YqtuEYU"
@@ -314,9 +248,6 @@
     "wikiId": 63,
     "wikiInternalName": "En-en adult card 23 hindered calcification process",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_23_hindered_calcification_process",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/f/fe/En-en_adult_card_23_front.png"
-    },
     "backDescription": "When the pH drops, the formation of calcium carbonate (and more specifically, of calcified shells) becomes more difficult.",
     "explanation": "The formation of limestone (calcification) follows the chemical reaction Ca++ + 2HCO3- ⇔ CaCO3 + H2O + CO2It requires the presence of bicarbonate ions (HCO3-). However, the quantity of these ions in water depends on the pH: in water, carbon dioxide, carbonic acid, bicarbonate ions and carbonates ion are in equilibrium, depending on the pH : CO2 + H2O ⇔ H2CO3 ⇔ H+ + HCO3- ⇔ 2 H+ + CO32-. The addition of an acid shifts the equilibrium towards the left of the equation. In other words, if the pH drops, there are fewer bicarbonate ions, making it more difficult for organisms to build their shells.",
     "videoYoutubeCode": "1nlD6jzbZJI"
@@ -328,9 +259,6 @@
     "wikiId": 65,
     "wikiInternalName": "En-en adult card 24 ocean acidification",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_24_ocean_acidification",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/2/2a/En-en_adult_card_24_front.png"
-    },
     "backDescription": "When CO2 dissolves into the ocean, it turns into acid ions (H2CO3 and HCO3–). The effect of this transformation is ocean acidification (the pH decreases).",
     "explanation": "Ocean acidification is sometimes referred to as \"the other carbon problem\". It is not strictly speaking a consequence of climate change, but another consequence of CO2 emissions.",
     "videoYoutubeCode": "ppZenThTh5c"
@@ -342,9 +270,6 @@
     "wikiId": 69,
     "wikiInternalName": "En-en adult card 25 terrestrial biodiversity",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_25_terrestrial_biodiversity",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/8/81/En-en_adult_card_25_front.png"
-    },
     "backDescription": "Animals and plants are affected by the changes in temperature and the disruption of the water cycle. They may migrate, become extinct or, more rarely, proliferate.",
     "explanation": "Today, the Earth's biodiversity is being undermined above all by factors other than climate change, such as deforestation, disappearance of natural habitats, use of pesticides and various forms of pollution. However, climate change will largely contribute to the disappearance of species in the coming decades.",
     "videoYoutubeCode": "oa5rHgw2EE0"
@@ -356,9 +281,6 @@
     "wikiId": 71,
     "wikiInternalName": "En-en adult card 26 river flooding",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_26_river_flooding",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/8/8b/En-en_adult_card_26_front.png"
-    },
     "backDescription": "The disruption of the water cycle can bring more water or less water. More water can lead to river flooding. If the soil has been dried out by a drought, it makes things worse because the water runs off.",
     "explanation": "A flood is the temporary rise in the level of a river due to precipitation (whether local or upstream) or melting snow or ice.",
     "videoYoutubeCode": "EgCZs3oqwos"
@@ -370,9 +292,6 @@
     "wikiId": 73,
     "wikiInternalName": "En-en adult card 27 marine biodiversity",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_27_marine_biodiversity",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/6/66/En-en_adult_card_27_front.png"
-    },
     "backDescription": "Pteropods and coccolithophores are at the base of the ocean food chain. Therefore, if they disappear, all marine biodiversity is threatened. The warming of ocean waters also threatens marine biodiversity.",
     "explanation": "For the moment, marine biodiversity is more endangered by overfishing than by climate change or acidification. But in the long term, these two phenomena will considerably increase their pressure. The FAO estimates that between 660 and 820 million people worldwide, about 10% of the world's population, are directly or indirectly dependent on fisheries and aquaculture.",
     "videoYoutubeCode": "5aL1RA4Q0VU"
@@ -384,9 +303,6 @@
     "wikiId": 67,
     "wikiInternalName": "En-en adult card 28 vectors of disease",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_28_vectors_of_disease",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/7/78/En-en_adult_card_28_front.png"
-    },
     "backDescription": "With global warming, animals migrate. Some of them carry diseases and can reach areas where the population is not immunized against these diseases.",
     "explanation": "The problem is not so much the proliferation of vectors of disease as their displacement. This card ideally comes after card 25, as vectors of disease are a sub-part of biodiversity.",
     "videoYoutubeCode": "Ec6KJpVw_Rc"
@@ -398,9 +314,6 @@
     "wikiId": 75,
     "wikiInternalName": "En-en adult card 29 pteropods and coccolithophores",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_29_pteropods_and_coccolithophores",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/c/c3/En-en_adult_card_29_front.png"
-    },
     "backDescription": "Pteropods are a kind of zooplankton and coccolithophores a kind of phytoplankton. These organisms have a calcified shell.",
     "explanation": "",
     "videoYoutubeCode": "6gHERqKJc2A"
@@ -412,9 +325,6 @@
     "wikiId": 77,
     "wikiInternalName": "En-en adult card 30 droughts",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_30_droughts",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/c/cc/En-en_adult_card_30_front.png"
-    },
     "backDescription": "The disruption of the water cycle can bring more water or less water. Less water is a drought. Droughts are likely to become more frequent in the future.",
     "explanation": "A drought is a period of abnormal water shortage. A meteorological drought is when there is a drop in rainfall, and an agricultural drought is when soil moisture drops abnormally, affecting crop production. A mega-drought is a persistent and widespread drought that lasts much longer than normal (usually a decade or more). Lack of rainfall and evaporation from the ground are the causes of droughts, as well as soil erosion.",
     "videoYoutubeCode": "bEuX-UVM-4M"
@@ -426,9 +336,6 @@
     "wikiId": 97,
     "wikiInternalName": "En-en adult card 31 freshwater resources",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_31_freshwater_resources",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/a/ac/En-en_adult_card_31_front.png"
-    },
     "backDescription": "Freshwater resources are affected by changes in rainfall and by the disappearance of glaciers that regulate the flow of rivers.",
     "explanation": "The biggest issue here is the disappearance of the glaciers. They serve as reservoirs of fresh water in solid form and melt to supply downstream irrigation for crops.",
     "videoYoutubeCode": "zJEORSe1RQY"
@@ -440,9 +347,6 @@
     "wikiId": 81,
     "wikiInternalName": "En-en adult card 32 decline agricultural yields",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_32_decline_agricultural_yields",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/c/cd/En-en_adult_card_32_front.png"
-    },
     "backDescription": "Food production can be affected by temperature, droughts, extreme weather events, floods and marine submersion (e.g. the Nile Delta).",
     "explanation": "This is one of the greatest threats to humanity. Declines in agricultural yields have already led to conflicts in Rwanda and Syria.",
     "videoYoutubeCode": "RkVjxqMTQvE"
@@ -454,9 +358,6 @@
     "wikiId": 79,
     "wikiInternalName": "En-en adult card 33 marine submersion",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_33_marine_submersion",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/a/ae/En-en_adult_card_33_front.png"
-    },
     "backDescription": "Cyclones and weather disturbances bring wind (therefore waves) and low pressure conditions. 1 hectopascal less means a 1 cm sea level rise. Therefore cyclones can cause marine submersions (or coastal flooding), amplified by the sea level rise already caused by global warming.",
     "explanation": "Not to be confused with floods. Marine submersion is seawater or ocean water rising. This rise can be exceptional because of extreme weather events, or permanent because of rising water levels.",
     "videoYoutubeCode": "OuZd3GVgyjg"
@@ -468,9 +369,6 @@
     "wikiId": 91,
     "wikiInternalName": "En-en adult card 34 cyclones",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_34_cyclones",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/7/77/En-en_adult_card_34_front.png"
-    },
     "backDescription": "Cyclones use energy from warm waters at the ocean surface. Because of global warming, they are becoming stronger.",
     "explanation": "There are not more cyclones because of climate change (at least we are not yet able to establish this statistically), but they are more violent. For the upstream card, we can choose either the disruption of the water cycle, in the sense that the increase in cyclone power is an illustration of the disruption of the water cycle, or the increase in water temperature, because cyclones feed on the energy of warm water from intertropical areas. It makes less sense to have both.",
     "videoYoutubeCode": "pgbIRQMCeqc"
@@ -482,9 +380,6 @@
     "wikiId": 95,
     "wikiInternalName": "En-en adult card 35 forest fires",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_35_forest_fires",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/2/23/En-en_adult_card_35_front.png"
-    },
     "backDescription": "Forest fires start more easily during droughts and heat waves.",
     "explanation": "",
     "videoYoutubeCode": "0hkG0xUIHp8"
@@ -496,9 +391,6 @@
     "wikiId": 93,
     "wikiInternalName": "En-en adult card 36 heat waves",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_36_heat_waves",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/a/a0/En-en_adult_card_36_front.png"
-    },
     "backDescription": "A manifestation of temperature increase is the multiplication of heat waves.",
     "explanation": "A heat wave is a meteorological phenomenon of abnormally high air temperatures, day and night, lasting from a few days to a few weeks, over a relatively large area.",
     "videoYoutubeCode": "cw0iqw6jcyc"
@@ -510,9 +402,6 @@
     "wikiId": 132,
     "wikiInternalName": "En-en adult card 37 starvation",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_37_starvation",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/c/c4/En-en_adult_card_37_front.png"
-    },
     "backDescription": "Starvation can be caused by lower agricultural yields and by the reduction of marine biodiversity.",
     "explanation": "",
     "videoYoutubeCode": "8moQDG78iqY"
@@ -524,9 +413,6 @@
     "wikiId": 85,
     "wikiInternalName": "En-en adult card 38 human health",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_38_human_health",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/b/bb/En-en_adult_card_38_front.png"
-    },
     "backDescription": "Starvation, displacement of disease vectors, heat waves and armed conflicts can affect human health.",
     "explanation": "This is one of the cards to be placed last, as one of the ultimate consequences of climate change.",
     "videoYoutubeCode": "8Wz5bj7r-dI"
@@ -538,9 +424,6 @@
     "wikiId": 89,
     "wikiInternalName": "En-en adult card 39 climate refugees",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_39_climate_refugees",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/2/22/En-en_adult_card_39_front.png"
-    },
     "backDescription": "Imagine that you live in a place that has been miraculously spared by climate change. Several billions of human beings might want to share this space with you.",
     "explanation": "",
     "videoYoutubeCode": "KhWuuoK_-BI"
@@ -552,9 +435,6 @@
     "wikiId": 87,
     "wikiInternalName": "En-en adult card 40 armed conflicts",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_40_armed_conflicts",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/2/25/En-en_adult_card_40_front.png"
-    },
     "backDescription": "This is how we shouldn't let it end...",
     "explanation": "This card is intended to be placed last, as the text suggests. It can already be said that climate change has been one of the causes of some conflicts, such as in Rwanda or Syria. In a world that is suffering from all the consequences described in the game, it is hard to imagine that armed conflicts can be avoided. In 2007, when the IPCC was awarded the Nobel Prize, it was the Nobel Peace Prize. And there are very good reasons for that.",
     "videoYoutubeCode": "KzW-8WEXdSI"
@@ -566,9 +446,6 @@
     "wikiId": 101,
     "wikiInternalName": "En-en adult card 41 permafrost",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_41_permafrost",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/7/7d/En-en_adult_card_41_front.png"
-    },
     "backDescription": "Permafrost is permanently frozen ground. Permafrost thawing leads to the decomposition of organic matter previously frozen underground, a phenomenon that releases methane and CO2 into the atmosphere. Beyond +2°C, it is almost certain this phenomenon will accelerate and make the climate spiral out of control.",
     "explanation": "Permafrost is soil that is permanently frozen for at least two consecutive years. The two last cards to be added to the Fresk after card 40 are potentially violent feedback loops or \"climate bombs\" which, if triggered, would cause us to lose control over the climate for good. Thermokarst are veritable bioreactors at the heart of the process of releasing frozen carbon: when the permafrost thaws, pieces of soil detach and fall into the water, bringing nutrients and carbon to the bacteria and plankton present in the sea, which degrade them into CO2 (in the water layers near the surface) and methane (CH4 -- in the oxygen-deprived bottom).",
     "videoYoutubeCode": "0eXsD4C15KQ"
@@ -580,9 +457,6 @@
     "wikiId": 99,
     "wikiInternalName": "En-en adult card 42 methane hydrates",
     "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_42_methane_hydrates",
-    "img": {
-      "url": "https://fresqueduclimat.org/wiki/en/images_en/b/b9/En-en_adult_card_42_front.png"
-    },
     "backDescription": "Methane hydrates (or methane clathrates) are a form of ice on the ocean floor, along continental slopes, that traps methane molecules. They can become unstable above +2°C.",
     "explanation": "The two last cards to be added to the Fresk after card 40 are potentially violent feedback loops or \"climate bombs\" which, if triggered, would cause us to lose control over the climate for good. Thermokarst are veritable bioreactors at the heart of the process of releasing frozen carbon: when the permafrost thaws, pieces of soil detach and fall into the water, bringing nutrients and carbon to the bacteria and plankton present in the sea, which degrade them into CO2 (in the water layers near the surface) and methane (CH4 -- in the oxygen-deprived bottom).",
     "videoYoutubeCode": "0KDUOKv2Qg8"
