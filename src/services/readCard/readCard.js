@@ -29,7 +29,8 @@ const readCards = async (cards, fromCard, toCard, lang = 'fr') => {
 
 const getCardData = async (card, lang = 'fr') => {
   const wikiId = await getPageId(card.wikiInternalName, lang);
-  const img = await getCardImageUrl(card.cardNum, `image (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`, lang);
+  // Not requested anymore
+  // const img = await getCardImageUrl(card.cardNum, `image (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`, lang);
 
   const backDescription = await getBackDescription(wikiId, `getBackDescription (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`, lang);
   const explanation = await getExplanation(wikiId, `getExplanation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`, lang);
@@ -47,7 +48,7 @@ const getCardData = async (card, lang = 'fr') => {
     wikiId,
     wikiInternalName,
     wikiUrl,
-    img,
+    // img,
     backDescription,
     explanation
   };

@@ -21,7 +21,7 @@ var questions = [
       ui.action.EXTRACT_GAME,
       ui.action.EXTRACT_CARDS_LIST,
       ui.action.EXTRACT_CARD_DETAILS,
-      ui.action.EXTRACT_IMAGES,
+      // ui.action.EXTRACT_IMAGES,
       ui.action.EXTRACT_LINKS,
       ui.action.CUSTOM_TREATMENT,
     ],

@@ -7,7 +7,7 @@ module.exports.ui = {
     EXTRACT_GAME: 'Extract Game (ALL)',
     EXTRACT_CARDS_LIST: '1. Extract Card list',
     EXTRACT_CARD_DETAILS: '2. Extract cards details',
-    EXTRACT_IMAGES: '2.c download images',
+    // EXTRACT_IMAGES: '2.c download images',
     EXTRACT_LINKS: '3. Extract links',
     CUSTOM_TREATMENT: '999. CUSTOM_TREATMENT',
   }
