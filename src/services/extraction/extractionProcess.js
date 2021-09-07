@@ -29,14 +29,14 @@ const extractCardList = async (lang = 'fr') => {
   await writeObject(cardsListFilePath(lang), cardsData);
 };
 
-const extractImages = async (lang = 'fr') => {
-  console.log(" => 1.b\tDownload images");
-  const cards = await getObject(cardsV1FilePath(lang));
-  cards.forEach(c => {
-    // if (c.cardNum === 1)
-      downloadImage(c, lang);
-  });
-};
+// const extractImages = async (lang = 'fr') => {
+//   console.log(" => 1.b\tDownload images");
+//   const cards = await getObject(cardsV1FilePath(lang));
+//   cards.forEach(c => {
+//     // if (c.cardNum === 1)
+//       downloadImage(c, lang);
+//   });
+// };
 
 // 2- EXTRACT_CARD_DETAILS
 const extractAllCards = async (lang = 'fr') => {
@@ -84,5 +84,5 @@ module.exports = {
   extractAllCards,
   extractCardsLinks,
   // getCardLinksAsWiki
-  extractImages
+  // extractImages
 };
