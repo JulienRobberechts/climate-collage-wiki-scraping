@@ -23,6 +23,7 @@
     "imagemin-webp": "^6.0.0",
     "inquirer": "^8.1.0",
     "jest": "^27.0.4",
-    "jsdom": "^16.6.0"
+    "jsdom": "^16.6.0",
+    "pdf-image": "^2.0.0"
   }
 }
