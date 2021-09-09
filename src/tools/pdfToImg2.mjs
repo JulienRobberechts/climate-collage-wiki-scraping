@@ -9,7 +9,7 @@ const optionsPDF = () => ({
 });
 
 const fromCardNum = 1;
-const toCardNum = 3;
+const toCardNum = 42;
 
 const convertListOfPdfToImg = async (lang) => {
   var pdfImage = new PDFImage(
@@ -49,7 +49,7 @@ function getCardPage(cardNum) {
     case 1:
       return 2;
     case 2:
-      return 14;
+      return 16;
     case 3:
       return 18;
     case 4:
