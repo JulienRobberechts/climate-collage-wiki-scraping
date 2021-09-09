@@ -13,7 +13,7 @@ const toCardNum = 42;
 
 const convertListOfPdfToImg = async (lang) => {
   var pdfImage = new PDFImage(
-    `data/images/${lang}/pdf/game.fr.pdf`,
+    `data/images/${lang}/pdf/game.${lang}.pdf`,
     optionsPDF()
   );
 
@@ -21,7 +21,7 @@ const convertListOfPdfToImg = async (lang) => {
     const pageNum = getCardPage(cardNum);
 
     // remove  png files
-    const pngPath = `data/images/${lang}/pdf/game.fr-${pageNum}.png`;
+    const pngPath = `data/images/${lang}/pdf/game.${lang}-${pageNum}.png`;
     if (fs.existsSync(pngPath)) fs.unlinkSync(pngPath);
 
     try {
@@ -36,7 +36,7 @@ const convertListOfPdfToImg = async (lang) => {
 function moveAndRenameImages(lang) {
   for (let cardNum = fromCardNum; cardNum <= toCardNum; cardNum++) {
     const pageNum = getCardPage(cardNum);
-    const srcPath = `data/images/${lang}/pdf/game.fr-${pageNum}.png`;
+    const srcPath = `data/images/${lang}/pdf/game.${lang}-${pageNum}.png`;
     if (!fs.existsSync(srcPath)) throw Error(`File ${srcPath} does not exist.`);
     const destPath = `data/images/${lang}/png/${cardNum}.png`;
     if (fs.existsSync(destPath)) fs.unlinkSync(destPath);
@@ -138,6 +138,8 @@ function getCardPage(cardNum) {
 async function convertAllPdfToImg() {
   await convertListOfPdfToImg("fr");
   moveAndRenameImages("fr");
+  await convertListOfPdfToImg("en");
+  moveAndRenameImages("en");
 }
 
 export default convertAllPdfToImg;
