@@ -1,20 +1,27 @@
 import { PDFImage } from "pdf-image";
 import fs from "fs";
 
-const optionsPDF = () => ({
+const optionsPDFLarge = {
   convertOptions: {
     "-quality": "100",
     "-density": "200",
   },
-});
+};
+
+const optionsPDFSmall = {
+  convertOptions: {
+    "-quality": "80",
+    "-density": "40",
+  },
+};
 
 const fromCardNum = 1;
 const toCardNum = 42;
 
-const convertListOfPdfToImg = async (lang) => {
+const convertListOfPdfToImg = async (lang, optionsPDF) => {
   var pdfImage = new PDFImage(
     `data/images/${lang}/pdf/game.${lang}.pdf`,
-    optionsPDF()
+    optionsPDF
   );
 
   for (let cardNum = fromCardNum; cardNum <= toCardNum; cardNum++) {
@@ -33,12 +40,12 @@ const convertListOfPdfToImg = async (lang) => {
   }
 };
 
-function moveAndRenameImages(lang) {
+function moveAndRenameImages(lang, destFolder) {
   for (let cardNum = fromCardNum; cardNum <= toCardNum; cardNum++) {
     const pageNum = getCardPage(cardNum);
     const srcPath = `data/images/${lang}/pdf/game.${lang}-${pageNum}.png`;
     if (!fs.existsSync(srcPath)) throw Error(`File ${srcPath} does not exist.`);
-    const destPath = `data/images/${lang}/png/${cardNum}.png`;
+    const destPath = `data/images/${lang}/${destFolder}/${cardNum}.png`;
     if (fs.existsSync(destPath)) fs.unlinkSync(destPath);
     fs.renameSync(srcPath, destPath);
   }
@@ -136,10 +143,17 @@ function getCardPage(cardNum) {
 }
 
 async function convertAllPdfToImg() {
-  await convertListOfPdfToImg("fr");
-  moveAndRenameImages("fr");
-  await convertListOfPdfToImg("en");
-  moveAndRenameImages("en");
+  await convertListOfPdfToImg("fr", optionsPDFLarge);
+  moveAndRenameImages("fr", "png");
+
+  await convertListOfPdfToImg("fr", optionsPDFSmall);
+  moveAndRenameImages("fr", "default");
+
+  await convertListOfPdfToImg("en", optionsPDFLarge);
+  moveAndRenameImages("en", "png");
+
+  await convertListOfPdfToImg("en", optionsPDFSmall);
+  moveAndRenameImages("en", "default");
 }
 
 export default convertAllPdfToImg;
