@@ -29,7 +29,6 @@ const convertToWebP = async (lang, options) => {
 };
 
 async function convertAllImgToWebp() {
-
   await convertToWebP("fr", options125);
   await convertToWebP("fr", options250);
   await convertToWebP("fr", options450);
@@ -39,7 +38,11 @@ async function convertAllImgToWebp() {
   await convertToWebP("en", options250);
   await convertToWebP("en", options450);
   await convertToWebP("en", options600);
-  
+
+  await convertToWebP("es", options125);
+  await convertToWebP("es", options250);
+  await convertToWebP("es", options450);
+  await convertToWebP("es", options600);
 }
 
 // convertAll().then(() => console.log("conversion completed"));

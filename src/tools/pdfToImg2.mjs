@@ -154,6 +154,12 @@ async function convertAllPdfToImg() {
 
   await convertListOfPdfToImg("en", optionsPDFSmall);
   moveAndRenameImages("en", "default");
+
+  await convertListOfPdfToImg("es", optionsPDFLarge);
+  moveAndRenameImages("es", "png");
+
+  await convertListOfPdfToImg("es", optionsPDFSmall);
+  moveAndRenameImages("es", "default");
 }
 
 export default convertAllPdfToImg;
