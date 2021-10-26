@@ -1,15 +1,15 @@
-const { readCardList } = require('../readCardList/readCardList');
-const { readCards } = require('../readCard/readCard');
-const { getAllLinks } = require('../readCard/links/linksBuilder');
+const { readCardList } = require("../readCardList/readCardList");
+const { readCards } = require("../readCard/readCard");
+const { getAllLinks } = require("../readCard/links/linksBuilder");
 // const { getAllOfficialLinks } = require('../readCard/officialLinks/officialLinks');
-const { writeObject } = require('../utils/fileServices/writeFile');
-const { getObject } = require('../utils/fileServices/readFile');
+const { writeObject } = require("../utils/fileServices/writeFile");
+const { getObject } = require("../utils/fileServices/readFile");
 // const { buildAllValidLinks } = require('../linkCalculation/buildLinks');
-const { mapDataFile } = require('../utils/etl/transformData');
-const { downloadImage } = require('../wiki-api/images');
+const { mapDataFile } = require("../utils/etl/transformData");
+const { downloadImage } = require("../wiki-api/images");
 
 // EXTRACT
-const extractGame = async (lang = 'fr') => {
+const extractGame = async (lang = "fr") => {
   await extractCardList(lang);
   await extractAllCards(lang);
   await extractCardsLinks(lang);
@@ -18,12 +18,15 @@ const extractGame = async (lang = 'fr') => {
 const cardsListFilePath = (lang) => `./data/work/1-cards-list-${lang}.json`;
 const getAllCards = (lang) => getObject(cardsListFilePath(lang));
 const cardsV1FilePath = (lang) => `./data/work/2.cards-${lang}-v1.json`;
-const cardsExtraFilePath = (lang) => `./data/external-sources/cards-videos-${lang}.json`;
+const cardsYoutubeCodesFilePath = (lang) =>
+  `./data/external-sources/cards-youtube-${lang}.json`;
+const cardsInstaCodesFilePath = (lang) =>
+  `./data/external-sources/cards-insta-${lang}.json`;
 const cardsResultsFilePath = (lang) => `./data/results/cards-${lang}.json`;
 const linksResultsFilePath = (lang) => `./data/results/links-${lang}.json`;
 
 // 1- EXTRACT_CARDS_LIST
-const extractCardList = async (lang = 'fr') => {
+const extractCardList = async (lang = "fr") => {
   console.log(" => 1.\tRead Card List");
   const cardsData = await readCardList(lang);
   await writeObject(cardsListFilePath(lang), cardsData);
@@ -39,30 +42,37 @@ const extractCardList = async (lang = 'fr') => {
 // };
 
 // 2- EXTRACT_CARD_DETAILS
-const extractAllCards = async (lang = 'fr') => {
+const extractAllCards = async (lang = "fr") => {
   await extractCardsDetails(lang);
   await mergeCardsFiles(lang);
 };
 
-const extractCardsDetails = async (lang = 'fr') => {
+const extractCardsDetails = async (lang = "fr") => {
   console.log(" => 2.a\tRead Cards");
   const allCards = await getAllCards(lang);
   const cardsData = await readCards(allCards, 1, 42, lang);
   await writeObject(cardsV1FilePath(lang), cardsData);
 };
 
-const mergeCardsFiles = async (lang = 'fr') => {
+const mergeCardsFiles = async (lang = "fr") => {
   console.log(" => 2.b\tAdd video urls");
-  const videoData = await getObject(cardsExtraFilePath(lang));
-  const transform = (data) => data.map(card => ({
-    ...card,
-    ...videoData.find(c => c.cardNum === card.cardNum),
-  }));
-  await mapDataFile(cardsV1FilePath(lang), transform, cardsResultsFilePath(lang));
+  const ytData = await getObject(cardsYoutubeCodesFilePath(lang));
+  const instaData = await getObject(cardsInstaCodesFilePath(lang));
+  const transform = (data) =>
+    data.map((card) => ({
+      ...card,
+      ...instaData.find((c) => c.cardNum === card.cardNum),
+      ...ytData.find((c) => c.cardNum === card.cardNum),
+    }));
+  await mapDataFile(
+    cardsV1FilePath(lang),
+    transform,
+    cardsResultsFilePath(lang)
+  );
 };
 
 // 3 - EXTRACT_LINKS
-const extractCardsLinks = async (lang = 'fr') => {
+const extractCardsLinks = async (lang = "fr") => {
   console.log(" => 3.\tRead Links");
   const allCards = await getAllCards(lang);
   const links = await getAllLinks(allCards, lang);
