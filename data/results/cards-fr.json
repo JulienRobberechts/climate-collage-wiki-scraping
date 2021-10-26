@@ -139,7 +139,7 @@
     "wikiInternalName": "Fr-fr adulte carte 13 effet de serre additionnel",
     "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_13_effet_de_serre_additionnel",
     "backDescription": "L'effet de serre est naturel. D’ailleurs, le premier GES naturel est la vapeur d’eau. Sans l'effet de serre, la planète serait 33°C plus froide. Mais le CO2 et les autres GES dus à l'Homme augmentent cet effet de serre naturel ce qui réchauffe le climat.",
-    "explanation": "Sur cette carte, on voit des flèches de deux couleurs : Le orange pour l'énergie qui vient du soleil (UV, lumière visible et infrarouge de haute fréquence) et celle qui est réfléchie par effet albedo à la même fréquence. L'albedo est la capacité d'un corps à renvoyer la lumière (un corps noir a un albedo de 0, un miroir a un albedo de 1. La terre a un albedo moyen de 0,31). Le rouge pour les infrarouges de basse fréquences, émis par la terre qui est moins chaude que le soleil, ou retenus pas l'effet de serre. L'effet de serre repose sur le fait que ce ne soit pas la même rayonnement entrant que le rayonnement sortant. Sur la droite, \"-18°C\", c'est la température qu'il ferait sur terre sans l'effet de serre et \"15°C\", c'est la température réelle aujourd'hui. Il faisait \"14°C\" en 1850, c'est à dire avant que l'activité humaine ne produise cet effet de serre additionnel.",
+    "explanation": "Sur cette carte, on voit des flèches de deux couleurs : Le orange pour l'énergie qui vient du soleil (UV, lumière visible et infrarouge de haute fréquence) et celle qui est réfléchie par effet albedo à la même fréquence. L'albedo est la capacité d'un corps à renvoyer la lumière (un corps noir a un albedo de 0, un miroir a un albedo de 1. La terre a un albedo moyen de 0,31). Le rouge pour les infrarouges de basses fréquences, émis par la terre qui est moins chaude que le soleil, ou retenus pas l'effet de serre. L'effet de serre repose sur le fait que ce ne soit pas le même rayonnement entrant que le rayonnement sortant. Sur la droite, \"-18°C\", c'est la température qu'il ferait sur terre sans l'effet de serre et \"15°C\", c'est la température réelle aujourd'hui. Il faisait \"14°C\" en 1850, c'est à dire avant que l'activité humaine ne produise cet effet de serre additionnel.",
     "videoYoutubeCode": "M_bdkLnLQAE"
   },
   {
@@ -453,12 +453,12 @@
   {
     "cardNum": 42,
     "cardSet": 5,
-    "title": "Hydrates de méthane",
-    "wikiId": 92,
-    "wikiInternalName": "Fr-fr adulte carte 42 hydrates de méthane",
-    "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_42_hydrates_de_m%C3%A9thane",
-    "backDescription": "Les hydrates de méthanes (ou clathrates de méthane) sont une forme de glace posée au fond des océans, le long des talus continentaux, qui emprisonne des molécules de méthane. Ils peuvent devenir instables au-delà de +2°C.",
-    "explanation": "Deux cartes ont été ajoutée après la carte n°40 : ce sont des boucles de rétroactions violentes potentielles, des \"bombes climatiques\", qui si elles se déclenchent, nous font perdre définitivement le contrôle sur le climat. Les thermokarst sont de véritables bioréacteurs au cœur du processus de relargage du carbone gelé : Lorsque le pergélisol dégèle, des morceaux de sol se détachent et tombent dans l’eau, apportant nutriments et carbone aux bactéries et au plancton présents dans la mare, qui les dégradent en CO2 (dans les couches d’eau proches de la surface) et en méthane ou CH4 (dans le fond privé d’oxygène de la mare).",
-    "videoYoutubeCode": "K4_cT6bkPXQ"
+    "title": "Ralentissement du gulf stream",
+    "wikiId": 517,
+    "wikiInternalName": "Fr-fr adulte carte 42 ralentissement du gulf stream",
+    "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_42_ralentissement_du_gulf_stream",
+    "backDescription": "La circulation thermohaline dont fait partie le Gulf Stream pourrait ralentir à cause de l’apport en eau douce de la fonte du Groenland. Cela aurait pour effet de déréguler encore plus le cycle de l’eau et de réduire la capacité de l’océan à absorber du carbone et de la chaleur.",
+    "explanation": "",
+    "videoYoutubeCode": ""
   }
 ]

@@ -342,12 +342,6 @@
     "explanation": "If we take the idea of energy conservation all the way, we can link the energy budget to the thawing of permafrost."
   },
   {
-    "fromNum": 14,
-    "toNum": 42,
-    "status": "optional",
-    "explanation": "If we take the idea of energy conservation all the way, we can link the energy budget to the thawing of methane hydrates."
-  },
-  {
     "fromNum": 15,
     "toNum": 14,
     "status": "valid",
@@ -446,6 +440,12 @@
   {
     "fromNum": 19,
     "toNum": 22,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 19,
+    "toNum": 42,
     "status": "valid",
     "explanation": ""
   },
@@ -877,7 +877,13 @@
   },
   {
     "fromNum": 42,
-    "toNum": 9,
+    "toNum": 12,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 42,
+    "toNum": 14,
     "status": "valid",
     "explanation": ""
   }

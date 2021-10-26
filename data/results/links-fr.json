@@ -342,12 +342,6 @@
     "explanation": "Si l'on veut rester dans la même logique de conservation de l'énergie, il faudrait faire le lien de fonte à partir de bilan énergétique. Cependant pour des raisons pratiques, on peut préférer faire le lien à partir de la hausse de la température."
   },
   {
-    "fromNum": 14,
-    "toNum": 42,
-    "status": "optional",
-    "explanation": "Si l'on veut rester dans la même logique de conservation de l'énergie, il faudrait faire le lien de fonte à partir de bilan énergétique. Cependant pour des raisons pratiques, on peut préférer faire le lien à partir de la hausse de la température."
-  },
-  {
     "fromNum": 15,
     "toNum": 14,
     "status": "valid",
@@ -446,6 +440,12 @@
   {
     "fromNum": 19,
     "toNum": 22,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 19,
+    "toNum": 42,
     "status": "valid",
     "explanation": ""
   },
@@ -579,7 +579,7 @@
     "fromNum": 25,
     "toNum": 27,
     "status": "optional",
-    "explanation": "Les deux types de biodiversité peuvent interagir entres elles."
+    "explanation": "Les deux types de biodiversité peuvent interagir entre elles."
   },
   {
     "fromNum": 25,
@@ -877,7 +877,13 @@
   },
   {
     "fromNum": 42,
-    "toNum": 9,
+    "toNum": 12,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 42,
+    "toNum": 14,
     "status": "valid",
     "explanation": ""
   }
