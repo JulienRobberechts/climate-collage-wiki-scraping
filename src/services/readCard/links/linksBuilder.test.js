@@ -29,8 +29,8 @@ describe('Main effects links', () => {
 
 describe('Optional effects links', () => {
   it.each(oneTo42)('check optional effects on card %i', checkEffects('optional'));
-  it('check links optional effects card 35', async () => {
-    await checkEffects('optional')(35);
+  it('check links optional effects card 4*', async () => {
+    await checkEffects('optional')(4);
   });
 });
 
