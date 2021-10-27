@@ -1,22 +1,22 @@
 /**
  * @jest-environment node
  */
-const { getBackDescription } = require('./backDescription');
-const { getCardsFrReferenceByCardNum } = require('../../data-access/cardsRepo')
-const { oneTo42 } = require('../../../tests/utils/cardsNumbers');
+const { getBackDescription } = require("./backDescription");
+const { getCardsFrReferenceByCardNum } = require("../../data-access/cardsRepo");
+const { oneTo42 } = require("../../../tests/utils/cardsNumbers");
 
-const lang = 'fr';
+const lang = "fr";
 
-describe('backDescription', () => {
-  it.each(oneTo42)('check backDescription on card %i', async (cardNum) => {
+describe("backDescription", () => {
+  it.each(oneTo42)("check backDescription on card %i", async (cardNum) => {
     // const cardNum = 4;
     const card = await getCardsFrReferenceByCardNum(cardNum);
     // console.log('card 4', card);
     const backDescription = await getBackDescription(card.wikiId, lang);
     expect(backDescription).toStrictEqual(card.backDescription);
   });
-  it('check backDescription on card 15', async () => {
-    const cardNum = 15;
+  it("check backDescription on card 21*", async () => {
+    const cardNum = 21;
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const backDescription = await getBackDescription(card.wikiId, lang);
     expect(backDescription).toStrictEqual(card.backDescription);
