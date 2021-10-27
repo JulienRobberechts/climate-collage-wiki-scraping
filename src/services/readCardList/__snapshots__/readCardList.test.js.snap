@@ -257,9 +257,9 @@ Array [
   Object {
     "cardNum": 37,
     "cardSet": 5,
-    "title": "Famines",
-    "wikiInternalName": "En-en adult card 37 famines",
-    "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_37_famines",
+    "title": "Starvation",
+    "wikiInternalName": "En-en adult card 37 starvation",
+    "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_37_starvation",
   },
   Object {
     "cardNum": 38,
@@ -292,9 +292,9 @@ Array [
   Object {
     "cardNum": 42,
     "cardSet": 5,
-    "title": "Methane Hydrates",
-    "wikiInternalName": "En-en adult card 42 methane hydrates",
-    "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_42_methane_hydrates",
+    "title": "Weakening Gulf Stream",
+    "wikiInternalName": "En-en adult card 42 weakening gulf stream",
+    "wikiUrl": "/wiki/en/index.php?title=En-en_adult_card_42_weakening_gulf_stream",
   },
 ]
 `;
@@ -591,9 +591,9 @@ Array [
   Object {
     "cardNum": 42,
     "cardSet": 5,
-    "title": "Hydrates de méthane",
-    "wikiInternalName": "Fr-fr adulte carte 42 hydrates de méthane",
-    "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_42_hydrates_de_m%C3%A9thane",
+    "title": "Ralentissement du gulf stream",
+    "wikiInternalName": "Fr-fr adulte carte 42 ralentissement du gulf stream",
+    "wikiUrl": "/wiki/index.php?title=Fr-fr_adulte_carte_42_ralentissement_du_gulf_stream",
   },
 ]
 `;
