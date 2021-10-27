@@ -5,15 +5,20 @@ const cleanUpStringBasic = (input) => {
   const nbsp = /\u00A0/gi;
   const reference = /\s*\[\d\]/gi;
 
-  return input
-    .replace(reference, '')
-    .replace(spaces, ' ')
-    .replace(tab, ' ')
-    .replace(nbsp, ' ')
-    .replace(newline, ' ')
+  return removeSemiColumn(input)
+    .replace(reference, "")
+    .replace(spaces, " ")
+    .replace(tab, " ")
+    .replace(nbsp, " ")
+    .replace(newline, " ")
     .replace(/:([A-Z])/g, ": $1")
     .replace(/\.([A-Z])/g, ". $1")
     .trim();
+};
+
+const removeSemiColumn = (input) => {
+  if (input.startsWith(": ")) return input.substring(2);
+  return input;
 };
 
 const cleanUpStringSpecific = (input) => {
@@ -25,4 +30,4 @@ const cleanUpStringSpecific = (input) => {
     .replace("2 , 6 W / m 2 {\\displaystyle 2,6W/m^{2}}", "2,6 W/m2");
 };
 
-module.exports = { cleanUpStringBasic, cleanUpStringSpecific }
+module.exports = { cleanUpStringBasic, cleanUpStringSpecific };
