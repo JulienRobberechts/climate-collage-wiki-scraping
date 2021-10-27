@@ -1,4 +1,5 @@
 const jsdom = require("jsdom");
+const { cleanUpStringBasic } = require("../../utils/string/cleanUpString");
 const { JSDOM } = jsdom;
 
 module.exports.parseLinks = (content, message = "") => {
@@ -20,6 +21,6 @@ const parseLink = (listItem) => {
 
   return {
     href: anchor.href,
-    explanation,
+    explanation: cleanUpStringBasic(explanation),
   };
 };
