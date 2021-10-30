@@ -35,8 +35,8 @@ const parseLink = (listItem) => {
 };
 
 const isValidCardLinkHRef = (href) => {
-  if (href.includes("/wiki/index.php?title=")) return true;
+  if (href.includes("/wiki/")) return true;
   if (href.includes("#cite_note")) return false;
 
-  console.warn(`card link is not recognized as valid or not: "${href}"`);
+  console.warn(`card link is not recognized: "${href}"`);
 };
