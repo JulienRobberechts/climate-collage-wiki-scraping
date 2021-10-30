@@ -31,9 +31,15 @@ const checkLinks =
     );
   };
 
-const linksToCheck = (links) => {
+const linksToCheck = (links, removeExplanation = true) => {
   // Remove explanation from the comparison for the moment
-  return links.sort(linkOrder);
+  const linksWithoutExplanation = removeExplanation
+    ? links.map((l) => ({
+        ...l,
+        explanation: null,
+      }))
+    : links;
+  return linksWithoutExplanation.sort(linkOrder);
 };
 
 describe("Valid effects links", () => {
@@ -50,17 +56,49 @@ describe("Optional effects links", () => {
   });
 });
 
-describe("invalid effects links", () => {
+describe("Invalid effects links", () => {
   it.each(oneTo42)("check invalid effects on card %i", checkLinks("invalid"));
   it("check invalid effects card 35", async () => {
     await checkLinks("invalid")(35);
   });
 });
 
-describe("Valid causes links", () => {
-  it.each(cards1To10)("check valid causes on card %i", checkLinks("valid"));
-  it("check links valid effects card 22", async () => {
-    await checkLinks("valid", false)(22);
+describe("Valid causes", () => {
+  it.each(oneTo42)("check valid causes on card %i", checkLinks("valid", false));
+  it("card 01", async () => {
+    await checkLinks("valid", false)(1);
+  });
+  // it("card 36", async () => {
+  //   await checkLinks("valid", false)(36);
+  // });
+  // it("card 38", async () => {
+  //   await checkLinks("valid", false)(38);
+  // });
+  // it("card 39", async () => {
+  //   await checkLinks("valid", false)(39);
+  // });
+  // it("card 40", async () => {
+  //   await checkLinks("valid", false)(40);
+  // });
+});
+
+describe("Optional causes", () => {
+  it.each(oneTo42)(
+    "check optional causes on card %i",
+    checkLinks("optional", false)
+  );
+  it("card 01", async () => {
+    await checkLinks("optional", false)(1);
+  });
+});
+
+describe("Invalid causes", () => {
+  it.each(oneTo42)(
+    "check invalid causes on card %i",
+    checkLinks("invalid", false)
+  );
+  it("card 01", async () => {
+    await checkLinks("invalid", false)(1);
   });
 });
 
