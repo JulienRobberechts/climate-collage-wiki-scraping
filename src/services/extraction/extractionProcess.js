@@ -1,12 +1,11 @@
 const { readCardList } = require("../readCardList/readCardList");
 const { readCards } = require("../readCard/readCard");
 const { getAllLinks } = require("../readCard/links/linksBuilder");
-// const { getAllOfficialLinks } = require('../readCard/officialLinks/officialLinks');
 const { writeObject } = require("../utils/fileServices/writeFile");
 const { getObject } = require("../utils/fileServices/readFile");
 // const { buildAllValidLinks } = require('../linkCalculation/buildLinks');
 const { mapDataFile } = require("../utils/etl/transformData");
-const { downloadImage } = require("../wiki-api/images");
+
 
 // EXTRACT
 const extractGame = async (lang = "fr") => {

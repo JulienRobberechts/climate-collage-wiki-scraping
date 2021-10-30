@@ -3,18 +3,13 @@
 @pageTitle = En-en_adult_card_1_human_activities
 @pageTitle2 = En-en_adult_card_14_energy_budget
 
-@query = {{api}}?action=query&format=json&titles={{pageTitle}}
-
 @pageTitle_CardsList = Adult_game
+
+@query = {{api}}?action=query&format=json&titles={{pageTitle}}
 
 ### get info CardsList Page
 https://{{api}}?action=query&format=json&titles={{pageTitle_CardsList}}&prop=info
 # Get the pageid to put it in config cardsListPageId=2
-
-### getImageInfo (card 3)
-@imgTitle = File:En-en adult card 3 front.png
-https://{{api}}?action=query&format=json&prop=imageinfo&iiprop=url|size|canonicaltitle|mediatype&titles={{imgTitle}}
-# Get the pageid to put in src/services/wiki-api/images/getImageInfo-en.test.js
 
 ### get info
 https://{{api}}?action=query&format=json&titles={{pageTitle2}}&prop=info
@@ -32,17 +27,11 @@ https://{{query}}&prop=categories
 ### extlinks - OK
 https://{{query}}&prop=extlinks
 
-### images - GOOD
-https://{{query}}&prop=images
-
 ### extlinks - bof
 https://{{query}}&prop=info
 
 ### iwlinks -nothing
 https://{{query}}&prop=iwlinks
-
-### pageimages
-https://{{query}}&prop=pageimages
 
 ### pageprops - get page id from the title
 https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=pageprops

@@ -1,6 +1,5 @@
 const { getObject } = require('../utils/fileServices/readFile.js');
 const { getPageId } = require('../wiki-api/pages/getPageProps');
-const { getCardImageUrl } = require('../wiki-api/images');
 const { sleepRandom } = require("../utils/time/wait");
 const { getBackDescription } = require('./backDescription/backDescription');
 const { getExplanation } = require('./explanation/explanation');
@@ -29,8 +28,6 @@ const readCards = async (cards, fromCard, toCard, lang = 'fr') => {
 
 const getCardData = async (card, lang = 'fr') => {
   const wikiId = await getPageId(card.wikiInternalName, lang);
-  // Not requested anymore
-  // const img = await getCardImageUrl(card.cardNum, `image (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`, lang);
 
   const backDescription = await getBackDescription(wikiId, `getBackDescription (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`, lang);
   const explanation = await getExplanation(wikiId, `getExplanation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`, lang);

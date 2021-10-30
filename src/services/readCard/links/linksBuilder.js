@@ -49,9 +49,6 @@ const getSectionName = (linkType, lang = 'fr') => {
   }
 }
 
-/**
- * to replace getAllOfficialLinks
- */
 const getAllLinks = async (cards, lang = 'fr') => {
   const fromCard = 1;
   const toCard = 42;

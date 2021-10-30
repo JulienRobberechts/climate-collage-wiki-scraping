@@ -1,0 +1,15 @@
+@api = fresqueduclimat.org/wiki/en/api.php
+
+### getImageInfo (card 3)
+@imgTitle = File:En-en adult card 3 front.png
+https://{{api}}?action=query&format=json&prop=imageinfo&iiprop=url|size|canonicaltitle|mediatype&titles={{imgTitle}}
+
+### image query
+@pageTitle = En-en_adult_card_1_human_activities
+@query = {{api}}?action=query&format=json&titles={{pageTitle}}
+
+### images - GOOD
+https://{{query}}&prop=images
+
+### pageimages
+https://{{query}}&prop=pageimages

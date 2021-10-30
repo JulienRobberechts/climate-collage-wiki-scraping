@@ -1,6 +1,5 @@
 const {
   extractGame,
-  // extractImages,
   extractCardList,
   extractAllCards,
   extractCardsLinks,
