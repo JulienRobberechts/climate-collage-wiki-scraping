@@ -64,7 +64,8 @@ const mergeCardsFiles = async (lang = "fr") => {
 const extractCardsLinks = async (lang = "fr") => {
   console.log(" => 3.\tRead Links");
   const allCards = await getAllCards(lang);
-  const links = await getAllLinks(allCards, lang);
+  const viaEffects = true;
+  const links = await getAllLinks(allCards, lang, viaEffects);
   await writeObject(linksResultsFilePath(lang), links);
 };
 

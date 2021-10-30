@@ -3,7 +3,7 @@
  */
 const { getLinks,
   linkIndex,
-  linkTypeIndex
+  linkStatusIndex
 } = require('./linksBuilder');
 
 const {
@@ -13,10 +13,10 @@ const {
 const { oneTo42 } = require('../../../tests/utils/cardsNumbers');
 const lang = 'fr';
 
-const checkEffects = (linkType) => async (cardNum) => {
+const checkEffects = (linkStatus) => async (cardNum) => {
   const card = await getCardsFrReferenceByCardNum(cardNum);
-  const expectedLink = await getLinksEffectFrRef(cardNum, linkType);
-  const actualLinks = await getLinks(cardNum, card.wikiId, linkType, `link '${linkType}'`, lang);
+  const expectedLink = await getLinksEffectFrRef(cardNum, linkStatus);
+  const actualLinks = await getLinks(cardNum, card.wikiId, linkStatus, `link '${linkStatus}'`, lang);
   expect(actualLinks.sort(linkOrder)).toStrictEqual(expectedLink.sort(linkOrder));
 };
 
@@ -41,10 +41,10 @@ describe('invalid effects links', () => {
   });
 });
 
-describe('linkTypeIndex', () => {
-  it('linkTypeIndex valid', () => expect(linkTypeIndex('valid')).toBe(0));
-  it('linkTypeIndex optional', () => expect(linkTypeIndex('optional')).toBe(1));
-  it('linkTypeIndex invalid', () => expect(linkTypeIndex('invalid')).toBe(2));
+describe('linkStatusIndex', () => {
+  it('linkStatusIndex valid', () => expect(linkStatusIndex('valid')).toBe(0));
+  it('linkStatusIndex optional', () => expect(linkStatusIndex('optional')).toBe(1));
+  it('linkStatusIndex invalid', () => expect(linkStatusIndex('invalid')).toBe(2));
 });
 
 describe('linkIndex', () => {

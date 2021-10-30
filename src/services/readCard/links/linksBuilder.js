@@ -7,61 +7,7 @@ const { getPageId } = require("../../wiki-api/pages/getPageProps");
 const { sleepRandom } = require("../../utils/time/wait");
 const { createProgressBar } = require("../../../cli/progress");
 
-const getLinks = async (cardNum, wikiId, linkType, message, lang = "fr") => {
-  const sectionName = getSectionName(linkType, lang);
-  const content = await getSectionContentByName(wikiId, sectionName, lang);
-  return parseLinks(content, message).map((l) => ({
-    fromNum: cardNum,
-    toNum: getCardNumberFromUrl(l.href, lang),
-    status: linkType,
-    explanation: cleanUpStringBasic(l.explanation),
-  }));
-};
-
-const getAllTypesLinks = async (cardNum, wikiId, message, lang = "fr") => {
-  try {
-    const relationsValid = await getLinks(
-      cardNum,
-      wikiId,
-      "valid",
-      message,
-      lang
-    );
-    const relationsOptional = await getLinks(
-      cardNum,
-      wikiId,
-      "optional",
-      message,
-      lang
-    );
-    const relationsInvalid = await getLinks(
-      cardNum,
-      wikiId,
-      "invalid",
-      message,
-      lang
-    );
-    return [...relationsValid, ...relationsOptional, ...relationsInvalid];
-  } catch (error) {
-    console.log("error ", error);
-  }
-};
-
-const getSectionName = (linkType, lang = "fr") => {
-  const sectionsNames = getSectionNames(lang);
-  switch (linkType) {
-    case "valid":
-      return sectionsNames.sectionMainEffects;
-    case "optional":
-      return sectionsNames.sectionOptionalEffects;
-    case "invalid":
-      return sectionsNames.sectionInvalidEffects;
-    default:
-      throw new Error(`linkType '${linkType}' not recognized`);
-  }
-};
-
-const getAllLinks = async (cards, lang = "fr") => {
+const getAllLinks = async (cards, lang, viaEffects = true) => {
   const fromCard = 1;
   const toCard = 42;
 
@@ -72,11 +18,12 @@ const getAllLinks = async (cards, lang = "fr") => {
       progress.increment();
       const card = cards[cardNum - 1];
       const wikiId = await getPageId(card.wikiInternalName, lang);
-      const linksForCard = await getAllTypesLinks(
+      const linksForCard = await getAllStatusLinksForOneCard(
         cardNum,
         wikiId,
         `relation (card id=${wikiId}, num=${card.cardNum}, title=${card.wikiInternalName})`,
-        lang
+        lang,
+        viaEffects
       );
       links.push(...linksForCard);
       await sleepRandom(300, 800);
@@ -90,16 +37,99 @@ const getAllLinks = async (cards, lang = "fr") => {
   return links.sort(linkOrder);
 };
 
+const getAllStatusLinksForOneCard = async (
+  cardNum,
+  wikiId,
+  message,
+  lang,
+  viaEffects
+) => {
+  try {
+    const relationsValid = await getLinks(
+      cardNum,
+      wikiId,
+      "valid",
+      message,
+      lang,
+      viaEffects
+    );
+    const relationsOptional = await getLinks(
+      cardNum,
+      wikiId,
+      "optional",
+      message,
+      lang,
+      viaEffects
+    );
+    const relationsInvalid = await getLinks(
+      cardNum,
+      wikiId,
+      "invalid",
+      message,
+      lang,
+      viaEffects
+    );
+    return [...relationsValid, ...relationsOptional, ...relationsInvalid];
+  } catch (error) {
+    console.log("error ", error);
+  }
+};
+
+const getLinks = async (
+  cardNum,
+  wikiId,
+  linkStatus,
+  message,
+  lang,
+  viaEffects
+) => {
+  const sectionName = getLinkEffectsSectionName(linkStatus, lang, viaEffects);
+  const content = await getSectionContentByName(wikiId, sectionName, lang);
+  return parseLinks(content, message).map((l) => ({
+    fromNum: cardNum,
+    toNum: getCardNumberFromUrl(l.href, lang),
+    status: linkStatus,
+    explanation: cleanUpStringBasic(l.explanation),
+  }));
+};
+
+const getLinkEffectsSectionName = (linkStatus, lang, effects = true) => {
+  const sectionsNames = getSectionNames(lang);
+  if (effects) {
+    switch (linkStatus) {
+      case "valid":
+        return sectionsNames.sectionMainEffects;
+      case "optional":
+        return sectionsNames.sectionOptionalEffects;
+      case "invalid":
+        return sectionsNames.sectionInvalidEffects;
+      default:
+        throw new Error(`linkStatus '${linkStatus}' not recognized`);
+    }
+  }
+
+  switch (linkStatus) {
+    case "valid":
+      return sectionsNames.sectionMainCauses;
+    case "optional":
+      return sectionsNames.sectionOptionalCauses;
+    case "invalid":
+      return sectionsNames.sectionInvalidCauses;
+    default:
+      throw new Error(`linkStatus '${linkStatus}' not recognized`);
+  }
+};
+
 const linkOrder = (l1, l2) => {
   return linkIndex(l1) - linkIndex(l2);
 };
 
 const linkIndex = (link) => {
-  return link.fromNum * 1000 + 100 * linkTypeIndex(link.status) + link.toNum;
+  return link.fromNum * 1000 + 100 * linkStatusIndex(link.status) + link.toNum;
 };
 
-const linkTypeIndex = (linkType) => {
-  switch (linkType) {
+const linkStatusIndex = (linkStatus) => {
+  switch (linkStatus) {
     case "valid":
       return 0;
     case "optional":
@@ -107,13 +137,13 @@ const linkTypeIndex = (linkType) => {
     case "invalid":
       return 2;
     default:
-      throw new Error(`linkType '${linkType}' not recognized`);
+      throw new Error(`linkStatus '${linkStatus}' not recognized`);
   }
 };
 
 module.exports = {
-  getLinks,
   getAllLinks,
+  getLinks,
   linkIndex,
-  linkTypeIndex,
+  linkStatusIndex,
 };
