@@ -81,16 +81,21 @@ const getLinks = async (
   linkStatus,
   message,
   lang,
-  viaEffects
+  useEffects
 ) => {
-  const sectionName = getLinkEffectsSectionName(linkStatus, lang, viaEffects);
+  const sectionName = getLinkEffectsSectionName(linkStatus, lang, useEffects);
   const content = await getSectionContentByName(wikiId, sectionName, lang);
-  return parseLinks(content, message).map((l) => ({
-    fromNum: cardNum,
-    toNum: getCardNumberFromUrl(l.href, lang),
-    status: linkStatus,
-    explanation: cleanUpStringBasic(l.explanation),
-  }));
+  return parseLinks(content, message).map((linkData) => {
+    const connectedCardNum = getCardNumberFromUrl(linkData.href, lang);
+    const fromNum = useEffects ? cardNum : connectedCardNum;
+    const toNum = useEffects ? connectedCardNum : cardNum;
+    return {
+      fromNum,
+      toNum,
+      status: linkStatus,
+      explanation: cleanUpStringBasic(linkData.explanation),
+    };
+  });
 };
 
 const getLinkEffectsSectionName = (linkStatus, lang, effects = true) => {
