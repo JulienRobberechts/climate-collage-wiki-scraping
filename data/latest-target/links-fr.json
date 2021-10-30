@@ -385,12 +385,6 @@
   },
   {
     "fromNum": 17,
-    "toNum": 42,
-    "status": "valid",
-    "explanation": "Si l'on veut rester dans la même logique de conservation de l'énergie, il faudrait faire le lien de fonte a partir de budget énergétique."
-  },
-  {
-    "fromNum": 17,
     "toNum": 24,
     "status": "invalid",
     "explanation": "La hausse de la température de l'eau n'a aucun lien avec l'acidification de l'océan, du moins à court terme. A plus long terme (sur plusieurs centaines d'années), en se réchauffant, l'océan perd sa capacité à dissoudre le CO2 atmosphérique. Le puits océan perd donc de son efficacité au fur et à mesure que l'océan se réchauffe. La hausse de la température de l'eau a donc un effet sur l'acidification, inhibiteur en l'occurrence."
