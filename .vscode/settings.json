@@ -1,0 +1,6 @@
+{
+  "jest.testExplorer" : {"enabled": true },
+  "jest.autoRun": "off",
+  "jest.jestCommandLine": "yarn test",
+  "jest.rootPath":"src",
+}
