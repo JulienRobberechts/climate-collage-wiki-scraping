@@ -1,0 +1,32 @@
+### 0. Select the language
+
+@apiFr = fresqueduclimat.org/wiki/api.php
+@apiEn = fresqueduclimat.org/wiki/en/api.php
+
+@api = {{apiFr}}
+
+### 1. Set the title
+
+@pageTitle = Fr-fr_adulte_carte_3_utilisation_des_bâtiments
+
+### 2. call this
+https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=info
+
+### 3. fill th page Id with the response
+@pageId = 14
+
+### 4. Call get sections
+
+https://{{api}}?action=parse&format=json&prop=sections&pageid={{pageId}}
+
+# => update files src/tests/data/fr/section-card-XXX.json
+
+### 5. Fill the sections[].index where the line & anchor is ad hoc
+
+@sectionIndex = 1
+
+### 6. Call the parse endpoint with pageid and section index
+
+https://{{api}}?action=parse&format=json&prop=text&pageid={{pageId}}&section={{sectionIndex}}
+
+# => update files src/tests/data/fr/carteX-SectionName.html

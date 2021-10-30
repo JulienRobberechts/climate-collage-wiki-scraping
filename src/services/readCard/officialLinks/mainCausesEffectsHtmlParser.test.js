@@ -1,6 +1,7 @@
 const { getContent } = require('../../utils/fileServices/readFile');
 const { parseMainCausesEffects } = require('./mainCausesEffectsHtmlParser');
 
+// to update those files check manual-calls/get -card-sections.http
 const cardContent1FilePath = './src/tests/data/fr/carte1.html';
 const cardContent6FilePath = './src/tests/data/fr/carte6-0.html';
 
