@@ -7,13 +7,13 @@
 
 ### 1. Set the title
 
-@pageTitle = Fr-fr_adulte_carte_3_utilisation_des_bâtiments
+@pageTitle = Fr-fr_adulte_carte_1_activités_humaines
 
 ### 2. call this
 https://{{api}}?action=query&format=json&titles={{pageTitle}}&prop=info
 
 ### 3. fill th page Id with the response
-@pageId = 14
+@pageId = 4
 
 ### 4. Call get sections
 
@@ -23,7 +23,7 @@ https://{{api}}?action=parse&format=json&prop=sections&pageid={{pageId}}
 
 ### 5. Fill the sections[].index where the line & anchor is ad hoc
 
-@sectionIndex = 1
+@sectionIndex = 2
 
 ### 6. Call the parse endpoint with pageid and section index
 
