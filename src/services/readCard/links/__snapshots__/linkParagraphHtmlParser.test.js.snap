@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`parse other links parse optional Causes card 25 1`] = `
+Array [
+  Object {
+    "explanation": "On pense ici surtout aux pesticides (notamment au Round-up ou aux n\\\\u00e9onicotino\\\\u00efdes). Pas de lien avec le climat, mais relation int\\\\u00e9ressante \\\\u00e0 faire",
+    "href": "\\\\\\"/wiki/index.php?title=Fr-fr_adulte_carte_8_agriculture\\\\\\"",
+  },
+  Object {
+    "explanation": "La d\\\\u00e9forestation cause \\\\u00e9norm\\\\u00e9ment de perte de biodiversit\\\\u00e9 :\\\\n Animale car la for\\\\u00eat est un h\\\\u00f4te de beaucoup d'esp\\\\u00e8ce. L'indice de biodiversit\\\\u00e9 des for\\\\u00eats a chut\\\\u00e9 de 53% entre 1970 et 2014.\\\\nV\\\\u00e9g\\\\u00e9tale car sur les 60 000 esp\\\\u00e8ces d'arbres connues, 8000 sont consid\\\\u00e9r\\\\u00e9es comme menac\\\\u00e9es.",
+    "href": "\\\\\\"/wiki/index.php?title=Fr-fr_adulte_carte_6_d%C3%A9forestation\\\\\\"",
+  },
+  Object {
+    "explanation": "Les deux types de biodiversit\\\\u00e9 peuvent interagir entres elles.",
+    "href": "\\\\\\"/wiki/index.php?title=Fr-fr_adulte_carte_27_biodiversit%C3%A9_marine\\\\\\"",
+  },
+]
+`;
+
 exports[`parse other links parse optional Effects card 1 1`] = `
 Array [
   Object {

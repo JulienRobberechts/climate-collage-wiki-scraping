@@ -9,18 +9,34 @@ module.exports.parseLinks = (content, message = "") => {
   const items = Array.from(document.querySelectorAll("ul>li"));
   const cardLinks = items.map(parseLink);
 
-  return cardLinks.filter((l) => !!l);
+  return cardLinks.filter(linkNotNull);
 };
 
+const linkNotNull = (link) => !!link;
+
+const ALLOW_EMPTY_LINKS = true;
+
 const parseLink = (listItem) => {
-  listItem.child;
   const anchor = listItem.querySelector("a");
-  // Now links can be listed without anchor (and will be ignored)
-  if (!anchor) return null;
+
+  if (!anchor) {
+    if (ALLOW_EMPTY_LINKS) return null;
+    throw Error(`Link with no anchor: ${listItem.textContent}`);
+  }
+
+  if (!isValidCardLinkHRef(anchor.href)) return null;
+
   const explanation = listItem.textContent.replace(anchor.textContent, "");
 
   return {
     href: anchor.href,
     explanation: cleanUpStringBasic(explanation),
   };
+};
+
+const isValidCardLinkHRef = (href) => {
+  if (href.includes("/wiki/index.php?title=")) return true;
+  if (href.includes("#cite_note")) return false;
+
+  console.warn(`card link is not recognized as valid or not: "${href}"`);
 };
