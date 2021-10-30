@@ -10,6 +10,11 @@ This project extract some data from the ["Fresque du Climat" wiki ](https://fres
 
 The french version is in work in progress. The goal is to have a one click import in French and English.
 
+## Status
+
+- French Wiki: extracted the 30/10/2021
+- English Wiki: need to be modified with the new format (main section) to be updated.
+
 ## Launch the program
 
 #### 1. Run the start command
@@ -17,6 +22,7 @@ The french version is in work in progress. The goal is to have a one click impor
 It's supposed to run on your local machine with an internet access.
 
 #### 1.A With Prompt
+
 ```cmd
 yarn start
 ```
@@ -35,6 +41,7 @@ yarn start import -l en
 yarn import-fr
 yarn import-en
 ```
+
 #### 2. Then to see the execution progress
 
 ![progress-bar](./doc/assets/screenshot-2-progress-bar.png)
@@ -59,6 +66,7 @@ yarn test
 ### run tests on github
 
 Tests are played on github (tab Actions)
+
 - after each code change
 - every day at 1pm automatically to check everything is still ok.
 - manually on demand if you click on this green button "run workflow":
