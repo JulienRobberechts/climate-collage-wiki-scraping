@@ -2,8 +2,6 @@
  * @jest-environment node
  */
 const { getCardNumberFromUrl } = require('./buildLinks');
-const cards1and3FilePath = './src/tests/data/cards-1-3.json';
-const { getObject } = require('../utils/fileServices/readFile');
 
 describe('getCardNumberFromUrl', () => {
   it('card 24 fr', async () => {

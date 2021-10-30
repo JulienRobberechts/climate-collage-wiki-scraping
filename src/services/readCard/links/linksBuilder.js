@@ -2,7 +2,6 @@ const { getSectionContentByName } = require('../../wiki-api/sections');
 const { cleanUpStringBasic } = require('../../utils/string/cleanUpString');
 const { getSectionNames } = require('../../wiki-api/sections/sectionNames.js');
 const { getCardNumberFromUrl } = require('../../linkCalculation/buildLinks');
-// const { getObject } = require('../../utils/fileServices/readFile.js');
 const { parseLinks } = require('./linkParagraphHtmlParser');
 const { getPageId } = require('../../wiki-api/pages/getPageProps');
 const { sleepRandom } = require("../../utils/time/wait");
