@@ -96,6 +96,12 @@
     "explanation": "La construction de route nécessite parfois de déforester, mais l'aspect unidimensionnelle de la route la rend quasiment négligeable devant la déforestation lié à l'agriculture."
   },
   {
+    "fromNum": 4,
+    "toNum": 10,
+    "status": "optional",
+    "explanation": "La pollution locale que représentent les échappements des voitures est une motivation forte pour pousser la voiture électrique. Or cette dernière est responsable d'émissions dûes à la génération de l'électricité elle-même (selon le mix électrique du pays considéré)."
+  },
+  {
     "fromNum": 5,
     "toNum": 7,
     "status": "valid",

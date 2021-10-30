@@ -49,12 +49,6 @@
   },
   {
     "fromNum": 2,
-    "toNum": 10,
-    "status": "valid",
-    "explanation": ""
-  },
-  {
-    "fromNum": 2,
     "toNum": 6,
     "status": "optional",
     "explanation": "This link is possible for wood-consuming industries. However, wood used by a factory in a sustainably managed forest would not be considered as deforestation."
@@ -97,15 +91,15 @@
   },
   {
     "fromNum": 4,
-    "toNum": 10,
-    "status": "valid",
-    "explanation": ""
-  },
-  {
-    "fromNum": 4,
     "toNum": 6,
     "status": "optional",
     "explanation": "Road construction sometimes requires deforestation, but the one-dimensional aspect of the road makes it almost negligible compared to deforestation linked to agriculture."
+  },
+  {
+    "fromNum": 4,
+    "toNum": 10,
+    "status": "optional",
+    "explanation": ""
   },
   {
     "fromNum": 5,
@@ -884,7 +878,7 @@
   {
     "fromNum": 42,
     "toNum": 20,
-    "status": "valid",
+    "status": "optional",
     "explanation": ""
   }
 ]
