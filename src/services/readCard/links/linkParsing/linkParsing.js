@@ -1,4 +1,4 @@
-const { getConfig } = require("../../config/config");
+const { getConfig } = require("../../../../config/config");
 
 const getCardNumberFromUrl = (cardUrl, lang = "fr") => {
   const { cardUrlRegexp } = getConfig(lang);
