@@ -1,20 +1,6 @@
 
 const { getConfig } = require('../../config/config');
 
-const buildLinks = (cards, cardNumber) => {
-  const card = getCardByNum(cards, cardNumber);
-  const linkCauses = card.causes.map(causeCardId => ({
-    fromNum: causeCardId,
-    toNum: cardNumber
-  }));
-  const linkEffects = card.effects.map(effectCardId => ({
-    fromNum: cardNumber,
-    toNum: effectCardId,
-  }));
-
-  return [...linkCauses, ...linkEffects];
-};
-
 const getCardByNum = (cards, cardNumber) => {
   const card = cards.find(c => c.cardNum.toString() === cardNumber.toString());
   if (!card)
@@ -34,4 +20,4 @@ const getCardNumberFromUrl = (cardUrl, lang = 'fr') => {
 };
 
 
-module.exports = { buildLinks, getCardNumberFromUrl };
+module.exports = { getCardNumberFromUrl };
