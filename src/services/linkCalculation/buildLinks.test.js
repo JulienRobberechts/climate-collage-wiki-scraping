@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-const { buildLinks, getCardNumberFromUrl, buildAllValidLinks } = require('./buildLinks');
+const { buildLinks, getCardNumberFromUrl } = require('./buildLinks');
 const cards1and3FilePath = './src/tests/data/cards-1-3.json';
 const { getObject } = require('../utils/fileServices/readFile');
 
@@ -44,18 +44,6 @@ describe('buildLinks', () => {
       fromNum: 2,
       toNum: 10,
     }]);
-  });
-});
-
-describe('buildAllLinks', () => {
-  it('build links 1-3', async () => {
-    const cards = await getObject(cards1and3FilePath);
-    const linksInfo = buildAllValidLinks(cards);
-    expect(linksInfo.length).toBe(7);
-    expect(linksInfo.filter(c => c.fromNum === 1).length).toBe(4);
-    expect(linksInfo.filter(c => c.fromNum === 2).length).toBe(2);
-    expect(linksInfo.filter(c => c.fromNum === 3).length).toBe(1);
-    expect(linksInfo).toMatchSnapshot();
   });
 });
 

@@ -1,35 +1,6 @@
 
 const { getConfig } = require('../../config/config');
 
-const buildAllValidLinks = (cards) => {
-  const links = Array.from(new Array(cards.length), (_x, i) => i + 1)
-    .map((n) => buildLinks(cards, n));
-  const linksFlat = [].concat(...links); // links.flat();
-  const linksClean = dedupLinks(linksFlat);
-  const linksCleanValid = linksClean.map(l => ({
-    ...l,
-    status: "valid"
-  }));
-
-  return linksCleanValid;
-};
-
-const dedupLinks = (links) => {
-  const result = [];
-  const map = new Map();
-  for (const l of links) {
-    const key = `${l.fromNum}-${l.toNum}`;
-    if (!map.has(key)) {
-      map.set(key, true);
-      result.push({
-        fromNum: l.fromNum,
-        toNum: l.toNum
-      });
-    }
-  }
-  return result;
-}
-
 const buildLinks = (cards, cardNumber) => {
   const card = getCardByNum(cards, cardNumber);
   const linkCauses = card.causes.map(causeCardId => ({
@@ -63,4 +34,4 @@ const getCardNumberFromUrl = (cardUrl, lang = 'fr') => {
 };
 
 
-module.exports = { buildLinks, getCardNumberFromUrl, buildAllValidLinks };
+module.exports = { buildLinks, getCardNumberFromUrl };

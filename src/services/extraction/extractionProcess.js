@@ -3,7 +3,6 @@ const { readCards } = require("../readCard/readCard");
 const { getAllLinks } = require("../readCard/links/linksBuilder");
 const { writeObject } = require("../utils/fileServices/writeFile");
 const { getObject } = require("../utils/fileServices/readFile");
-// const { buildAllValidLinks } = require('../linkCalculation/buildLinks');
 const { mapDataFile } = require("../utils/etl/transformData");
 
 
@@ -30,15 +29,6 @@ const extractCardList = async (lang = "fr") => {
   const cardsData = await readCardList(lang);
   await writeObject(cardsListFilePath(lang), cardsData);
 };
-
-// const extractImages = async (lang = 'fr') => {
-//   console.log(" => 1.b\tDownload images");
-//   const cards = await getObject(cardsV1FilePath(lang));
-//   cards.forEach(c => {
-//     // if (c.cardNum === 1)
-//       downloadImage(c, lang);
-//   });
-// };
 
 // 2- EXTRACT_CARD_DETAILS
 const extractAllCards = async (lang = "fr") => {
@@ -93,5 +83,4 @@ module.exports = {
   extractAllCards,
   extractCardsLinks,
   // getCardLinksAsWiki
-  // extractImages
 };
