@@ -505,6 +505,12 @@
   },
   {
     "fromNum": 21,
+    "toNum": 36,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
     "toNum": 41,
     "status": "valid",
     "explanation": "Si l'on veut rester dans la même logique de conservation de l'énergie, il faudrait faire le lien de fonte à partir de budget énergétique."
@@ -520,12 +526,6 @@
     "toNum": 32,
     "status": "optional",
     "explanation": "Dans les pays du Nord, une hausse de la température peut améliorer les rendements. Dans les pays du Sud, c'est le contraire : la moindre augmentation de température se traduit par une baisse de rendement."
-  },
-  {
-    "fromNum": 21,
-    "toNum": 36,
-    "status": "optional",
-    "explanation": ""
   },
   {
     "fromNum": 21,
@@ -806,12 +806,12 @@
   {
     "fromNum": 37,
     "toNum": 40,
-    "status": "optional",
-    "explanation": "[explication en cours...]"
+    "status": "valid",
+    "explanation": ""
   },
   {
     "fromNum": 38,
-    "toNum": 40,
+    "toNum": 39,
     "status": "valid",
     "explanation": ""
   },
