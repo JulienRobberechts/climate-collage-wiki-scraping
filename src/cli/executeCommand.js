@@ -4,17 +4,14 @@ const {
   extractAllCards,
   extractCardsLinks,
   getCardLinksAsWiki,
-} = require('../services/extraction/extractionProcess');
-const { ui } = require('./ui-data');
+} = require("../services/extraction/extractionProcess");
+const { ui } = require("./ui-data");
 
 module.exports.executeRequest = async ({ operation, lang }) => {
   switch (operation) {
     case ui.action.EXTRACT_GAME:
-      await extractGame(lang);
+      await extractGameMultiLang(lang);
       break;
-    // case ui.action.EXTRACT_IMAGES:
-    //   await extractImages(lang);
-    //   break;
     case ui.action.EXTRACT_CARDS_LIST:
       await extractCardList(lang);
       break;
@@ -26,7 +23,7 @@ module.exports.executeRequest = async ({ operation, lang }) => {
       break;
 
     case ui.action.CUSTOM_TREATMENT:
-      console.log('CUSTOM_TREATMENT - DISABLED');
+      console.log("CUSTOM_TREATMENT - DISABLED");
       // await getCardLinksAsWiki();
       break;
     default:
@@ -36,3 +33,10 @@ module.exports.executeRequest = async ({ operation, lang }) => {
   console.log("\ndone.\n");
 };
 
+const extractGameMultiLang = async (multilang) => {
+  const langs = multilang.split("&");
+  for (const lang of langs) {
+    console.log(`=> Extract lang: ${lang}`);
+    await extractGame(lang);
+  }
+};

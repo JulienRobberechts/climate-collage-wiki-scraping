@@ -9,6 +9,7 @@ var questions = [
     name: 'lang',
     message: 'Which langage?',
     choices: [
+      ui.lang.FR_EN,
       ui.lang.FR,
       ui.lang.EN,
     ],
