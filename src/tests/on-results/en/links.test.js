@@ -1,4 +1,4 @@
-const { checkMissingLinks } = require("../linksChecks");
+const { checkMissingLinks } = require("../linksChecksAcrossLanguages");
 
 const lang = "en";
 const langRef = "fr";
