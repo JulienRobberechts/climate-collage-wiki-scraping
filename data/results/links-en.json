@@ -745,6 +745,12 @@
   },
   {
     "fromNum": 35,
+    "toNum": 38,
+    "status": "valid",
+    "explanation": "630 people died in Californian wildfires in autumn 2018."
+  },
+  {
+    "fromNum": 35,
     "toNum": 6,
     "status": "optional",
     "explanation": "Deforestation is partly done by burning the forest, which can then degenerate into uncontrolled fire. This is what happened in the summer of 2019 in the Amazon and Australia."
@@ -766,12 +772,6 @@
     "toNum": 32,
     "status": "optional",
     "explanation": "Generally forests burn better than wheat fields."
-  },
-  {
-    "fromNum": 35,
-    "toNum": 38,
-    "status": "optional",
-    "explanation": "630 people died in Californian wildfires in autumn 2018."
   },
   {
     "fromNum": 36,
@@ -805,12 +805,6 @@
   },
   {
     "fromNum": 37,
-    "toNum": 40,
-    "status": "optional",
-    "explanation": ""
-  },
-  {
-    "fromNum": 38,
     "toNum": 40,
     "status": "valid",
     "explanation": ""
@@ -884,7 +878,7 @@
   {
     "fromNum": 42,
     "toNum": 20,
-    "status": "optional",
+    "status": "valid",
     "explanation": ""
   }
 ]
