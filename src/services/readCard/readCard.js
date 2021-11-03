@@ -14,7 +14,7 @@ const readCards = async (cards, fromCard, toCard, lang = 'fr') => {
       const card = cards[index];
       const cardData = await getCardData(card, lang);
       cardsData.push(cardData);
-      await sleepRandom(200, 200);
+      await sleepRandom(20, 100);
     }
   } catch (error) {
     console.log('Read Cards error: ', error);

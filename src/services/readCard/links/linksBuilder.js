@@ -26,7 +26,7 @@ const getAllLinks = async (cards, lang, viaEffects = true) => {
         viaEffects
       );
       links.push(...linksForCard);
-      await sleepRandom(300, 800);
+      await sleepRandom(20, 100);
     }
   } catch (error) {
     console.log("Read main Links error: ", error);
