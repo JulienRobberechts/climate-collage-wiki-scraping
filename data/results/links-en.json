@@ -109,6 +109,12 @@
   },
   {
     "fromNum": 5,
+    "toNum": 10,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 5,
     "toNum": 1,
     "status": "optional",
     "explanation": "What comes first? Do human activities cause the use of fossil fuels or do fossil fuels ensable human activities? Don't waste time on this and group the two cards together if necessary. Plenty of activities, happily, do not require burning fossil fuels, like windmills and watermills grinding grains for flour."
@@ -499,19 +505,7 @@
   },
   {
     "fromNum": 21,
-    "toNum": 32,
-    "status": "valid",
-    "explanation": ""
-  },
-  {
-    "fromNum": 21,
     "toNum": 36,
-    "status": "valid",
-    "explanation": ""
-  },
-  {
-    "fromNum": 21,
-    "toNum": 38,
     "status": "valid",
     "explanation": ""
   },
@@ -526,6 +520,18 @@
     "toNum": 28,
     "status": "optional",
     "explanation": "The vectors of disease card is generally linked to the Terrestrial Biodiversity card because disease vectors are a sub-part of biodiversity, but it can also be linked to the same causes as the biodiversity card, i.e. Disruption of the Water Cycle and Rising Air Temperatures."
+  },
+  {
+    "fromNum": 21,
+    "toNum": 32,
+    "status": "optional",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
+    "toNum": 38,
+    "status": "optional",
+    "explanation": ""
   },
   {
     "fromNum": 22,

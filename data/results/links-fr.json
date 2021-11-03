@@ -99,7 +99,7 @@
     "fromNum": 4,
     "toNum": 10,
     "status": "optional",
-    "explanation": "La pollution locale que représentent les échappements des voitures est une motivation forte pour pousser la voiture électrique. Or cette dernière est responsable d'émissions dûes à la génération de l'électricité elle-même (selon le mix électrique du pays considéré)."
+    "explanation": "La pollution locale que représentent les échappements des voitures est une motivation forte pour pousser la voiture électrique. Or cette dernière est responsable d'émissions dues à la génération de l'électricité elle-même (selon le mix électrique du pays considéré)."
   },
   {
     "fromNum": 5,
@@ -423,7 +423,7 @@
     "fromNum": 18,
     "toNum": 20,
     "status": "invalid",
-    "explanation": "La fonte de la banquise arctique, mais également la fonte des glaciers du Groenland peuvent amener, dans un futur lointain, à perturber la circulation thermohaline (qui donne le Gulf Stream). Mais attention, la carte \"Cycle de l'eau\" ne fait pas du tout référence à la Circulation thermohaline."
+    "explanation": "La fonte de la banquise arctique, mais également la fonte des glaciers du Groenland peuvent amener, dans un futur lointain, à perturber la circulation thermohaline (qui donne le Gulf Stream). Mais attention, la carte \"cycle de l'eau\" ne fait pas du tout référence à la Circulation thermohaline."
   },
   {
     "fromNum": 18,
@@ -505,7 +505,19 @@
   },
   {
     "fromNum": 21,
+    "toNum": 32,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
     "toNum": 36,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
+    "toNum": 38,
     "status": "valid",
     "explanation": ""
   },
@@ -583,6 +595,12 @@
   },
   {
     "fromNum": 26,
+    "toNum": 31,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 26,
     "toNum": 32,
     "status": "valid",
     "explanation": ""
@@ -609,7 +627,7 @@
     "fromNum": 26,
     "toNum": 33,
     "status": "invalid",
-    "explanation": "Ne pas confondre 'Crues' et 'Submersions'. Les crues, ce sont les rivières qui débordent (c'est de l'eau douce). Les submersions, c'est la mer qui entre dans les terres (c'est de l'eau salée)."
+    "explanation": "Ne pas confondre 'Crues' et 'Submersions'. Les crues, ce sont les rivières / fleuves qui débordent (c'est de l'eau douce). Les submersions, c'est la mer qui entre dans les terres (c'est de l'eau salée)."
   },
   {
     "fromNum": 27,
@@ -745,6 +763,12 @@
   },
   {
     "fromNum": 35,
+    "toNum": 38,
+    "status": "valid",
+    "explanation": "630 disparus suite aux incendies en Californie à l'automne 2018."
+  },
+  {
+    "fromNum": 35,
     "toNum": 6,
     "status": "optional",
     "explanation": "Une partie de la déforestation est faite en brûlant la forêt qui peut ensuite dégénérer en feu non-maîtrisé. C'est ce qu'il s'est passé pendant l'été 2019 en Amazonie et en Australie."
@@ -766,12 +790,6 @@
     "toNum": 32,
     "status": "optional",
     "explanation": "En général, ce qui brûle bien, c'est la forêt, pas les champs de blé."
-  },
-  {
-    "fromNum": 35,
-    "toNum": 38,
-    "status": "optional",
-    "explanation": "630 disparus suite aux incendies en Californie à l'automne 2018."
   },
   {
     "fromNum": 36,
@@ -810,8 +828,8 @@
     "explanation": ""
   },
   {
-    "fromNum": 38,
-    "toNum": 39,
+    "fromNum": 39,
+    "toNum": 38,
     "status": "valid",
     "explanation": ""
   },
@@ -884,7 +902,7 @@
   {
     "fromNum": 42,
     "toNum": 20,
-    "status": "optional",
+    "status": "valid",
     "explanation": ""
   }
 ]
