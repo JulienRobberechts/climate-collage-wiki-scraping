@@ -285,7 +285,7 @@
     "fromNum": 12,
     "toNum": 24,
     "status": "valid",
-    "explanation": "Le mot Océan est écrit des deux côtés."
+    "explanation": ""
   },
   {
     "fromNum": 12,
@@ -303,7 +303,7 @@
     "fromNum": 13,
     "toNum": 15,
     "status": "valid",
-    "explanation": "Le mot Effet de serre est écrit des deux cotés (version > Oct 2018)."
+    "explanation": "Le mot Effet de serre est écrit des deux cotés."
   },
   {
     "fromNum": 14,
@@ -399,7 +399,7 @@
     "fromNum": 18,
     "toNum": 15,
     "status": "optional",
-    "explanation": "Quand la banquise fond, une surface blanche est remplacé par une surface bleu marine, qui à un albédo plus faible, donc absorbe plus d'énergie. Cette relation n'est pas indispensable mais permet de mettre en avant une autre boucle de rétro-action du jeu."
+    "explanation": "Quand la banquise fond, une surface blanche est remplacé par une surface bleu marine, qui à un albédo plus faible, donc absorbe plus d'énergie. Cette relation n'est pas indispensable mais permet de mettre en avant une autre boucle de rétroaction du jeu."
   },
   {
     "fromNum": 18,
@@ -613,12 +613,6 @@
   },
   {
     "fromNum": 26,
-    "toNum": 31,
-    "status": "optional",
-    "explanation": "[explication en cours...]"
-  },
-  {
-    "fromNum": 26,
     "toNum": 28,
     "status": "invalid",
     "explanation": "Attention aux associations d'idées : Crues / marécages / moustiques... Les crues peuvent amener des situations sanitaires dégradées, mais ce n'est pas de cela qu'on parle quand on évoque les vecteurs de maladie qui se déplacent à cause du changement climatique."
@@ -705,7 +699,7 @@
     "fromNum": 31,
     "toNum": 38,
     "status": "optional",
-    "explanation": "[explication en cours...]"
+    "explanation": ""
   },
   {
     "fromNum": 32,

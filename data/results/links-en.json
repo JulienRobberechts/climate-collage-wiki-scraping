@@ -505,7 +505,19 @@
   },
   {
     "fromNum": 21,
+    "toNum": 32,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
     "toNum": 36,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
+    "toNum": 38,
     "status": "valid",
     "explanation": ""
   },
@@ -520,18 +532,6 @@
     "toNum": 28,
     "status": "optional",
     "explanation": "The vectors of disease card is generally linked to the Terrestrial Biodiversity card because disease vectors are a sub-part of biodiversity, but it can also be linked to the same causes as the biodiversity card, i.e. Disruption of the Water Cycle and Rising Air Temperatures."
-  },
-  {
-    "fromNum": 21,
-    "toNum": 32,
-    "status": "optional",
-    "explanation": ""
-  },
-  {
-    "fromNum": 21,
-    "toNum": 38,
-    "status": "optional",
-    "explanation": ""
   },
   {
     "fromNum": 22,
@@ -583,6 +583,12 @@
   },
   {
     "fromNum": 26,
+    "toNum": 31,
+    "status": "valid",
+    "explanation": "Flooding can lead in some cases to contamination of freshwater resources and affect drinking water systems."
+  },
+  {
+    "fromNum": 26,
     "toNum": 32,
     "status": "valid",
     "explanation": ""
@@ -592,12 +598,6 @@
     "toNum": 38,
     "status": "valid",
     "explanation": ""
-  },
-  {
-    "fromNum": 26,
-    "toNum": 31,
-    "status": "optional",
-    "explanation": "Flooding can lead in some cases to contamination of freshwater resources and affect drinking water systems."
   },
   {
     "fromNum": 26,
