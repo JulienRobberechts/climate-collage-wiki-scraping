@@ -55,7 +55,7 @@ yarn import-en
 There are two types of tests:
 
 - Some tests are done to check the generic behavior of the program.
-- Some are to check that the data fetched from the wiki are what we expect. The targets used for that are files in the /data/latest-target directory. Those latest-target files are temporary and modified when the automatic result is better than the expected result. Those latest-target files will probably be removed when the scrapper could be trusted enough.
+- Some are to check that the data fetched from the wiki are what we expect. The targets used for that are files in the /data/result directory.
 
 ### run tests locally
 

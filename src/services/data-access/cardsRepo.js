@@ -1,7 +1,7 @@
 const { getObject } = require("../utils/fileServices/readFile.js");
 
 const getCardsFrReference = async (lang = "fr") => {
-  const sourceFile = `./data/latest-target/cards-${lang}.json`;
+  const sourceFile = `./data/results/cards-${lang}.json`;
   const cards = await getObject(sourceFile);
   return cards;
 };
@@ -12,7 +12,7 @@ const getCardsFrReferenceByCardNum = async (cardNum, lang = "fr") => {
 };
 
 const getLinksFrReference = (lang = "fr") =>
-  getObject(`./data/latest-target/links-${lang}.json`);
+  getObject(`./data/results/links-${lang}.json`);
 
 const getLinksEffectFrRef = async (cardNumFrom, status, lang = "fr") => {
   const cards = await getLinksFrReference(lang);
