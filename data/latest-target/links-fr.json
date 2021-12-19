@@ -96,6 +96,12 @@
     "explanation": "La construction de route nécessite parfois de déforester, mais l'aspect unidimensionnelle de la route la rend quasiment négligeable devant la déforestation lié à l'agriculture."
   },
   {
+    "fromNum": 4,
+    "toNum": 10,
+    "status": "optional",
+    "explanation": "La pollution locale que représentent les échappements des voitures est une motivation forte pour pousser la voiture électrique. Or cette dernière est responsable d'émissions dues à la génération de l'électricité elle-même (selon le mix électrique du pays considéré)."
+  },
+  {
     "fromNum": 5,
     "toNum": 7,
     "status": "valid",
@@ -279,7 +285,7 @@
     "fromNum": 12,
     "toNum": 24,
     "status": "valid",
-    "explanation": "Le mot Océan est écrit des deux côtés."
+    "explanation": ""
   },
   {
     "fromNum": 12,
@@ -297,7 +303,7 @@
     "fromNum": 13,
     "toNum": 15,
     "status": "valid",
-    "explanation": "Le mot Effet de serre est écrit des deux cotés (version > Oct 2018)."
+    "explanation": "Le mot Effet de serre est écrit des deux cotés."
   },
   {
     "fromNum": 14,
@@ -393,7 +399,7 @@
     "fromNum": 18,
     "toNum": 15,
     "status": "optional",
-    "explanation": "Quand la banquise fond, une surface blanche est remplacé par une surface bleu marine, qui à un albédo plus faible, donc absorbe plus d'énergie. Cette relation n'est pas indispensable mais permet de mettre en avant une autre boucle de rétro-action du jeu."
+    "explanation": "Quand la banquise fond, une surface blanche est remplacé par une surface bleu marine, qui à un albédo plus faible, donc absorbe plus d'énergie. Cette relation n'est pas indispensable mais permet de mettre en avant une autre boucle de rétroaction du jeu."
   },
   {
     "fromNum": 18,
@@ -417,7 +423,7 @@
     "fromNum": 18,
     "toNum": 20,
     "status": "invalid",
-    "explanation": "La fonte de la banquise arctique, mais également la fonte des glaciers du Groenland peuvent amener, dans un futur lointain, à perturber la circulation thermohaline (qui donne le Gulf Stream). Mais attention, la carte \"Cycle de l'eau\" ne fait pas du tout référence à la Circulation thermohaline."
+    "explanation": "La fonte de la banquise arctique, mais également la fonte des glaciers du Groenland peuvent amener, dans un futur lointain, à perturber la circulation thermohaline (qui donne le Gulf Stream). Mais attention, la carte \"cycle de l'eau\" ne fait pas du tout référence à la Circulation thermohaline."
   },
   {
     "fromNum": 18,
@@ -499,6 +505,24 @@
   },
   {
     "fromNum": 21,
+    "toNum": 32,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
+    "toNum": 36,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
+    "toNum": 38,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 21,
     "toNum": 41,
     "status": "valid",
     "explanation": "Si l'on veut rester dans la même logique de conservation de l'énergie, il faudrait faire le lien de fonte à partir de budget énergétique."
@@ -514,12 +538,6 @@
     "toNum": 32,
     "status": "optional",
     "explanation": "Dans les pays du Nord, une hausse de la température peut améliorer les rendements. Dans les pays du Sud, c'est le contraire : la moindre augmentation de température se traduit par une baisse de rendement."
-  },
-  {
-    "fromNum": 21,
-    "toNum": 36,
-    "status": "optional",
-    "explanation": ""
   },
   {
     "fromNum": 21,
@@ -577,6 +595,12 @@
   },
   {
     "fromNum": 26,
+    "toNum": 31,
+    "status": "valid",
+    "explanation": ""
+  },
+  {
+    "fromNum": 26,
     "toNum": 32,
     "status": "valid",
     "explanation": ""
@@ -589,12 +613,6 @@
   },
   {
     "fromNum": 26,
-    "toNum": 31,
-    "status": "optional",
-    "explanation": "[explication en cours...]"
-  },
-  {
-    "fromNum": 26,
     "toNum": 28,
     "status": "invalid",
     "explanation": "Attention aux associations d'idées : Crues / marécages / moustiques... Les crues peuvent amener des situations sanitaires dégradées, mais ce n'est pas de cela qu'on parle quand on évoque les vecteurs de maladie qui se déplacent à cause du changement climatique."
@@ -603,7 +621,7 @@
     "fromNum": 26,
     "toNum": 33,
     "status": "invalid",
-    "explanation": "Ne pas confondre 'Crues' et 'Submersions'. Les crues, ce sont les rivières qui débordent (c'est de l'eau douce). Les submersions, c'est la mer qui entre dans les terres (c'est de l'eau salée)."
+    "explanation": "Ne pas confondre 'Crues' et 'Submersions'. Les crues, ce sont les rivières / fleuves qui débordent (c'est de l'eau douce). Les submersions, c'est la mer qui entre dans les terres (c'est de l'eau salée)."
   },
   {
     "fromNum": 27,
@@ -681,7 +699,7 @@
     "fromNum": 31,
     "toNum": 38,
     "status": "optional",
-    "explanation": "[explication en cours...]"
+    "explanation": ""
   },
   {
     "fromNum": 32,
@@ -739,6 +757,12 @@
   },
   {
     "fromNum": 35,
+    "toNum": 38,
+    "status": "valid",
+    "explanation": "630 disparus suite aux incendies en Californie à l'automne 2018."
+  },
+  {
+    "fromNum": 35,
     "toNum": 6,
     "status": "optional",
     "explanation": "Une partie de la déforestation est faite en brûlant la forêt qui peut ensuite dégénérer en feu non-maîtrisé. C'est ce qu'il s'est passé pendant l'été 2019 en Amazonie et en Australie."
@@ -760,12 +784,6 @@
     "toNum": 32,
     "status": "optional",
     "explanation": "En général, ce qui brûle bien, c'est la forêt, pas les champs de blé."
-  },
-  {
-    "fromNum": 35,
-    "toNum": 38,
-    "status": "optional",
-    "explanation": "630 disparus suite aux incendies en Californie à l'automne 2018."
   },
   {
     "fromNum": 36,
@@ -800,12 +818,12 @@
   {
     "fromNum": 37,
     "toNum": 40,
-    "status": "optional",
-    "explanation": "[explication en cours...]"
+    "status": "valid",
+    "explanation": ""
   },
   {
-    "fromNum": 38,
-    "toNum": 40,
+    "fromNum": 39,
+    "toNum": 38,
     "status": "valid",
     "explanation": ""
   },
@@ -878,7 +896,7 @@
   {
     "fromNum": 42,
     "toNum": 20,
-    "status": "optional",
+    "status": "valid",
     "explanation": ""
   }
 ]

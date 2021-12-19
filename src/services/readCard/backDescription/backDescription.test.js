@@ -15,8 +15,8 @@ describe("backDescription", () => {
     const backDescription = await getBackDescription(card.wikiId, lang);
     expect(backDescription).toStrictEqual(card.backDescription);
   });
-  it("check backDescription on card 21*", async () => {
-    const cardNum = 21;
+  it("check backDescription on card 41*", async () => {
+    const cardNum = 41;
     const card = await getCardsFrReferenceByCardNum(cardNum);
     const backDescription = await getBackDescription(card.wikiId, lang);
     expect(backDescription).toStrictEqual(card.backDescription);

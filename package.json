@@ -8,7 +8,7 @@
     "import-fr": "node src/index.js import --lang fr",
     "import-en": "node src/index.js import --lang en",
     "convert": "node src/tools/convertImg.mjs",
-    "test": "jest src/services src/config",
+    "test": "jest src/services",
     "test-res-fr": "jest src/tests/on-results/fr",
     "test-res-en": "jest src/tests/on-results/en",
     "test-update": "jest src -u"
