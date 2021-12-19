@@ -1,6 +1,6 @@
 const { getObject } = require('../../services/utils/fileServices/readFile');
 
-const cardsResultsFilePath = (lang) => `./data/results/cards-${lang}.json`;
+const cardsResultsFilePath = (lang) =>  `./data/results/cards/${lang}/cards.json`;
 
 module.exports = {
   checkCardCount: async (lang) => {

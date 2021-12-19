@@ -1,5 +1,6 @@
 const { getObject } = require("../../services/utils/fileServices/readFile");
-const linksResultsFilePath = (lang) => `./data/results/links-${lang}.json`;
+const linksResultsFilePath = (lang) =>
+  `./data/results/cards/${lang}/links.json`;
 
 module.exports = {
   checkMultipleLinkStates: async (lang) => {

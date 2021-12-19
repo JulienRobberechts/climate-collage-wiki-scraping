@@ -5,7 +5,6 @@ const { writeObject } = require("../utils/fileServices/writeFile");
 const { getObject } = require("../utils/fileServices/readFile");
 const { mapDataFile } = require("../utils/etl/transformData");
 
-
 // EXTRACT
 const extractGame = async (lang = "fr") => {
   await extractCardList(lang);
@@ -20,8 +19,10 @@ const cardsYoutubeCodesFilePath = (lang) =>
   `./data/external-sources/cards-youtube-${lang}.json`;
 const cardsInstaCodesFilePath = (lang) =>
   `./data/external-sources/cards-insta-${lang}.json`;
-const cardsResultsFilePath = (lang) => `./data/results/cards-${lang}.json`;
-const linksResultsFilePath = (lang) => `./data/results/links-${lang}.json`;
+const cardsResultsFilePath = (lang) =>
+  `./data/results/cards/${lang}/cards.json`;
+const linksResultsFilePath = (lang) =>
+  `./data/results/cards/${lang}/links.json`;
 
 // 1- EXTRACT_CARDS_LIST
 const extractCardList = async (lang = "fr") => {
