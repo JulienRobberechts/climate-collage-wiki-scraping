@@ -787,15 +787,15 @@
   },
   {
     "fromNum": 36,
-    "toNum": 30,
-    "status": "optional",
-    "explanation": "Heatwaves can cause droughts. They often go together."
+    "toNum": 38,
+    "status": "valid",
+    "explanation": "Heat waves can be devastating, especially for the elderly."
   },
   {
     "fromNum": 36,
-    "toNum": 38,
+    "toNum": 30,
     "status": "optional",
-    "explanation": "Heat waves can be devastating, especially for the elderly."
+    "explanation": "Heatwaves can cause droughts. They often go together."
   },
   {
     "fromNum": 37,
