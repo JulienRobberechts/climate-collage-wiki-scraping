@@ -50,7 +50,7 @@ describe("Valid effects links", () => {
     "check valid effects on card %i",
     checkLinksEffects("valid")
   );
-  it("check links valid effects card 1", async () => {
+  it("check links valid effects card 1 (DEBUG)", async () => {
     await checkLinksEffects("valid")(1);
   });
 });
@@ -60,7 +60,7 @@ describe("Optional effects links", () => {
     "check optional effects on card %i",
     checkLinksEffects("optional")
   );
-  it("check links optional effects card 4*", async () => {
+  it("check links optional effects card 4 (DEBUG)", async () => {
     await checkLinksEffects("optional")(4);
   });
 });
@@ -70,7 +70,7 @@ describe("Invalid effects links", () => {
     "check invalid effects on card %i",
     checkLinksEffects("invalid")
   );
-  it("check invalid effects card 35", async () => {
+  it("check invalid effects card 35  (DEBUG)", async () => {
     await checkLinksEffects("invalid")(35);
   });
 });
@@ -87,8 +87,8 @@ describe("Optional causes", () => {
     "check optional causes on card %i",
     checkLinksCauses("optional")
   );
-  it("card 01", async () => {
-    await checkLinksCauses("optional")(1);
+  it("check optional causes on card 5 (DEBUG)", async () => {
+    await checkLinksCauses("optional")(5);
   });
 });
 
@@ -97,8 +97,8 @@ describe("Invalid causes", () => {
     "check invalid causes on card %i",
     checkLinksCauses("invalid")
   );
-  it("card 01", async () => {
-    await checkLinksCauses("invalid")(1);
+  it("check invalid causes on card 5 (DEBUG)", async () => {
+    await checkLinksCauses("invalid")(5);
   });
 });
 
