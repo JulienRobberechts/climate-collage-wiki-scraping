@@ -507,7 +507,7 @@
     "fromNum": 21,
     "toNum": 32,
     "status": "valid",
-    "explanation": ""
+    "explanation": "Dans les pays du Nord, une hausse de la température peut améliorer les rendements. Dans les pays du Sud, c'est le contraire : la moindre augmentation de température se traduit par une baisse de rendement."
   },
   {
     "fromNum": 21,
@@ -532,12 +532,6 @@
     "toNum": 28,
     "status": "optional",
     "explanation": "La carte vecteurs de maladie est en général reliée à la carte Biodiversité terrestre car les vecteurs de maladie sont une sous-partie de la biodiversité, mais on peut aussi la relier aux mêmes causes que la carte biodiversité, c’est-à-dire perturbation du cycle de l'eau et hausse de la température."
-  },
-  {
-    "fromNum": 21,
-    "toNum": 32,
-    "status": "optional",
-    "explanation": "Dans les pays du Nord, une hausse de la température peut améliorer les rendements. Dans les pays du Sud, c'est le contraire : la moindre augmentation de température se traduit par une baisse de rendement."
   },
   {
     "fromNum": 21,
