@@ -11,6 +11,9 @@ const {
 const { cards1To10, oneTo42 } = require("../../../tests/utils/cardsNumbers");
 const lang = "fr";
 
+const checkLinksEffects = (linkStatus) => checkLinks(linkStatus);
+const checkLinksCauses = (linkStatus) => checkLinks(linkStatus, false);
+
 const checkLinks =
   (linkStatus, linkEffect = true) =>
   async (cardNum) => {
@@ -43,62 +46,59 @@ const linksToCheck = (links, removeExplanation = true) => {
 };
 
 describe("Valid effects links", () => {
-  it.each(oneTo42)("check valid effects on card %i", checkLinks("valid"));
+  it.each(oneTo42)(
+    "check valid effects on card %i",
+    checkLinksEffects("valid")
+  );
   it("check links valid effects card 1", async () => {
-    await checkLinks("valid")(1);
+    await checkLinksEffects("valid")(1);
   });
 });
 
 describe("Optional effects links", () => {
-  it.each(oneTo42)("check optional effects on card %i", checkLinks("optional"));
+  it.each(oneTo42)(
+    "check optional effects on card %i",
+    checkLinksEffects("optional")
+  );
   it("check links optional effects card 4*", async () => {
-    await checkLinks("optional")(4);
+    await checkLinksEffects("optional")(4);
   });
 });
 
 describe("Invalid effects links", () => {
-  it.each(oneTo42)("check invalid effects on card %i", checkLinks("invalid"));
+  it.each(oneTo42)(
+    "check invalid effects on card %i",
+    checkLinksEffects("invalid")
+  );
   it("check invalid effects card 35", async () => {
-    await checkLinks("invalid")(35);
+    await checkLinksEffects("invalid")(35);
   });
 });
 
 describe("Valid causes", () => {
-  it.each(oneTo42)("check valid causes on card %i", checkLinks("valid", false));
-  it("card 01", async () => {
-    await checkLinks("valid", false)(1);
+  it.each(oneTo42)("check valid causes on card %i", checkLinksCauses("valid"));
+  it("check valid causes on card 38 (DEBUG)", async () => {
+    await checkLinksCauses("valid")(38);
   });
-  // it("card 36", async () => {
-  //   await checkLinks("valid", false)(36);
-  // });
-  // it("card 38", async () => {
-  //   await checkLinks("valid", false)(38);
-  // });
-  // it("card 39", async () => {
-  //   await checkLinks("valid", false)(39);
-  // });
-  // it("card 40", async () => {
-  //   await checkLinks("valid", false)(40);
-  // });
 });
 
 describe("Optional causes", () => {
   it.each(oneTo42)(
     "check optional causes on card %i",
-    checkLinks("optional", false)
+    checkLinksCauses("optional")
   );
   it("card 01", async () => {
-    await checkLinks("optional", false)(1);
+    await checkLinksCauses("optional")(1);
   });
 });
 
 describe("Invalid causes", () => {
   it.each(oneTo42)(
     "check invalid causes on card %i",
-    checkLinks("invalid", false)
+    checkLinksCauses("invalid")
   );
   it("card 01", async () => {
-    await checkLinks("invalid", false)(1);
+    await checkLinksCauses("invalid")(1);
   });
 });
 
