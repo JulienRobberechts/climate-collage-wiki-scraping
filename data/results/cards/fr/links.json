@@ -825,19 +825,13 @@
     "fromNum": 39,
     "toNum": 38,
     "status": "valid",
-    "explanation": ""
+    "explanation": "Lorsque les réfugiés se déplacent, ils se retrouvent souvent placés dans des camps \"de réfugiés\" dans lesquels la concentration humaine et le manque d'infrastructures sanitaires favorisent l'apparition et la circulation des vecteurs de maladie."
   },
   {
     "fromNum": 39,
     "toNum": 40,
     "status": "valid",
     "explanation": ""
-  },
-  {
-    "fromNum": 39,
-    "toNum": 38,
-    "status": "optional",
-    "explanation": "Lorsque les réfugiés se déplacent, ils se retrouvent souvent placés dans des camps \"de réfugiés\" dans lesquels la concentration humaine et le manque d'infrastructures sanitaires favorisent l'apparition et la circulation des vecteurs de maladie."
   },
   {
     "fromNum": 40,
